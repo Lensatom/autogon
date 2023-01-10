@@ -9,21 +9,27 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.7",
+    "@heroicons/react": "^2.0.13",
     "@hookform/resolvers": "^2.9.10",
     "@reduxjs/toolkit": "^1.9.1",
     "classnames": "^2.3.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.41.5",
+    "react-icons": "^4.7.1",
+    "react-lottie": "^1.2.3",
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.6.2",
     "react-spinners": "^0.13.7",
     "react-toastify": "^9.1.1",
-    "redux": "^4.2.0"
+    "redux": "^4.2.0",
+    "tailwindcss-animate": "^1.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.9",
+    "@types/react-lottie": "^1.2.6",
     "@vitejs/plugin-react": "^3.0.0",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.21",

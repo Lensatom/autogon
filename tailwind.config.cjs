@@ -7,6 +7,7 @@ module.exports = {
         primary: "#FF8200",
         neutral: "#081819",
         secondary: "#2B383B",
+        surface: "#FBFCF8",
       },
       fontFamily: {
         roboto: "'Roboto Condensed', sans-serif;",
@@ -14,5 +15,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };

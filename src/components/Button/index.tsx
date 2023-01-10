@@ -8,7 +8,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         <button
           {...props}
           ref={ref}
-          className={`px-6 py-5 bg-transparent border border-secondary text-secondary rounded-full text-[16px] font-roboto leading-4 -tracking-[0.16px] ${props.className}`}
+          className={`px-6 py-5 bg-transparent border border-secondary text-secondary rounded-full text-[16px] font-inter leading-4 -tracking-[0.16px] ${props.className}`}
         />
       );
     }
@@ -17,7 +17,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         {...props}
         ref={ref}
-        className={`px-6 py-5 bg-primary text-neutral rounded-full text-[16px] font-roboto leading-4 -tracking-[0.16px] ${props.className}`}
+        className={`px-6 py-5 bg-primary text-neutral rounded-full text-[16px] font-inter leading-4 -tracking-[0.16px] ${props.className}`}
       />
     );
   }

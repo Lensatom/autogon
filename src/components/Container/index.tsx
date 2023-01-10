@@ -50,7 +50,7 @@ export const Container = <E extends ElementType = typeof defaultElement>(
         flex: flex,
         "w-screen": fullWidth,
         "h-screen": fullHeight,
-        "px-4 lg:px-10": !noGutter,
+        "px-4 lg:px-12": !noGutter,
         [justifyItems[justify as Justify]]: justify,
         [alignItems[align as Align]]: align,
         [flexDirection[direction as Row]]: direction,
