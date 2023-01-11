@@ -40,6 +40,7 @@ type PolymorphicAsProps<E extends ElementType> = {
    */
   variant:
     | "display"
+    | "subdisplay"
     | "header"
     | "title"
     | "body"

@@ -32,6 +32,8 @@ export const Typography = <E extends ElementType = typeof defaultElement>({
   const fontSizeVariant = {
     display:
       " text-[70px] lg:text-[120px] font-roboto font-bold leading-[70px] lg:leading-[140px] -tracking-[4.8px] text-neutral",
+    subdisplay:
+      " text-[70px] lg:text-[117px] font-roboto font-bold leading-[70px] lg:leading-[151.2px] -tracking-[3.36px] text-neutral",
     header:
       "font-roboto text-[78px] font-medium leading-[100.8px] -tracking-[2.24px] text-neutral",
     title: "font-roboto text-[33px] leading-[52.8px] text-neutral font-medium",
