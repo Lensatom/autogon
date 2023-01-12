@@ -42,6 +42,8 @@ export const Container = <E extends ElementType = typeof defaultElement>(
   let flexDirection = {
     row: "flex-row",
     col: "flex-col",
+    "col-reverse": "flex-col-reverse",
+    "row-reverse": "flex-row-reverse",
   };
 
   return (

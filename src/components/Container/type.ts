@@ -15,7 +15,7 @@ export type Align =
   | "baseline"
   | "stretch"
 
-export type Row = "row" | "col"
+export type Row = "row" | "col" | "col-reverse" | "row-reverse";
 
 type PolymorphicAsProps<E extends ElementType> = {
   as?: E | keyof HTMLElementTagNameMap;
@@ -24,7 +24,7 @@ type PolymorphicAsProps<E extends ElementType> = {
   fullWidth?: boolean;
   noGutter?: boolean;
   flex?: boolean;
-  direction?: "row" | "col";
+  direction?: Row;
   justify?: Justify;
   align?: Align;
 };
