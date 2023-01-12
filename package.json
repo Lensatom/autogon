@@ -24,6 +24,7 @@
     "react-spinners": "^0.13.7",
     "react-toastify": "^9.1.1",
     "redux": "^4.2.0",
+    "swiper": "^8.4.5",
     "tailwindcss-animate": "^1.0.5"
   },
   "devDependencies": {

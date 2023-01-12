@@ -4,18 +4,22 @@ import { Header } from "../../Layouts/Header";
 import { HeroPage } from "./Layouts/Hero";
 import Smilesvg from "../../assets/logo/kili-smile.svg.png";
 import cn from "classnames";
+import { BenefitCardProps } from "../../interfaces";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { BlogCard } from "../../components/Cards/BlogCard";
+import { Footer } from "../../Layouts/Footer";
 
-const BenefitCard = ({ className }: { className?: string }) => {
+const BenefitCard = ({ className, position }: BenefitCardProps) => {
   return (
     <div
       className={cn(
-        "h-[35rem] w-[28rem] rounded-6xl bg-[#EAEEE2] hover:bg-[#B090EF] p-12 relative shadow-4xl shadow-black/40",
+        "h-[35rem] w-[28rem] rounded-6xl bg-[#EAEEE2] hover:bg-[#B090EF] p-12 relative shadow-4xl",
         className
       )}
     >
-      <Avatar sizes={70} />
-      <Typography variant="title" className="mt-3">
-        ML Engineers
+      <Avatar sizes={75} />
+      <Typography variant="title" className="mt-3 font-extrabold">
+        {position}
       </Typography>
       <div className="mt-2">
         <Typography variant="body">
@@ -36,6 +40,8 @@ const BenefitCard = ({ className }: { className?: string }) => {
   );
 };
 
+
+
 export const LandingPage = () => {
   return (
     <>
@@ -45,24 +51,78 @@ export const LandingPage = () => {
         <video></video>
       </Container>
 
-      <Container className="bg-surface py-10">
-        <Typography variant="subdisplay" align="center">
+      <Container className="bg-surface py-10 overflow-hidden h-[110rem]">
+        <Typography
+          variant="header"
+          align="center"
+          className="w-[80%] mx-auto font-extrabold"
+        >
           See how Kili can help you in your role
         </Typography>
 
-        <div className="flex mt-40 gap-10  justify-center">
+        <div className="flex mt-32 gap-10  justify-center">
           <div className="">
-            <BenefitCard />
-            <BenefitCard className="-top-[23rem]" />
-            <BenefitCard className="-top-[46rem]" />
-            <BenefitCard className="-top-[69rem]" />
+            <BenefitCard position="Ml Engineers" />
+            <BenefitCard className="-top-[23rem]" position="Project Leaders" />
+            <BenefitCard className="-top-[46rem]" position="IT Leaders" />
+            <BenefitCard className="-top-[69rem]" position="CXOs" />
           </div>
           <div className="">
-            <BenefitCard />
-            <BenefitCard className="-top-[23rem]" />
-            <BenefitCard className="-top-[46rem]" />
+            <BenefitCard position="Project Managers" />
+            <BenefitCard className="-top-[23rem]" position="AI Leaders" />
+            <BenefitCard className="-top-[46rem]" position="Data Scientists" />
           </div>
         </div>
+      </Container>
+
+      <Container className="bg-surface py-10">
+        <Typography
+          variant="header"
+          align="center"
+          className="w-[80%] mx-auto font-extrabold"
+        >
+          Recent news
+        </Typography>
+       
+        <Swiper
+          spaceBetween={16}
+          slidesPerView="auto"
+          centeredSlides
+          allowTouchMove
+          initialSlide={1}
+          className="mt-20 mb-60"
+          scrollbar={{
+            draggable: true,
+          }}
+          breakpoints={{
+            959: { spaceBetween: 22 },
+            1100: { allowTouchMove: true, scrollbar: { draggable: false } },
+          }}
+        >
+          <SwiperSlide className="!w-fit">
+            <BlogCard
+              caption="Blog"
+              src="https://a.storyblok.com/f/139616/1920x1080/dc2cef422d/ai-for-compliance-what-why-and-how.svg/m/767x0"
+              title="AI For compliance: What, why and how?"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide className="!w-fit">
+            <BlogCard
+              caption="whitespaper"
+              src="https://a.storyblok.com/f/139616/1920x1080/dc2cef422d/ai-for-compliance-what-why-and-how.svg/m/767x0"
+              title="Kili's guide to the new AI paradigm"
+            />
+          </SwiperSlide>
+
+          <SwiperSlide className="!w-fit">
+            <BlogCard
+              caption="tutorial"
+              src="https://a.storyblok.com/f/139616/1920x1080/dc2cef422d/ai-for-compliance-what-why-and-how.svg/m/767x0"
+              title="Opinion Classification with kili & HuggingFac.."
+            />
+          </SwiperSlide>
+        </Swiper>
       </Container>
 
       <Container className="bg-[#162427] pb-28">
@@ -86,6 +146,7 @@ export const LandingPage = () => {
           </div>
         </div>
       </Container>
+      <Footer />
     </>
   );
 };
