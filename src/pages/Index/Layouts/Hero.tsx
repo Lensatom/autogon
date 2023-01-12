@@ -14,7 +14,7 @@ export const HeroPage = () => {
   };
 
   return (
-    <Container as="header" className="bg-surface pt-3 pb-8">
+    <Container as="header" className="bg-surface pt-3 pb-28">
       <Typography align="center" variant="display" className="mx-auto">
         Labeling Platform for High-Quality Training Data
       </Typography>

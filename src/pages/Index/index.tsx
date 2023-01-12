@@ -4,7 +4,7 @@ import { Header } from "../../Layouts/Header";
 import { HeroPage } from "./Layouts/Hero";
 import Smilesvg from "../../assets/logo/kili-smile.svg.png";
 import cn from "classnames";
-import { BenefitCardProps } from "../../interfaces";
+import { BenefitCardProps, TestimonialProps } from "../../interfaces";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BlogCard } from "../../components/Cards/BlogCard";
 import { Footer } from "../../Layouts/Footer";
@@ -47,28 +47,26 @@ const BenefitCard = ({ className, position }: BenefitCardProps) => {
   );
 };
 
-const TestimonialCard = () => {
+const TestimonialCard = ({ comment, img, name, positionandcompany }: TestimonialProps) => {
   return (
     <>
       <Typography
         variant="body"
         className="w-[30rem] text-[24px] leading-[140%] -tracking-[.02em]"
       >
-        "Kili's customer support is best in-class. We solve issues much faster
-        and their training data platform has a direct impact on our
-        performance."
+        {comment}
       </Typography>
       <div className="flex items-center gap-2">
-        <Avatar sizes={58} />
+        <Avatar sizes={58} src={img} />
         <div className="">
-          <Typography variant="caption" className="!font-semibold !text-[12px]">
-            Andrea Colonna
+          <Typography variant="caption" className="!font-semibold !text-[14px]">
+            {name}
           </Typography>
           <Typography
             variant="caption"
-            className="!text-[13px] mt-0.5 font-normal"
+            className="!text-[12px] mt-0.5 font-normal"
           >
-            Head of Data, Jellysmack
+           {positionandcompany}
           </Typography>
         </div>
       </div>
@@ -81,8 +79,70 @@ export const LandingPage = () => {
     <>
       <Header />
       <HeroPage />
-      <Container flex align="center" className="bg-surface">
-        <video></video>
+
+      <Container
+        flex
+        align="center"
+        itemScope
+        itemProp="videoObject"
+        itemType="https://scheme.org/videoObject"
+        className="bg-surface pb-32"
+      >
+        <meta
+          itemProp="contentUrl"
+          content="https://a.storyblok.com/f/139616/x/46411cf354/demo-homepage-v2.mp4"
+        />
+        <div className="mx-auto px-[1.375em] flex relative overflow-hidden items-center justify-center rounded">
+          <video
+            className="h-auto w-[80%] rounded-lg"
+            loop
+            autoPlay
+            typeof="video/mp4"
+            src="https://a.storyblok.com/f/139616/x/46411cf354/demo-homepage-v2.mp4"
+          ></video>
+          <meta itemProp="name" content="kili presentation" />
+          <meta
+            itemProp="thumbnailUrl"
+            content="https://a.storyblok.com/f/139616/2339x1666/31706b2698/annotate-fast.png"
+          />
+          <meta itemProp="uploadDate" content="2022-11-07 00:00" />
+          <meta itemProp="description" content="kili presentation" />
+        </div>
+      </Container>
+
+      <Container noGutter className="bg-surface">
+        <Typography
+          variant="title"
+          align="center"
+          className="text-[3rem] leading-[110%]"
+        >
+          They trust us on their data-centric journey
+        </Typography>
+
+        <div className="bg-white overflow-x-hidden flex mt-16 h-[12.5rem]">
+          <div className="h-full flex animate-marquee whitespace-nowrap items-center">
+            <img
+              src="https://a.storyblok.com/f/139616/x/fa21008d7a/thales.svg"
+              className="mr-[9.375rem] h-[4.0625rem]"
+            />
+            <img
+              src="https://a.storyblok.com/f/139616/x/233eb3a6d5/stellantis.svg"
+              className="mr-[9.375rem] h-[4.0625rem]"
+            />
+            <img
+              src="https://a.storyblok.com/f/139616/x/01ba6e99f5/safran.svg"
+              className="mr-[9.375rem] h-[4.0625rem]"
+            />
+            <img
+              src="https://a.storyblok.com/f/139616/x/9070e09d27/michelin.svg"
+              className="mr-[9.375rem] h-[4.0625rem]"
+            />
+            <img
+              src="https://a.storyblok.com/f/139616/x/5c6ee6de34/louisvuitton.svg"
+              className="mr-[9.375rem] h-[4.0625rem]"
+            />
+          </div>
+        </div>
       </Container>
 
       <Container className="bg-surface pt-20 pb-40" flex align="center">
@@ -221,22 +281,54 @@ export const LandingPage = () => {
           }}
         >
           <SwiperSlide className="!w-fit rounded-4xl max-h-[370px] shadow-[0_0_16px_rgb(8,24,25/4%)] flex flex-col justify-between py-12 px-16 bg-white">
-            <TestimonialCard />
+            <TestimonialCard
+              comment={
+                "Kili's customer support is best in-class. We solve issues much faster and their training data platform has a direct impact on our performance."
+              }
+              name="Andrea Colonna"
+              img="https://a.storyblok.com/f/139616/800x800/1937b81e0c/jellysmack2.jpeg"
+              positionandcompany="Head of Data, Jellysmack"
+            />
           </SwiperSlide>
           <SwiperSlide className="!w-fit rounded-4xl max-h-[370px] shadow-[0_0_16px_rgb(8,24,25/4%)] flex flex-col justify-between py-12 px-16 bg-white">
-            <TestimonialCard />
+            <TestimonialCard
+              comment={
+                "Great companies like Kili Technology, [...] have already adopted this data-centric AI approach."
+              }
+              name="Andrew Ng"
+              img="https://a.storyblok.com/f/139616/398x398/e888674f6a/andrew.jpeg"
+              positionandcompany="Data-centric AI Influencer"
+            />
           </SwiperSlide>
           <SwiperSlide className="!w-fit rounded-4xl max-h-[370px] shadow-[0_0_16px_rgb(8,24,25/4%)] flex flex-col justify-between py-12 px-16 bg-white">
-            <TestimonialCard />
+            <TestimonialCard
+              comment={
+                "Kili, the training data platform, is bringing added value in the management of our projects and this is quality."
+              }
+              name="Gilles Henaff"
+              img="https://a.storyblok.com/f/139616/500x500/3dd69add65/thales.jpeg"
+              positionandcompany="Head of AI, Thales Las France"
+            />
           </SwiperSlide>
           <SwiperSlide className="!w-fit rounded-4xl max-h-[370px] shadow-[0_0_16px_rgb(8,24,25/4%)] flex flex-col justify-between py-12 px-16 bg-white">
-            <TestimonialCard />
+            <TestimonialCard
+              comment={
+                "Kili enables us to improve our models’ performance and scale our AI projects as fast as our business needs."
+              }
+              name="Andrea Colonna"
+              img="https://a.storyblok.com/f/139616/800x800/1937b81e0c/jellysmack2.jpeg"
+              positionandcompany="Head of Data, Jellysmack"
+            />
           </SwiperSlide>
           <SwiperSlide className="!w-fit rounded-4xl max-h-[370px] shadow-[0_0_16px_rgb(8,24,25/4%)] flex flex-col justify-between py-12 px-16 bg-white">
-            <TestimonialCard />
-          </SwiperSlide>
-          <SwiperSlide className="!w-fit rounded-4xl max-h-[370px] shadow-[0_0_16px_rgb(8,24,25/4%)] flex flex-col justify-between py-12 px-16 bg-white">
-            <TestimonialCard />
+            <TestimonialCard
+              comment={
+                "We are very satisfied with our collaboration with Kili. We saw a performance improvement of our model of 3.5%"
+              }
+              name="Marie de Léséleuc "
+              img="https://a.storyblok.com/f/139616/460x460/5e38951100/eidos.jpeg"
+              positionandcompany="Director of Analytics and Data Science, Eidos-Montréal"
+            />
           </SwiperSlide>
         </Swiper>
       </Container>
@@ -294,16 +386,16 @@ export const LandingPage = () => {
       <Container className="bg-[#162427] pb-28">
         <div className="mx-auto w-fit ">
           <img src={Smilesvg} className="relative -top-24 mx-auto" />
-          <Typography variant="subdisplay" className="capitalize text-white">
+          <Typography variant="subdisplay" className="capitalize !text-white">
             get started
           </Typography>
-          <Typography variant="body" align="center" className="text-white">
+          <Typography variant="body" align="center" className="!text-white">
             Get started! Build better data, now.
           </Typography>
           <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
             <Button>Request a demo</Button>
             <Button
-              className="flex items-center gap-3 text-white border-white"
+              className="flex items-center gap-3 !text-white border-white"
               variant="outline"
             >
               Start for free
@@ -312,6 +404,7 @@ export const LandingPage = () => {
           </div>
         </div>
       </Container>
+
       <Footer />
     </>
   );

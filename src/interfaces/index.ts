@@ -20,3 +20,10 @@ export type BlogCardProps = {
   caption: string;
   title: string;
 };
+
+export type TestimonialProps = {
+  comment: string,
+  name: string,
+  img: string,
+  positionandcompany: string
+}

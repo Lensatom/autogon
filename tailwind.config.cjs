@@ -23,6 +23,27 @@ module.exports = {
         "6xl": "3rem",
         "7xl": "3.5rem",
       },
+      animationDuration: {
+        "2s": "2s",
+        "10s": "52.0664s",
+      },
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+        marquee2: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
+      },
+      animation: {
+        "spin-slow-30": "spin 30s linear infinite",
+        "spin-slow-25": "spin 25s linear infinite",
+        "spin-slow-10": "spin 10s linear infinite",
+        marquee: "marquee 25s linear infinite",
+        marquee2: "marquee2 25s linear infinite",
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
