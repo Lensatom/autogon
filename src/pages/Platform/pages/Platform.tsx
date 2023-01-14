@@ -8,7 +8,61 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import Smilesvg from "../../../assets/kili-icon-dark-mode.svg.svg";
 import { Footer } from "../../../Layouts/Footer";
 
+type IconSectionTypes = {
+  src: string;
+  title: string;
+};
+
+const IconSection = ({ src, title }: IconSectionTypes) => {
+  return (
+    <div className="mb-16">
+      <img
+        src={src}
+        className="max-w-[64px] object-contain mx-auto mb-4"
+        loading="lazy"
+        alt={title}
+      />
+      <Typography
+        isDarkMode
+        variant="title"
+        align="center"
+        className="text-[22px] leading-[35.2px] -tracking-[0.22px]"
+      >
+        {title}
+      </Typography>
+    </div>
+  );
+};
+// TODO: carousel
 export const PlatformPage = () => {
+  let iconsSections = [
+    {
+      src: "https://a.storyblok.com/f/139616/x/215a2f39bd/foster.svg",
+      title: "Foster collaboration",
+    },
+    {
+      src: "https://a.storyblok.com/f/139616/x/67bc799aee/dataset.svg",
+      title: "Dataset and project management",
+    },
+    {
+      src: "https://a.storyblok.com/f/139616/x/37326a836d/secure.svg",
+      title: "Secure training data hubs",
+    },
+    {
+      src: "https://a.storyblok.com/f/139616/x/4b5c895fa5/workflows.svg",
+      title: "Continous iterating workflows",
+    },
+    {
+      src: "https://a.storyblok.com/f/139616/x/65f2fe8908/ai.svg",
+      title:
+        "Control the performance of your model through the quality of your data",
+    },
+    {
+      src: "https://a.storyblok.com/f/139616/x/a9bf9ed871/storage.svg",
+      title: "Fast labeling powered by AI",
+    },
+  ];
+
   return (
     <>
       <Header darkMode />
@@ -16,8 +70,8 @@ export const PlatformPage = () => {
       <HeroPage />
 
       <Container isDarkMode className="pt-20 pb-10">
-        <div className="mx-auto">
-          <Typography isDarkMode variant="body" className="w-3/4 mx-auto">
+        <div className="lg:mx-auto">
+          <Typography isDarkMode variant="body" className="lg:w-3/4 mx-auto">
             Whether the use case at hand involves computer vision, natural
             language processing, or speech recognition, Kili empowers teams of
             annotators, engineers, data scientists, business stakeholders, and
@@ -25,7 +79,14 @@ export const PlatformPage = () => {
             drives the results.
           </Typography>
           <div className="h-[601px] w-fit mx-auto mt-2">
-            <img src={Image} className="h-full w-full object-contain hidden lg:block" />
+            <img
+              src={Image}
+              className="h-full w-full object-contain hidden lg:block"
+            />
+            <img
+              src="https://a.storyblok.com/f/139616/x/7c4a30c66d/diagram-02-mobile-3.svg"
+              className="h-full w-full object-contain lg:hidden"
+            />
           </div>
         </div>
       </Container>
@@ -43,7 +104,7 @@ export const PlatformPage = () => {
           variant="body"
           align="center"
           isDarkMode
-          className="w-1/2 mx-auto mt-5"
+          className="lg:w-1/2 mx-auto mt-5"
         >
           Kili is the platform that accelerates the creation and deployment of
           training data for ML and AI. With Kili, build and deliver training
@@ -52,94 +113,13 @@ export const PlatformPage = () => {
         </Typography>
       </Container>
 
-      <Container isDarkMode className="pt-60 pb-52">
-        <div className="mx-auto flex flex-wrap w-[80%] justify-center gap-8 gap-y-10">
-          <div className="w-80 h-48 ">
-            <div className="h-16 w-16 border border-white grid place-items-center rounded-full mx-auto">
-              <img src={FosterIcon} className="h-8 w-8 object-contain" />
-            </div>
-            <Typography
-              isDarkMode
-              variant="title"
-              align="center"
-              className="text-[22px] mt-10 leading-[35.2px] -tracking-[0.22px]"
-            >
-              Foster collaboration
-            </Typography>
-          </div>
-
-          <div className="w-80 h-48">
-            <div className="h-16 w-16 border border-white grid place-items-center rounded-full mx-auto">
-              <img src={FosterIcon} className="h-8 w-8 object-contain" />
-            </div>
-            <Typography
-              isDarkMode
-              variant="title"
-              align="center"
-              className="text-[22px] mt-10 w-60 leading-[35.2px] -tracking-[0.22px] mx-auto"
-            >
-              Dataset and project management
-            </Typography>
-          </div>
-
-          <div className="w-80 h-48">
-            <div className="h-16 w-16 border border-white grid place-items-center rounded-full mx-auto">
-              <img src={FosterIcon} className="h-8 w-8 object-contain" />
-            </div>
-            <Typography
-              isDarkMode
-              variant="title"
-              align="center"
-              className="text-[22px] mt-10 w-60 leading-[35.2px] -tracking-[0.22px] mx-auto"
-            >
-              Secure training data hubs
-            </Typography>
-          </div>
-
-          <div className="w-80 h-48">
-            <div className="h-16 w-16 border border-white grid place-items-center rounded-full mx-auto">
-              <img src={FosterIcon} className="h-8 w-8 object-contain" />
-            </div>
-            <Typography
-              isDarkMode
-              variant="title"
-              align="center"
-              className="text-[22px] mt-10 leading-[35.2px] -tracking-[0.22px] mx-auto"
-            >
-              Continous iterating workflows
-            </Typography>
-          </div>
-
-          <div className="w-80 h-48">
-            <div className="h-16 w-16 border border-white grid place-items-center rounded-full mx-auto">
-              <img src={FosterIcon} className="h-8 w-8 object-contain" />
-            </div>
-            <Typography
-              isDarkMode
-              variant="title"
-              align="center"
-              className="text-[22px] mt-10 w-72 leading-[35.2px] -tracking-[0.22px] mx-auto"
-            >
-              Control the performance of your model through the quality of your
-              data
-            </Typography>
-          </div>
-
-          <div className="w-80 h-48">
-            <div className="h-16 w-16 border border-white grid place-items-center rounded-full mx-auto">
-              <img src={FosterIcon} className="h-8 w-8 object-contain" />
-            </div>
-            <Typography
-              isDarkMode
-              variant="title"
-              align="center"
-              className="text-[22px] mt-10 w-60 leading-[35.2px] -tracking-[0.22px] mx-auto"
-            >
-              Fast labeling powered by AI
-            </Typography>
-          </div>
+      <Container isDarkMode className="lg:pt-40 pt-10 lg:pb-40 pb-20">
+        <div className="lg:mx-auto grid grid-cols-2 lg:grid-cols-3 lg:w-[80%] lg:gap-8 lg:gap-y-10">
+          {iconsSections.map((item) => (
+            <IconSection src={item.src} title={item.title} />
+          ))}
         </div>
-        <div className="mt-16 flex justify-center">
+        <div className="lg:mt-5 flex justify-center">
           <Button darkMode className="mt-5" variant="outline">
             Talk to an expert
           </Button>
@@ -151,20 +131,20 @@ export const PlatformPage = () => {
           as="div"
           isLightDarkMode
           background
-          className="flex items-center gap-3 rounded-2xl h-[50rem] !px-20"
+          className="lg:flex items-center gap-3 rounded lg:rounded-2xl lg:h-[50rem] lg:!px-20"
         >
-          <div className="w-full">
+          <div className="w-full pt-12 lg:mt-0">
             <Typography isDarkMode variant="caption">
               SECURITY AND COMPLIANCE
             </Typography>
             <Typography
               isDarkMode
               variant="header"
-              className="font-semibold text-[90px] mt-4 !leading-[5rem]"
+              className="font-semibold lg:text-[90px] lg:mt-4 !leading-[4rem] lg:!leading-[5rem]"
             >
               Security that scales
             </Typography>
-            <Typography variant="body" isDarkMode className="mt-4 w-[36rem]">
+            <Typography variant="body" isDarkMode className="mt-4 lg:w-[36rem]">
               Whatever the size of your organization, our intelligent security
               measures are built to scale. Our rigorous security program is
               informed by the needs of our customers and industry standards,

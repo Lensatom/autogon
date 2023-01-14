@@ -40,7 +40,7 @@ export const Typography = forwardRef(
       subdisplay:
         " text-[70px] lg:text-[117px] font-roboto font-bold leading-[70px] lg:leading-[151.2px] -tracking-[3.36px]",
       header:
-        "font-roboto text-[104px] font-medium leading-[100.8px] -tracking-[2.24px]",
+        "font-roboto text-[70px] lg:text-[104px] font-medium leading-[90%] lg:leading-[100.8px] -tracking-[2.24px]",
       title:
         "font-roboto text-[43px] leading-[52.8px] font-medium",
       body: "text-[18px] font-inter leading-[28.8px] -tracking-[0.18px]",

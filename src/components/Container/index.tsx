@@ -51,7 +51,7 @@ export const Container = forwardRef<any, ContainerProps<any>>((props, ref) => {
   return (
     <Component
       ref={ref}
-      className={cn("", className, {
+      className={cn("overflow-x-hidden", className, {
         flex: flex,
         "w-screen": fullWidth,
         "h-screen": fullHeight,

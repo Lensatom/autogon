@@ -16,7 +16,7 @@ export const BreadCrumb = ({
   array_pathname.splice(0, 1);
 
   return (
-    <nav className={`font-bold mb-2 mt-2 ${className}`} aria-label="Breadcrumb">
+    <nav className={`font-bold mb-2 mt-2 hidden lg:block ${className}`} aria-label="Breadcrumb">
       <ol className="list-none p-0 inline-flex">
         <li className="flex items-center">
           <Typography
