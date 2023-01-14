@@ -8,6 +8,11 @@ module.exports = {
         neutral: "#081819",
         secondary: "#2B383B",
         surface: "#FBFCF8",
+        "dark-surface": "#081819",
+      },
+      backgroundColor: {
+        "dark-paper": "#162427",
+        "light-dark-surface": "#2B383B",
       },
       fontFamily: {
         roboto: "'Roboto Condensed', sans-serif;",

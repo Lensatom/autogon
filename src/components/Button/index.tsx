@@ -8,7 +8,9 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         <button
           {...props}
           ref={ref}
-          className={`px-6 py-5 bg-transparent border border-secondary text-secondary rounded-full text-[16px] font-inter leading-4 -tracking-[0.16px] ${props.className}`}
+          className={`px-6 py-5 bg-transparent border  rounded-full text-[16px] font-inter leading-4 -tracking-[0.16px] hover:text-neutral hover:bg-primary hover:border-primary hover:shadow ${
+            props.darkMode ? "border-white text-white" : "border-secondary text-secondary"
+          } ${props.className}`}
         />
       );
     }

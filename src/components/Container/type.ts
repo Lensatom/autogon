@@ -6,14 +6,9 @@ export type Justify =
   | "start"
   | "between"
   | "around"
-  | "evenly"
+  | "evenly";
 
-export type Align =
-  | "start"
-  | "end"
-  | "center"
-  | "baseline"
-  | "stretch"
+export type Align = "start" | "end" | "center" | "baseline" | "stretch";
 
 export type Row = "row" | "col" | "col-reverse" | "row-reverse";
 
@@ -27,8 +22,10 @@ type PolymorphicAsProps<E extends ElementType> = {
   direction?: Row;
   justify?: Justify;
   align?: Align;
+  isDarkMode?: boolean;
+  background?: boolean,
+  isLightDarkMode?: boolean
 };
 
-export type ContainerProps<E extends ElementType> = PolymorphicAsProps<E> & PropsWithChildren<
-  ComponentPropsWithRef<E>
->;
+export type ContainerProps<E extends ElementType> = PolymorphicAsProps<E> &
+  PropsWithChildren<ComponentPropsWithRef<E>>;

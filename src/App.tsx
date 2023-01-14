@@ -1,5 +1,5 @@
 import { useRoutes } from "react-router-dom";
-import { LandingPage } from "./pages";
+import { LandingPage, Platform } from "./pages";
 import { ROUTES } from "./utils/routes";
 
 function App() {
@@ -8,6 +8,10 @@ function App() {
       path: ROUTES.index,
       element: <LandingPage />,
     },
+    {
+      path: `${ROUTES.platform}/*`,
+      element: <Platform />
+    }
   ]);
 }
 

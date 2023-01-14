@@ -55,6 +55,7 @@ type PolymorphicAsProps<E extends ElementType> = {
    * Passing content to the component.
    */
   children?: ReactNode;
+  isDarkMode?: boolean
 };
 
 export type TypographyProps<E extends ElementType> = PolymorphicAsProps<E>;

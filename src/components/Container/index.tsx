@@ -1,12 +1,11 @@
-import { ElementType } from "react";
+import { ElementType, forwardRef } from "react";
 import cn from "classnames";
 import { ContainerProps, Justify, Align, Row } from "./type";
 
 const defaultElement = "section";
 
-export const Container = <E extends ElementType = typeof defaultElement>(
-  props: ContainerProps<E>
-) => {
+
+export const Container = forwardRef<any, ContainerProps<any>>((props, ref) => {
   const {
     as,
     className,
@@ -17,6 +16,9 @@ export const Container = <E extends ElementType = typeof defaultElement>(
     align,
     direction,
     noGutter,
+    isDarkMode,
+    background,
+    isLightDarkMode,
     ...rest
   } = props;
 
@@ -48,6 +50,7 @@ export const Container = <E extends ElementType = typeof defaultElement>(
 
   return (
     <Component
+      ref={ref}
       className={cn("", className, {
         flex: flex,
         "w-screen": fullWidth,
@@ -56,8 +59,11 @@ export const Container = <E extends ElementType = typeof defaultElement>(
         [justifyItems[justify as Justify]]: justify,
         [alignItems[align as Align]]: align,
         [flexDirection[direction as Row]]: direction,
+        "!bg-dark-paper": isDarkMode && !background,
+        "!bg-dark-surface": isDarkMode && background,
+        "!bg-light-dark-surface": isLightDarkMode && background,
       })}
       {...rest}
     />
   );
-};
+});

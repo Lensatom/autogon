@@ -16,13 +16,13 @@ export const BlogCard = ({ caption, src, title }: BlogCardProps) => {
           </Typography>
           <Typography
             variant="title"
-            className="capitalize text-[32px] mt-1 font-extrabold leading-10"
+            className="capitalize !text-[32px] mt-1 font-extrabold !leading-10"
           >
             {title}
           </Typography>
         </div>
         <Button
-          className="flex items-center gap-3 bg-[#EAEEE2] border-none absolute bottom-5 left-4"
+          className="flex items-center gap-3 !bg-[#EAEEE2] border-none absolute bottom-5 left-4"
           variant="outline"
         >
           Read more

@@ -3,7 +3,7 @@ export type MenuDrawerProps = {
     id: string;
     name: string;
     link: string;
-    useHover: boolean;
+    hover: boolean;
   };
   navLinks: MenuDrawerProps["navLink"][];
   onClick: () => void;
@@ -22,8 +22,9 @@ export type BlogCardProps = {
 };
 
 export type TestimonialProps = {
-  comment: string,
-  name: string,
-  img: string,
-  positionandcompany: string
-}
+  comment: string;
+  name: string;
+  img: string;
+  positionandcompany: string;
+  isDark?: boolean;
+};

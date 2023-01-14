@@ -1,55 +1,217 @@
 import { Button, Container, Typography } from "../components";
-import Logo from "../assets/logo/svg.svg";
+import DarkLogo from "../assets/logo/svg.svg";
+import Logo from "../assets/logo/light-logo.svg";
 import cn from "classnames";
 import { Transition } from "@headlessui/react";
-import { Fragment, useState } from "react";
+import { forwardRef, Fragment, MutableRefObject, useState } from "react";
 
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { MenuDrawerProps } from "../interfaces";
+import { useHover } from "../hooks/useHover.js";
+import { useWindowScrollPositions } from "../hooks/useWindowScroll";
 
-export const Header = () => {
+const MenuLinks = ({
+  links,
+  title,
+  dark,
+  className,
+}: {
+  links: any[];
+  title: string;
+  dark?: boolean;
+  className?: string;
+}) => {
+  return (
+    <div className="w-[75%] bg-orange-70">
+      <Typography
+        isDarkMode={dark}
+        variant="title"
+        className="!text-[23px] font-bold !leading-6"
+      >
+        {title}
+      </Typography>
+      <ul className="mt-4">
+        {links.map((nav) => (
+          <li className="my-2 w-[10rem]" key={nav.id}>
+            <Typography
+              variant="link"
+              isDarkMode={dark}
+              className={cn(
+                "capitalize text-sm cursor-pointer hover:text-primary !font-thin hover:no-underline"
+              )}
+            >
+              {nav.name}
+            </Typography>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+const PopoverMenu = forwardRef<
+  any,
+  {
+    menus: { title: string; links: { name: string }[] }[];
+    isHovering: boolean;
+    dark?: boolean;
+  }
+>(({ menus, isHovering, dark }, ref) => {
+  return (
+    <Container
+      as="div"
+      isDarkMode={dark}
+      background
+      ref={ref}
+      className={cn(
+        "absolute bg-white shadow-xl w-fit -left-4 top-14 rounded-2xl flex p-6 ease-in-out duration-1000",
+        {
+          "translate-y-0 opacity-100": isHovering,
+          "-translate-y-[40rem] opacity-0": !isHovering,
+        }
+      )}
+    >
+      {menus.map((menu, index) => (
+        <MenuLinks dark={dark} key={index} links={menu.links} title={menu.title} />
+      ))}
+      <Container isLightDarkMode={dark} background className="bg-surface w-[22.625rem] h-fit flex flex-col min-h-[14.6875rem] pt-6 pr-4 pb-4 pl-4 rounded-xl">
+        <img
+          src="https://a.storyblok.com/f/139616/300x300/bf794cd0b7/sap-square-preview.png"
+          className="h-28 mb-7 object-contain object-center"
+        />
+        <p className="mb-1 text-[0.75rem] leading-[130%] -tracking-[.01em] text-center">
+          WEBINAR: How SAP trains ML for Document Information Extraction
+          Application?
+        </p>
+        <a className="text-center text-[12px] leading-[140%] cursor-pointer -tracking-[.01em] uppercase text-primary">
+          Register now
+        </a>
+      </Container>
+    </Container>
+  );
+});
+
+interface HeaderProps {
+  darkMode?: boolean;
+}
+
+export const Header = ({ darkMode }: HeaderProps) => {
   const [isShowing, setIsShowing] = useState(false);
+  const { scrollY } = useWindowScrollPositions();
 
   let navLinks = [
     {
       id: "1",
       name: "products",
       link: "",
-      useHover: true,
+      hover: true,
+      menu: [
+        {
+          title: "Platform",
+          links: [
+            {
+              name: "Label & Annotate",
+              link: "",
+            },
+            {
+              name: "Explore & Fix",
+              link: "",
+            },
+            {
+              name: "Integrate & Automate",
+              link: "",
+            },
+            {
+              name: "Professional Services",
+              link: "",
+            },
+            {
+              name: "Plan & Features",
+              link: "",
+            },
+          ],
+        },
+        {
+          title: "Professional Services",
+          links: [
+            {
+              name: "Complete project monitoring",
+            },
+            {
+              name: "On demand labeling workforce",
+            },
+            {
+              name: "Ml expert guidance",
+            },
+          ],
+        },
+      ],
     },
     {
       id: "2",
       name: "company",
       link: "",
-      useHover: true,
+      hover: true,
+      menu: [
+        {
+          title: "",
+          links: [
+            {
+              name: "About Us",
+            },
+            {
+              name: "Careers",
+            },
+            {
+              name: "Events",
+            },
+          ],
+        },
+      ],
     },
     {
       id: "3",
       name: "resources",
       link: "",
-      useHover: true,
+      hover: true,
+      menu: [
+        {
+          title: "",
+          links: [
+            {
+              name: "Blog",
+            },
+            {
+              name: "Whitepapers",
+            },
+            {
+              name: "Case Studies",
+            },
+          ],
+        },
+      ],
     },
     {
       id: "4",
       name: "docs",
       link: "",
-      useHover: false,
+      hover: false,
     },
     {
       id: "5",
       name: "pricing",
       link: "",
-      useHover: false,
+      hover: false,
     },
   ];
 
   return (
-    <>
+    <div className={cn({ "fixed w-full z-50": scrollY !== 0 })}>
       <Container
         justify="between"
         align="center"
         as="div"
-        className="bg-[#B090EF] lg:flex w-full py-[6.4px] !px-6 "
+        className="bg-[#B090EF] lg:flex w-full py-[6.4px] "
       >
         <Typography
           variant="caption"
@@ -74,40 +236,90 @@ export const Header = () => {
           />
         </Transition>
 
-        <Container flex align="center" className="bg-surface py-5 gap-x-16">
+        <Container
+          isDarkMode={darkMode}
+          flex
+          align="center"
+          className="bg-surface py-5 gap-x-16"
+        >
           <img
-            src={Logo}
+            src={darkMode ? Logo : DarkLogo}
             className="h-[40.47px] font-roboto font-bold select-none"
           />
+
           <ul className="items-center gap-12 hidden lg:flex">
             {navLinks.map((nav) => (
-              <li key={nav.id}>
-                <Typography
-                  variant="link"
-                  className={cn("capitalize cursor-pointer", {
-                    "hover:underline hover:text-blue-800": !nav.useHover,
-                  })}
-                >
-                  {nav.name}
-                </Typography>
-              </li>
+              <MenuItem
+                id={nav?.name}
+                menu={nav?.menu ?? []}
+                name={nav.name}
+                hover={nav.hover}
+                dark={darkMode}
+              />
             ))}
           </ul>
+
           <div className="flex-1 gap-2 justify-end flex">
             <Bars2Icon
               onClick={() => setIsShowing((isShowing) => true)}
               className="h-10 w-10 font-bold text- lg:hidden"
             />
-            <Button className="hidden lg:block">Request a demo</Button>
-            <Button className="hidden lg:block" variant="outline">
+            <Button darkMode={darkMode} className="hidden lg:block">
+              Request a demo
+            </Button>
+            <Button
+              darkMode={darkMode}
+              className="hidden lg:block"
+              variant="outline"
+            >
               Talk to sales
             </Button>
           </div>
         </Container>
       </div>
-    </>
+    </div>
   );
 };
+
+const MenuItem = forwardRef<
+  any,
+  {
+    id: string;
+    name: string;
+    menu: any[];
+    hover: boolean;
+    dark?: boolean;
+  }
+>(({ id, name, menu, hover, dark }, ref) => {
+  const [hoverRef, isHovering] = useHover<HTMLLIElement>();
+  const [hoverMenuRef, isHoveringMenu] = useHover<HTMLLIElement>();
+
+  return (
+    <div className="relative">
+      <li key={id}>
+        <Typography
+          ref={hoverRef}
+          variant="link"
+          isDarkMode={dark}
+          className={cn("capitalize cursor-pointer", {
+            "hover:underline hover:text-blue-800": !hover,
+            "hover:no-underline": hover,
+          })}
+        >
+          {name}
+        </Typography>
+      </li>
+      {menu?.length !== 0 && (
+        <PopoverMenu
+          dark={dark}
+          ref={hoverMenuRef}
+          menus={menu ?? []}
+          isHovering={isHovering || isHoveringMenu}
+        />
+      )}
+    </div>
+  );
+});
 
 const MenuDrawer = ({ navLinks, onClick }: MenuDrawerProps) => {
   return (
@@ -133,7 +345,7 @@ const MenuDrawer = ({ navLinks, onClick }: MenuDrawerProps) => {
             <Typography
               variant="body"
               className={cn("capitalize cursor-pointer text-[20px]", {
-                "hover:text-primary": !nav?.useHover,
+                "hover:text-primary": !nav?.hover,
               })}
             >
               {nav?.name}
