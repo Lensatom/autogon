@@ -19,6 +19,7 @@ export const Container = forwardRef<any, ContainerProps<any>>((props, ref) => {
     isDarkMode,
     background,
     isLightDarkMode,
+    disableOverflowHidden,
     ...rest
   } = props;
 
@@ -51,7 +52,7 @@ export const Container = forwardRef<any, ContainerProps<any>>((props, ref) => {
   return (
     <Component
       ref={ref}
-      className={cn("overflow-x-hidden", className, {
+      className={cn("", className, {
         flex: flex,
         "w-screen": fullWidth,
         "h-screen": fullHeight,
@@ -62,6 +63,7 @@ export const Container = forwardRef<any, ContainerProps<any>>((props, ref) => {
         "!bg-dark-paper": isDarkMode && !background,
         "!bg-dark-surface": isDarkMode && background,
         "!bg-light-dark-surface": isLightDarkMode && background,
+        "overflow-x-hidden": !disableOverflowHidden
       })}
       {...rest}
     />

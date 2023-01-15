@@ -101,7 +101,7 @@ export const Testimonial = ({ isDarkMode }: TestimonialType) => {
           bulletActiveClass: "!bg-primary !opacity-100 !h-3 !w-3",
           bulletClass: "h-3 w-3 inline-block rounded-full bg-black mx-2",
         }}
-        className="mt-20 mb-60 h-[28rem]"
+        className="pt-20 mb-60 h-[28rem]"
         scrollbar={{
           draggable: true,
         }}

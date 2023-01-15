@@ -23,8 +23,9 @@ type PolymorphicAsProps<E extends ElementType> = {
   justify?: Justify;
   align?: Align;
   isDarkMode?: boolean;
-  background?: boolean,
-  isLightDarkMode?: boolean
+  background?: boolean;
+  isLightDarkMode?: boolean;
+  disableOverflowHidden?: boolean;
 };
 
 export type ContainerProps<E extends ElementType> = PolymorphicAsProps<E> &

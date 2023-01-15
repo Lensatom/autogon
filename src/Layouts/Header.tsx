@@ -3,12 +3,14 @@ import DarkLogo from "../assets/logo/svg.svg";
 import Logo from "../assets/logo/light-logo.svg";
 import cn from "classnames";
 import { Transition } from "@headlessui/react";
-import { forwardRef, Fragment, MutableRefObject, useState } from "react";
+import { forwardRef, Fragment, useState } from "react";
 
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { MenuDrawerProps } from "../interfaces";
 import { useHover } from "../hooks/useHover.js";
 import { useWindowScrollPositions } from "../hooks/useWindowScroll";
+import { Link, useNavigate } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const MenuLinks = ({
   links,
@@ -21,6 +23,8 @@ const MenuLinks = ({
   dark?: boolean;
   className?: string;
 }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="w-[75%] bg-orange-70">
       <Typography
@@ -32,16 +36,36 @@ const MenuLinks = ({
       </Typography>
       <ul className="mt-4">
         {links.map((nav) => (
-          <li className="my-2 w-[10rem]" key={nav.id}>
-            <Typography
-              variant="link"
-              isDarkMode={dark}
-              className={cn(
-                "capitalize text-sm cursor-pointer hover:text-primary !font-thin hover:no-underline"
-              )}
-            >
-              {nav.name}
-            </Typography>
+          <li
+            // onClick={() => navigate(nav.link)}
+            className="my-2 w-[10rem]"
+            key={nav.id}
+          >
+            {nav.hash ? (
+              <HashLink to={nav.link} smooth>
+                <Typography
+                  variant="link"
+                  isDarkMode={dark}
+                  className={cn(
+                    "capitalize text-sm cursor-pointer hover:text-primary !font-thin hover:no-underline"
+                  )}
+                >
+                  {nav.name}
+                </Typography>
+              </HashLink>
+            ) : (
+              <Link to={nav.link} reloadDocument>
+                <Typography
+                  variant="link"
+                  isDarkMode={dark}
+                  className={cn(
+                    "capitalize text-sm cursor-pointer hover:text-primary !font-thin hover:no-underline"
+                  )}
+                >
+                  {nav.name}
+                </Typography>
+              </Link>
+            )}
           </li>
         ))}
       </ul>
@@ -64,7 +88,7 @@ const PopoverMenu = forwardRef<
       background
       ref={ref}
       className={cn(
-        "absolute bg-white shadow-xl w-fit -left-4 top-14 rounded-2xl flex p-6 ease-in-out duration-1000",
+        "absolute bg-white shadow-xl w-fit -left-4 top-14 rounded-2xl flex p-6 ease-in-out duration-1000 z-40",
         {
           "translate-y-0 opacity-100": isHovering,
           "-translate-y-[40rem] opacity-0": !isHovering,
@@ -72,9 +96,18 @@ const PopoverMenu = forwardRef<
       )}
     >
       {menus.map((menu, index) => (
-        <MenuLinks dark={dark} key={index} links={menu.links} title={menu.title} />
+        <MenuLinks
+          dark={dark}
+          key={index}
+          links={menu.links}
+          title={menu.title}
+        />
       ))}
-      <Container isLightDarkMode={dark} background className="bg-surface w-[22.625rem] h-fit flex flex-col min-h-[14.6875rem] pt-6 pr-4 pb-4 pl-4 rounded-xl">
+      <Container
+        isLightDarkMode={dark}
+        background
+        className="bg-surface w-[22.625rem] h-fit flex flex-col min-h-[14.6875rem] pt-6 pr-4 pb-4 pl-4 rounded-xl"
+      >
         <img
           src="https://a.storyblok.com/f/139616/300x300/bf794cd0b7/sap-square-preview.png"
           className="h-28 mb-7 object-contain object-center"
@@ -111,23 +144,15 @@ export const Header = ({ darkMode }: HeaderProps) => {
           links: [
             {
               name: "Label & Annotate",
-              link: "",
+              link: "/platform/label-annotate",
             },
             {
               name: "Explore & Fix",
-              link: "",
+              link: "/platform/explore-and-fix",
             },
             {
               name: "Integrate & Automate",
-              link: "",
-            },
-            {
-              name: "Professional Services",
-              link: "",
-            },
-            {
-              name: "Plan & Features",
-              link: "",
+              link: "/platform/integrate-automate",
             },
           ],
         },
@@ -136,12 +161,18 @@ export const Header = ({ darkMode }: HeaderProps) => {
           links: [
             {
               name: "Complete project monitoring",
+              link: "/professional-services#from-design",
+              hash: true,
             },
             {
               name: "On demand labeling workforce",
+              link: "/professional-services#trained-workforce",
+              hash: true,
             },
             {
               name: "Ml expert guidance",
+              link: "/professional-services#data-centric",
+              hash: true,
             },
           ],
         },
@@ -158,12 +189,15 @@ export const Header = ({ darkMode }: HeaderProps) => {
           links: [
             {
               name: "About Us",
+              link: "/company",
             },
             {
               name: "Careers",
+              // link: "/company/events-list",
             },
             {
               name: "Events",
+              link: "/company/events-list",
             },
           ],
         },
@@ -206,12 +240,12 @@ export const Header = ({ darkMode }: HeaderProps) => {
   ];
 
   return (
-    <div className={cn({ "fixed w-full z-50": scrollY !== 0 })}>
+    <header className="fixed w-full max-w-full z-50 top-0 left-0">
       <Container
         justify="between"
         align="center"
         as="div"
-        className="bg-[#B090EF] lg:flex w-full py-[6.4px] "
+        className="bg-[#B090EF] lg:flex lg:w-full py-[6.4px] "
       >
         <Typography
           variant="caption"
@@ -238,14 +272,18 @@ export const Header = ({ darkMode }: HeaderProps) => {
 
         <Container
           isDarkMode={darkMode}
+          background
           flex
           align="center"
-          className="bg-surface py-5 gap-x-16"
+          className="bg-surface py-5 gap-x-16 justify-between"
+          disableOverflowHidden
         >
-          <img
-            src={darkMode ? Logo : DarkLogo}
-            className="h-[40.47px] font-roboto font-bold select-none"
-          />
+          <Link to="/">
+            <img
+              src={darkMode ? Logo : DarkLogo}
+              className="h-[40.47px] font-roboto font-bold select-none"
+            />
+          </Link>
 
           <ul className="items-center gap-12 hidden lg:flex">
             {navLinks.map((nav) => (
@@ -259,7 +297,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
             ))}
           </ul>
 
-          <div className="flex-1 gap-2 justify-end flex">
+          <div className="lg:flex-1 gap-2 lg:justify-end flex">
             <Bars2Icon
               onClick={() => setIsShowing((isShowing) => true)}
               className="h-10 w-10 font-bold text- lg:hidden"
@@ -277,7 +315,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
           </div>
         </Container>
       </div>
-    </div>
+    </header>
   );
 };
 

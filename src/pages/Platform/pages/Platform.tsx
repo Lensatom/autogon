@@ -2,7 +2,6 @@ import { Button, Container, Typography } from "../../../components";
 import { Header } from "../../../Layouts/Header";
 import { HeroPage } from "../Layout/Hero";
 import Image from "../../../assets/diagram-02-desktop-4.svg.png";
-import FosterIcon from "../../../assets/icons/foster.png";
 import SOCIcon from "../../../assets/soc-2.png.png";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import Smilesvg from "../../../assets/kili-icon-dark-mode.svg.svg";
@@ -69,7 +68,7 @@ export const PlatformPage = () => {
 
       <HeroPage />
 
-      <Container isDarkMode className="pt-20 pb-10">
+      <Container isDarkMode background className="pt-20 pb-10">
         <div className="lg:mx-auto">
           <Typography isDarkMode variant="body" className="lg:w-3/4 mx-auto">
             Whether the use case at hand involves computer vision, natural
@@ -91,7 +90,7 @@ export const PlatformPage = () => {
         </div>
       </Container>
 
-      <Container isDarkMode className="pt-20">
+      <Container isDarkMode background className="pt-20">
         <Typography
           variant="header"
           align="center"
@@ -113,7 +112,11 @@ export const PlatformPage = () => {
         </Typography>
       </Container>
 
-      <Container isDarkMode className="lg:pt-40 pt-10 lg:pb-40 pb-20">
+      <Container
+        isDarkMode
+        background
+        className="lg:pt-40 pt-10 lg:pb-40 pb-20"
+      >
         <div className="lg:mx-auto grid grid-cols-2 lg:grid-cols-3 lg:w-[80%] lg:gap-8 lg:gap-y-10">
           {iconsSections.map((item) => (
             <IconSection src={item.src} title={item.title} />

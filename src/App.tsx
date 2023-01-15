@@ -1,5 +1,5 @@
 import { useRoutes } from "react-router-dom";
-import { LandingPage, Platform } from "./pages";
+import { LandingPage, Platform, ProfessionalService, Company } from "./pages";
 import { ROUTES } from "./utils/routes";
 
 function App() {
@@ -10,7 +10,15 @@ function App() {
     },
     {
       path: `${ROUTES.platform}/*`,
-      element: <Platform />
+      element: <Platform />,
+    },
+    {
+      path: "professional-services",
+      element: <ProfessionalService />,
+    },
+    {
+      path: "company/*",
+      element: <Company />
     }
   ]);
 }

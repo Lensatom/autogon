@@ -19,6 +19,11 @@ export type BlogCardProps = {
   src: string;
   caption: string;
   title: string;
+  Icon?: any;
+  buttonText?: string;
+  className?: string;
+  titleClass?: string;
+  children?: any;
 };
 
 export type TestimonialProps = {
