@@ -4,17 +4,10 @@ import DataSetImage from "../../../assets/kili_product_platform_hero.png.png";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import { BreadCrumb } from "../../../components/BreadCrumb";
 import { useWindowScrollPositions } from "../../../hooks/useWindowScroll";
-import classNames from "classnames";
 
 export const HeroPage = () => {
-  const { scrollY } = useWindowScrollPositions();
   return (
-    <Container
-      isDarkMode
-      className={classNames("bg-surface pt-1 pb-40 ", {
-        "!pt-36": scrollY !== 0,
-      })}
-    >
+    <Container isDarkMode className="bg-surface pb-40 pt-[8rem]">
       <BreadCrumb darkMode />
       <div className="lg:flex lg:mt-5">
         <div className="w-[95%]">

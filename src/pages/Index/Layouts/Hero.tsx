@@ -3,11 +3,8 @@ import Lottie from "react-lottie";
 import animationData from "../../../assets/lf30_editor_22k2biyf.json";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import cn from "classnames";
-import { useWindowScrollPositions } from "../../../hooks/useWindowScroll";
 
 export const HeroPage = () => {
-  const { scrollY } = useWindowScrollPositions();
-
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -18,10 +15,7 @@ export const HeroPage = () => {
   };
 
   return (
-    <Container
-      as="header"
-      className={cn("bg-surface pt-3 pb-28", { "pt-36": scrollY !== 0 })}
-    >
+    <Container className="bg-surface pt-[8rem] pb-28">
       <Typography align="center" variant="display" className="mx-auto">
         Labeling Platform for High-Quality Training Data
       </Typography>

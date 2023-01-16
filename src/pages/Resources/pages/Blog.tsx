@@ -1,69 +1,68 @@
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import { Button, Container, Typography } from "../../../components"
+import { Button, Container, Typography } from "../../../components";
 import { BreadCrumb } from "../../../components/BreadCrumb";
 import { BlogCard } from "../../../components/Cards/BlogCard";
-import { Header } from "../../../Layouts/Header"
+import { Header } from "../../../Layouts/Header";
 import { PartnerCarousel } from "../../../Layouts/PartnerCarousel";
 import Smilesvg from "../../../assets/kili-icon-dark-mode.svg.svg";
 import { Footer } from "../../../Layouts/Footer";
 
-export const Event = () => {
-  const [query, setQuery] = useState("")
+export const Blog = () => {
+  const [query, setQuery] = useState("");
 
   let blogs = [
     {
-      caption: "upcoming event",
-      src: "https://a.storyblok.com/f/139616/3750x1959/f207b200cb/sap-rectangle.png/m/767x0",
-      title: "How SAP trains ML for Document Information Ex...",
+      // caption: "upcoming event",
+      src: "//a.storyblok.com/f/139616/1200x800/d541fc2ca7/build-vs-buy-your-data-labeling-solution.png/m/767x0",
+      title: "Data Labeling Platform: Build vs. Buy",
       content:
-        "Principal Data Scientist shares insights on how SAP overcomes the challenges of complex ontologies.",
-      // Icon: null,
-      buttonText: "Register",
+        "In this article, we'll cover the cost and time investment involved, as well as the benefits and draw...",
+      Icon: null,
+      buttonText: "Read",
     },
     {
-      caption: "ON-DEMAND EVENT",
-      src: "https://a.storyblok.com/f/139616/1200x627/7136ba8df3/1.png/m/767x0",
-      title: "Data annotation in AgriTech: How to overcome ...",
-      // Icon: null,
-      content:
-        "A guide on how to scale data labeling, manage the required level of expertise & identify the various...",
-      buttonText: "Watch the replay",
-    },
-    {
-      caption: "ON-DEMAND EVENT",
-      src: "https://a.storyblok.com/f/139616/1200x627/12826d5965/1-1.png/m/767x0",
-      title: "Insider tips on data annotation project manag...",
-      // Icon: null,
-      content:
-        "85% of ALL machine learning projects NEVER reach real-world deployment – most often due to a lack of...",
-      buttonText: "Watch the replay",
-    },
-    {
-      caption: "ON-DEMAND EVENT",
-      src: "https://a.storyblok.com/f/139616/1200x628/c20478254f/webinar-thumbnail-replay-data-labeling-solution.png/m/767x0",
-      title: "Data Labeling: What are my options?",
-      // Icon: null,
-      content:
-        "What data labeling solution should I go for? Struggling to make up your mind? We know the feeling....",
-      buttonText: "Watch the replay",
-    },
-    {
-      caption: "ON-DEMAND EVENT",
-      src: "https://a.storyblok.com/f/139616/1200x628/0f6d2bb323/webinar-thumbnail-quality-unboxed-beta.png/m/767x0",
-      title: "3 steps towards data labeling excellence.",
-      // Icon: null,
-      content:
-        "50% of the time of labeling projects is around data quality.The increasing focus on the scale, speed...",
-    },
-    {
-      caption: "PAST EVENT",
-      src: "https://a.storyblok.com/f/139616/782x322/464b9e5e5e/kili_ai_bigdata_expo.png/m/767x0",
-      title: "AI and Big Data Expo",
+      // caption: "ON-DEMAND EVENT",
+      src: "//a.storyblok.com/f/139616/5000x3000/c6439a1600/v1-1.jpg/m/767x0",
+      title: "Our Journey to Cleaning the Oceans with Machi...",
       Icon: null,
       content:
-        "TechEx North America is an enterprise technology exhibition and conference consisting of six co-loca...",
-      buttonText: "Book a meeting",
+        "Remember the plastic continent floating in the Pacific that shocked the world 3 years ago? Research ...",
+      buttonText: "Read",
+    },
+    {
+      // caption: "ON-DEMAND EVENT",
+      src: "//a.storyblok.com/f/139616/1200x628/7c485e8b33/kilixmicrosoftazuremarketplace.jpg/m/767x0",
+      title: "Kili is now available on Microsoft Azure Mark...",
+      Icon: null,
+      content:
+        "Let’s face it, though: nobody likes the constraints imposed by on-prem. Having to talk your IT  depa...",
+      buttonText: "Read",
+    },
+    {
+      // caption: "ON-DEMAND EVENT",
+      src: "//a.storyblok.com/f/139616/1200x800/09e6d39032/kili-technology-x-yolo-v7/m/767x0",
+      title: "Using Kili Technology to work with YOLO v7",
+      Icon: null,
+      content:
+        "To be able to train a model using YOLO v7, you have to create a data.yaml file that indicates the im...",
+      buttonText: "Read",
+    },
+    {
+      // caption: "ON-DEMAND EVENT",
+      src: "//a.storyblok.com/f/139616/1200x675/d2df291de1/v2.jpg/m/767x0",
+      title: "3 steps towards data labeling excellence.",
+      Icon: null,
+      content: "Data-Scientists, Join The Ocean Cleanup Chall...",
+    },
+    {
+      // caption: "PAST EVENT",
+      src: "//a.storyblok.com/f/139616/1920x1080/7e52740622/automatic-error-identification-for-image-object-detection-in-kili.png/m/767x0",
+      title: "Automatic error identification for image obje...",
+      Icon: null,
+      content:
+        "At Kili, we believe the quality of the data is what differentiates a successful AI project from one ...",
+      buttonText: "Read",
     },
     // {
     //   caption: "",
@@ -109,12 +108,6 @@ export const Event = () => {
     // },
   ];
 
-   let filteredBlog = blogs?.filter((blog) => {
-     return (
-       blog?.caption?.toLowerCase?.()?.indexOf?.(query?.toLowerCase?.()) != -1
-     );
-   });
-
   return (
     <>
       <Header />
@@ -127,13 +120,13 @@ export const Event = () => {
             variant="header"
             className="max-w-[47.625rem] text-[46px] lg:!text-[65px] !leading-[98%] font-semibold"
           >
-            Join us at the most influential AI events in the world
+            We help customers to build AI that matters across industries
           </Typography>
         </Container>
       </Container>
 
-      <Container className="bg-surface pt-16 lg:pb-72">
-        <div className="flex items-center gap-3 lg:pl-28 flex-wrap">
+      <Container className="bg-surface pt-16 lg:pb-40">
+        {/* <div className="flex items-center gap-3 lg:pl-28 flex-wrap">
           <Typography variant="caption">Filter Events:</Typography>
           <div className="flex gap-3 items-center flex-wrap">
             <Button
@@ -155,9 +148,9 @@ export const Event = () => {
               Past Event
             </Button>
           </div>
-        </div>
+        </div> */}
         <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 mt-10 lg:w-[85%] mx-auto gap-y-6">
-          {filteredBlog.map((blog) => (
+          {blogs.map((blog) => (
             <BlogCard
               {...blog}
               titleClass="!text-[28px] !leading-[30px] font-semibold"
@@ -172,9 +165,14 @@ export const Event = () => {
             />
           ))}
         </div>
+        <div className="grid place-items-center w-full lg:mt-40 mt-10">
+          <Button>Load more</Button>
+        </div>
       </Container>
 
       <PartnerCarousel />
+
+      <Container className="bg-surface h-40"></Container>
 
       <Container disableOverflowHidden isDarkMode background className="pb-28">
         <div className="mx-auto w-fit ">
@@ -202,4 +200,4 @@ export const Event = () => {
       <Footer />
     </>
   );
-}
+};

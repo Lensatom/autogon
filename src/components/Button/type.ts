@@ -32,5 +32,6 @@ export type ButtonProps = {
    * trigger button click
    */
   onClick?: () => void,
-  darkMode?: boolean
+  darkMode?: boolean,
+  color?: "secondary" | "primary"
 };

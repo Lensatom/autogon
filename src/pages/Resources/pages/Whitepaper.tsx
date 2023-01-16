@@ -1,69 +1,65 @@
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import { Button, Container, Typography } from "../../../components"
+import { Button, Container, Typography } from "../../../components";
 import { BreadCrumb } from "../../../components/BreadCrumb";
 import { BlogCard } from "../../../components/Cards/BlogCard";
-import { Header } from "../../../Layouts/Header"
+import { Header } from "../../../Layouts/Header";
 import { PartnerCarousel } from "../../../Layouts/PartnerCarousel";
 import Smilesvg from "../../../assets/kili-icon-dark-mode.svg.svg";
 import { Footer } from "../../../Layouts/Footer";
 
-export const Event = () => {
-  const [query, setQuery] = useState("")
+export const Whitepapers = () => {
 
   let blogs = [
     {
-      caption: "upcoming event",
+      caption: "Whitepaper",
       src: "https://a.storyblok.com/f/139616/3750x1959/f207b200cb/sap-rectangle.png/m/767x0",
-      title: "How SAP trains ML for Document Information Ex...",
+      title: "European AI Act",
       content:
-        "Principal Data Scientist shares insights on how SAP overcomes the challenges of complex ontologies.",
+        "European AI Act goes live in Fiscal Year 2023. Is your AI-app ready, yet?",
       // Icon: null,
-      buttonText: "Register",
+      buttonText: "Download",
     },
     {
-      caption: "ON-DEMAND EVENT",
-      src: "https://a.storyblok.com/f/139616/1200x627/7136ba8df3/1.png/m/767x0",
-      title: "Data annotation in AgriTech: How to overcome ...",
+      caption: "Whitepaper",
+      src: "https://a.storyblok.com/f/139616/339x240/03d38e4390/ai-regulations-in-the-us-thumbnail-sbk.jpg/m/767x0",
+      title: "AI Regulations in the US",
       // Icon: null,
-      content:
-        "A guide on how to scale data labeling, manage the required level of expertise & identify the various...",
-      buttonText: "Watch the replay",
+      content: "How to make your AI-app stay ahead of US Regulations",
+      buttonText: "Download",
     },
     {
-      caption: "ON-DEMAND EVENT",
-      src: "https://a.storyblok.com/f/139616/1200x627/12826d5965/1-1.png/m/767x0",
-      title: "Insider tips on data annotation project manag...",
+      caption: "Whitepaper",
+      src: "https://a.storyblok.com/f/139616/339x240/3bb00738bf/ai-in-manufacturing-industry-thumbnail-ebook-directory/m/767x0",
+      title: "AI in Manufacturing",
       // Icon: null,
-      content:
-        "85% of ALL machine learning projects NEVER reach real-world deployment – most often due to a lack of...",
-      buttonText: "Watch the replay",
+      content: "How AI can fuel you defect detection system",
+      buttonText: "Download",
     },
     {
-      caption: "ON-DEMAND EVENT",
-      src: "https://a.storyblok.com/f/139616/1200x628/c20478254f/webinar-thumbnail-replay-data-labeling-solution.png/m/767x0",
-      title: "Data Labeling: What are my options?",
+      caption: "Whitepaper",
+      src: "https://a.storyblok.com/f/139616/4000x2670/57faf7d7c5/dcai-mock-up.png/m/767x0",
+      title: "Data-Centric AI",
       // Icon: null,
-      content:
-        "What data labeling solution should I go for? Struggling to make up your mind? We know the feeling....",
-      buttonText: "Watch the replay",
+      content: "The Ultimate Guide to the New AI Paradigm",
+      buttonText: "Download",
     },
     {
-      caption: "ON-DEMAND EVENT",
-      src: "https://a.storyblok.com/f/139616/1200x628/0f6d2bb323/webinar-thumbnail-quality-unboxed-beta.png/m/767x0",
-      title: "3 steps towards data labeling excellence.",
+      caption: "Whitepaper",
+      src: "https://a.storyblok.com/f/139616/1017x720/8ec58ad76e/data.png/m/767x0",
+      title: "Training Data for Machine Learning",
       // Icon: null,
       content:
-        "50% of the time of labeling projects is around data quality.The increasing focus on the scale, speed...",
+        "Early Release from O'Reilly | Human Supervision from Annotation to Data Science",
+      buttonText: "Download",
     },
     {
-      caption: "PAST EVENT",
-      src: "https://a.storyblok.com/f/139616/782x322/464b9e5e5e/kili_ai_bigdata_expo.png/m/767x0",
-      title: "AI and Big Data Expo",
+      caption: "Whitepaper",
+      src: "https://a.storyblok.com/f/139616/1017x720/3f2ba0b287/ebook-ai-transformation-in-banking.png/m/767x0",
+      title: "Fueling AI transformation in Banking",
       Icon: null,
-      content:
-        "TechEx North America is an enterprise technology exhibition and conference consisting of six co-loca...",
-      buttonText: "Book a meeting",
+      content: "with Intelligent Document Processing",
+      buttonText: "Download",
     },
     // {
     //   caption: "",
@@ -109,12 +105,6 @@ export const Event = () => {
     // },
   ];
 
-   let filteredBlog = blogs?.filter((blog) => {
-     return (
-       blog?.caption?.toLowerCase?.()?.indexOf?.(query?.toLowerCase?.()) != -1
-     );
-   });
-
   return (
     <>
       <Header />
@@ -127,37 +117,14 @@ export const Event = () => {
             variant="header"
             className="max-w-[47.625rem] text-[46px] lg:!text-[65px] !leading-[98%] font-semibold"
           >
-            Join us at the most influential AI events in the world
+            Join the data-centric AI movement
           </Typography>
         </Container>
       </Container>
 
       <Container className="bg-surface pt-16 lg:pb-72">
-        <div className="flex items-center gap-3 lg:pl-28 flex-wrap">
-          <Typography variant="caption">Filter Events:</Typography>
-          <div className="flex gap-3 items-center flex-wrap">
-            <Button
-              onClick={() => setQuery("")}
-              variant={query === "" ? "" : "outline"}
-            >
-              All Event
-            </Button>
-            <Button
-              onClick={() => setQuery("new")}
-              variant={query === "new" ? "" : "outline"}
-            >
-              Upcoming Event
-            </Button>
-            <Button
-              onClick={() => setQuery("upcoming")}
-              variant={query === "upcoming" ? "" : "outline"}
-            >
-              Past Event
-            </Button>
-          </div>
-        </div>
         <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 mt-10 lg:w-[85%] mx-auto gap-y-6">
-          {filteredBlog.map((blog) => (
+          {blogs.map((blog) => (
             <BlogCard
               {...blog}
               titleClass="!text-[28px] !leading-[30px] font-semibold"
@@ -175,6 +142,8 @@ export const Event = () => {
       </Container>
 
       <PartnerCarousel />
+      
+      <Container className="bg-surface h-40"></Container>
 
       <Container disableOverflowHidden isDarkMode background className="pb-28">
         <div className="mx-auto w-fit ">
@@ -202,4 +171,4 @@ export const Event = () => {
       <Footer />
     </>
   );
-}
+};

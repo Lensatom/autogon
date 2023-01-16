@@ -23,8 +23,6 @@ const MenuLinks = ({
   dark?: boolean;
   className?: string;
 }) => {
-  const navigate = useNavigate();
-
   return (
     <div className="w-[75%] bg-orange-70">
       <Typography
@@ -130,7 +128,6 @@ interface HeaderProps {
 
 export const Header = ({ darkMode }: HeaderProps) => {
   const [isShowing, setIsShowing] = useState(false);
-  const { scrollY } = useWindowScrollPositions();
 
   let navLinks = [
     {
@@ -214,12 +211,15 @@ export const Header = ({ darkMode }: HeaderProps) => {
           links: [
             {
               name: "Blog",
+              link: "/blog",
             },
             {
               name: "Whitepapers",
+              link: "/whitepaper",
             },
             {
               name: "Case Studies",
+              link: "/case-studies",
             },
           ],
         },
@@ -234,7 +234,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
     {
       id: "5",
       name: "pricing",
-      link: "",
+      link: "/pricing",
       hover: false,
     },
   ];
@@ -292,6 +292,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
                 menu={nav?.menu ?? []}
                 name={nav.name}
                 hover={nav.hover}
+                link={nav.link}
                 dark={darkMode}
               />
             ))}
@@ -327,26 +328,45 @@ const MenuItem = forwardRef<
     menu: any[];
     hover: boolean;
     dark?: boolean;
+    link?: string;
   }
->(({ id, name, menu, hover, dark }, ref) => {
+>(({ id, name, menu, hover, dark, link }, ref) => {
   const [hoverRef, isHovering] = useHover<HTMLLIElement>();
   const [hoverMenuRef, isHoveringMenu] = useHover<HTMLLIElement>();
 
   return (
     <div className="relative">
-      <li key={id}>
-        <Typography
-          ref={hoverRef}
-          variant="link"
-          isDarkMode={dark}
-          className={cn("capitalize cursor-pointer", {
-            "hover:underline hover:text-blue-800": !hover,
-            "hover:no-underline": hover,
-          })}
-        >
-          {name}
-        </Typography>
-      </li>
+      {link ? (
+        <li key={id}>
+          <Link to={link}>
+            <Typography
+              ref={hoverRef}
+              variant="link"
+              isDarkMode={dark}
+              className={cn("capitalize cursor-pointer", {
+                "hover:underline hover:text-blue-800": !hover,
+                "hover:no-underline": hover,
+              })}
+            >
+              {name}
+            </Typography>
+          </Link>
+        </li>
+      ) : (
+        <li key={id}>
+          <Typography
+            ref={hoverRef}
+            variant="link"
+            isDarkMode={dark}
+            className={cn("capitalize cursor-pointer", {
+              "hover:underline hover:text-blue-800": !hover,
+              "hover:no-underline": hover,
+            })}
+          >
+            {name}
+          </Typography>
+        </li>
+      )}
       {menu?.length !== 0 && (
         <PopoverMenu
           dark={dark}

@@ -1,5 +1,14 @@
 import { useRoutes } from "react-router-dom";
-import { LandingPage, Platform, ProfessionalService, Company } from "./pages";
+import {
+  LandingPage,
+  Platform,
+  ProfessionalService,
+  Company,
+  Blog,
+  Whitepapers,
+  CaseStudies,
+  Pricing
+} from "./pages";
 import { ROUTES } from "./utils/routes";
 
 function App() {
@@ -18,7 +27,23 @@ function App() {
     },
     {
       path: "company/*",
-      element: <Company />
+      element: <Company />,
+    },
+    {
+      path: "blog",
+      element: <Blog />,
+    },
+    {
+      path: "whitepaper",
+      element: <Whitepapers />,
+    },
+    {
+      path: "case-studies",
+      element: <CaseStudies />,
+    },
+    {
+      path: "pricing",
+      element: <Pricing />
     }
   ]);
 }

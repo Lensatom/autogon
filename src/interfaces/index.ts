@@ -17,7 +17,7 @@ export type BenefitCardProps = {
 
 export type BlogCardProps = {
   src: string;
-  caption: string;
+  caption?: string;
   title: string;
   Icon?: any;
   buttonText?: string;
