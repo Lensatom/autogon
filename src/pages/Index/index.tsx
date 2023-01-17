@@ -13,42 +13,83 @@ import DevopsImage from "../../assets/dataops-2.webp.png";
 import FixAndFixImage from "../../assets/fix-and-fix-issues-v2-1.webp.png";
 import { IoIosArrowForward } from "react-icons/io";
 
+import Lottie from "lottie-react";
+import animationData from "../../assets/lf30_editor_22k2biyf.json";
 import { Testimonial } from "../../Layouts/Testimonial";
 import { PartnerCarousel } from "../../Layouts/PartnerCarousel";
+import Draggable from "react-draggable";
+import { useState } from "react";
+import { Pagination } from "swiper";
 
-const BenefitCard = ({ className, position }: BenefitCardProps) => {
+const BenefitCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
   return (
-    <div
-      className={cn(
-        "h-[35rem] w-[28rem] rounded-6xl bg-[#EAEEE2] hover:bg-[#B090EF] p-12 relative shadow-4xl",
-        className
-      )}
-    >
-      <Avatar sizes={75} />
-      <Typography variant="title" className="mt-3 font-extrabold">
-        {position}
-      </Typography>
-      <div className="mt-2">
-        <Typography variant="body">
-          Access to professional external data labeling workforce matching data
-          security requirements.
-        </Typography>
-        <Typography variant="body">
-          Access to professional external data labeling workforce matching data
-          security requirements.
-        </Typography>
-        <Typography variant="body">
-          Access to professional external data labeling workforce matching data
-          security requirements.
-        </Typography>
+    <Draggable bounds={{ top: -350, left: -200, right: 800, bottom: 800 }}>
+      <div
+        onClick={onClick}
+        className={cn(
+          "h-[35rem] w-[28rem] rounded-6xl bg-[#EAEEE2]  p-12 absolute shadow-4xl cursor-move select-none",
+          className,
+          { "bg-[#B090EF] z-30": active }
+        )}
+      >
+        <div className="h-full relative">
+          <Avatar src={src} sizes={75} />
+          <Typography variant="title" className="mt-3 font-extrabold">
+            {position}
+          </Typography>
+          <div className="mt-2">
+            <ul className="list-disc">
+              {contents.map((content, index) => (
+                <li key={index}>
+                  <Typography className="my-2" variant="body">
+                    {content}
+                  </Typography>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <Button className="absolute bottom-10">Request a Demo</Button>
       </div>
-      <Button className="relative -bottom-4">Request a Demo</Button>
-    </div>
+    </Draggable>
+  );
+};
+const BenefitMobileCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
+  return (
+      <div
+        // onClick={onClick}
+        className={cn(
+          "",
+          className,
+          { "bg-[#B090EF] z-30": active }
+        )}
+      >
+        <div className="h-full relative">
+          <Avatar src={src} sizes={75} />
+          <Typography variant="title" className="mt-3 font-extrabold">
+            {position}
+          </Typography>
+          <div className="mt-2">
+            <ul className="list-disc">
+              {contents.map((content, index) => (
+                <li key={index}>
+                  <Typography className="my-2" variant="body">
+                    {content}
+                  </Typography>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <Button className="absolute bottom-10">Request a Demo</Button>
+      </div>
   );
 };
 
 
 export const LandingPage = () => {
+  const [active, setActive] = useState(7);
+
   return (
     <>
       <Header />
@@ -61,15 +102,15 @@ export const LandingPage = () => {
         itemScope
         itemProp="videoObject"
         itemType="https://scheme.org/videoObject"
-        className="bg-surface pb-32"
+        className="bg-surface pb-14 lg:pb-32"
       >
         <meta
           itemProp="contentUrl"
           content="https://a.storyblok.com/f/139616/x/46411cf354/demo-homepage-v2.mp4"
         />
-        <div className="mx-auto px-[1.375em] flex relative overflow-hidden items-center justify-center rounded">
+        <div className="mx-auto lg:px-[1.375em] flex relative overflow-hidden items-center justify-center rounded">
           <video
-            className="h-auto w-[80%] rounded-lg"
+            className="h-auto lg:w-[80%] rounded-lg"
             loop
             autoPlay
             typeof="video/mp4"
@@ -87,7 +128,7 @@ export const LandingPage = () => {
 
       <PartnerCarousel />
 
-      <Container className="bg-neutral py-10">
+      <Container className="bg-neutral py-10 lg:py-20 pb-32">
         <Typography
           variant="header"
           align="center"
@@ -98,16 +139,33 @@ export const LandingPage = () => {
         <Typography
           variant="body"
           align="center"
-          className="!text-white w-[79%] mx-auto"
+          className="!text-white lg:w-[59%] mx-auto mb-[56px]"
         >
           urn your Machine Learning workflow in a Data-centric AI workflow
           within 5 minutes. Integrate high-quality training data selection, data
           labeling and data annotation in your ML workflow with 5 lines of code.
           Annotate all data types in fast iteration cycles.
         </Typography>
+
+        <div>
+          <img
+            src="https://a.storyblok.com/f/139616/x/1eb97a0c59/diagram-01-desktop-updated-april11th.svg"
+            className="hidden lg:block mx-auto"
+            alt="Integrate quickly"
+          />
+          <img
+            src="https://a.storyblok.com/f/139616/x/945e9b6d8a/diagram-01-mobile-updated-april11th.svg"
+            alt="Integrate quickly"
+            className="lg:hidden"
+          />
+        </div>
       </Container>
 
-      <Container className="bg-surface pt-20 pb-40" flex align="center">
+      <Container
+        className="bg-surface flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-40"
+        flex
+        align="center"
+      >
         <div className="w-full">
           <Typography variant="header" className="font-semibold">
             Create training datasets fast
@@ -129,8 +187,7 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        direction="row-reverse"
-        className="bg-surface pt-20 pb-40 gap-10"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse lg:pt-20 lg:pb-40 gap-10"
         flex
         align="center"
       >
@@ -153,7 +210,11 @@ export const LandingPage = () => {
         </div>
       </Container>
 
-      <Container className="bg-surface pt-10 pb-40" flex align="center">
+      <Container
+        className="bg-surface pt-10 lg:pb-40 flex-col-reverse lg:flex-row-reverse"
+        flex
+        align="center"
+      >
         <div className="w-full">
           <Typography variant="header" className="font-semibold">
             Simplify your LabelingOps
@@ -174,8 +235,7 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        direction="row-reverse"
-        className="bg-surface pt-10 pb-60 gap-10"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse pt-10 pb-60 gap-10"
         flex
         align="center"
       >
@@ -192,31 +252,237 @@ export const LandingPage = () => {
           </Button>
         </div>
         <div className="w-full">
-          {/* <img src={DataSetImage} className="h-full w-full object-contain" /> */}
+          <Lottie
+            animationData={animationData}
+            loop
+            className="h-80 mx-auto w-80"
+          />
         </div>
       </Container>
 
-      <Container className="bg-surface py-10 overflow-hidden h-[110rem]">
+      <Container className="bg-surface py-10 overflow-hidden lg:h-[110rem] ">
         <Typography
           variant="header"
           align="center"
-          className="w-[80%] mx-auto font-extrabold"
+          className="lg:w-[80%] mx-auto font-extrabold"
         >
           See how Kili can help you in your role
         </Typography>
 
-        <div className="flex mt-32 gap-10  justify-center">
-          <div className="">
-            <BenefitCard position="Ml Engineers" />
-            <BenefitCard className="-top-[23rem]" position="Project Leaders" />
-            <BenefitCard className="-top-[46rem]" position="IT Leaders" />
-            <BenefitCard className="-top-[69rem]" position="CXOs" />
+        <div className="grid-cols-2 mt-32 justify-center hidden lg:grid">
+          <div className="relative bg-blue-600">
+            <BenefitCard
+              active={active === 1}
+              onClick={() => setActive(1)}
+              src="https://a.storyblok.com/f/139616/160x160/9a8818c603/ml-engineer.png"
+              position="ML Engineers"
+              className="left-40"
+              contents={[
+                "Industrialize data labeling via cross team collaboration and production of quality data to feed your models.",
+                "Ship more successful projects in less time with the simple UX of our training data platform, smooth workflows and the ability to handle any and all data.",
+              ]}
+            />
+            <BenefitCard
+              active={active === 2}
+              onClick={() => setActive(2)}
+              src="https://a.storyblok.com/f/139616/160x160/c468ab2a8f/product-leaders.jpg"
+              className="top-52 left-40"
+              position="Project Leaders"
+              contents={[
+                "Improve performance of AI projects and ship successful projects on time with our training data platform by using data to unlock and harness the expertise already present in your business.",
+                "Mitigate the risk of running an unreliable and unethical AI.",
+              ]}
+            />
+            <BenefitCard
+              active={active === 3}
+              onClick={() => setActive(3)}
+              src="https://a.storyblok.com/f/139616/160x160/ead56e9b1f/it-leader.png"
+              className="top-[25rem] left-40"
+              position="IT Leaders"
+              contents={[
+                "Build the data labeling infrastructure that can support scale with total security.",
+                "Ensure data security and governance: sensitive data is protected.",
+                "Simplify and rationalize your AI & data tech stack.",
+              ]}
+            />
+            <BenefitCard
+              active={active === 4}
+              onClick={() => setActive(4)}
+              src="https://a.storyblok.com/f/139616/160x160/d782b4acd8/cxo.png"
+              className="top-[37rem] left-40"
+              position="CXOs"
+              contents={[
+                "Improve performance of AI projects and ship successful projects on time by using data to unlock and harness the expertise already present in your business.",
+                "Mitigate the risk of running an unreliable and unethical AI.",
+              ]}
+            />
           </div>
-          <div className="">
-            <BenefitCard position="Project Managers" />
-            <BenefitCard className="-top-[23rem]" position="AI Leaders" />
-            <BenefitCard className="-top-[46rem]" position="Data Scientists" />
+          <div className="relative">
+            <BenefitCard
+              active={active === 5}
+              onClick={() => setActive(5)}
+              src="https://a.storyblok.com/f/139616/160x160/b37814d5df/project-managers.jpg"
+              position="Project Managers"
+              contents={[
+                "Facilitate intuitive collaboration on our training data platform between business experts and tech teams to produce quality data.",
+                "Manage resources within a smooth & controlled process and integrate different users, including non-technical, at the right moment for maximum impact.",
+              ]}
+            />
+            <BenefitCard
+              active={active === 6}
+              onClick={() => setActive(6)}
+              src="https://a.storyblok.com/f/139616/160x160/8343df36fa/ai-leaders.jpg"
+              className="top-52"
+              position="AI Leaders"
+              contents={[
+                "Industrialize data labeling via cross team collaboration and production of quality data to feed models.",
+                "Gain control over data spread across your organisation and simplify the model training iteration loop.",
+                "Free your teams from the low value task of labeling with our training data platform",
+              ]}
+            />
+            <BenefitCard
+              active={active === 7}
+              onClick={() => setActive(7)}
+              src="https://a.storyblok.com/f/139616/160x160/256be6f7e1/ml-engineers.jpg"
+              className="top-[25rem]"
+              position="Data Scientists"
+              contents={[
+                "Industrialize data labeling via cross team collaboration and production of quality data to feed your models.",
+                "Access to professional external data labeling workforce matching data security requirements.",
+                "Unlock broader projects through growing data capabilities.",
+              ]}
+            />
           </div>
+        </div>
+        <div className="lg:hidden mt-10">
+          <Swiper
+            spaceBetween={16}
+            slidesPerView="auto"
+            centeredSlides
+            allowTouchMove
+            initialSlide={0}
+            modules={[Pagination]}
+            slideActiveClass="!bg-[#b090ef]"
+            pagination={{
+              clickable: true,
+              bulletActiveClass: "!bg-primary !opacity-100 !h-3 !w-3",
+              bulletClass: "h-3 w-3 inline-block rounded-full bg-black mx-2",
+            }}
+            className="pt-20 mb-40 h-[45rem]"
+            scrollbar={{
+              draggable: true,
+            }}
+            breakpoints={{
+              959: { spaceBetween: 22, initialSlide: 1 },
+            }}
+          >
+            <SwiperSlide
+              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2]  p-12  shadow-4xl cursor-move select-none`}
+            >
+              <BenefitMobileCard
+                active={active === 1}
+                onClick={() => setActive(1)}
+                src="https://a.storyblok.com/f/139616/160x160/9a8818c603/ml-engineer.png"
+                position="ML Engineers"
+                contents={[
+                  "Industrialize data labeling via cross team collaboration and production of quality data to feed your models.",
+                  "Ship more successful projects in less time with the simple UX of our training data platform, smooth workflows and the ability to handle any and all data.",
+                ]}
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2]  p-12  shadow-4xl cursor-move select-none`}
+            >
+              <BenefitMobileCard
+                active={active === 2}
+                onClick={() => setActive(2)}
+                src="https://a.storyblok.com/f/139616/160x160/c468ab2a8f/product-leaders.jpg"
+                className="top-52 left-40"
+                position="Project Leaders"
+                contents={[
+                  "Improve performance of AI projects and ship successful projects on time with our training data platform by using data to unlock and harness the expertise already present in your business.",
+                  "Mitigate the risk of running an unreliable and unethical AI.",
+                ]}
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2]  p-12  shadow-4xl cursor-move select-none`}
+            >
+              <BenefitCard
+                active={active === 3}
+                onClick={() => setActive(3)}
+                src="https://a.storyblok.com/f/139616/160x160/ead56e9b1f/it-leader.png"
+                className="top-[25rem] left-40"
+                position="IT Leaders"
+                contents={[
+                  "Build the data labeling infrastructure that can support scale with total security.",
+                  "Ensure data security and governance: sensitive data is protected.",
+                  "Simplify and rationalize your AI & data tech stack.",
+                ]}
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2]  p-12  shadow-4xl cursor-move select-none`}
+            >
+              <BenefitCard
+                active={active === 4}
+                onClick={() => setActive(4)}
+                src="https://a.storyblok.com/f/139616/160x160/d782b4acd8/cxo.png"
+                className="top-[37rem] left-40"
+                position="CXOs"
+                contents={[
+                  "Improve performance of AI projects and ship successful projects on time by using data to unlock and harness the expertise already present in your business.",
+                  "Mitigate the risk of running an unreliable and unethical AI.",
+                ]}
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2]  p-12  shadow-4xl cursor-move select-none`}
+            >
+              <BenefitCard
+                active={active === 5}
+                onClick={() => setActive(5)}
+                src="https://a.storyblok.com/f/139616/160x160/b37814d5df/project-managers.jpg"
+                position="Project Managers"
+                contents={[
+                  "Facilitate intuitive collaboration on our training data platform between business experts and tech teams to produce quality data.",
+                  "Manage resources within a smooth & controlled process and integrate different users, including non-technical, at the right moment for maximum impact.",
+                ]}
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2]  p-12  shadow-4xl cursor-move select-none`}
+            >
+              <BenefitCard
+                active={active === 6}
+                onClick={() => setActive(6)}
+                src="https://a.storyblok.com/f/139616/160x160/8343df36fa/ai-leaders.jpg"
+                className="top-52"
+                position="AI Leaders"
+                contents={[
+                  "Industrialize data labeling via cross team collaboration and production of quality data to feed models.",
+                  "Gain control over data spread across your organisation and simplify the model training iteration loop.",
+                  "Free your teams from the low value task of labeling with our training data platform",
+                ]}
+              />
+            </SwiperSlide>
+            <SwiperSlide
+              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2] p-12 shadow-4xl cursor-move select-none`}
+            >
+              <BenefitCard
+                active={active === 7}
+                onClick={() => setActive(7)}
+                src="https://a.storyblok.com/f/139616/160x160/256be6f7e1/ml-engineers.jpg"
+                className="top-[25rem]"
+                position="Data Scientists"
+                contents={[
+                  "Industrialize data labeling via cross team collaboration and production of quality data to feed your models.",
+                  "Access to professional external data labeling workforce matching data security requirements.",
+                  "Unlock broader projects through growing data capabilities.",
+                ]}
+              />
+            </SwiperSlide>
+          </Swiper>
         </div>
       </Container>
 
@@ -272,7 +538,7 @@ export const LandingPage = () => {
         </Swiper>
       </Container>
 
-      <Container className="bg-[#162427] pb-28">
+      <Container disableOverflowHidden className="bg-[#162427] pb-28">
         <div className="mx-auto w-fit ">
           <img src={Smilesvg} className="relative -top-24 mx-auto" />
           <Typography variant="subdisplay" className="capitalize !text-white">

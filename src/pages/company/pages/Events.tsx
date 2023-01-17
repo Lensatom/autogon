@@ -156,22 +156,35 @@ export const Event = () => {
             </Button>
           </div>
         </div>
-        <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 mt-10 lg:w-[85%] mx-auto gap-y-6">
-          {filteredBlog.map((blog) => (
-            <BlogCard
-              {...blog}
-              titleClass="!text-[28px] !leading-[30px] font-semibold"
-              children={
-                <Typography
-                  variant="body"
-                  className="mt-2 !leading-6 !text-[16px] "
-                >
-                  {blog.content}
-                </Typography>
-              }
-            />
-          ))}
-        </div>
+        {filteredBlog.length ? (
+          <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 mt-10 lg:w-[85%] mx-auto gap-y-6">
+            {filteredBlog.map((blog) => (
+              <BlogCard
+                {...blog}
+                titleClass="!text-[28px] !leading-[30px] font-semibold"
+                children={
+                  <Typography
+                    variant="body"
+                    className="mt-2 !leading-6 !text-[16px] "
+                  >
+                    {blog.content}
+                  </Typography>
+                }
+              />
+            ))}
+          </div>
+        ) : (
+          <div className="h-40 grid place-items-center">
+            <Typography
+              variant="body"
+              align="center"
+              className="lg:w-[65%] mx-auto"
+            >
+              There are currently no upcoming events scheduled, but check back
+              soon as new events are added all the time.
+            </Typography>
+          </div>
+        )}
       </Container>
 
       <PartnerCarousel />

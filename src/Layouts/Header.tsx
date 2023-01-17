@@ -24,11 +24,11 @@ const MenuLinks = ({
   className?: string;
 }) => {
   return (
-    <div className="w-[75%] bg-orange-70">
+    <div className="w-[ bg-orange-70">
       <Typography
         isDarkMode={dark}
         variant="title"
-        className="!text-[23px] font-bold !leading-6"
+        className="lg:!text-[23px] text-[1.3rem] font-bold !leading-6"
       >
         {title}
       </Typography>
@@ -45,7 +45,7 @@ const MenuLinks = ({
                   variant="link"
                   isDarkMode={dark}
                   className={cn(
-                    "capitalize text-sm cursor-pointer hover:text-primary !font-thin hover:no-underline"
+                    "capitalize text-sm cursor-pointer hover:text-primary !font-thin hover:no-underline text-[1rem]"
                   )}
                 >
                   {nav.name}
@@ -74,50 +74,73 @@ const MenuLinks = ({
 const PopoverMenu = forwardRef<
   any,
   {
-    menus: { title: string; links: { name: string }[] }[];
-    isHovering: boolean;
+    menus: any;
+    isHovering?: boolean;
     dark?: boolean;
+    noAbsolute?: boolean
   }
->(({ menus, isHovering, dark }, ref) => {
+>(({ menus, isHovering, dark, noAbsolute }, ref) => {
   return (
     <Container
       as="div"
+      disableOverflowHidden
       isDarkMode={dark}
       background
+      noGutter
       ref={ref}
       className={cn(
-        "absolute bg-white shadow-xl w-fit -left-4 top-14 rounded-2xl flex p-6 ease-in-out duration-1000 z-40",
+        "bg-white lg:w-fit -left-4 lg:shadow-xl shadow-lg top-10 rounded-2xl p-3 lg:p-6 ease-in-out duration-1000 z-40 pt-4 pb-8 mt-6 lg:mt-0",
         {
-          "translate-y-0 opacity-100": isHovering,
-          "-translate-y-[40rem] opacity-0": !isHovering,
+          absolute: !noAbsolute,
+          "translate-y-0 opacity-100": isHovering && !noAbsolute,
+          "-translate-y-[30rem] opacity-0 delay-500":
+            !isHovering && !noAbsolute,
         }
       )}
     >
-      {menus.map((menu, index) => (
-        <MenuLinks
-          dark={dark}
-          key={index}
-          links={menu.links}
-          title={menu.title}
-        />
-      ))}
-      <Container
-        isLightDarkMode={dark}
-        background
-        className="bg-surface w-[22.625rem] h-fit flex flex-col min-h-[14.6875rem] pt-6 pr-4 pb-4 pl-4 rounded-xl"
-      >
-        <img
-          src="https://a.storyblok.com/f/139616/300x300/bf794cd0b7/sap-square-preview.png"
-          className="h-28 mb-7 object-contain object-center"
-        />
-        <p className="mb-1 text-[0.75rem] leading-[130%] -tracking-[.01em] text-center">
-          WEBINAR: How SAP trains ML for Document Information Extraction
-          Application?
-        </p>
-        <a className="text-center text-[12px] leading-[140%] cursor-pointer -tracking-[.01em] uppercase text-primary">
-          Register now
-        </a>
-      </Container>
+      <div className="flex gap-2 lg:gap-8 relative">
+        <div className="absolute -top-10 -left-5">
+          <svg
+            width={48}
+            style={{ maxHeight: 48 }}
+            viewBox="0 0 26 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.7321 1C13.9622 -0.333333 12.0378 -0.333332 11.2679 1L0.875645 19C0.105845 20.3333 1.0681 22 2.6077 22L23.3923 22C24.9319 22 25.8942 20.3333 25.1244 19L14.7321 1Z"
+              fill="#ffffff"
+            ></path>
+          </svg>
+        </div>
+        {menus.map((menu, index) => (
+          <MenuLinks
+            dark={dark}
+            key={index}
+            links={menu.links}
+            title={menu.title}
+          />
+        ))}
+        <Container
+          isLightDarkMode={dark}
+          background
+          noGutter
+          as="div"
+          className="bg-surface w-fit min-w-[14rem] h-fit flex-col min-h-[14.6875rem] pt-6 pr-4 pb-4 pl-4 rounded-xl hidden lg:flex"
+        >
+          <img
+            src="https://a.storyblok.com/f/139616/300x300/bf794cd0b7/sap-square-preview.png"
+            className="h-28 mb-7 object-contain object-center"
+          />
+          <p className="mb-1 text-[0.75rem] leading-[130%] -tracking-[.01em] text-center">
+            WEBINAR: How SAP trains ML for Document Information Extraction
+            Application?
+          </p>
+          <a className="text-center text-[12px] leading-[140%] cursor-pointer -tracking-[.01em] uppercase text-primary">
+            Register now
+          </a>
+        </Container>
+      </div>
     </Container>
   );
 });
@@ -245,7 +268,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
         justify="between"
         align="center"
         as="div"
-        className="bg-[#B090EF] lg:flex lg:w-full py-[6.4px] "
+        className="bg-[#B090EF] lg:flex lg:w-full py-[6.4px] relative z-20"
       >
         <Typography
           variant="caption"
@@ -264,11 +287,14 @@ export const Header = ({ darkMode }: HeaderProps) => {
         </Typography>
       </Container>
       <div className="relative">
-        <Transition show={isShowing} as={Fragment}>
-          <MenuDrawer
-            {...{ navLinks, onClick: () => setIsShowing((isShowing) => false) }}
-          />
-        </Transition>
+        <MenuDrawer
+          {...{
+            navLinks,
+            isShowing,
+            dark: darkMode,
+            onClick: () => setIsShowing((isShowing) => false),
+          }}
+        />
 
         <Container
           isDarkMode={darkMode}
@@ -299,13 +325,28 @@ export const Header = ({ darkMode }: HeaderProps) => {
           </ul>
 
           <div className="lg:flex-1 gap-2 lg:justify-end flex">
-            <Bars2Icon
-              onClick={() => setIsShowing((isShowing) => true)}
-              className="h-10 w-10 font-bold text- lg:hidden"
-            />
-            <Button darkMode={darkMode} className="hidden lg:block">
-              Request a demo
-            </Button>
+            <div
+              onClick={() => setIsShowing((isShowing) => !isShowing)}
+              className="relative z-40 flex flex-col justify-center gap-3 w-8 p-0 ease-in-out duration-200 transition-all lg:hidden"
+            >
+              <div
+                className={cn(
+                  "h-1 w-full bg-neutral ease-in-out duration-200",
+                  {
+                    "rotate-45": isShowing,
+                  }
+                )}
+              />
+              <div
+                className={cn(
+                  "h-1 w-full bg-neutral ease-in-out duration-200",
+                  {
+                    "-rotate-45 trans -translate-y-4": isShowing,
+                  }
+                )}
+              />
+            </div>
+            <Button className="hidden lg:block">Request a demo</Button>
             <Button
               darkMode={darkMode}
               className="hidden lg:block"
@@ -379,51 +420,59 @@ const MenuItem = forwardRef<
   );
 });
 
-const MenuDrawer = ({ navLinks, onClick }: MenuDrawerProps) => {
+const MenuDrawer = ({ navLinks, dark, isShowing }: MenuDrawerProps) => {
+  const [active, setActive] = useState<any>();
+
+
   return (
-    <Transition.Child
-      className="bg-surface w-full h-full lg:hidden pl-5 absolute select-none z-20"
-      enter="transform transition ease-in-out duration-500 sm:duration-700"
-      enterFrom="translate-y-full"
-      enterTo="translate-y-0"
-      leave="transform transition ease-in-out duration-500 sm:duration-700"
-      leaveFrom="translate-y-0"
-      leaveTo="translate-y-full"
+    <div
+      className={cn(
+        "bg-surface w-full h-screen flex flex-col lg:hidden px-5 ease-in-out overflow-auto absolute select-none z-10 duration-300",
+        {
+          "-translate-y-0": isShowing,
+          "-translate-y-full": !isShowing,
+        }
+      )}
     >
-      <XMarkIcon
-        onClick={onClick}
-        className="h-10 w-10 absolute right-4 top-4 text-black cursor-pointer"
-      />
-      <ul>
-        {navLinks.map((nav) => (
-          <li
-            className={cn("py-3", { "mt-32": nav?.id === "1" })}
-            key={nav?.id}
-          >
-            <Typography
-              variant="body"
-              className={cn("capitalize cursor-pointer text-[20px]", {
-                "hover:text-primary": !nav?.hover,
-              })}
+      <div className="flex flex-col h-5/6 justify-between">
+        <ul>
+          {navLinks.map((nav) => (
+            <li
+              className={cn("py-3", { "mt-32": nav?.id === "1" })}
+              key={nav?.id}
+              onClick={() => setActive(nav?.id)}
             >
-              {nav?.name}
-            </Typography>
-          </li>
-        ))}
-      </ul>
-      <Typography
-        variant="link"
-        className={cn(
-          "uppercase cursor-pointer hover:text-primary mt-12 mb-5 block"
-        )}
-      >
-        request a demo
-      </Typography>
-      <div className="flex justify-center mt-8">
-        <Button variant="outline" className="self-center">
-          Talk to sales
-        </Button>
+              <Typography
+                variant="body"
+                className={cn("capitalize cursor-pointer text-[20px]", {
+                  "hover:text-primary": !nav?.hover,
+                  "text-primary": active === nav?.id,
+                })}
+              >
+                {nav?.name}
+              </Typography>
+              {typeof nav?.menu?.length !== "undefined" && active === nav.id && (
+                <PopoverMenu dark={dark} noAbsolute menus={nav?.menu ?? []} />
+              )}
+            </li>
+          ))}
+        </ul>
+        <div>
+          <Typography
+            variant="link"
+            className={cn(
+              "uppercase cursor-pointer hover:text-primary mt-12 mb-5 block"
+            )}
+          >
+            request a demo
+          </Typography>
+          <div className="flex justify-center mt-8">
+            <Button variant="outline" className="self-center">
+              Talk to sales
+            </Button>
+          </div>
+        </div>
       </div>
-    </Transition.Child>
+    </div>
   );
 };

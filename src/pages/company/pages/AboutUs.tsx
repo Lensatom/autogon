@@ -344,7 +344,7 @@ export const Company = () => {
         subtitle="Our clients and investors trust Kili to take the AI industry to new and exciting places."
       />
       <Container className="h-40 bg-surface hidden lg:block"></Container>
-      <Container isDarkMode background className="bg-[#162427] pb-28">
+      <Container disableOverflowHidden isDarkMode background className="bg-[#162427] pb-28">
         <div className="mx-auto w-fit ">
           <img src={Smilesvg} className="relative -top-24 mx-auto" />
           <Typography

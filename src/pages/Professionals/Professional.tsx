@@ -19,7 +19,7 @@ const ResourcePoints = ({ index, body }: { index: string; body: string }) => {
       isDarkMode
       flex
       align="center"
-      className="gap-5 rounded-full py-2 pl-2 pr-10 mb-10 w-fit"
+      className="gap-5 rounded-full py-2 pl-2 lg:pr-10 mb-5 lg:mb-10 pr-5 w-fit"
     >
       <div className="h-10 w-10 rounded-full grid place-items-center bg-[#B090EF]">
         {index}
@@ -41,9 +41,7 @@ export const ProfessionalService = () => {
       <Container
         isDarkMode
         background
-        className={classNames("bg-surface pt-1 pb-40 ", {
-          "!pt-36": scrollY !== 0,
-        })}
+        className="bg-surface pt-[12rem] lg:pt-[8rem] pb-10 lg:pb-40 "
       >
         <BreadCrumb darkMode />
         <div className="lg:flex gap-12 lg:mt-5">
@@ -55,7 +53,10 @@ export const ProfessionalService = () => {
             >
               Augment my team
             </Typography>
-            <img src="" className="h-full w-full mt-3 lg:hidden" />
+            <img
+              src="https://a.storyblok.com/f/139616/x/f5eb489f54/workforce-hero.svg"
+              className="h-full w-full mt-3 lg:hidden"
+            />
             <Typography isDarkMode variant="body" className="mt-6">
               Scale your project with our expert labeling workforce, fully
               managed with tasked based metrics.
@@ -83,7 +84,7 @@ export const ProfessionalService = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pt-20 gap-10 pb-40"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse pt-20 gap-10 pb-10 lg:pb-40"
         flex
         direction="row-reverse"
         id="from-design"
@@ -95,7 +96,7 @@ export const ProfessionalService = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             From design to deployment
           </Typography>
@@ -116,7 +117,7 @@ export const ProfessionalService = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pb-40 gap-10"
+        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-10"
         flex
         id="trained-workforce"
         // direction="row-reverse"
@@ -128,7 +129,7 @@ export const ProfessionalService = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             A trained workforce
           </Typography>
@@ -139,7 +140,7 @@ export const ProfessionalService = () => {
 
           <Button className="mt-6">Request a demo</Button>
         </div>
-        <div className="w-[90%]">
+        <div className="lg:w-[90%]">
           <img
             src="https://a.storyblok.com/f/139616/661x601/9700f20ec3/task-based-workforce.webp"
             className="h-full w-full object-contain"
@@ -150,7 +151,7 @@ export const ProfessionalService = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pb-40 gap-3"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
         direction="row-reverse"
         id="data-centric"
@@ -162,7 +163,7 @@ export const ProfessionalService = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             Data Centric AI & Labeling experts
           </Typography>
@@ -175,7 +176,7 @@ export const ProfessionalService = () => {
 
           <Button className="mt-6">Request a demo</Button>
         </div>
-        <div className="w-[90%]">
+        <div className="lg:w-[90%]">
           <img
             src="https://a.storyblok.com/f/139616/661x601/9700f20ec3/task-based-workforce.webp"
             className="h-full w-full object-contain"
@@ -189,16 +190,16 @@ export const ProfessionalService = () => {
         className="bg-surface pb-40 gap-3"
         // direction="row-reverse"
       >
-        <div className="flex w-[70rem] mx-auto gap-8">
+        <div className="flex flex-col lg:flex-row lg:w-[70rem] mx-auto gap-8">
           <div>
             <Typography
               isDarkMode
               variant="title"
-              className="w-[40rem] font-semibold text-[75px] leading-[100%]"
+              className="lg:w-[40rem] font-semibold text-[75px] leading-[100%]"
             >
               The right resources at the right time
             </Typography>
-            <Typography isDarkMode variant="body" className="mt-4 w-[35rem]">
+            <Typography isDarkMode variant="body" className="mt-4 lg:w-[35rem]">
               Kili is designed to support companies at every stage in the
               process of building responsible AI, with expertise across data
               annotation types, labeling tasks, and specific use cases.
@@ -255,10 +256,10 @@ export const ProfessionalService = () => {
 
       {/* <Blog /> */}
 
-      <Container isLightDarkMode background className="bg-[#162427] pb-28">
+      <Container disableOverflowHidden isLightDarkMode background className="bg-[#162427] pb-28">
         <div className="mx-auto w-fit ">
           <img src={Smilesvg} className="relative -top-24 mx-auto" />
-          <Typography variant="subdisplay" className="capitalize !text-white">
+          <Typography variant="subdisplay" align="center" className="capitalize !text-white">
             get started
           </Typography>
           <Typography variant="body" align="center" className="!text-white">

@@ -15,7 +15,7 @@ const TestimonialCard = ({
       <Typography
         variant="body"
         isDarkMode={isDark}
-        className="w-[30rem] text-[24px] leading-[140%] -tracking-[.02em]"
+        className="lg:w-[30rem] text-[24px] leading-[140%] -tracking-[.02em]"
       >
         {comment}
       </Typography>
@@ -112,7 +112,7 @@ export const Testimonial = ({ isDarkMode }: TestimonialType) => {
         {testimonials.map((testimonial, index) => (
           <SwiperSlide
             key={index}
-            className={`!w-fit rounded-4xl max-h-[370px] shadow-[0_0_16px_rgb(8,24,25/4%)] flex flex-col justify-between py-12 px-16 ${
+            className={`!w-fit rounded-4xl max-h-[370px] shadow-[0_0_16px_rgb(8,24,25/4%)] flex flex-col justify-between py-12 px-8 lg:px-16 ${
               isDarkMode ? "bg-dark-paper" : "bg-white"
             }`}
           >

@@ -63,7 +63,7 @@ export const Container = forwardRef<any, ContainerProps<any>>((props, ref) => {
         "!bg-dark-paper": isDarkMode && !background,
         "!bg-dark-surface": isDarkMode && background,
         "!bg-light-dark-surface": isLightDarkMode && background,
-        "overflow-x-hidden": !disableOverflowHidden
+        "overflow-hidden": !disableOverflowHidden
       })}
       {...rest}
     />

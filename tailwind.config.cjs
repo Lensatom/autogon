@@ -48,6 +48,20 @@ module.exports = {
         "spin-slow-10": "spin 10s linear infinite",
         marquee: "marquee 25s linear infinite",
         marquee2: "marquee2 25s linear infinite",
+        hoverIn: "hoverIn 1000ms ease-in-out",
+        hoverOut: "hoverOut 1000ms ease-in-out"
+      },
+      keyframes: {
+        hoverIn: {
+          "0%": { transform: "translateY(20rem)" },
+          "50%": { transform: "translateY(10rem)" },
+          "100%": { transform: "translateY(0px)" },
+        },
+        hoverOut: {
+          "0%": { transform: "translateY(0px)" },
+          "50%": { transform: "translateY(-10rem)" },
+          "100%": { transform: "translateY(-20rem)" },
+        },
       },
     },
   },

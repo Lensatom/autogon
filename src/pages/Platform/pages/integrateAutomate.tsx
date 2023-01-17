@@ -9,7 +9,6 @@ import { PartnerCarousel } from "../../../Layouts/PartnerCarousel";
 import { Testimonial } from "../../../Layouts/Testimonial";
 import { Blog } from "../Layout/Blog";
 import { useWindowScrollPositions } from "../../../hooks/useWindowScroll";
-import classNames from "classnames";
 
 export const IntegrateAutomate = () => {
 
@@ -17,7 +16,11 @@ export const IntegrateAutomate = () => {
     <>
       <Header darkMode />
 
-      <Container isDarkMode background className="bg-surface pb-40 pt-[8rem]">
+      <Container
+        isDarkMode
+        background
+        className="bg-surface pb-10 lg:pb-40 pt-[12rem] lg:pt-[8rem]"
+      >
         <BreadCrumb darkMode />
         <div className="lg:flex gap-10 lg:mt-5">
           <div className="w-[95%]">
@@ -28,7 +31,10 @@ export const IntegrateAutomate = () => {
             >
               Simplify your LabelingOps
             </Typography>
-            <img src="" className="h-full w-full mt-3 lg:hidden" />
+            <img
+              src="https://a.storyblok.com/f/139616/2500x1933/68c38b951d/dataops-1.webp"
+              className="h-full w-full mt-3 lg:hidden"
+            />
             <Typography isDarkMode variant="body" className="mt-6">
               Integrate labeling operations with your existing ML stack, easily
               import and export data, create and manage labeling projects, and
@@ -41,7 +47,7 @@ export const IntegrateAutomate = () => {
               <Button>Request a demo</Button>
               <Button
                 darkMode
-                className="flex items-center gap-3 mb-3 lg:mb-0 group"
+                className="flex items-center mt-2 lg:mt-0 gap-3 mb-3 lg:mb-0 group"
                 variant="outline"
               >
                 Start for free
@@ -63,7 +69,7 @@ export const IntegrateAutomate = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pt-20 gap-10 pb-40"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse lg:pt-20 gap-10 pb-10 lg:pb-40"
         flex
         direction="row-reverse"
       >
@@ -74,7 +80,7 @@ export const IntegrateAutomate = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             Import & export data effortlessly
           </Typography>
@@ -87,7 +93,7 @@ export const IntegrateAutomate = () => {
 
           <Button className="mt-12">Request a demo</Button>
         </div>
-        <div className="w-[90%]">
+        <div className="lg:w-[90%]">
           <img
             src="https://a.storyblok.com/f/139616/2500x1933/8ccebc4de5/import-export-1.webp"
             className="h-full w-full object-contain"
@@ -98,7 +104,7 @@ export const IntegrateAutomate = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pb-40 gap-10"
+        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-10"
         flex
         // direction="row-reverse"
       >
@@ -109,7 +115,7 @@ export const IntegrateAutomate = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             Manage your team at scale
           </Typography>
@@ -122,7 +128,7 @@ export const IntegrateAutomate = () => {
 
           <Button className="mt-9">Request a demo</Button>
         </div>
-        <div className="w-[90%]">
+        <div className="lg:w-[90%]">
           <img
             src="https://a.storyblok.com/f/139616/2500x1933/001cd75f17/manage-your-team-1.webp"
             className="h-full w-full object-contain"
@@ -133,7 +139,7 @@ export const IntegrateAutomate = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pb-40 gap-3"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
         direction="row-reverse"
       >
@@ -144,7 +150,7 @@ export const IntegrateAutomate = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             Automate your MLOps infrastructure
           </Typography>
@@ -158,7 +164,7 @@ export const IntegrateAutomate = () => {
 
           <Button className="mt-9">Request a demo</Button>
         </div>
-        <div className="w-[90%]">
+        <div className="lg:w-[90%]">
           <img
             src="https://a.storyblok.com/f/139616/2500x1933/c1a7e12ea3/automate-mlops-infra-2.webp"
             className="h-full w-full object-contain"
@@ -236,7 +242,7 @@ export const IntegrateAutomate = () => {
 
       <Blog />
 
-      <Container isLightDarkMode background className="bg-[#162427] pb-28">
+      <Container disableOverflowHidden isLightDarkMode background className="bg-[#162427] pb-28">
         <div className="mx-auto w-fit ">
           <img src={Smilesvg} className="relative -top-24 mx-auto" />
           <Typography variant="subdisplay" className="capitalize !text-white">

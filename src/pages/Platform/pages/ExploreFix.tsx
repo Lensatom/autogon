@@ -9,12 +9,9 @@ import { PartnerCarousel } from "../../../Layouts/PartnerCarousel";
 import { Testimonial } from "../../../Layouts/Testimonial";
 import { Blog } from '../Layout/Blog';
 import classNames from "classnames";
-import { useWindowScrollPositions } from "../../../hooks/useWindowScroll";
 
 
 export const ExploreFix = () => {
-  const { scrollY } = useWindowScrollPositions();
-
   return (
     <>
       <Header darkMode />
@@ -22,9 +19,7 @@ export const ExploreFix = () => {
       <Container
         isDarkMode
         background
-        className={classNames("bg-surface pt-1 pb-40 ", {
-          "!pt-36": scrollY !== 0,
-        })}
+        className="bg-surface pb-10 lg:pb-40 pt-[12rem] lg:pt-[8rem]"
       >
         <BreadCrumb darkMode />
         <div className="lg:flex gap-10 lg:mt-5">
@@ -36,7 +31,10 @@ export const ExploreFix = () => {
             >
               Find & fix issues in your ML datasets
             </Typography>
-            <img src="" className="h-full w-full mt-3 lg:hidden" />
+            <img
+              src="https://a.storyblok.com/f/139616/2500x1933/a1314fefc1/explore-and-fix-issues.webp"
+              className="h-full w-full mt-3 lg:hidden"
+            />
             <Typography isDarkMode variant="body" className="mt-6">
               Supervise quality level & improvements to ensure low-error
               datasets. Simplify advanced collaboration workflows. Leverage
@@ -44,11 +42,11 @@ export const ExploreFix = () => {
               matters.
             </Typography>
 
-            <div className="lg:flex mt-20 gap-2">
+            <div className="lg:flex mt-5 lg:mt-20 gap-2">
               <Button>Request a demo</Button>
               <Button
                 darkMode
-                className="flex items-center gap-3 mb-3 lg:mb-0 group"
+                className="flex items-center gap-3 mb-3 mt-2 lg:mb-0 group"
                 variant="outline"
               >
                 Start for free
@@ -70,7 +68,7 @@ export const ExploreFix = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pt-20 gap-10 pb-40"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse pt-20 gap-10 pb-10 lg:pb-40"
         flex
         direction="row-reverse"
       >
@@ -81,7 +79,7 @@ export const ExploreFix = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             Focus review on data that matters
           </Typography>
@@ -104,7 +102,7 @@ export const ExploreFix = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pb-40 gap-10"
+        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-10"
         flex
         // direction="row-reverse"
       >
@@ -115,7 +113,7 @@ export const ExploreFix = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             Quantify quality with insights from advanced quality metrics
           </Typography>
@@ -129,7 +127,7 @@ export const ExploreFix = () => {
 
           <Button className="mt-9">Request a demo</Button>
         </div>
-        <div className="w-[90%]">
+        <div className="lg:w-[90%]">
           <img
             src="https://a.storyblok.com/f/139616/2500x1933/8289083871/quantify-quality.webp"
             className="h-full w-full object-contain"
@@ -140,7 +138,7 @@ export const ExploreFix = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pb-40 gap-3"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
         direction="row-reverse"
       >
@@ -151,7 +149,7 @@ export const ExploreFix = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             Increase data quality with programmatic error spotting
           </Typography>
@@ -163,7 +161,7 @@ export const ExploreFix = () => {
 
           <Button className="mt-9">Request a demo</Button>
         </div>
-        <div className="w-[90%]">
+        <div className="lg:w-[90%]">
           <img
             src="https://a.storyblok.com/f/139616/2500x1933/355881270f/programmatic-error-spotting-1.webp"
             className="h-full w-full object-contain"
@@ -174,7 +172,7 @@ export const ExploreFix = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pb-40 gap-3"
+        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
         flex
         // direction="row-reverse"
       >
@@ -185,18 +183,18 @@ export const ExploreFix = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             Orchestrate all your quality strategies with automated workflows
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-2 w-[80%]">
+          <Typography isDarkMode variant="body" className="mt-2 lg;w-[80%]">
             Fully automate & build custom workflows to scale your labeling
             operations.
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
         </div>
-        <div className="w-[90%]">
+        <div className="lg:w-[90%]">
           <img
             src="https://a.storyblok.com/f/139616/3000x3000/795d266d6a/kili_brand_icon_focus_dark.png"
             className="h-full w-full object-contain"
@@ -206,7 +204,7 @@ export const ExploreFix = () => {
 
       <Testimonial isDarkMode />
 
-      <Container isDarkMode background noGutter className="pb-60">
+      <Container isDarkMode background noGutter className=" pb-10 lg:pb-60">
         <Container
           as="div"
           isLightDarkMode
@@ -241,10 +239,15 @@ export const ExploreFix = () => {
 
       <Blog />
 
-      <Container isLightDarkMode background className="bg-[#162427] pb-28">
+      <Container
+        disableOverflowHidden
+        isLightDarkMode
+        background
+        className="bg-[#162427] pb-28"
+      >
         <div className="mx-auto w-fit ">
           <img src={Smilesvg} className="relative -top-24 mx-auto" />
-          <Typography variant="subdisplay" className="capitalize !text-white">
+          <Typography align="center" variant="subdisplay" className="capitalize !text-white">
             get started
           </Typography>
           <Typography variant="body" align="center" className="!text-white">

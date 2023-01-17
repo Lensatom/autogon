@@ -8,6 +8,8 @@ import { BreadCrumb } from "../../../components/BreadCrumb";
 import { PartnerCarousel } from "../../../Layouts/PartnerCarousel";
 import { Testimonial } from "../../../Layouts/Testimonial";
 import { Blog } from "../Layout/Blog";
+import Lottie from "lottie-react";
+import animationData from "../../../assets/lf30_editor_22k2biyf.json";
 
 
 export const LabelAnnotationPage = () => {
@@ -15,7 +17,11 @@ export const LabelAnnotationPage = () => {
     <>
       <Header darkMode />
 
-      <Container isDarkMode background className="bg-surface pt-1 pb-40 ">
+      <Container
+        isDarkMode
+        background
+        className="bg-surface pb-10 lg:pb-40 pt-[12rem] lg:pt-[8rem]"
+      >
         {/* <BreadCrumb darkMode /> */}
         <div className="lg:flex lg:mt-5">
           <div className="w-[95%]">
@@ -26,7 +32,10 @@ export const LabelAnnotationPage = () => {
             >
               Create training datasets fast
             </Typography>
-            <img src="" className="h-full w-full mt-3 lg:hidden" />
+            <img
+              src="https://a.storyblok.com/f/139616/2339x1666/0054abe91a/annotate-fast.webp"
+              className="h-full w-full mt-3 lg:hidden"
+            />
             <Typography isDarkMode variant="body" className="mt-6">
               Annotate all types of unstructured data rapidly and accurately
               with customizable annotation tasks & an interface optimized for
@@ -40,7 +49,7 @@ export const LabelAnnotationPage = () => {
               <Button>Request a demo</Button>
               <Button
                 darkMode
-                className="flex items-center gap-3 mb-3 lg:mb-0 group"
+                className="flex items-center gap-3 mb-3 mt-3 lg:mb-0 group"
                 variant="outline"
               >
                 Start for free
@@ -62,9 +71,8 @@ export const LabelAnnotationPage = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pt-20 pb-40 gap-3"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse pt-20 pb-40 gap-3"
         flex
-        direction="row-reverse"
       >
         <div className="w-full">
           <Typography isDarkMode variant="body" className="text-[22px]">
@@ -73,11 +81,11 @@ export const LabelAnnotationPage = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             Customizable interfaces for all your data
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 w-[80%]">
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
             Kili natively supports image, video, text, PDF documents, satellite
             imagery, and conversations. Leverage advanced UX that speeds up
             labeling and prevents tagging errors. Customize interfaces and
@@ -97,7 +105,7 @@ export const LabelAnnotationPage = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pb-40 gap-3"
+        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
         flex
         // direction="row-reverse"
       >
@@ -108,11 +116,11 @@ export const LabelAnnotationPage = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
           >
             Powerful workflows for fast & accurate annotation
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 w-[80%]">
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
             Control your labeling queue to prioritize assets, assign assets to
             specific labelers or add validation rules. Set a review pipeline to
             spot inconsistencies and send assets back to the labelers.
@@ -131,7 +139,7 @@ export const LabelAnnotationPage = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pb-40 gap-3"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
         direction="row-reverse"
       >
@@ -142,11 +150,11 @@ export const LabelAnnotationPage = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
           >
             Automation tools to speed-up labeling
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 w-[80%]">
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
             Apply interactive segmentation and tracking to accelerate labeling
             without compromising quality. Leverage your own-model predictions to
             pre-label. Use active learning to focus on human labeling and review
@@ -166,7 +174,7 @@ export const LabelAnnotationPage = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface pb-40 gap-3"
+        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
         flex
         // direction="row-reverse"
       >
@@ -177,11 +185,11 @@ export const LabelAnnotationPage = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
+            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
           >
             Analytics & Reporting
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 w-[80%]">
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
             Monitor your collaborative data labeling projects to ensure project
             progress and label accuracy at scale. Diagnose productivity and
             quality problems, and take corrective action.
@@ -199,7 +207,7 @@ export const LabelAnnotationPage = () => {
 
       <Testimonial isDarkMode />
 
-      <Container isDarkMode background noGutter className="pb-60">
+      <Container isDarkMode background noGutter className="pb-10 lg:pb-60">
         <Container
           as="div"
           isLightDarkMode
@@ -227,23 +235,36 @@ export const LabelAnnotationPage = () => {
             </Button>
           </div>
           <div className="w-full">
-            <img src={SOCIcon} className="h-full w-full object-contain" />
+            <Lottie
+              animationData={animationData}
+              loop
+              className="h-80 mx-auto w-80"
+            />
           </div>
         </Container>
       </Container>
 
       <Blog />
 
-      <Container isLightDarkMode background className="bg-[#162427] pb-28">
+      <Container
+        disableOverflowHidden
+        isLightDarkMode
+        background
+        className="bg-[#162427] pb-28"
+      >
         <div className="mx-auto w-fit ">
           <img src={Smilesvg} className="relative -top-24 mx-auto" />
-          <Typography variant="subdisplay" className="capitalize !text-white">
+          <Typography
+            variant="subdisplay"
+            align="center"
+            className="capitalize !text-white"
+          >
             get started
           </Typography>
           <Typography variant="body" align="center" className="!text-white">
             Get started! Build better data, now.
           </Typography>
-          <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
+          <div className="flex mx-auto w-fit gap-2 lg:gap-2 mt-16 mb-8 lg:mb-0">
             <Button>Request a demo</Button>
             <Button
               darkMode

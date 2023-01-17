@@ -27,8 +27,8 @@ export const Blog = () => {
   ];
 
   return (
-    <Container isDarkMode background>
-      <div className="w-[80%] mx-auto pb-20">
+    <Container isDarkMode background className="pt-5">
+      <div className="lg:w-[80%] mx-auto pb-20">
         <Typography
           isDarkMode
           align="center"
@@ -41,13 +41,13 @@ export const Blog = () => {
           isDarkMode
           align="center"
           variant="body"
-          className="w-[60%] mx-auto mt-5"
+          className="lg:w-[60%] mx-auto mt-5"
         >
           Discover how Kili is helping companies in different sectors build
           responsible, effective AI on a foundation of good data.
         </Typography>
       </div>
-      <div className="mt-10 w-[50rem] mx-auto pb-10">
+      <div className="mt-10 lg:w-[50rem] mx-auto pb-10">
         {blogs.map((blog, index) => (
           <MiniCard key={index} {...blog} />
         ))}

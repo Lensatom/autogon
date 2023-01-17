@@ -1,15 +1,20 @@
+import classNames from "classnames";
 import { Container, Typography } from "../components";
 
 interface PartnerCarouselProps {
   darkMode?: boolean;
   title?: string;
   subtitle?: string;
+  carouselContainerClassName?: string;
+  titleClassName?: string;
 }
 
 export const PartnerCarousel = ({
   darkMode,
   title = "They trust us on their data-centric journey",
   subtitle,
+  carouselContainerClassName,
+  titleClassName,
 }: PartnerCarouselProps) => {
   let brands = [
     {
@@ -71,7 +76,10 @@ export const PartnerCarousel = ({
         variant="title"
         isDarkMode={darkMode}
         align="center"
-        className="lg:text-[3rem] text-[2.5rem] leading-[110%]"
+        className={classNames(
+          "lg:text-[3rem] text-[2.5rem] leading-[110%]",
+          titleClassName
+        )}
       >
         {title}
       </Typography>
@@ -90,13 +98,16 @@ export const PartnerCarousel = ({
         isDarkMode={darkMode}
         noGutter
         as="div"
-        className="bg-white overflow-x-hidden flex mt-16 h-[12.5rem]"
+        className={classNames(
+          "bg-white overflow-x-hidden flex mt-5 lg:mt-16 h-[128px] lg:h-[12.5rem]",
+          carouselContainerClassName
+        )}
       >
         <div className="h-full flex animate-marquee whitespace-nowrap items-center">
           {brands.map((item) => (
             <img
               src={darkMode ? item.dark : item.light}
-              className="mr-[9.375rem] h-[4.0625rem]"
+              className="lg:mr-[9.375rem] mr-[4rem] h-[4.0625rem]"
             />
           ))}
         </div>

@@ -4,15 +4,21 @@ export type MenuDrawerProps = {
     name: string;
     link: string;
     hover: boolean;
+    menu?: any
   };
   navLinks: MenuDrawerProps["navLink"][];
-  onClick: () => void;
+  dark?: boolean;
+  isShowing?: boolean
 };
 
 export type BenefitCardProps = {
   className?: string;
   position: string;
   children?: any;
+  contents: string[];
+  src: string;
+  active: boolean;
+  onClick: () => void
 };
 
 export type BlogCardProps = {
