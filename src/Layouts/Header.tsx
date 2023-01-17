@@ -2,13 +2,9 @@ import { Button, Container, Typography } from "../components";
 import DarkLogo from "../assets/logo/svg.svg";
 import Logo from "../assets/logo/light-logo.svg";
 import cn from "classnames";
-import { Transition } from "@headlessui/react";
 import { forwardRef, Fragment, useState } from "react";
-
-import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { MenuDrawerProps, NavLinks, NavMenus } from "../interfaces";
 import { useHover } from "../hooks/useHover.js";
-import { useWindowScrollPositions } from "../hooks/useWindowScroll";
 import { Link, useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 

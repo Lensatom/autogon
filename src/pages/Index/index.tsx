@@ -21,9 +21,9 @@ import Draggable from "react-draggable";
 import { useState } from "react";
 import { Pagination } from "swiper";
 
-const BenefitCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
+const BenefitCard = ({ className, position, contents, src, active, onClick, bounds }: BenefitCardProps) => {
   return (
-    <Draggable bounds={{ top: -350, left: -200, right: 800, bottom: 800 }}>
+    <Draggable bounds={bounds}>
       <div
         onClick={onClick}
         className={cn(
@@ -274,6 +274,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 1}
               onClick={() => setActive(1)}
+              bounds={{ top: -350, left: -200, right: 800, bottom: 800 }}
               src="https://a.storyblok.com/f/139616/160x160/9a8818c603/ml-engineer.png"
               position="ML Engineers"
               className="left-40"
@@ -285,6 +286,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 2}
               onClick={() => setActive(2)}
+              bounds={{ top: -580, left: -200, right: 800, bottom: 600 }}
               src="https://a.storyblok.com/f/139616/160x160/c468ab2a8f/product-leaders.jpg"
               className="top-52 left-40"
               position="Project Leaders"
@@ -295,6 +297,7 @@ export const LandingPage = () => {
             />
             <BenefitCard
               active={active === 3}
+              bounds={{ top: -720, left: -200, right: 800, bottom: 410 }}
               onClick={() => setActive(3)}
               src="https://a.storyblok.com/f/139616/160x160/ead56e9b1f/it-leader.png"
               className="top-[25rem] left-40"
@@ -308,6 +311,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 4}
               onClick={() => setActive(4)}
+              bounds={{ top: -350, left: -200, right: 800, bottom: 220 }}
               src="https://a.storyblok.com/f/139616/160x160/d782b4acd8/cxo.png"
               className="top-[37rem] left-40"
               position="CXOs"
@@ -321,6 +325,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 5}
               onClick={() => setActive(5)}
+              bounds={{ top: -350, left: -200, right: 800, bottom: 800 }}
               src="https://a.storyblok.com/f/139616/160x160/b37814d5df/project-managers.jpg"
               position="Project Managers"
               contents={[
@@ -331,6 +336,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 6}
               onClick={() => setActive(6)}
+              bounds={{ top: -580, left: -200, right: 800, bottom: 600 }}
               src="https://a.storyblok.com/f/139616/160x160/8343df36fa/ai-leaders.jpg"
               className="top-52"
               position="AI Leaders"
@@ -343,6 +349,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 7}
               onClick={() => setActive(7)}
+              bounds={{ top: -720, left: -200, right: 800, bottom: 410 }}
               src="https://a.storyblok.com/f/139616/160x160/256be6f7e1/ml-engineers.jpg"
               className="top-[25rem]"
               position="Data Scientists"

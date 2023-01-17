@@ -12,7 +12,8 @@ export type BenefitCardProps = {
   contents: string[];
   src: string;
   active: boolean;
-  onClick: () => void
+  onClick: () => void,
+  bounds?: { top?: number, left?: number, right?: number, bottom?: number }
 };
 
 export type BlogCardProps = {

@@ -18,18 +18,23 @@ export const Footer = ({ darkMode }: FooterProps) => {
       },
       {
         name: "Label & Annotate",
+        link: "/platform/label-annotate",
       },
       {
         name: "Explore & Fix",
+        link: "/platform/explore-and-fix",
       },
       {
         name: "Integrate & Automate",
+        link: "/platform/integrate-automate",
       },
       {
         name: "Professional Services",
+        link: "/professional-services",
       },
       {
         name: "Plan & Features",
+        link: "pricing",
       },
     ],
   };
