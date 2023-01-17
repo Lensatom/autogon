@@ -52,7 +52,7 @@ const MenuLinks = ({
                 </Typography>
               </HashLink>
             ) : (
-              <Link to={nav.link} reloadDocument>
+              <Link to={nav.link}>
                 <Typography
                   variant="link"
                   isDarkMode={dark}
@@ -109,7 +109,7 @@ const PopoverMenu = forwardRef<
           >
             <path
               d="M14.7321 1C13.9622 -0.333333 12.0378 -0.333332 11.2679 1L0.875645 19C0.105845 20.3333 1.0681 22 2.6077 22L23.3923 22C24.9319 22 25.8942 20.3333 25.1244 19L14.7321 1Z"
-              fill="#ffffff"
+              fill={dark ? "#081819" : "#ffffff"}
             ></path>
           </svg>
         </div>
@@ -422,7 +422,6 @@ const MenuItem = forwardRef<
 const MenuDrawer = ({ navLinks, dark, isShowing }: MenuDrawerProps) => {
   const [active, setActive] = useState<any>();
 
-
   return (
     <div
       className={cn(
@@ -450,9 +449,10 @@ const MenuDrawer = ({ navLinks, dark, isShowing }: MenuDrawerProps) => {
               >
                 {nav?.name}
               </Typography>
-              {typeof nav?.menu?.length !== "undefined" && active === nav.id && (
-                <PopoverMenu dark={dark} noAbsolute menus={nav?.menu ?? []} />
-              )}
+              {typeof nav?.menu?.length !== "undefined" &&
+                active === nav.id && (
+                  <PopoverMenu dark={dark} noAbsolute menus={nav?.menu ?? []} />
+                )}
             </li>
           ))}
         </ul>
