@@ -1,14 +1,8 @@
 export type MenuDrawerProps = {
-  navLink?: {
-    id: string;
-    name: string;
-    link: string;
-    hover: boolean;
-    menu?: any
-  };
-  navLinks: MenuDrawerProps["navLink"][];
+  navLink?: NavLinks;
+  navLinks: MenuDrawerProps["navLink"];
   dark?: boolean;
-  isShowing?: boolean
+  isShowing?: boolean;
 };
 
 export type BenefitCardProps = {
@@ -39,3 +33,20 @@ export type TestimonialProps = {
   positionandcompany: string;
   isDark?: boolean;
 };
+
+export type NavMenus = {
+  title?: string;
+  links?: {
+    name?: string;
+    link?: string;
+    hash?: boolean;
+  }[];
+};
+
+export type NavLinks = {
+  id: string;
+  name: string;
+  link?: string;
+  hover?: boolean;
+  menu?: NavMenus[];
+}[];

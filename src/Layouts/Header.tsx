@@ -6,7 +6,7 @@ import { Transition } from "@headlessui/react";
 import { forwardRef, Fragment, useState } from "react";
 
 import { Bars2Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { MenuDrawerProps } from "../interfaces";
+import { MenuDrawerProps, NavLinks, NavMenus } from "../interfaces";
 import { useHover } from "../hooks/useHover.js";
 import { useWindowScrollPositions } from "../hooks/useWindowScroll";
 import { Link, useNavigate } from "react-router-dom";
@@ -74,10 +74,10 @@ const MenuLinks = ({
 const PopoverMenu = forwardRef<
   any,
   {
-    menus: any;
+    menus: NavMenus[];
     isHovering?: boolean;
     dark?: boolean;
-    noAbsolute?: boolean
+    noAbsolute?: boolean;
   }
 >(({ menus, isHovering, dark, noAbsolute }, ref) => {
   return (
@@ -113,12 +113,12 @@ const PopoverMenu = forwardRef<
             ></path>
           </svg>
         </div>
-        {menus.map((menu, index) => (
+        {menus?.map?.((menu, index) => (
           <MenuLinks
             dark={dark}
             key={index}
-            links={menu.links}
-            title={menu.title}
+            links={menu?.links ?? []}
+            title={menu?.title ?? ""}
           />
         ))}
         <Container
@@ -152,7 +152,7 @@ interface HeaderProps {
 export const Header = ({ darkMode }: HeaderProps) => {
   const [isShowing, setIsShowing] = useState(false);
 
-  let navLinks = [
+  let navLinks: NavLinks = [
     {
       id: "1",
       name: "products",
@@ -292,7 +292,6 @@ export const Header = ({ darkMode }: HeaderProps) => {
             navLinks,
             isShowing,
             dark: darkMode,
-            onClick: () => setIsShowing((isShowing) => false),
           }}
         />
 
@@ -317,7 +316,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
                 id={nav?.name}
                 menu={nav?.menu ?? []}
                 name={nav.name}
-                hover={nav.hover}
+                hover={nav?.hover ?? false}
                 link={nav.link}
                 dark={darkMode}
               />
@@ -436,7 +435,7 @@ const MenuDrawer = ({ navLinks, dark, isShowing }: MenuDrawerProps) => {
     >
       <div className="flex flex-col h-5/6 justify-between">
         <ul>
-          {navLinks.map((nav) => (
+          {navLinks?.map?.((nav) => (
             <li
               className={cn("py-3", { "mt-32": nav?.id === "1" })}
               key={nav?.id}
