@@ -1,6 +1,6 @@
 import { Button, Container, Typography } from "../components";
-import DarkLogo from "../assets/logo/svg.svg";
-import Logo from "../assets/logo/light-logo.svg";
+import DarkLogo from "../assets/logo/Autogon-logo.png";
+import Logo from "../assets/logo/Autogon-logo-light.png";
 import cn from "classnames";
 import { forwardRef, Fragment, useState } from "react";
 import { MenuDrawerProps, NavLinks, NavMenus } from "../interfaces";

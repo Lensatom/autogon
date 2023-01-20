@@ -1,6 +1,6 @@
 import { useRoutes } from "react-router-dom";
 import { PlatformPage } from "./pages/Platform";
-import { LabelAnnotationPage } from "./pages/LabelAnnotation";
+import { LabelAnnotation } from "./pages/LabelAutomate";
 import { ExploreFix } from "./pages/ExploreFix";
 import { IntegrateAutomate } from "./pages/integrateAutomate";
 
@@ -11,8 +11,8 @@ export const Platform = () => {
       element: <PlatformPage />,
     },
     {
-      path: "label-annotate",
-      element: <LabelAnnotationPage />,
+      path: "label-annotate/*",
+      element: <LabelAnnotation />,
     },
     {
       path: "explore-and-fix",

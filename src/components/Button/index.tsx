@@ -46,7 +46,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         {...rest}
         ref={ref}
-        className={classNames(`px-6 py-5 text-neutral rounded-full text-[16px] font-inter leading-4 -tracking-[0.16px]`, className, {
+        className={classNames(`px-6 py-5 text-neutral rounded-full text-[16px] font-inter leading-4 -tracking-[0.16px] group`, className, {
           [colors[color].container.dark]: darkMode,
           [colors.primary['container'].light]: !darkMode
         })}

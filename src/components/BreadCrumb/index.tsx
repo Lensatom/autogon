@@ -3,13 +3,17 @@ import { Typography } from "../Typography";
 import { BsSlash } from "react-icons/bs";
 import cn from "classnames";
 
+type BreadCrumbType = {
+  className?: string;
+  darkMode?: boolean;
+  info?: string
+};
+
 export const BreadCrumb = ({
   className = "",
   darkMode,
-}: {
-  className?: string;
-  darkMode?: boolean;
-}) => {
+  info
+}: BreadCrumbType) => {
   const location = useLocation();
 
   let array_pathname = location.pathname.split("/");
@@ -26,7 +30,7 @@ export const BreadCrumb = ({
           <Typography
             isDarkMode={darkMode}
             variant="link"
-            className="!text-primary "
+            className="!text-primary border-b border-primary"
           >
             Home
           </Typography>
@@ -38,17 +42,29 @@ export const BreadCrumb = ({
           />
         </li>
         {array_pathname.map((item, i) => (
-          <li key={i} className="flex items-center">
-            <Typography
-              isDarkMode={darkMode}
-              variant="link"
-              className={cn("capitalize", {
-                "hover:no-underline cursor-default":
-                  array_pathname.length === i + 1,
+          <li key={i} className={cn("flex items-center", {})}>
+            <div
+              className={cn("", {
+                "border-b border-primary ":
+                  i < array_pathname.length && array_pathname.length !== i + 1,
               })}
             >
-              {item}
-            </Typography>
+              <Typography
+                isDarkMode={darkMode}
+                variant="link"
+                className={cn("capitalize", {
+                  "hover:no-underline cursor-default":
+                    array_pathname.length === i + 1,
+                  "text-primary pb-1":
+                    i < array_pathname.length &&
+                    array_pathname.length !== i + 1,
+                })}
+              >
+                {array_pathname.length === i && typeof info === "string"
+                  ? info
+                  : item}
+              </Typography>
+            </div>
             {array_pathname.length > i + 1 && (
               <BsSlash
                 className={cn("h-6 w-6", {
@@ -57,7 +73,7 @@ export const BreadCrumb = ({
                 })}
               />
             )}
-            {array_pathname.length === i + 1 && (
+            {array_pathname.length === i + 1 && typeof info !== "string" && (
               <Typography
                 isDarkMode={darkMode}
                 variant="link"

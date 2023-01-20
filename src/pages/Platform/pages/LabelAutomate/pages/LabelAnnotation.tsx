@@ -1,15 +1,15 @@
-import { Button, Container, Typography } from "../../../components";
-import { Header } from "../../../Layouts/Header";
+import { Button, Container, Typography } from "../../../../../components";
+import { Header } from "../../../../../Layouts/Header";
 import SOCIcon from "../../../assets/soc-2.png.png";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
-import Smilesvg from "../../../assets/kili-icon-dark-mode.svg.svg";
-import { Footer } from "../../../Layouts/Footer";
-import { BreadCrumb } from "../../../components/BreadCrumb";
-import { PartnerCarousel } from "../../../Layouts/PartnerCarousel";
-import { Testimonial } from "../../../Layouts/Testimonial";
-import { Blog } from "../Layout/Blog";
+import Smilesvg from "../../../../../assets/kili-icon-dark-mode.svg.svg";
+import { Footer } from "../../../../../Layouts/Footer";
+import { BreadCrumb } from "../../../../../components/BreadCrumb";
+import { PartnerCarousel } from "../../../../../Layouts/PartnerCarousel";
+import { Testimonial } from "../../../../../Layouts/Testimonial";
+import { Blog } from "../../../Layout/Blog";
 import Lottie from "lottie-react";
-import animationData from "../../../assets/lf30_editor_22k2biyf.json";
+import animationData from "../../../../../assets/lf30_editor_22k2biyf.json";
 
 
 export const LabelAnnotationPage = () => {

@@ -11,6 +11,9 @@ export type Justify =
 export type Align = "start" | "end" | "center" | "baseline" | "stretch";
 
 export type Row = "row" | "col" | "col-reverse" | "row-reverse";
+export type Columns = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12"
+export type Rows = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12"
+  
 
 type PolymorphicAsProps<E extends ElementType> = {
   as?: E | keyof HTMLElementTagNameMap;
@@ -26,6 +29,9 @@ type PolymorphicAsProps<E extends ElementType> = {
   background?: boolean;
   isLightDarkMode?: boolean;
   disableOverflowHidden?: boolean;
+  grid?: boolean,
+  columns?: Columns,
+  rows?: Rows
 };
 
 export type ContainerProps<E extends ElementType> = PolymorphicAsProps<E> &

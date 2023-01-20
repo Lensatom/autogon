@@ -2,7 +2,7 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import { Avatar, Button, Container, Typography } from "../../components";
 import { Header } from "../../Layouts/Header";
 import { HeroPage } from "./Layouts/Hero";
-import Smilesvg from "../../assets/logo/kili-smile.svg.png";
+import Smilesvg from "../../assets/logo/Autogon-logo-light.png";
 import cn from "classnames";
 import { BenefitCardProps } from "../../interfaces";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -547,7 +547,7 @@ export const LandingPage = () => {
 
       <Container disableOverflowHidden className="bg-[#162427] pb-28">
         <div className="mx-auto w-fit ">
-          <img src={Smilesvg} className="relative -top-24 mx-auto" />
+          <img src={Smilesvg} className="relative -top-6 mx-auto h-20 w-20 mb-10" />
           <Typography variant="subdisplay" className="capitalize !text-white">
             get started
           </Typography>

@@ -1,6 +1,6 @@
 import { Container, Typography } from "../components";
-import Logo from "../assets/logo/svg.svg";
-import DarkLogo from "../assets/logo/svg.png";
+import Logo from "../assets/logo/Autogon-logo.png";
+import DarkLogo from "../assets/logo/Autogon-logo-light.png";
 import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter, FaYoutube, FaSlack } from "react-icons/fa";
 import cn from "classnames";
 import { FooterLinks } from "../components/FooterLinks";
@@ -49,6 +49,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
       },
       {
         name: "Text annotation tool",
+        link: "/platform/label-annotate/nlp-text-annotation-tool",
       },
       {
         name: "Audio transcription tool",
@@ -112,10 +113,10 @@ export const Footer = ({ darkMode }: FooterProps) => {
       <div className="w-[40rem] h-full mt-16 lg:mt-0">
         <img
           src={darkMode ? DarkLogo : Logo}
-          className="h-[40.47px] font-roboto font-bold select-none"
+          className="h-[48.47px] font-roboto font-bold select-none"
         />
-        <Typography isDarkMode={darkMode} variant="caption" className="mt-1">
-          KILI TECHNOLOGY © 2022
+        <Typography isDarkMode={darkMode} variant="caption" className="mt-2">
+          Autogon © {new Date().getFullYear()}
         </Typography>
       </div>
       <div className="flex gap-x-20 lg:gap-y-12 gap-6 mt-5 lg:mt-0 flex-wrap">
