@@ -20,40 +20,41 @@ import { PartnerCarousel } from "../../Layouts/PartnerCarousel";
 import Draggable from "react-draggable";
 import { useState } from "react";
 import { Pagination } from "swiper";
+import { BenefitCard } from "./components/BenefitCard";
 
-const BenefitCard = ({ className, position, contents, src, active, onClick, bounds }: BenefitCardProps) => {
-  return (
-    <Draggable bounds={bounds}>
-      <div
-        onClick={onClick}
-        className={cn(
-          "h-[35rem] w-[28rem] rounded-6xl bg-[#EAEEE2]  p-12 absolute shadow-4xl cursor-move select-none",
-          className,
-          { "bg-[#B090EF] z-30": active }
-        )}
-      >
-        <div className="h-full relative">
-          <Avatar src={src} sizes={75} />
-          <Typography variant="title" className="mt-3 font-extrabold">
-            {position}
-          </Typography>
-          <div className="mt-2">
-            <ul className="list-disc">
-              {contents.map((content, index) => (
-                <li key={index}>
-                  <Typography className="my-2" variant="body">
-                    {content}
-                  </Typography>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-        <Button className="absolute bottom-10">Request a Demo</Button>
-      </div>
-    </Draggable>
-  );
-};
+// const BenefitCard = ({ className, position, contents, src, active, onClick, bounds }: BenefitCardProps) => {
+//   return (
+//     <Draggable bounds={bounds}>
+//       <div
+//         onClick={onClick}
+//         className={cn(
+//           "h-[35rem] w-[28rem] rounded-6xl bg-[#EAEEE2]  p-12 absolute shadow-4xl cursor-move select-none",
+//           className,
+//           { "bg-[#B090EF] z-30": active }
+//         )}
+//       >
+//         <div className="h-full relative">
+//           <Avatar src={src} sizes={75} />
+//           <Typography variant="title" className="mt-3 font-extrabold">
+//             {position}
+//           </Typography>
+//           <div className="mt-2">
+//             <ul className="list-disc">
+//               {contents.map((content, index) => (
+//                 <li key={index}>
+//                   <Typography className="my-2" variant="body">
+//                     {content}
+//                   </Typography>
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+//         </div>
+//         <Button className="absolute bottom-10">Request a Demo</Button>
+//       </div>
+//     </Draggable>
+//   );
+// };
 const BenefitMobileCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
   return (
       <div
@@ -126,7 +127,7 @@ export const LandingPage = () => {
         </div>
       </Container>
 
-      <PartnerCarousel />
+      <PartnerCarousel title="Join an elite group of companies revolutionizing their industries with our AI/ML solutions" />
 
       <Container className="bg-neutral py-10 lg:py-20 pb-32">
         <Typography
@@ -134,17 +135,16 @@ export const LandingPage = () => {
           align="center"
           className="!text-white mb-4"
         >
-          Integrate quickly
+          Generate AI models in minutes
         </Typography>
         <Typography
           variant="body"
           align="center"
           className="!text-white lg:w-[59%] mx-auto mb-[56px]"
         >
-          urn your Machine Learning workflow in a Data-centric AI workflow
-          within 5 minutes. Integrate high-quality training data selection, data
-          labeling and data annotation in your ML workflow with 5 lines of code.
-          Annotate all data types in fast iteration cycles.
+          Autogon makes the process of building, evaluating, and deploying
+          machine learning models more efficient, enabling companies to quickly
+          build models and put them into production.
         </Typography>
 
         <div>
@@ -168,13 +168,13 @@ export const LandingPage = () => {
       >
         <div className="w-full">
           <Typography variant="header" className="font-semibold">
-            Create training datasets fast
+            Predictive modeling
           </Typography>
           <Typography variant="body" className="mt-8 w-[80%]">
-            Annotate all types of unstructured data rapidly and accurately with
-            customizable annotation tasks & an interface optimized for
-            productivity & quality. Automate labeling to save time with smart
-            tools & model predictions.
+            Autogon is used to create predictive models to predict future
+            outcomes based on historical data. It can be used in a variety of
+            industries, such as finance, healthcare, and retail, to predict
+            customer behavior, identify fraud, and forecast demand.
           </Typography>
           <Typography variant="link" className="text-sm mt-9 !font-extrabold ">
             Learn more
@@ -193,12 +193,11 @@ export const LandingPage = () => {
       >
         <div className="w-full">
           <Typography variant="header" className="font-semibold">
-            Find & fix issues in your ML datasets
+            Anomaly detection
           </Typography>
           <Typography variant="body" className="mt-8 w-[85%]">
-            Supervise quality level & improvements to ensure low-error datasets.
-            Simplify advanced collaboration workflows. Leverage programmatic QA.
-            Explore your datasets and identify the data that matters.
+            Autogon can be used to detect anomalies in data, which can be used
+            to identify fraud, network intrusions, or other unusual behavior.
           </Typography>
           <Typography variant="link" className="text-sm mt-9 !font-extrabold ">
             Learn more
@@ -217,12 +216,12 @@ export const LandingPage = () => {
       >
         <div className="w-full">
           <Typography variant="header" className="font-semibold">
-            Simplify your LabelingOps
+            Time series forecasting
           </Typography>
           <Typography variant="body" className="mt-8 w-[90%]">
-            Integrate natively with your ML stack, easily orchestrate your data
-            pipeline, structure projects & user management, and manage the
-            entire data lifecycle of your ML project on Kili.
+            Autogon can be used to analyse time series data and make predictions
+            about future trends. This can be used in industries such as finance
+            and logistics to forecast demand and make better business decisions.
           </Typography>
           <Typography variant="link" className="text-sm mt-9 !font-extrabold ">
             Learn more
@@ -241,15 +240,12 @@ export const LandingPage = () => {
       >
         <div className="w-full">
           <Typography variant="header" className="font-semibold">
-            Augment your team
+            Artificial Intelligence for Creatives
           </Typography>
           <Typography variant="body" className="mt-8 w-[85%]">
-            Get ahead of the game with expert labeling workforce. Strengthen
-            your project management & ML teams with Kili experts.
+            Get ahead of the game with Autpgon’s cutting edge AI models.
           </Typography>
-          <Button className="flex items-center gap-3 mt-9">
-            Talk to sales
-          </Button>
+          <Button className="flex items-center gap-3 mt-9">Chat to us.</Button>
         </div>
         <div className="w-full">
           <Lottie
@@ -266,7 +262,7 @@ export const LandingPage = () => {
           align="center"
           className="lg:w-[80%] mx-auto font-extrabold"
         >
-          See how Kili can help you in your role
+          You can use Autogon if you are a
         </Typography>
 
         <div className="grid-cols-2 mt-32 justify-center hidden lg:grid">
@@ -547,7 +543,10 @@ export const LandingPage = () => {
 
       <Container disableOverflowHidden className="bg-[#162427] pb-28">
         <div className="mx-auto w-fit ">
-          <img src={Smilesvg} className="relative -top-6 mx-auto h-20 w-20 mb-10" />
+          <img
+            src={Smilesvg}
+            className="relative -top-6 mx-auto h-20 w-20 mb-10"
+          />
           <Typography variant="subdisplay" className="capitalize !text-white">
             get started
           </Typography>

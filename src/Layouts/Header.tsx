@@ -271,9 +271,8 @@ export const Header = ({ darkMode }: HeaderProps) => {
           align="center"
           className="uppercase lg:text-left"
         >
-          Interested to learn how SAP trains ML for Document Information
-          Extraction Application? Join our upcoming webinar with SAP's Principal
-          Data Scientist to discover it.
+          Interested in keeping updated with our latest advancement and
+          research, join our community.
         </Typography>
         <Typography
           variant="caption"
