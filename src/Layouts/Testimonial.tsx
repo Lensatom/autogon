@@ -50,40 +50,40 @@ export const Testimonial = ({ isDarkMode }: TestimonialType) => {
   let testimonials = [
     {
       comment:
-        "Kili's customer support is best in-class. We solve issues much faster and their training data platform has a direct impact on our performance.",
-      name: "Andrea Colonna",
+        '"Autogon has been a game changer for our company. Their AI/ML solutions have allowed us to automate processes and gain insights that were previously impossible. Their team of experts provided invaluable guidance throughout the entire process, and we are seeing significant improvements in efficiency and accuracy. We highly recommend Autogon to any company looking to take their business to the next level."',
+      name: "John",
       img: "https://a.storyblok.com/f/139616/800x800/1937b81e0c/jellysmack2.jpeg",
-      positionandcompany: "Head of Data, Jellysmack",
+      positionandcompany: "CEO of Fictitious Company A",
     },
     {
       comment:
-        "Great companies like Kili Technology, [...] have already adopted this data-centric AI approach.",
-      name: "Andrew Ng",
+        "\"As a small business, we were hesitant to invest in AI/ML solutions, but Autogon has exceeded our expectations. Their platform is easy to use and their team provided all the support we needed to get up and running quickly. The results have been amazing - we're seeing significant increases in revenue and customer satisfaction. We couldn't be happier with our choice to work with Autogon.\"",
+      name: "Jane",
       img: "https://a.storyblok.com/f/139616/398x398/e888674f6a/andrew.jpeg",
       positionandcompany: "Data-centric AI Influencer",
     },
     {
       comment:
-        "Kili, the training data platform, is bringing added value in the management of our projects and this is quality.",
-      name: "Gilles Henaff",
+        '"Autogon\'s AI/ML solutions have been a huge asset to our organization. Their platform has allowed us to gain insights that have led to new business opportunities and increased efficiency. The team at Autogon provided excellent support and guidance throughout the entire process. We highly recommend Autogon to any company looking to stay ahead of the competition."',
+      name: "Michael",
       img: "https://a.storyblok.com/f/139616/500x500/3dd69add65/thales.jpeg",
-      positionandcompany: "Head of AI, Thales Las France",
+      positionandcompany: "CTO of Fictitious Company C",
     },
-    {
-      comment:
-        "Kili enables us to improve our models’ performance and scale our AI projects as fast as our business needs.",
-      name: "Andrea Colonna",
-      img: "https://a.storyblok.com/f/139616/800x800/1937b81e0c/jellysmack2.jpeg",
-      positionandcompany: "Head of Data, Jellysmack",
-    },
-    {
-      comment:
-        "We are very satisfied with our collaboration with Kili. We saw a performance improvement of our model of 3.5%",
-      name: "Marie de Léséleuc",
-      img: "https://a.storyblok.com/f/139616/460x460/5e38951100/eidos.jpeg",
-      positionandcompany:
-        "Director of Analytics and Data Science, Eidos-Montréal",
-    },
+    // {
+    //   comment:
+    //     "Kili enables us to improve our models’ performance and scale our AI projects as fast as our business needs.",
+    //   name: "Andrea Colonna",
+    //   img: "https://a.storyblok.com/f/139616/800x800/1937b81e0c/jellysmack2.jpeg",
+    //   positionandcompany: "Head of Data, Jellysmack",
+    // },
+    // {
+    //   comment:
+    //     "We are very satisfied with our collaboration with Kili. We saw a performance improvement of our model of 3.5%",
+    //   name: "Marie de Léséleuc",
+    //   img: "https://a.storyblok.com/f/139616/460x460/5e38951100/eidos.jpeg",
+    //   positionandcompany:
+    //     "Director of Analytics and Data Science, Eidos-Montréal",
+    // },
   ];
 
   return (

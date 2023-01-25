@@ -275,8 +275,7 @@ export const LandingPage = () => {
               position="ML Engineers"
               className="left-40"
               contents={[
-                "Industrialize data labeling via cross team collaboration and production of quality data to feed your models.",
-                "Ship more successful projects in less time with the simple UX of our training data platform, smooth workflows and the ability to handle any and all data.",
+                "Autogon can be used by ML engineers to quickly build and test models, as well as deploy them into production. It also allows for easy monitoring and management of deployed models, which can help ML engineers to ensure that models are performing as expected",
               ]}
             />
             <BenefitCard
@@ -285,10 +284,9 @@ export const LandingPage = () => {
               bounds={{ top: -580, left: -200, right: 800, bottom: 600 }}
               src="https://a.storyblok.com/f/139616/160x160/c468ab2a8f/product-leaders.jpg"
               className="top-52 left-40"
-              position="Project Leaders"
+              position=" Executives and Analytics Leaders"
               contents={[
-                "Improve performance of AI projects and ship successful projects on time with our training data platform by using data to unlock and harness the expertise already present in your business.",
-                "Mitigate the risk of running an unreliable and unethical AI.",
+                "Executives and analytics leaders can use Autogon to gain insights from their data and make data-driven decisions. The platform's ability to automate the machine learning process can also help organizations to become more efficient and effective.",
               ]}
             />
             <BenefitCard
@@ -297,14 +295,12 @@ export const LandingPage = () => {
               onClick={() => setActive(3)}
               src="https://a.storyblok.com/f/139616/160x160/ead56e9b1f/it-leader.png"
               className="top-[25rem] left-40"
-              position="IT Leaders"
+              position="Software Engineers"
               contents={[
-                "Build the data labeling infrastructure that can support scale with total security.",
-                "Ensure data security and governance: sensitive data is protected.",
-                "Simplify and rationalize your AI & data tech stack.",
+                "Software engineers can use Autogon to deploy machine learning models into production quickly and easily. The platform also allows for easy integration with other systems and applications.",
               ]}
             />
-            <BenefitCard
+            {/* <BenefitCard
               active={active === 4}
               onClick={() => setActive(4)}
               bounds={{ top: -350, left: -200, right: 800, bottom: 220 }}
@@ -315,7 +311,7 @@ export const LandingPage = () => {
                 "Improve performance of AI projects and ship successful projects on time by using data to unlock and harness the expertise already present in your business.",
                 "Mitigate the risk of running an unreliable and unethical AI.",
               ]}
-            />
+            /> */}
           </div>
           <div className="relative">
             <BenefitCard
@@ -323,10 +319,9 @@ export const LandingPage = () => {
               onClick={() => setActive(5)}
               bounds={{ top: -350, left: -200, right: 800, bottom: 800 }}
               src="https://a.storyblok.com/f/139616/160x160/b37814d5df/project-managers.jpg"
-              position="Project Managers"
+              position="Data Scientists"
               contents={[
-                "Facilitate intuitive collaboration on our training data platform between business experts and tech teams to produce quality data.",
-                "Manage resources within a smooth & controlled process and integrate different users, including non-technical, at the right moment for maximum impact.",
+                "Autogon allows data scientists to quickly and easily build and test machine learning models, without the need for extensive coding. This can save data scientists time and effort and allow them to focus on more complex modeling tasks.",
               ]}
             />
             <BenefitCard
@@ -335,14 +330,12 @@ export const LandingPage = () => {
               bounds={{ top: -580, left: -200, right: 800, bottom: 600 }}
               src="https://a.storyblok.com/f/139616/160x160/8343df36fa/ai-leaders.jpg"
               className="top-52"
-              position="AI Leaders"
+              position="Business Analysts"
               contents={[
-                "Industrialize data labeling via cross team collaboration and production of quality data to feed models.",
-                "Gain control over data spread across your organisation and simplify the model training iteration loop.",
-                "Free your teams from the low value task of labeling with our training data platform",
+                "Business analysts can use Autogon to quickly create predictive models to support business decisions. The platform's automated machine learning capabilities allow analysts to build models without needing deep technical expertise.",
               ]}
             />
-            <BenefitCard
+            {/* <BenefitCard
               active={active === 7}
               onClick={() => setActive(7)}
               bounds={{ top: -720, left: -200, right: 800, bottom: 410 }}
@@ -350,11 +343,9 @@ export const LandingPage = () => {
               className="top-[25rem]"
               position="Data Scientists"
               contents={[
-                "Industrialize data labeling via cross team collaboration and production of quality data to feed your models.",
-                "Access to professional external data labeling workforce matching data security requirements.",
-                "Unlock broader projects through growing data capabilities.",
+                "Autogon allows data scientists to quickly and easily build and test machine learning models, without the need for extensive coding. This can save data scientists time and effort and allow them to focus on more complex modeling tasks.",
               ]}
-            />
+            /> */}
           </div>
         </div>
         <div className="lg:hidden mt-10">
@@ -518,24 +509,27 @@ export const LandingPage = () => {
           <SwiperSlide className="!w-fit">
             <BlogCard
               caption="Blog"
+              titleClass="!text-2xl"
               src="https://a.storyblok.com/f/139616/1920x1080/dc2cef422d/ai-for-compliance-what-why-and-how.svg/m/767x0"
-              title="AI For compliance: What, why and how?"
+              title="Revolutionizing Business Operations: How Autogon's AI/ML Platform is Transforming Industries"
             />
           </SwiperSlide>
 
           <SwiperSlide className="!w-fit">
             <BlogCard
-              caption="whitespaper"
+              caption="blog"
+              titleClass="!text-2xl"
               src="https://a.storyblok.com/f/139616/1920x1080/dc2cef422d/ai-for-compliance-what-why-and-how.svg/m/767x0"
-              title="Kili's guide to the new AI paradigm"
+              title="Unlocking the Potential of Data: How Autogon's AI/ML Platform is Empowering Businesses of All Sizes"
             />
           </SwiperSlide>
 
           <SwiperSlide className="!w-fit">
             <BlogCard
-              caption="tutorial"
+              caption="blog"
+              titleClass="!text-2xl"
               src="https://a.storyblok.com/f/139616/1920x1080/dc2cef422d/ai-for-compliance-what-why-and-how.svg/m/767x0"
-              title="Opinion Classification with kili & HuggingFac.."
+              title="Disrupting the Fintech Industry: How Autogon's AI/ML Platform is Revolutionizing Financial Services"
             />
           </SwiperSlide>
         </Swiper>
@@ -556,11 +550,11 @@ export const LandingPage = () => {
           <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
             <Button>Request a demo</Button>
             <Button
-              className="flex items-center gap-3 !text-white border-white"
+              className="flex items-center gap-3 !text-white hover:!border-primary !border-white"
               variant="outline"
             >
               Start for free
-              <ArrowTopRightOnSquareIcon className="h-6 w-6 text-gray-500" />
+              <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white" />
             </Button>
           </div>
         </div>

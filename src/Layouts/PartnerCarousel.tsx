@@ -16,6 +16,8 @@ export const PartnerCarousel = ({
   carouselContainerClassName,
   titleClassName,
 }: PartnerCarouselProps) => {
+
+  
   let brands = [
     {
       dark: "https://a.storyblok.com/f/139616/x/9d12bad092/airbus-white.svg",
@@ -77,7 +79,7 @@ export const PartnerCarousel = ({
         isDarkMode={darkMode}
         align="center"
         className={classNames(
-          "lg:text-[3rem] text-[2.5rem] leading-[110%]",
+          "lg:text-[3rem] text-[2.5rem] leading-[110%] lg:w-[60rem] mx-auto",
           titleClassName
         )}
       >
