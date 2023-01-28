@@ -30,6 +30,7 @@ export const BreadCrumb = ({
           <Typography
             isDarkMode={darkMode}
             variant="link"
+            disableUnderline
             className="!text-primary border-b border-primary"
           >
             Home
@@ -52,10 +53,11 @@ export const BreadCrumb = ({
               <Typography
                 isDarkMode={darkMode}
                 variant="link"
+                disableUnderline
                 className={cn("capitalize", {
-                  "hover:no-underline cursor-default":
+                  "hover:!no-underline cursor-default":
                     array_pathname.length === i + 1,
-                  "text-primary pb-1":
+                  "text-primary":
                     i < array_pathname.length &&
                     array_pathname.length !== i + 1,
                 })}
@@ -79,7 +81,7 @@ export const BreadCrumb = ({
                 variant="link"
                 className="ml-1 hover:no-underline capitalize cursor-default"
               >
-                - Kili Website
+                - Autogon Website
               </Typography>
             )}
           </li>

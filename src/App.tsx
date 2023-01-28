@@ -2,12 +2,12 @@ import { useRoutes } from "react-router-dom";
 import {
   LandingPage,
   Platform,
-  ProfessionalService,
   Company,
   Blog,
   Whitepapers,
   CaseStudies,
-  Pricing
+  Pricing,
+  SolutionsRoute
 } from "./pages";
 import { ROUTES } from "./utils/routes";
 
@@ -22,8 +22,8 @@ function App() {
       element: <Platform />,
     },
     {
-      path: "professional-services",
-      element: <ProfessionalService />,
+      path: "solutions/*",
+      element: <SolutionsRoute />,
     },
     {
       path: "company/*",
@@ -43,8 +43,8 @@ function App() {
     },
     {
       path: "pricing",
-      element: <Pricing />
-    }
+      element: <Pricing />,
+    },
   ]);
 }
 

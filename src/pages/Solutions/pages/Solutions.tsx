@@ -1,70 +1,11 @@
-import { Button, Container, Typography } from "../../../components";
-import { Header } from "../../../Layouts/Header";
-import Image from "../../../assets/diagram-02-desktop-4.svg.png";
-import SOCIcon from "../../../assets/soc-2.png.png";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
-import Smilesvg from "../../../assets/logo/Autogon-logo-light.png";
-import { Footer } from "../../../Layouts/Footer";
+import { Button, Container, Typography } from "../../../components";
 import { BreadCrumb } from "../../../components/BreadCrumb";
-import DataSetImage from "../../../assets/kili_product_platform_hero.png.png";
+import { Header } from "../../../Layouts/Header";
+import Logo from '../../../assets/logo/Autogon-logo-light.png'
+import { Footer } from "../../../Layouts/Footer";
 
-
-type IconSectionTypes = {
-  src: string;
-  title: string;
-};
-
-const IconSection = ({ src, title }: IconSectionTypes) => {
-  return (
-    <div className="mb-16">
-      <img
-        src={src}
-        className="max-w-[64px] object-contain mx-auto mb-4"
-        loading="lazy"
-        alt={title}
-      />
-      <Typography
-        isDarkMode
-        variant="title"
-        align="center"
-        className="text-[22px] leading-[35.2px] -tracking-[0.22px]"
-      >
-        {title}
-      </Typography>
-    </div>
-  );
-};
-// TODO: carousel
-export const PlatformPage = () => {
-
-  let iconsSections = [
-    {
-      src: "https://a.storyblok.com/f/139616/x/215a2f39bd/foster.svg",
-      title: "Foster collaboration",
-    },
-    {
-      src: "https://a.storyblok.com/f/139616/x/67bc799aee/dataset.svg",
-      title: "Dataset and project management",
-    },
-    {
-      src: "https://a.storyblok.com/f/139616/x/37326a836d/secure.svg",
-      title: "Secure training data hubs",
-    },
-    {
-      src: "https://a.storyblok.com/f/139616/x/4b5c895fa5/workflows.svg",
-      title: "Continous iterating workflows",
-    },
-    {
-      src: "https://a.storyblok.com/f/139616/x/65f2fe8908/ai.svg",
-      title:
-        "Control the performance of your model through the quality of your data",
-    },
-    {
-      src: "https://a.storyblok.com/f/139616/x/a9bf9ed871/storage.svg",
-      title: "Fast labeling powered by AI",
-    },
-  ];
-
+export const Solutions = () => {
   return (
     <>
       <Header darkMode />
@@ -81,7 +22,7 @@ export const PlatformPage = () => {
           variant="display"
           className="mx-auto mt-4 lg:w-[80rem]"
         >
-          The most advanced platform for enterprise AI
+          Solutions designed for industry-specific
         </Typography>
         <Typography
           variant="body"
@@ -89,11 +30,10 @@ export const PlatformPage = () => {
           isDarkMode
           className="capitalize lg:w-[45rem] mx-auto mt-5"
         >
-          Welcome to our AI Cloud Platform, the most advanced platform for
-          enterprise AI. Our platform makes it easy for businesses of all sizes
-          to benefit from the power of AI by providing a simple, scalable and
-          secure solution for building, deploying and managing machine learning
-          models.
+          At our company, we understand that different industries have different
+          needs and challenges when it comes to AI and machine learning. That's
+          why we've developed industry-specific solutions to help businesses in
+          each sector take advantage of the power of AI.
         </Typography>
       </Container>
 
@@ -102,7 +42,7 @@ export const PlatformPage = () => {
         isDarkMode
         className="bg-surface flex-col-reverse lg:flex-row-reverse pt-20 pb-40 gap-3"
         flex
-        id="augmented-intelligence"
+        id="banking"
       >
         <div className="w-full">
           <Typography isDarkMode variant="body" className="text-[22px]">
@@ -113,15 +53,16 @@ export const PlatformPage = () => {
             variant="title"
             className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
-            AUGMENTED INTELLIGENCE
+            BANKING
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
-            Augmented Intelligence is the future of work. Our platform provides
-            organizations with the tools and capabilities to unlock the full
-            potential of their data and workforce through the power of AI. From
-            automating repetitive tasks to providing insights that drive
-            business growth, our platform empowers your team to work smarter and
-            more efficiently.
+            In the banking industry, AI and machine learning can be used to
+            improve fraud detection, risk management, and customer service. Our
+            platform provides a wide range of pre-built models and algorithms
+            for these use cases, as well as a powerful model builder for
+            creating custom models. With our platform, banks can easily
+            implement AI and machine learning to improve their operations and
+            better serve their customers.
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
@@ -139,7 +80,7 @@ export const PlatformPage = () => {
         isDarkMode
         className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
         flex
-        id="data-engineering"
+        id="healthcare"
         // direction="row-reverse"
       >
         <div className="w-full">
@@ -151,15 +92,16 @@ export const PlatformPage = () => {
             variant="title"
             className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
           >
-            DATA ENGINEERING
+            HEALTHCARE
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
-            Data Engineering is the backbone of any successful AI initiative.
-            Our platform provides a complete end-to-end solution for data
-            engineering, including data ingestion, data preparation, and feature
-            engineering. With our platform, you can easily access, clean and
-            prepare your data for machine learning, resulting in better and more
-            accurate models.
+            In the healthcare industry, AI and machine learning can be used to
+            improve patient outcomes, streamline operations, and reduce costs.
+            Our platform provides a wide range of pre-built models and
+            algorithms for these use cases, as well as a powerful model builder
+            for creating custom models. With our platform, healthcare providers
+            can easily implement AI and machine learning to improve patient care
+            and streamline their operations
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
@@ -178,7 +120,7 @@ export const PlatformPage = () => {
         className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
         direction="row-reverse"
-        id="machine-learning"
+        id="manufacturing"
       >
         <div className="w-full">
           <Typography isDarkMode variant="body" className="text-[22px]">
@@ -189,15 +131,16 @@ export const PlatformPage = () => {
             variant="title"
             className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
           >
-            MACHINE LEARNING
+            MANUFACTURING
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
-            Machine Learning is the core of our platform. We provide a wide
-            range of pre-built models and algorithms for a variety of use cases,
-            including image and video analysis, natural language processing, and
-            predictive modeling. Our platform also provides a powerful model
-            builder for building custom models, making it easy for businesses to
-            create models that are tailored to their specific needs.
+            In the manufacturing industry, AI and machine learning can be used
+            to improve efficiency, reduce costs, and increase safety. Our
+            platform provides a wide range of pre-built models and algorithms
+            for these use cases, as well as a powerful model builder for
+            creating custom models. With our platform, manufacturers can easily
+            implement AI and machine learning to improve their operations and
+            stay competitive in the market.
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
@@ -216,7 +159,7 @@ export const PlatformPage = () => {
         className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
         flex
         // direction="row-reverse"
-        id="mlops"
+        id="retail"
       >
         <div className="w-full">
           <Typography isDarkMode variant="body" className="text-[22px]">
@@ -227,15 +170,16 @@ export const PlatformPage = () => {
             variant="title"
             className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
           >
-            MLOPS
+            RETAIL
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
-            MLOps (Machine Learning Operations) is the practice of managing the
-            end-to-end machine learning lifecycle. Our platform provides a
-            complete solution for MLOps, including model management, monitoring,
-            and deployment. With our platform, you can easily manage and deploy
-            models in production, ensuring that your models are always
-            up-to-date and accurate.
+            In the retail industry, AI and machine learning can be used to
+            improve customer service, personalization, and inventory management.
+            Our platform provides a wide range of pre-built models and
+            algorithms for these use cases, as well as a powerful model builder
+            for creating custom models. With our platform, retailers can easily
+            implement AI and machine learning to improve their operations and
+            better serve their customers.
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
@@ -254,7 +198,7 @@ export const PlatformPage = () => {
         className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
         direction="row-reverse"
-        id="decision-intelligence"
+        id="financial-services"
       >
         <div className="w-full">
           <Typography isDarkMode variant="body" className="text-[22px]">
@@ -265,15 +209,16 @@ export const PlatformPage = () => {
             variant="title"
             className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
           >
-            DECISION INTELLIGENCE
+            FINANCIAL SERVICES
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
-            Decision Intelligence is the ability to turn data into actionable
-            insights. Our platform provides a complete solution for Decision
-            Intelligence, including data visualization, data labeling, and
-            advanced analytics. With our platform, you can easily gain insights
-            from your data and make data-driven decisions that drive business
-            growth.
+            In the financial services industry, AI and machine learning can be
+            used to improve risk management, fraud detection, and customer
+            service. Our platform provides a wide range of pre-built models and
+            algorithms for these use cases, as well as a powerful model builder
+            for creating custom models. With our platform, financial services
+            companies can easily implement AI and machine learning to improve
+            their operations and better serve their customers.
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
@@ -292,7 +237,7 @@ export const PlatformPage = () => {
         className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
         flex
         // direction="row-reverse"
-        id="data-visualization"
+        id="oil-and-gas"
       >
         <div className="w-full">
           <Typography isDarkMode variant="body" className="text-[22px]">
@@ -303,14 +248,16 @@ export const PlatformPage = () => {
             variant="title"
             className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
           >
-            DATA VISUALIZATION
+            OIL AND GAS
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
-            Data visualization is a key component of Decision Intelligence. Our
-            platform provides a wide range of visualization tools and
-            capabilities to help you make sense of your data. With our platform,
-            you can easily create interactive visualizations that allow you to
-            explore your data and gain insights from it.
+            In the oil and gas industry, AI and machine learning can be used to
+            improve efficiency, reduce costs, and increase safety. Our platform
+            provides a wide range of pre-built models and algorithms for these
+            use cases, as well as a powerful model builder for creating custom
+            models. With our platform, oil and gas companies can easily
+            implement AI and machine learning to optimize their operations,
+            improve resource management and ensure safety in the industry.
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
@@ -329,6 +276,7 @@ export const PlatformPage = () => {
         className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
         direction="row-reverse"
+        id="public-sector"
       >
         <div className="w-full">
           <Typography isDarkMode variant="body" className="text-[22px]">
@@ -339,15 +287,17 @@ export const PlatformPage = () => {
             variant="title"
             className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
           >
-            DATA LABELING
+            PUBLIC SECTOR
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
-            Data labeling is the process of adding labels to data for use in
-            machine learning models. Our platform provides a complete solution
-            for data labeling, including an easy-to-use interface for creating
-            and managing labels, as well as a wide range of tools for automating
-            the labeling process. With our platform, you can easily create
-            high-quality labeled data for use in machine learning models.
+            In the public sector, AI and machine learning can be used to improve
+            the delivery of services, streamline operations, and increase
+            transparency. Our platform provides a wide range of pre-built models
+            and algorithms for these use cases, as well as a powerful model
+            builder for creating custom models. With our platform, public sector
+            organizations can easily implement AI and machine learning to
+            improve the services they provide and increase the efficiency of
+            their operations.
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
@@ -355,6 +305,45 @@ export const PlatformPage = () => {
         <div className="w-full">
           <img
             src="https://a.storyblok.com/f/139616/2500x1933/9316e5479f/automation-tools.webp"
+            className="h-full w-full object-contain"
+          />
+        </div>
+      </Container>
+
+      <Container
+        background
+        isDarkMode
+        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
+        flex
+        // direction="row-reverse"
+        id="sports"
+      >
+        <div className="w-full">
+          <Typography isDarkMode variant="body" className="text-[22px]">
+            [8]
+          </Typography>
+          <Typography
+            isDarkMode
+            variant="title"
+            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
+          >
+            SPORTS
+          </Typography>
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+            In the sports industry, AI and machine learning can be used to
+            improve player performance, analyze game data, and increase fan
+            engagement. Our platform provides a wide range of pre-built models
+            and algorithms for these use cases, as well as a powerful model
+            builder for creating custom models. With our platform, sports teams
+            and organizations can easily implement AI and machine learning to
+            improve their performance and engage with their fans in new ways.
+          </Typography>
+
+          <Button className="mt-9">Request a demo</Button>
+        </div>
+        <div className="w-full">
+          <img
+            src="https://a.storyblok.com/f/139616/2500x1933/92cc18dd9c/anlytics-reporting.webp"
             className="h-full w-full object-contain"
           />
         </div>
@@ -462,7 +451,7 @@ export const PlatformPage = () => {
         className="bg-[#162427] pb-28 pt-28"
       >
         <div className="">
-          <img src={Smilesvg} className="relative mx-auto h-20 w-20 mb-5" />
+          <img src={Logo} className="relative mx-auto h-20 w-20 mb-5" />
           <Typography
             variant="subdisplay"
             className="capitalize !text-white text-center"
@@ -473,7 +462,7 @@ export const PlatformPage = () => {
             Begin your journey! Start Creating AI Models.
           </Typography>
           <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
-            <Button>See Demo</Button>
+            <Button>See a Demo</Button>
             <Button
               className="flex items-center gap-3 !text-white hover:!border-primary !border-white"
               variant="outline"
@@ -488,4 +477,4 @@ export const PlatformPage = () => {
       <Footer darkMode />
     </>
   );
-};
+}

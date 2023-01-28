@@ -16,6 +16,7 @@ export const Typography = forwardRef(
       paragraph,
       variant,
       isDarkMode,
+      disableUnderline,
       ...rest
     }: TypographyProps<any>,
     ref
@@ -44,7 +45,7 @@ export const Typography = forwardRef(
       title:
         "font-roboto text-[43px] leading-[52.8px] font-medium",
       body: "text-[18px] font-inter leading-[28.8px] -tracking-[0.18px]",
-      link: "text-[16px] font-inter leading-[19.2px] -tracking-[0.16px]s hover:underline cursor-pointer",
+      link: "text-[16px] font-inter leading-[19.2px] -tracking-[0.16px]s cursor-pointer",
       caption:
         "text-[12px] font-inter font-normal leading-[19.2px] tracking-normal",
       text: "",
@@ -69,6 +70,7 @@ export const Typography = forwardRef(
         className={cn("", rest.className, {
           "mb-[0.35em]": gutterBottom,
           "mb-[16px]": paragraph,
+          "hover:underline": !disableUnderline && variant === "link",
           // [transformColorVariable(color)]: color,
           [alignText[align as AlignText]]: align,
           [fontSizeVariant[variant]]: variant,

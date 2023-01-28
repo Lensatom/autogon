@@ -160,27 +160,33 @@ export const Header = ({ darkMode }: HeaderProps) => {
           links: [
             {
               name: "Augmented Intelligence",
-              link: "/platform/label-annotate",
+              link: "/platform#augmented-intelligence",
+              hash: true,
             },
             {
               name: "Data Engineering",
-              link: "/platform/explore-and-fix",
+              link: "/platform#data-engineering",
+              hash: true,
             },
             {
               name: "Machine Learninge",
-              link: "/platform/integrate-automate",
+              link: "/platform#machine-learning",
+              hash: true,
             },
             {
               name: "MLOps",
-              link: "/platform/integrate-automate",
+              link: "/platform#mlops",
+              hash: true,
             },
             {
               name: "Decision Intelligence",
-              link: "/platform/integrate-automate",
+              link: "/platform#decision-intelligence",
+              hash: true,
             },
             {
               name: "Data Visualization. Data Labeling",
-              link: "/platform/integrate-automate",
+              link: "/platform#data-visualization",
+              hash: true,
             },
           ],
         },
@@ -232,42 +238,42 @@ export const Header = ({ darkMode }: HeaderProps) => {
           links: [
             {
               name: "Banking",
-              link: "/professional-services#from-design",
+              link: "/solutions#banking",
               hash: true,
             },
             {
               name: "Healthcare",
-              link: "/professional-services#from-design",
+              link: "/solutions#healthcare",
               hash: true,
             },
             {
               name: "Manufacturing",
-              link: "/professional-services#from-design",
+              link: "/solutions#manufacturing",
               hash: true,
             },
             {
               name: "Retail",
-              link: "/professional-services#from-design",
+              link: "/solutions#retail",
               hash: true,
             },
             {
               name: "Financial Services",
-              link: "/professional-services#from-design",
+              link: "/solutions#oil-and-gas",
               hash: true,
             },
             {
               name: "Oil and Gas",
-              link: "/professional-services#from-design",
+              link: "/solutions#public-sector",
               hash: true,
             },
             {
               name: "Public Sector",
-              link: "/professional-services#from-design",
+              link: "/solutions#from-design",
               hash: true,
             },
             {
               name: "Sports",
-              link: "/professional-services#from-design",
+              link: "/solutions#sports",
               hash: true,
             },
           ],
@@ -277,23 +283,28 @@ export const Header = ({ darkMode }: HeaderProps) => {
           links: [
             {
               name: "Business Analysis",
-              link: "",
+              link: "/solutions/roles#business-analysis",
+              hash: true,
             },
             {
               name: "Data Scientists",
-              link: "",
+              link: "/solutions/roles#data-scientisits",
+              hash: true,
             },
             {
               name: "IT Operations",
-              link: "",
+              link: "/solutions/roles#it-operations",
+              hash: true,
             },
             {
               name: "Software Engineers",
-              link: "",
+              link: "/solutions/roles#software-engineering",
+              hash: true,
             },
             {
               name: "Executives & Analytics Leaders",
-              link: "",
+              link: "/solutions/roles#executives",
+              hash: true,
             },
           ],
         },

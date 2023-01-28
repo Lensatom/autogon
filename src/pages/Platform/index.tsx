@@ -10,17 +10,17 @@ export const Platform = () => {
       index: true,
       element: <PlatformPage />,
     },
-    {
-      path: "label-annotate/*",
-      element: <LabelAnnotation />,
-    },
-    {
-      path: "explore-and-fix",
-      element: <ExploreFix />,
-    },
-    {
-      path: "integrate-automate",
-      element: <IntegrateAutomate />,
-    },
+    // {
+    //   path: "label-annotate/*",
+    //   element: <LabelAnnotation />,
+    // },
+    // {
+    //   path: "explore-and-fix",
+    //   element: <ExploreFix />,
+    // },
+    // {
+    //   path: "integrate-automate",
+    //   element: <IntegrateAutomate />,
+    // },
   ]);
 };

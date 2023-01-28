@@ -4,3 +4,4 @@ export { ProfessionalService } from './Professionals/Professional';
 export { Company } from './company';
 export { Blog, Whitepapers, CaseStudies } from './Resources';
 export { Pricing } from './Pricing';
+export { SolutionsRoute } from './Solutions';

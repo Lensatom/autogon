@@ -197,14 +197,14 @@ export const Footer = ({ darkMode }: FooterProps) => {
         />
         <FooterLinks
           darkMode={darkMode}
-          className="mt-6 lg:mt-0"
-          links={companyLink.links}
-          title={companyLink.title}
+          links={documentationLink.links}
+          title={documentationLink.title}
         />
         <FooterLinks
           darkMode={darkMode}
-          links={documentationLink.links}
-          title={documentationLink.title}
+          className="mt-6 lg:mt-0"
+          links={companyLink.links}
+          title={companyLink.title}
         />
         <FooterLinks
           darkMode={darkMode}
