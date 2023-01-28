@@ -22,14 +22,14 @@ export const FooterLinks = ({
       >
         {title}
       </Typography>
-      <ul>
+      <ul className="w-[17rem]">
         {links.map((nav) => (
-          <li className="my-2 w-[17rem]" key={nav.name}>
+          <li className="my-2 w-fit" key={nav.name}>
             <Link to={nav?.link}>
               <Typography
                 isDarkMode={darkMode}
                 variant="link"
-                className={cn("capitalize cursor-pointer hover:underline")}
+                className={cn("capitalize cursor-pointer hover:underline w-fit")}
               >
                 {nav.name}
               </Typography>

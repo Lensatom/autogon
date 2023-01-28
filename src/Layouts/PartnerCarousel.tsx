@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import { Container, Typography } from "../components";
+import { Apextech, BrightMinds, FutureDark, FutureLight, InnovateXLogo,Mind, MindLeap, OptimumIQ, ProdigyWorks, QuantumLogo, TechwaveLogo  } from '../assets/brand';
 
 interface PartnerCarouselProps {
   darkMode?: boolean;
@@ -20,41 +21,41 @@ export const PartnerCarousel = ({
   
   let brands = [
     {
-      dark: "https://a.storyblok.com/f/139616/x/9d12bad092/airbus-white.svg",
-      light: "https://a.storyblok.com/f/139616/x/fa21008d7a/thales.svg",
+      dark: Apextech,
+      light: Apextech,
     },
     {
-      dark: "https://a.storyblok.com/f/139616/x/397b196d5e/credit-agricole-white.svg",
-      light: "https://a.storyblok.com/f/139616/x/233eb3a6d5/stellantis.svg",
+      dark: BrightMinds,
+      light: BrightMinds,
     },
     {
-      dark: "https://a.storyblok.com/f/139616/x/2fa4986fb1/capegemini-white.svg",
-      light: "https://a.storyblok.com/f/139616/x/01ba6e99f5/safran.svg",
+      dark: FutureDark,
+      light: FutureLight,
     },
     {
-      dark: "https://a.storyblok.com/f/139616/x/bc6d760ee7/esa-white.svg",
-      light: "https://a.storyblok.com/f/139616/x/9070e09d27/michelin.svg",
+      dark: InnovateXLogo,
+      light: InnovateXLogo,
     },
     {
-      dark: "https://a.storyblok.com/f/139616/x/260237cda8/ibm-white.svg",
-      light: "https://a.storyblok.com/f/139616/x/5c6ee6de34/louisvuitton.svg",
+      dark: Mind,
+      light: Mind,
     },
     {
-      dark: "https://a.storyblok.com/f/139616/x/a9826c8347/louisvuitton-white.svg",
-      light: "https://a.storyblok.com/f/139616/x/1e5ade163c/ibm.svg",
+      dark: MindLeap,
+      light: MindLeap,
     },
     {
-      dark: "https://a.storyblok.com/f/139616/x/f5f6fb28ad/michelin-white.svg",
-      light: "https://a.storyblok.com/f/139616/x/04dc544485/esa.svg",
+      dark: OptimumIQ,
+      light: OptimumIQ,
     },
     {
-      dark: "https://a.storyblok.com/f/139616/x/c4fcd53361/safran-white.svg",
+      dark: TechwaveLogo,
       light:
-        "https://a.storyblok.com/f/139616/x/9bf28f30b4/credit-agricole.svg",
+        TechwaveLogo,
     },
     {
-      dark: "https://a.storyblok.com/f/139616/x/97ff1885ea/stellantis-white.svg",
-      light: "https://a.storyblok.com/f/139616/x/eca7a06dea/capegemini.svg",
+      dark: ProdigyWorks,
+      light: ProdigyWorks,
     },
     {
       dark: "https://a.storyblok.com/f/139616/x/c69a128f0c/thales-white.svg",

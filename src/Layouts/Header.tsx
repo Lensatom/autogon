@@ -156,37 +156,64 @@ export const Header = ({ darkMode }: HeaderProps) => {
       hover: true,
       menu: [
         {
-          title: "Platform",
+          title: "AI CLOUD PLATFORM",
           links: [
             {
-              name: "Label & Annotate",
+              name: "Augmented Intelligence",
               link: "/platform/label-annotate",
             },
             {
-              name: "Explore & Fix",
+              name: "Data Engineering",
               link: "/platform/explore-and-fix",
             },
             {
-              name: "Integrate & Automate",
+              name: "Machine Learninge",
+              link: "/platform/integrate-automate",
+            },
+            {
+              name: "MLOps",
+              link: "/platform/integrate-automate",
+            },
+            {
+              name: "Decision Intelligence",
+              link: "/platform/integrate-automate",
+            },
+            {
+              name: "Data Visualization. Data Labeling",
               link: "/platform/integrate-automate",
             },
           ],
         },
         {
-          title: "Professional Services",
+          title: "KEY CAPABILITIES",
           links: [
             {
-              name: "Complete project monitoring",
+              name: "AutoML",
               link: "/professional-services#from-design",
               hash: true,
             },
             {
-              name: "On demand labeling workforce",
+              name: "DragNDrop AI",
               link: "/professional-services#trained-workforce",
               hash: true,
             },
             {
-              name: "Ml expert guidance",
+              name: "Data Preparation",
+              link: "/professional-services#data-centric",
+              hash: true,
+            },
+            {
+              name: "Automated Time Series",
+              link: "/professional-services#data-centric",
+              hash: true,
+            },
+            {
+              name: "No-Code AI Apps",
+              link: "/professional-services#data-centric",
+              hash: true,
+            },
+            {
+              name: "More Capabilities",
               link: "/professional-services#data-centric",
               hash: true,
             },
@@ -196,6 +223,84 @@ export const Header = ({ darkMode }: HeaderProps) => {
     },
     {
       id: "2",
+      name: "solutions",
+      link: "",
+      hover: true,
+      menu: [
+        {
+          title: "BY INDUSTRY",
+          links: [
+            {
+              name: "Banking",
+              link: "/professional-services#from-design",
+              hash: true,
+            },
+            {
+              name: "Healthcare",
+              link: "/professional-services#from-design",
+              hash: true,
+            },
+            {
+              name: "Manufacturing",
+              link: "/professional-services#from-design",
+              hash: true,
+            },
+            {
+              name: "Retail",
+              link: "/professional-services#from-design",
+              hash: true,
+            },
+            {
+              name: "Financial Services",
+              link: "/professional-services#from-design",
+              hash: true,
+            },
+            {
+              name: "Oil and Gas",
+              link: "/professional-services#from-design",
+              hash: true,
+            },
+            {
+              name: "Public Sector",
+              link: "/professional-services#from-design",
+              hash: true,
+            },
+            {
+              name: "Sports",
+              link: "/professional-services#from-design",
+              hash: true,
+            },
+          ],
+        },
+        {
+          title: "BY ROLE",
+          links: [
+            {
+              name: "Business Analysis",
+              link: "",
+            },
+            {
+              name: "Data Scientists",
+              link: "",
+            },
+            {
+              name: "IT Operations",
+              link: "",
+            },
+            {
+              name: "Software Engineers",
+              link: "",
+            },
+            {
+              name: "Executives & Analytics Leaders",
+              link: "",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: "3",
       name: "company",
       link: "",
       hover: true,
@@ -220,7 +325,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
       ],
     },
     {
-      id: "3",
+      id: "4",
       name: "resources",
       link: "",
       hover: true,
@@ -240,18 +345,26 @@ export const Header = ({ darkMode }: HeaderProps) => {
               name: "Case Studies",
               link: "/case-studies",
             },
+            {
+              name: "Community",
+              link: "/case-studies",
+            },
+            {
+              name: "Marketplace",
+              link: "/case-studies",
+            },
           ],
         },
       ],
     },
     {
-      id: "4",
+      id: "5",
       name: "docs",
       link: "",
       hover: false,
     },
     {
-      id: "5",
+      id: "6",
       name: "pricing",
       link: "/pricing",
       hover: false,

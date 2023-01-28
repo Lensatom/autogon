@@ -1,14 +1,12 @@
 import { Button, Container, Typography } from "../../../components";
 import { Header } from "../../../Layouts/Header";
-import SOCIcon from "../../../assets/soc-2.png.png";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
-import Smilesvg from "../../../assets/kili-icon-dark-mode.svg.svg";
+import Smilesvg from "../../../assets/logo/Autogon-logo-light.png";
 import { Footer } from "../../../Layouts/Footer";
 import { BreadCrumb } from "../../../components/BreadCrumb";
 import { PartnerCarousel } from "../../../Layouts/PartnerCarousel";
 import { Testimonial } from "../../../Layouts/Testimonial";
 import { Blog } from "../Layout/Blog";
-import { useWindowScrollPositions } from "../../../hooks/useWindowScroll";
 
 export const IntegrateAutomate = () => {
 
@@ -242,24 +240,31 @@ export const IntegrateAutomate = () => {
 
       <Blog />
 
-      <Container disableOverflowHidden isLightDarkMode background className="bg-[#162427] pb-28">
-        <div className="mx-auto w-fit ">
-          <img src={Smilesvg} className="relative -top-24 mx-auto" />
-          <Typography variant="subdisplay" className="capitalize !text-white">
-            get started
+      <Container
+        disableOverflowHidden
+        isLightDarkMode
+        background
+        className="bg-[#162427] pb-28 pt-28"
+      >
+        <div className="">
+          <img src={Smilesvg} className="relative mx-auto h-20 w-20 mb-5" />
+          <Typography
+            variant="subdisplay"
+            className="capitalize !text-white text-center"
+          >
+            Begin your journey
           </Typography>
           <Typography variant="body" align="center" className="!text-white">
-            Get started! Build better data, now.
+            Begin your journey! Start Creating AI Models.
           </Typography>
           <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
-            <Button>Request a demo</Button>
+            <Button>See Demo</Button>
             <Button
-              darkMode
-              className="flex items-center gap-3 !text-white border-white"
+              className="flex items-center gap-3 !text-white hover:!border-primary !border-white"
               variant="outline"
             >
               Start for free
-              <ArrowTopRightOnSquareIcon className={`h-6 w-6 text-white`} />
+              <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white" />
             </Button>
           </div>
         </div>

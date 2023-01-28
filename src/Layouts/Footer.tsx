@@ -1,12 +1,19 @@
 import { Container, Typography } from "../components";
 import Logo from "../assets/logo/Autogon-logo.png";
 import DarkLogo from "../assets/logo/Autogon-logo-light.png";
-import { FaFacebookF, FaGithub, FaLinkedinIn, FaTwitter, FaYoutube, FaSlack } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaGithub,
+  FaLinkedinIn,
+  FaTwitter,
+  FaYoutube,
+  FaSlack,
+} from "react-icons/fa";
 import cn from "classnames";
 import { FooterLinks } from "../components/FooterLinks";
 
 interface FooterProps {
-  darkMode?: boolean
+  darkMode?: boolean;
 }
 
 export const Footer = ({ darkMode }: FooterProps) => {
@@ -14,23 +21,31 @@ export const Footer = ({ darkMode }: FooterProps) => {
     title: "Product",
     links: [
       {
-        name: "Platform",
+        name: "AI cloud platform",
       },
       {
-        name: "Label & Annotate",
+        name: "Augmented Intelligence",
         link: "/platform/label-annotate",
       },
       {
-        name: "Explore & Fix",
+        name: "Data Engineering",
         link: "/platform/explore-and-fix",
       },
       {
-        name: "Integrate & Automate",
+        name: "Machine Learninge",
         link: "/platform/integrate-automate",
       },
       {
-        name: "Professional Services",
+        name: "MLOps",
         link: "/professional-services",
+      },
+      {
+        name: "Decision Intelligence",
+        link: "pricing",
+      },
+      {
+        name: "Data Visualization. Data Labeling",
+        link: "pricing",
       },
       {
         name: "Plan & Features",
@@ -38,63 +53,108 @@ export const Footer = ({ darkMode }: FooterProps) => {
       },
     ],
   };
+
   let toolLinks = {
-    title: "Tools",
+    title: "Key Capabilities",
     links: [
       {
-        name: "Image annotation tool",
+        name: "AutoML",
+        link: "/professional-services#from-design",
+        hash: true,
       },
       {
-        name: "Video annotation tool",
+        name: "DragNDrop AI",
+        link: "/professional-services#trained-workforce",
+        hash: true,
       },
       {
-        name: "Text annotation tool",
-        link: "/platform/label-annotate/nlp-text-annotation-tool",
+        name: "Data Preparation",
+        link: "/professional-services#data-centric",
+        hash: true,
       },
       {
-        name: "Audio transcription tool",
+        name: "Automated Time Series",
+        link: "/professional-services#data-centric",
+        hash: true,
       },
       {
-        name: "OCR annotation tool",
+        name: "No-Code AI Apps",
+        link: "/professional-services#data-centric",
+        hash: true,
+      },
+      {
+        name: "More Capabilities",
+        link: "/professional-services#data-centric",
+        hash: true,
       },
     ],
   };
+
   let guidesLinks = {
-    title: "Guides",
+    title: "Solutions By Roles",
     links: [
       {
-        name: "Data Labeling Guide",
+        name: "Business Analysis",
+        link: "",
       },
       {
-        name: "Text Annotation Guide",
+        name: "Data Scientists",
+        link: "",
       },
       {
-        name: "Natural Language Processing Guide",
+        name: "IT Operations",
+        link: "",
       },
       {
-        name: "Audio transcription tool",
+        name: "Software Engineers",
+        link: "",
       },
       {
-        name: "OCR annotation tool",
+        name: "Executives & Analytics Leaders",
+        link: "",
       },
     ],
   };
+
   let companyLink = {
     title: "Company",
     links: [
+      {
+        name: "Contact Us",
+      },
+      {
+        name: "Careers",
+      },
       {
         name: "Press",
       },
     ],
   };
-  let franceLink = {
-    title: "France",
+
+  let documentationLink = {
+    title: "Resources",
     links: [
       {
-        name: "47 boulevard de Courelles, 75008, paris",
+        name: "Integration Library",
+      },
+      {
+        name: "Blog",
+      },
+      {
+        name: "Webinars",
+      },
+      {
+        name: "Community",
+      },
+      {
+        name: "Documentation",
+      },
+      {
+        name: "Events",
       },
     ],
   };
+
   let usaLink = {
     title: "United States",
     links: [
@@ -143,8 +203,8 @@ export const Footer = ({ darkMode }: FooterProps) => {
         />
         <FooterLinks
           darkMode={darkMode}
-          links={franceLink.links}
-          title={franceLink.title}
+          links={documentationLink.links}
+          title={documentationLink.title}
         />
         <FooterLinks
           darkMode={darkMode}
@@ -155,23 +215,59 @@ export const Footer = ({ darkMode }: FooterProps) => {
 
       <div className="absolute h-10 flex flex-col-reverse lg:flex-row lg:items-center bottom-10 lg:bottom-3 lg:gap-16 gap-4">
         <div className="flex items-center gap-x-4">
-          <div className={`rounded-full w-7 h-7 grid place-items-center ${ darkMode ? "bg-surface" :"bg-black"}`}>
-            <FaFacebookF className={`h-5 w-5 ${darkMode ? "text-neutral" : "text-white"}`} />
+          <div
+            className={`rounded-full w-7 h-7 grid place-items-center ${
+              darkMode ? "bg-surface" : "bg-black"
+            }`}
+          >
+            <FaFacebookF
+              className={`h-5 w-5 ${darkMode ? "text-neutral" : "text-white"}`}
+            />
           </div>
-          <div className={`rounded-full w-7 h-7 grid place-items-center ${ darkMode ? "bg-surface" :"bg-black"}`}>
-            <FaGithub className={`h-5 w-5 ${darkMode ? "text-neutral" : "text-white"}`} />
+          <div
+            className={`rounded-full w-7 h-7 grid place-items-center ${
+              darkMode ? "bg-surface" : "bg-black"
+            }`}
+          >
+            <FaGithub
+              className={`h-5 w-5 ${darkMode ? "text-neutral" : "text-white"}`}
+            />
           </div>
-          <div className={`rounded-full w-7 h-7 grid place-items-center ${ darkMode ? "bg-surface" :"bg-black"}`}>
-            <FaLinkedinIn className={`h-4 w-4 ${darkMode ? "text-neutral" : "text-white"}`} />
+          <div
+            className={`rounded-full w-7 h-7 grid place-items-center ${
+              darkMode ? "bg-surface" : "bg-black"
+            }`}
+          >
+            <FaLinkedinIn
+              className={`h-4 w-4 ${darkMode ? "text-neutral" : "text-white"}`}
+            />
           </div>
-          <div className={`rounded-full w-7 h-7 grid place-items-center ${ darkMode ? "bg-surface" :"bg-black"}`}>
-            <FaTwitter className={`h-4 w-4 ${darkMode ? "text-neutral" : "text-white"}`} />
+          <div
+            className={`rounded-full w-7 h-7 grid place-items-center ${
+              darkMode ? "bg-surface" : "bg-black"
+            }`}
+          >
+            <FaTwitter
+              className={`h-4 w-4 ${darkMode ? "text-neutral" : "text-white"}`}
+            />
           </div>
-          <div className={`rounded-full w-7 h-7 grid place-items-center ${ darkMode ? "bg-surface" :"bg-black"}`}>
-            <FaYoutube className={`h-5 w-5 ${darkMode ? "text-neutral" : "text-white"}`} />
+          <div
+            className={`rounded-full w-7 h-7 grid place-items-center ${
+              darkMode ? "bg-surface" : "bg-black"
+            }`}
+          >
+            <FaYoutube
+              className={`h-5 w-5 ${darkMode ? "text-neutral" : "text-white"}`}
+            />
           </div>
-          <div className={`rounded-full w-7 h-7 grid place-items-center ${ darkMode ? "bg-surface" :"bg-black"}`}>
-            <FaSlack className={`h-5 w-5 ${darkMode ? "text-neutral" : "text-white"}`} />
+          <div
+            className={`rounded-full w-7 h-7 grid place-items-center ${
+              darkMode ? "bg-surface" : "bg-black"
+            }`}
+          >
+            <FaSlack
+              className={`h-5 w-5 ${darkMode ? "text-neutral" : "text-white"}`}
+            />
           </div>
         </div>
 

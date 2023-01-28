@@ -22,39 +22,7 @@ import { useState } from "react";
 import { Pagination } from "swiper";
 import { BenefitCard } from "./components/BenefitCard";
 
-// const BenefitCard = ({ className, position, contents, src, active, onClick, bounds }: BenefitCardProps) => {
-//   return (
-//     <Draggable bounds={bounds}>
-//       <div
-//         onClick={onClick}
-//         className={cn(
-//           "h-[35rem] w-[28rem] rounded-6xl bg-[#EAEEE2]  p-12 absolute shadow-4xl cursor-move select-none",
-//           className,
-//           { "bg-[#B090EF] z-30": active }
-//         )}
-//       >
-//         <div className="h-full relative">
-//           <Avatar src={src} sizes={75} />
-//           <Typography variant="title" className="mt-3 font-extrabold">
-//             {position}
-//           </Typography>
-//           <div className="mt-2">
-//             <ul className="list-disc">
-//               {contents.map((content, index) => (
-//                 <li key={index}>
-//                   <Typography className="my-2" variant="body">
-//                     {content}
-//                   </Typography>
-//                 </li>
-//               ))}
-//             </ul>
-//           </div>
-//         </div>
-//         <Button className="absolute bottom-10">Request a Demo</Button>
-//       </div>
-//     </Draggable>
-//   );
-// };
+
 const BenefitMobileCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
   return (
       <div
@@ -535,20 +503,24 @@ export const LandingPage = () => {
         </Swiper>
       </Container>
 
-      <Container disableOverflowHidden className="bg-[#162427] pb-28">
-        <div className="mx-auto w-fit ">
-          <img
-            src={Smilesvg}
-            className="relative -top-6 mx-auto h-20 w-20 mb-10"
-          />
-          <Typography variant="subdisplay" className="capitalize !text-white">
-            get started
+      <Container
+        disableOverflowHidden
+        grid
+        className="bg-[#162427] pb-28 pt-28 place-items-center"
+      >
+        <div className="">
+          <img src={Smilesvg} className="relative mx-auto h-20 w-20 mb-5" />
+          <Typography
+            variant="subdisplay"
+            className="capitalize !text-white text-center"
+          >
+            Begin your journey
           </Typography>
           <Typography variant="body" align="center" className="!text-white">
-            Get started! Build better data, now.
+            Begin your journey! Start Creating AI Models.
           </Typography>
           <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
-            <Button>Request a demo</Button>
+            <Button>See Demo</Button>
             <Button
               className="flex items-center gap-3 !text-white hover:!border-primary !border-white"
               variant="outline"
