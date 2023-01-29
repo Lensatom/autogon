@@ -24,7 +24,7 @@ export const HeroPage = () => {
           <Typography
             variant="body"
             align="center"
-            className="capitalize lg:w-[28rem] lg:text-left"
+            className="capitalize lg:w-[30rem] lg:text-left"
           >
             Unlock the power of advanced decision making with Autogon's
             cutting-edge AI technology, designed to enhance efficiency and drive
@@ -34,7 +34,7 @@ export const HeroPage = () => {
             <Button>Case study</Button>
             <Button className="flex items-center gap-3" variant="outline">
               Start for free
-              <ArrowTopRightOnSquareIcon className="h-6 w-6 text-black" />
+              <ArrowTopRightOnSquareIcon className="h-6 w-6" />
             </Button>
           </div>
         </div>

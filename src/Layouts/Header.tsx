@@ -388,7 +388,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
         justify="between"
         align="center"
         as="div"
-        className="bg-[#B090EF] lg:flex lg:w-full py-[6.4px] relative z-20"
+        className="bg-accent lg:flex lg:w-full py-[6.4px] relative z-20"
       >
         <Typography
           variant="caption"
@@ -396,13 +396,13 @@ export const Header = ({ darkMode }: HeaderProps) => {
           className="uppercase lg:text-left"
         >
           Interested in keeping updated with our latest advancement and
-          research, join our community.
+          research.
         </Typography>
         <Typography
           variant="caption"
           className="uppercase leading-[19.2px] cursor-pointer hover:underline hidden lg:block"
         >
-          Register Now
+          join our community
         </Typography>
       </Container>
       <div className="relative">

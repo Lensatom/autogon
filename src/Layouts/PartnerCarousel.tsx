@@ -102,7 +102,7 @@ export const PartnerCarousel = ({
         noGutter
         as="div"
         className={classNames(
-          "bg-white overflow-x-hidden flex mt-5 lg:mt-16 h-[128px] lg:h-[12.5rem]",
+          "bg-tertiary overflow-x-hidden flex mt-5 lg:mt-16 h-[128px] lg:h-[12.5rem]",
           carouselContainerClassName
         )}
       >

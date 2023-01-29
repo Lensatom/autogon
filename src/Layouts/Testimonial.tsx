@@ -95,7 +95,7 @@ export const Testimonial = ({ isDarkMode }: TestimonialType) => {
         allowTouchMove
         initialSlide={0}
         modules={[Pagination]}
-        slideActiveClass="!bg-[#b090ef]"
+        slideActiveClass="!bg-accent"
         pagination={{
           clickable: true,
           bulletActiveClass: "!bg-primary !opacity-100 !h-3 !w-3",

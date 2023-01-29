@@ -30,7 +30,7 @@ const BenefitMobileCard = ({ className, position, contents, src, active, onClick
         className={cn(
           "",
           className,
-          { "bg-[#B090EF] z-30": active }
+          { "bg-accent z-30": active }
         )}
       >
         <div className="h-full relative">
@@ -94,8 +94,6 @@ export const LandingPage = () => {
           <meta itemProp="description" content="kili presentation" />
         </div>
       </Container>
-
-      <PartnerCarousel title="Join an elite group of companies revolutionizing their industries with our AI/ML solutions" />
 
       <Container className="bg-neutral py-10 lg:py-20 pb-32">
         <Typography
@@ -213,7 +211,7 @@ export const LandingPage = () => {
           <Typography variant="body" className="mt-8 w-[85%]">
             Get ahead of the game with Autpgon’s cutting edge AI models.
           </Typography>
-          <Button className="flex items-center gap-3 mt-9">Chat to us.</Button>
+          <Button className="flex items-center gap-3 mt-9">Chat to us</Button>
         </div>
         <div className="w-full">
           <Lottie
@@ -224,7 +222,7 @@ export const LandingPage = () => {
         </div>
       </Container>
 
-      <Container className="bg-surface py-10 overflow-hidden lg:h-[110rem] ">
+      <Container className="bg-surface py-10 overflow-hidden lg:h-[70rem] ">
         <Typography
           variant="header"
           align="center"
@@ -233,15 +231,15 @@ export const LandingPage = () => {
           You can use Autogon if you are a
         </Typography>
 
-        <div className="grid-cols-2 mt-32 justify-center hidden lg:grid">
-          <div className="relative bg-blue-600">
+        <div className="grid-rows-1 mt-32 gap-y-9 hidden lg:grid bg-pink-500">
+          <div className="relative w-fit bg-green-700">
             <BenefitCard
               active={active === 1}
               onClick={() => setActive(1)}
               bounds={{ top: -350, left: -200, right: 800, bottom: 800 }}
               src="https://a.storyblok.com/f/139616/160x160/9a8818c603/ml-engineer.png"
               position="ML Engineers"
-              className="left-40"
+              className="left"
               contents={[
                 "Autogon can be used by ML engineers to quickly build and test models, as well as deploy them into production. It also allows for easy monitoring and management of deployed models, which can help ML engineers to ensure that models are performing as expected",
               ]}
@@ -251,7 +249,7 @@ export const LandingPage = () => {
               onClick={() => setActive(2)}
               bounds={{ top: -580, left: -200, right: 800, bottom: 600 }}
               src="https://a.storyblok.com/f/139616/160x160/c468ab2a8f/product-leaders.jpg"
-              className="top-52 left-40"
+              className="top- left-48"
               position=" Executives and Analytics Leaders"
               contents={[
                 "Executives and analytics leaders can use Autogon to gain insights from their data and make data-driven decisions. The platform's ability to automate the machine learning process can also help organizations to become more efficient and effective.",
@@ -262,10 +260,32 @@ export const LandingPage = () => {
               bounds={{ top: -720, left: -200, right: 800, bottom: 410 }}
               onClick={() => setActive(3)}
               src="https://a.storyblok.com/f/139616/160x160/ead56e9b1f/it-leader.png"
-              className="top-[25rem] left-40"
+              className="top- left-[26rem]"
               position="Software Engineers"
               contents={[
                 "Software engineers can use Autogon to deploy machine learning models into production quickly and easily. The platform also allows for easy integration with other systems and applications.",
+              ]}
+            />
+            <BenefitCard
+              active={active === 5}
+              onClick={() => setActive(5)}
+              bounds={{ top: -350, left: -200, right: 800, bottom: 800 }}
+              src="https://a.storyblok.com/f/139616/160x160/b37814d5df/project-managers.jpg"
+              position="Data Scientists"
+              className="left-[40rem]"
+              contents={[
+                "Autogon allows data scientists to quickly and easily build and test machine learning models, without the need for extensive coding. This can save data scientists time and effort and allow them to focus on more complex modeling tasks.",
+              ]}
+            />
+            <BenefitCard
+              active={active === 6}
+              onClick={() => setActive(6)}
+              bounds={{ top: -580, left: -200, right: 800, bottom: 600 }}
+              src="https://a.storyblok.com/f/139616/160x160/8343df36fa/ai-leaders.jpg"
+              className="left-[55rem]"
+              position="Business Analysts"
+              contents={[
+                "Business analysts can use Autogon to quickly create predictive models to support business decisions. The platform's automated machine learning capabilities allow analysts to build models without needing deep technical expertise.",
               ]}
             />
             {/* <BenefitCard
@@ -281,13 +301,14 @@ export const LandingPage = () => {
               ]}
             /> */}
           </div>
-          <div className="relative">
+          {/* <div className="relative">
             <BenefitCard
               active={active === 5}
               onClick={() => setActive(5)}
               bounds={{ top: -350, left: -200, right: 800, bottom: 800 }}
               src="https://a.storyblok.com/f/139616/160x160/b37814d5df/project-managers.jpg"
               position="Data Scientists"
+              className="top-96"
               contents={[
                 "Autogon allows data scientists to quickly and easily build and test machine learning models, without the need for extensive coding. This can save data scientists time and effort and allow them to focus on more complex modeling tasks.",
               ]}
@@ -297,24 +318,13 @@ export const LandingPage = () => {
               onClick={() => setActive(6)}
               bounds={{ top: -580, left: -200, right: 800, bottom: 600 }}
               src="https://a.storyblok.com/f/139616/160x160/8343df36fa/ai-leaders.jpg"
-              className="top-52"
+              className="top-80"
               position="Business Analysts"
               contents={[
                 "Business analysts can use Autogon to quickly create predictive models to support business decisions. The platform's automated machine learning capabilities allow analysts to build models without needing deep technical expertise.",
               ]}
             />
-            {/* <BenefitCard
-              active={active === 7}
-              onClick={() => setActive(7)}
-              bounds={{ top: -720, left: -200, right: 800, bottom: 410 }}
-              src="https://a.storyblok.com/f/139616/160x160/256be6f7e1/ml-engineers.jpg"
-              className="top-[25rem]"
-              position="Data Scientists"
-              contents={[
-                "Autogon allows data scientists to quickly and easily build and test machine learning models, without the need for extensive coding. This can save data scientists time and effort and allow them to focus on more complex modeling tasks.",
-              ]}
-            /> */}
-          </div>
+          </div> */}
         </div>
         <div className="lg:hidden mt-10">
           <Swiper
@@ -324,7 +334,7 @@ export const LandingPage = () => {
             allowTouchMove
             initialSlide={0}
             modules={[Pagination]}
-            slideActiveClass="!bg-[#b090ef]"
+            slideActiveClass="!bg-accent"
             pagination={{
               clickable: true,
               bulletActiveClass: "!bg-primary !opacity-100 !h-3 !w-3",
@@ -339,7 +349,7 @@ export const LandingPage = () => {
             }}
           >
             <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2]  p-12  shadow-4xl cursor-move select-none`}
+              className={`!h-[40rem] rounded-6xl bg-tertiary p-12  shadow-4xl cursor-move select-none`}
             >
               <BenefitMobileCard
                 active={active === 1}
@@ -353,7 +363,7 @@ export const LandingPage = () => {
               />
             </SwiperSlide>
             <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2]  p-12  shadow-4xl cursor-move select-none`}
+              className={`!h-[40rem] rounded-6xl bg-tertiary  p-12 shadow-4xl cursor-move select-none`}
             >
               <BenefitMobileCard
                 active={active === 2}
@@ -368,7 +378,7 @@ export const LandingPage = () => {
               />
             </SwiperSlide>
             <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2]  p-12  shadow-4xl cursor-move select-none`}
+              className={`!h-[40rem] rounded-6xl bg-tertiary p-12 shadow-4xl cursor-move select-none`}
             >
               <BenefitCard
                 active={active === 3}
@@ -384,7 +394,7 @@ export const LandingPage = () => {
               />
             </SwiperSlide>
             <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2]  p-12  shadow-4xl cursor-move select-none`}
+              className={`!h-[40rem] rounded-6xl bg-tertiary p-12 shadow-4xl cursor-move select-none`}
             >
               <BenefitCard
                 active={active === 4}
@@ -399,7 +409,7 @@ export const LandingPage = () => {
               />
             </SwiperSlide>
             <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2]  p-12  shadow-4xl cursor-move select-none`}
+              className={`!h-[40rem] rounded-6xl bg-tertiary p-12 shadow-4xl cursor-move select-none`}
             >
               <BenefitCard
                 active={active === 5}
@@ -413,7 +423,7 @@ export const LandingPage = () => {
               />
             </SwiperSlide>
             <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2]  p-12  shadow-4xl cursor-move select-none`}
+              className={`!h-[40rem] rounded-6xl bg-tertiary p-12 shadow-4xl cursor-move select-none`}
             >
               <BenefitCard
                 active={active === 6}
@@ -429,7 +439,7 @@ export const LandingPage = () => {
               />
             </SwiperSlide>
             <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-[#EAEEE2] p-12 shadow-4xl cursor-move select-none`}
+              className={`!h-[40rem] rounded-6xl bg-tertiary p-12 shadow-4xl cursor-move select-none`}
             >
               <BenefitCard
                 active={active === 7}
@@ -449,6 +459,8 @@ export const LandingPage = () => {
       </Container>
 
       <Testimonial />
+
+      <PartnerCarousel title="Join an elite group of companies revolutionizing their industries with our AI/ML solutions" />
 
       <Container noGutter className="bg-surface py-10 pt-5">
         <Typography

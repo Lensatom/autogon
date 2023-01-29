@@ -6,10 +6,12 @@ module.exports = {
     extend: {
       colors: {
         primary: "#FF9900",
-        neutral: "#081819",
-        secondary: "#232F3E",
-        surface: "#FBFCF8",
-        "dark-surface": "#081819",
+        neutral: "#11151C",
+        secondary: "#7D4E57",
+        surface: "#EBF2FA",
+        "dark-surface": "#364156",
+        accent: "#7F9172",
+        tertiary: "#7F9172"
       },
       backgroundColor: {
         "dark-paper": "#162427",

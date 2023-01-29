@@ -166,7 +166,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
 
   return (
     <Container
-      className="relative bg-[#EAEEE2] py-8 lg:pb-20 pb-60 flex-col-reverse lg:flex-row"
+      className="relative bg-tertiary py-8 lg:pb-20 pb-60 flex-col-reverse lg:flex-row"
       isDarkMode={darkMode}
       flex
     >
