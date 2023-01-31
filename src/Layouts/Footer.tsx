@@ -166,7 +166,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
 
   return (
     <Container
-      className="relative bg-tertiary py-8 lg:pb-20 pb-60 flex-col-reverse lg:flex-row"
+      className="relative bg-[#232f3e] py-8 lg:pb-20 pb-60 flex-col-reverse lg:flex-row"
       isDarkMode={darkMode}
       flex
     >
@@ -275,28 +275,36 @@ export const Footer = ({ darkMode }: FooterProps) => {
           <Typography
             variant="caption"
             isDarkMode={darkMode}
-            className={cn("uppercase cursor-pointer hover:underline")}
+            className={cn(
+              "uppercase cursor-pointer !text-white hover:underline"
+            )}
           >
             Privacy Policy
           </Typography>
           <Typography
             isDarkMode={darkMode}
             variant="caption"
-            className={cn("uppercase cursor-pointer hover:underline")}
+            className={cn(
+              "uppercase cursor-pointer !text-white hover:underline"
+            )}
           >
             Legal Notice
           </Typography>
           <Typography
             isDarkMode={darkMode}
             variant="caption"
-            className={cn("uppercase cursor-pointer hover:underline")}
+            className={cn(
+              "uppercase cursor-pointer !text-white hover:underline"
+            )}
           >
             Security Info
           </Typography>
           <Typography
             isDarkMode={darkMode}
             variant="caption"
-            className={cn("uppercase cursor-pointer hover:underline")}
+            className={cn(
+              "uppercase cursor-pointer !text-white hover:underline"
+            )}
           >
             Status
           </Typography>

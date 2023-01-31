@@ -18,7 +18,7 @@ export const FooterLinks = ({
       <Typography
         isDarkMode={darkMode}
         variant="title"
-        className="!text-[23px] font-bold !leading-6"
+        className="!text-[23px] !text-white font-bold !leading-6"
       >
         {title}
       </Typography>
@@ -29,7 +29,9 @@ export const FooterLinks = ({
               <Typography
                 isDarkMode={darkMode}
                 variant="link"
-                className={cn("capitalize cursor-pointer hover:underline w-fit")}
+                className={cn(
+                  "capitalize cursor-pointer !text-white hover:underline w-fit"
+                )}
               >
                 {nav.name}
               </Typography>

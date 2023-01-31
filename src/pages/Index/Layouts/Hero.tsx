@@ -16,7 +16,7 @@ export const HeroPage = () => {
 
   return (
     <Container className="bg-surface pt-[12rem] lg:pt-[8rem] lg:pb-28">
-      <Typography align="center" variant="display" className="mx-auto">
+      <Typography align="center" variant="display" className="mx-auto w-1/2">
         Artificial Intelligence Platform for Creatives
       </Typography>
       <div className="flex flex-col-reverse lg:flex-row w-full items-center mb-10">
