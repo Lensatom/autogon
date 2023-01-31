@@ -37,12 +37,12 @@ export const Typography = forwardRef(
 
     const fontSizeVariant = {
       display:
-        " text-[70px] lg:text-[80px] font-montserrat font-bold leading-[70px] lg:leading-[140px] -tracking-[4.8px]",
+        " text-[70px] lg:text-7xl font-montserrat font-bold",
       subdisplay:
-        " text-[70px] lg:text-[117px] font-montserrat font-bold leading-[70px] lg:leading-[151.2px] -tracking-[3.36px]",
+        " text-[70px] lg:text-6xl font-montserrat font-bold",
       header:
-        "font-lora text-[70px] lg:text-[104px] font-medium leading-[90%] lg:leading-[100.8px] -tracking-[2.24px]",
-      title: "font-lora text-[43px] leading-[52.8px] font-medium",
+        "font-lora text-[70px] lg:text-4xl font-medium !leading-[50px]",
+      title: "font-lora text-3xl font-medium",
       body: "text-[18px] font-hind leading-[28.8px] -tracking-[0.18px]",
       link: "text-[16px] font-hind leading-[19.2px] -tracking-[0.16px]s cursor-pointer",
       caption:

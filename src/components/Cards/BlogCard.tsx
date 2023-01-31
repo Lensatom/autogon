@@ -14,7 +14,7 @@ export const BlogCard = ({
   titleClass,
   children
 }: BlogCardProps) => {
-  let IconComponent = Icon ? <Icon className="h-6 w-6 text-gray-500" /> : null;
+  let IconComponent = Icon ? <Icon className="h-6 w-6" /> : null;
 
   return (
     <div className="cursor-pointer select-none w-fit">
@@ -29,7 +29,7 @@ export const BlogCard = ({
           <Typography
             variant="title"
             className={cn(
-              "capitalize !text-[32px] mt-1 font-extrabold !leading-10",
+              "capitalize mt-1",
               titleClass 
             )}
           >
@@ -38,7 +38,7 @@ export const BlogCard = ({
           {children}
         </div>
         <Button
-          className="flex items-center gap-3 !bg-[#EAEEE2] border-none absolute bottom-5 left-4"
+          className="flex items-center gap-3 !bg-primary border-none absolute bottom-5 left-4"
           variant="outline"
         >
           {buttonText}

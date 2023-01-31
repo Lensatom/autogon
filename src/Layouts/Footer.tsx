@@ -1,5 +1,5 @@
 import { Container, Typography } from "../components";
-import Logo from "../assets/logo/Autogon-logo.png";
+import Logo from "../assets/logo/Autogon-full-logo-light.png";
 import DarkLogo from "../assets/logo/Autogon-logo-light.png";
 import {
   FaFacebookF,
@@ -175,7 +175,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
           src={darkMode ? DarkLogo : Logo}
           className="h-[48.47px] font-roboto font-bold select-none"
         />
-        <Typography isDarkMode={darkMode} variant="caption" className="mt-2">
+        <Typography isDarkMode={darkMode} variant="caption" className="mt-2 !text-white">
           Autogon © {new Date().getFullYear()}
         </Typography>
       </div>

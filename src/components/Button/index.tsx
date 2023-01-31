@@ -35,8 +35,10 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         <button
           {...rest}
           ref={ref}
-          className={`px-6 py-5 bg-transparent border  rounded-xl text-[16px] font-inter leading-4 -tracking-[0.16px] hover:text-neutral hover:bg-primary hover:border-primary hover:shadow ${
-            darkMode ? "border-white text-white" : "border-secondary text-secondary"
+          className={`px-4 h-10 min-w-[60px] bg-transparent border  rounded text-[16px] font-inter leading-4 -tracking-[0.16px] hover:text-neutral hover:bg-primary hover:border-primary hover:shadow ${
+            darkMode
+              ? "border-white text-white"
+              : "border-secondary text-secondary"
           } ${className}`}
         />
       );
@@ -46,7 +48,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       <button
         {...rest}
         ref={ref}
-        className={classNames(`px-6 py-5 text-neutral rounded-xl text-[16px] font-inter leading-4 -tracking-[0.16px] group`, className, {
+        className={classNames(`px-4 h-10 min-w-[60px] text-neutral rounded text-[16px] font-inter leading-4 -tracking-[0.16px] group`, className, {
           [colors[color].container.dark]: darkMode,
           [colors.primary['container'].light]: !darkMode
         })}

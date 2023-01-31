@@ -23,6 +23,7 @@ export const Container = forwardRef<any, ContainerProps<any>>((props, ref) => {
     background,
     isLightDarkMode,
     disableOverflowHidden,
+    smallGutter,
     ...rest
   } = props;
 
@@ -94,6 +95,7 @@ export const Container = forwardRef<any, ContainerProps<any>>((props, ref) => {
         [gridRow[rows as Rows]]: rows,
         "w-screen": fullWidth,
         "h-screen": fullHeight,
+        // "px-4 lg:px-28": !noGutter && !smallGutter,
         "px-4 lg:px-12": !noGutter,
         [justifyItems[justify as Justify]]: justify,
         [alignItems[align as Align]]: align,
@@ -101,7 +103,7 @@ export const Container = forwardRef<any, ContainerProps<any>>((props, ref) => {
         "!bg-dark-paper": isDarkMode && !background,
         "!bg-dark-surface": isDarkMode && background,
         "!bg-light-dark-surface": isLightDarkMode && background,
-        "overflow-hidden": !disableOverflowHidden
+        "overflow-hidden": !disableOverflowHidden,
       })}
       {...rest}
     />

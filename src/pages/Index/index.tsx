@@ -76,7 +76,7 @@ export const LandingPage = () => {
       >
         <meta
           itemProp="contentUrl"
-          content="https://a.storyblok.com/f/139616/x/46411cf354/demo-homepage-v2.mp4"
+          content="https://www.youtube.com/watch?v=6WC8Ef4nNjE"
         />
         <div className="mx-auto lg:px-[1.375em] flex relative overflow-hidden items-center justify-center rounded">
           <video
@@ -84,7 +84,7 @@ export const LandingPage = () => {
             loop
             autoPlay
             typeof="video/mp4"
-            src="https://a.storyblok.com/f/139616/x/46411cf354/demo-homepage-v2.mp4"
+            src="https://www.youtube.com/watch?v=6WC8Ef4nNjE"
           ></video>
           <meta itemProp="name" content="kili presentation" />
           <meta
@@ -98,7 +98,7 @@ export const LandingPage = () => {
 
       <Container className="bg-neutral py-10 lg:py-20 pb-32">
         <Typography
-          variant="header"
+          variant="subdisplay"
           align="center"
           className="!text-white mb-4"
         >
@@ -129,21 +129,23 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-surface flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-40"
+        className="bg-surface flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-20 gap-10"
         flex
         align="center"
       >
         <div className="w-full">
           <Typography variant="header" className="font-semibold">
-            Predictive modeling
+            NO CODE experience doing the complex but keeping it simple
           </Typography>
           <Typography variant="body" className="mt-8 w-[80%]">
-            Autogon is used to create predictive models to predict future
-            outcomes based on historical data. It can be used in a variety of
-            industries, such as finance, healthcare, and retail, to predict
-            customer behavior, identify fraud, and forecast demand.
+            Simple Drag and drop functions to build powerful wordclass machine
+            learning models that would require seasoned professionals, lots of
+            time and compute resources
           </Typography>
-          <Typography variant="link" className="text-sm mt-9 !font-extrabold ">
+          <Typography
+            variant="link"
+            className="text-sm mt-9 !font-extrabold text-primary"
+          >
             Learn more
             <IoIosArrowForward className="h-3 w-3 ml-2 inline" />
           </Typography>
@@ -154,17 +156,18 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-surface flex-col-reverse lg:flex-row-reverse lg:pt-20 lg:pb-40 gap-10"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse lg:pt-20 lg:pb-20 gap-10"
         flex
         align="center"
       >
         <div className="w-full">
           <Typography variant="header" className="font-semibold">
-            Anomaly detection
+            Quickly purchase and deploy powerful ML Models for your intended
+            usecase
           </Typography>
           <Typography variant="body" className="mt-8 w-[85%]">
-            Autogon can be used to detect anomalies in data, which can be used
-            to identify fraud, network intrusions, or other unusual behavior.
+            Go live in less than 5 minutes, browse through our Marketplace with
+            richset of Models designed for various industry
           </Typography>
           <Typography variant="link" className="text-sm mt-9 !font-extrabold ">
             Learn more
@@ -177,18 +180,20 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-surface pt-10 lg:pb-40 flex-col-reverse lg:flex-row-reverse"
+        className="bg-surface pt-10 lg:pb-20 gap-10 flex-col-reverse lg:flex-row"
         flex
         align="center"
       >
         <div className="w-full">
           <Typography variant="header" className="font-semibold">
-            Time series forecasting
+            Build custom software experiences with well-documented APIs and
+            Integration SDK's
           </Typography>
           <Typography variant="body" className="mt-8 w-[90%]">
-            Autogon can be used to analyse time series data and make predictions
-            about future trends. This can be used in industries such as finance
-            and logistics to forecast demand and make better business decisions.
+            Developers love our thorough, well-documented APIs and SDK's that
+            let you to build everything from simple weekend projects, to complex
+            products irrespective of the industry, serving hundreds of thousands
+            of customers. If you can imagine it, you can build it with Autogon.
           </Typography>
           <Typography variant="link" className="text-sm mt-9 !font-extrabold ">
             Learn more
@@ -201,16 +206,19 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-surface flex-col-reverse lg:flex-row-reverse pt-10 pb-60 gap-10"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse  pb-40 gap-10"
         flex
         align="center"
       >
         <div className="w-full">
           <Typography variant="header" className="font-semibold">
-            Artificial Intelligence for Creatives
+            Tap into the power of our AutoML engine
           </Typography>
           <Typography variant="body" className="mt-8 w-[85%]">
-            Get ahead of the game with Autpgon’s cutting edge AI models.
+            Save time and complete task in minutes by leaveraging the power of
+            our AUTOML by simply transfering data to our training algorithms and
+            automatically get the best neural network architecture for a given
+            issue with meterics on accuracy
           </Typography>
           <Button className="flex items-center gap-3 mt-9">Chat to us</Button>
         </div>
@@ -225,9 +233,9 @@ export const LandingPage = () => {
 
       <Container className="bg-surface py-10 overflow-hidden lg:h-[70rem] ">
         <Typography
-          variant="header"
+          variant="subdisplay"
           align="center"
-          className="lg:w-[80%] mx-auto font-extrabold"
+          className="lg:w-[60%] mx-auto font-extrabold"
         >
           You can use Autogon if you are a
         </Typography>
@@ -522,14 +530,14 @@ export const LandingPage = () => {
         className="bg-[#162427] pb-28 pt-28 place-items-center"
       >
         <div className="">
-          <img src={Smilesvg} className="relative mx-auto h-20 w-20 mb-5" />
+          <img src={Smilesvg} className="relative mx-auto h-20 w-20 mb-10" />
           <Typography
             variant="subdisplay"
             className="capitalize !text-white text-center"
           >
             Begin your journey
           </Typography>
-          <Typography variant="body" align="center" className="!text-white">
+          <Typography variant="body" align="center" className="!text-white mt-3">
             Begin your journey! Start Creating AI Models.
           </Typography>
           <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">

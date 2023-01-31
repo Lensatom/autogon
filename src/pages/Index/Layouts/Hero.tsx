@@ -1,6 +1,6 @@
 import { Button, Container, Typography } from "../../../components";
 import Lottie from "lottie-react";
-import animationData from "../../../assets/lf30_editor_22k2biyf.json";
+import animationData from "../../../assets/9gjZm6jqpK.json";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import cn from "classnames";
 
@@ -15,11 +15,11 @@ export const HeroPage = () => {
   };
 
   return (
-    <Container className="bg-surface pt-[12rem] lg:pt-[8rem] lg:pb-28">
-      <Typography align="center" variant="display" className="mx-auto w-1/2">
+    <Container className="bg-surface pt-[12rem] lg:pt-[12rem]">
+      <Typography align="center" variant="display" className="mx-auto w-[80%] mb-8">
         Artificial Intelligence Platform for Creatives
       </Typography>
-      <div className="flex flex-col-reverse lg:flex-row w-full items-center mb-10">
+      <div className="flex flex-col-reverse lg:flex-row w-full items-center">
         <div className="flex-1 flex flex-col-reverse lg:flex-col w-full lg:w-fit lg:pl-20">
           <Typography
             variant="body"
@@ -42,7 +42,7 @@ export const HeroPage = () => {
           <Lottie
             animationData={animationData}
             loop
-            className="h-80 mx-auto w-80"
+            className="h-[3orem] mx-auto w-[3orem]"
           />
         </div>
       </div>

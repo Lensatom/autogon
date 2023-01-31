@@ -1,6 +1,6 @@
 import { Button, Container, Typography } from "../components";
-import DarkLogo from "../assets/logo/Autogon-logo.png";
-import Logo from "../assets/logo/Autogon-logo-light.png";
+import DarkLogo from "../assets/logo/Autogon-full-logo.png";
+import Logo from "../assets/logo/Autogon-full-logo-light.png";
 import cn from "classnames";
 import { forwardRef, Fragment, useState } from "react";
 import { MenuDrawerProps, NavLinks, NavMenus } from "../interfaces";
@@ -388,6 +388,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
         justify="between"
         align="center"
         as="div"
+        smallGutter
         className="bg-accent lg:flex lg:w-full py-[6.4px] relative z-20"
       >
         <Typography
@@ -418,6 +419,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
           isDarkMode={darkMode}
           background
           flex
+          smallGutter
           align="center"
           className="bg-surface py-5 gap-x-16 justify-between"
           disableOverflowHidden

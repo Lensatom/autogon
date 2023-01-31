@@ -29,9 +29,10 @@ type PolymorphicAsProps<E extends ElementType> = {
   background?: boolean;
   isLightDarkMode?: boolean;
   disableOverflowHidden?: boolean;
-  grid?: boolean,
-  columns?: Columns,
-  rows?: Rows
+  grid?: boolean;
+  columns?: Columns;
+  rows?: Rows;
+  smallGutter?: boolean;
 };
 
 export type ContainerProps<E extends ElementType> = PolymorphicAsProps<E> &
