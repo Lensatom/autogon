@@ -87,7 +87,7 @@ export const PlatformPage = () => {
           variant="body"
           align="center"
           isDarkMode
-          className="capitalize lg:w-[45rem] mx-auto mt-5"
+          className="capitalize lg:w-[50rem] mx-auto mt-5"
         >
           Welcome to our AI Cloud Platform, the most advanced platform for
           enterprise AI. Our platform makes it easy for businesses of all sizes
@@ -108,11 +108,7 @@ export const PlatformPage = () => {
           <Typography isDarkMode variant="body" className="text-[22px]">
             [1]
           </Typography>
-          <Typography
-            isDarkMode
-            variant="title"
-            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
-          >
+          <Typography isDarkMode variant="header" lassName="font-semibold">
             AUGMENTED INTELLIGENCE
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">

@@ -39,7 +39,6 @@ export const BlogCard = ({
         </div>
         <Button
           className="flex items-center gap-3 !bg-primary border-none absolute bottom-5 left-4"
-          variant="outline"
         >
           {buttonText}
           {IconComponent}

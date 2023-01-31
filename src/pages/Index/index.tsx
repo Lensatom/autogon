@@ -21,7 +21,8 @@ import Draggable from "react-draggable";
 import { useState } from "react";
 import { Pagination } from "swiper";
 import { BenefitCard } from "./components/BenefitCard";
-import AIMLIcon from '../../assets/AIML.png'
+import AIMLIcon from '../../assets/AIML.png';
+import { screenshots, screenshots1, screenshots2, screenshots3 } from '../../assets/screenshots';
 
 
 const BenefitMobileCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
@@ -150,13 +151,13 @@ export const LandingPage = () => {
             <IoIosArrowForward className="h-3 w-3 ml-2 inline" />
           </Typography>
         </div>
-        <div className="w-full">
-          <img src={DataSetImage} className="h-full w-full object-contain" />
+        <div className="w-full p-5">
+          <img src={screenshots} className="h-full w-full object-contain" />
         </div>
       </Container>
 
       <Container
-        className="bg-surface flex-col-reverse lg:flex-row-reverse lg:pt-20 lg:pb-20 gap-10"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse lg:pt-20 lg:pb-28 gap-10"
         flex
         align="center"
       >
@@ -177,8 +178,8 @@ export const LandingPage = () => {
             <IoIosArrowForward className="h-3 w-3 ml-2 inline" />
           </Typography>
         </div>
-        <div className="w-full">
-          <img src={FixAndFixImage} className="h-full w-full object-contain" />
+        <div className="w-full p-5">
+          <img src={screenshots1} className="h-full w-full object-contain" />
         </div>
       </Container>
 
@@ -206,8 +207,8 @@ export const LandingPage = () => {
             <IoIosArrowForward className="h-3 w-3 ml-2 inline" />
           </Typography>
         </div>
-        <div className="w-full">
-          <img src={DevopsImage} className="h-full w-full object-contain" />
+        <div className="w-full p-5">
+          <img src={screenshots2} className="h-full w-full object-contain" />
         </div>
       </Container>
 
@@ -220,7 +221,7 @@ export const LandingPage = () => {
           <Typography variant="header" className="font-semibold">
             Tap into the power of our AutoML engine
           </Typography>
-          <Typography variant="body" className="mt-8 w-[85%]">
+          <Typography variant="body" className="mt-8 w-[80%]">
             Save time and complete task in minutes by leaveraging the power of
             our AUTOML by simply transfering data to our training algorithms and
             automatically get the best neural network architecture for a given
