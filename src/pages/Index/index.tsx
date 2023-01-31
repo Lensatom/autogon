@@ -14,13 +14,14 @@ import FixAndFixImage from "../../assets/fix-and-fix-issues-v2-1.webp.png";
 import { IoIosArrowForward } from "react-icons/io";
 
 import Lottie from "lottie-react";
-import animationData from "../../assets/lf30_editor_22k2biyf.json";
+import animationData from "../../assets/79314-assistant-bot.json";
 import { Testimonial } from "../../Layouts/Testimonial";
 import { PartnerCarousel } from "../../Layouts/PartnerCarousel";
 import Draggable from "react-draggable";
 import { useState } from "react";
 import { Pagination } from "swiper";
 import { BenefitCard } from "./components/BenefitCard";
+import AIMLIcon from '../../assets/AIML.png'
 
 
 const BenefitMobileCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
@@ -115,7 +116,7 @@ export const LandingPage = () => {
 
         <div>
           <img
-            src="https://a.storyblok.com/f/139616/x/1eb97a0c59/diagram-01-desktop-updated-april11th.svg"
+            src={AIMLIcon}
             className="hidden lg:block mx-auto"
             alt="Integrate quickly"
           />
@@ -217,7 +218,7 @@ export const LandingPage = () => {
           <Lottie
             animationData={animationData}
             loop
-            className="h-80 mx-auto w-80"
+            className="h-[40rem] mx-auto w-[40rem]"
           />
         </div>
       </Container>
@@ -236,7 +237,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 1}
               onClick={() => setActive(1)}
-              bounds={{ top: -350, left: -200, right: 800, bottom: 800 }}
+              bounds={{ top: -350, left: -200, right: 800, bottom: 300 }}
               src="https://a.storyblok.com/f/139616/160x160/9a8818c603/ml-engineer.png"
               position="ML Engineers"
               className="left"
@@ -247,7 +248,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 2}
               onClick={() => setActive(2)}
-              bounds={{ top: -580, left: -200, right: 800, bottom: 600 }}
+              bounds={{ top: -350, left: -200, right: 800, bottom: 300 }}
               src="https://a.storyblok.com/f/139616/160x160/c468ab2a8f/product-leaders.jpg"
               className="top- left-48"
               position=" Executives and Analytics Leaders"
@@ -257,7 +258,7 @@ export const LandingPage = () => {
             />
             <BenefitCard
               active={active === 3}
-              bounds={{ top: -720, left: -200, right: 800, bottom: 410 }}
+              bounds={{ top: -350, left: -200, right: 800, bottom: 300 }}
               onClick={() => setActive(3)}
               src="https://a.storyblok.com/f/139616/160x160/ead56e9b1f/it-leader.png"
               className="top- left-[26rem]"
@@ -269,7 +270,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 5}
               onClick={() => setActive(5)}
-              bounds={{ top: -350, left: -200, right: 800, bottom: 800 }}
+              bounds={{ top: -350, left: -200, right: 800, bottom: 300 }}
               src="https://a.storyblok.com/f/139616/160x160/b37814d5df/project-managers.jpg"
               position="Data Scientists"
               className="left-[40rem]"
@@ -280,7 +281,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 6}
               onClick={() => setActive(6)}
-              bounds={{ top: -580, left: -200, right: 800, bottom: 600 }}
+              bounds={{ top: -350, left: -200, right: 800, bottom: 300 }}
               src="https://a.storyblok.com/f/139616/160x160/8343df36fa/ai-leaders.jpg"
               className="left-[55rem]"
               position="Business Analysts"

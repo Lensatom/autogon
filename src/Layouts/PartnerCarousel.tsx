@@ -1,6 +1,25 @@
 import classNames from "classnames";
 import { Container, Typography } from "../components";
-import { Apextech, BrightMinds, FutureDark, FutureLight, InnovateXLogo,Mind, MindLeap, OptimumIQ, ProdigyWorks, QuantumLogo, TechwaveLogo  } from '../assets/brand';
+import {
+  // Apextech,
+  BrightMinds,
+  FutureDark,
+  FutureLight,
+  InnovateXLogo,
+  // Mind,
+  MindLeap,
+  MindLeapWhite,
+  ProdigyWorks,
+  QuantumLogo,
+  TechwaveLogo,
+  TechwaveWhiteLogo,
+  InnovateXWhiteLogo,
+  NextLevel,
+  NextLevelWhite,
+  ProdigyWorksWhite,
+  BrightMindsWhite,
+  QuantumWhiteLogo
+} from "../assets/brand";
 
 interface PartnerCarouselProps {
   darkMode?: boolean;
@@ -21,12 +40,8 @@ export const PartnerCarousel = ({
   
   let brands = [
     {
-      dark: Apextech,
-      light: Apextech,
-    },
-    {
       dark: BrightMinds,
-      light: BrightMinds,
+      light: BrightMindsWhite,
     },
     {
       dark: FutureDark,
@@ -34,37 +49,27 @@ export const PartnerCarousel = ({
     },
     {
       dark: InnovateXLogo,
-      light: InnovateXLogo,
-    },
-    {
-      dark: Mind,
-      light: Mind,
+      light: InnovateXWhiteLogo,
     },
     {
       dark: MindLeap,
-      light: MindLeap,
-    },
-    {
-      dark: OptimumIQ,
-      light: OptimumIQ,
+      light: MindLeapWhite,
     },
     {
       dark: TechwaveLogo,
-      light:
-        TechwaveLogo,
+      light: TechwaveWhiteLogo,
     },
     {
       dark: ProdigyWorks,
-      light: ProdigyWorks,
+      light: ProdigyWorksWhite,
     },
     {
-      dark: "https://a.storyblok.com/f/139616/x/c69a128f0c/thales-white.svg",
-      light: "https://a.storyblok.com/f/139616/x/6b1c8f07c3/airbus.svg",
+      dark: NextLevel,
+      light: NextLevelWhite,
     },
     {
-      dark: "https://a.storyblok.com/f/139616/x/9fbca9e252/logo-fond-fonce-01-1-1.svg",
-      light:
-        "https://a.storyblok.com/f/139616/x/0e30cb0034/logo-isahit-black.svg",
+      dark: QuantumLogo,
+      light: QuantumWhiteLogo,
     },
   ];
 
@@ -109,7 +114,7 @@ export const PartnerCarousel = ({
         <div className="h-full flex animate-marquee whitespace-nowrap items-center">
           {brands.map((item) => (
             <img
-              src={darkMode ? item.dark : item.light}
+              src={darkMode ? item.light : item.dark}
               className="lg:mr-[9.375rem] mr-[4rem] h-[4.0625rem]"
             />
           ))}

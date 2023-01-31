@@ -326,8 +326,8 @@ export const PlatformPage = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
+        className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         direction="row-reverse"
       >
         <div className="w-full">

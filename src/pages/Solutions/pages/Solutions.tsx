@@ -28,7 +28,7 @@ export const Solutions = () => {
           variant="body"
           align="center"
           isDarkMode
-          className="capitalize lg:w-[45rem] mx-auto mt-5"
+          className="capitalize lg:w-[50rem] mx-auto mt-5"
         >
           At our company, we understand that different industries have different
           needs and challenges when it comes to AI and machine learning. That's

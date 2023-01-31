@@ -37,17 +37,16 @@ export const Typography = forwardRef(
 
     const fontSizeVariant = {
       display:
-        " text-[70px] lg:text-[120px] font-roboto font-bold leading-[70px] lg:leading-[140px] -tracking-[4.8px]",
+        " text-[70px] lg:text-[120px] font-montserrat font-bold leading-[70px] lg:leading-[140px] -tracking-[4.8px]",
       subdisplay:
-        " text-[70px] lg:text-[117px] font-roboto font-bold leading-[70px] lg:leading-[151.2px] -tracking-[3.36px]",
+        " text-[70px] lg:text-[117px] font-montserrat font-bold leading-[70px] lg:leading-[151.2px] -tracking-[3.36px]",
       header:
-        "font-roboto text-[70px] lg:text-[104px] font-medium leading-[90%] lg:leading-[100.8px] -tracking-[2.24px]",
-      title:
-        "font-roboto text-[43px] leading-[52.8px] font-medium",
-      body: "text-[18px] font-inter leading-[28.8px] -tracking-[0.18px]",
-      link: "text-[16px] font-inter leading-[19.2px] -tracking-[0.16px]s cursor-pointer",
+        "font-lora text-[70px] lg:text-[104px] font-medium leading-[90%] lg:leading-[100.8px] -tracking-[2.24px]",
+      title: "font-lora text-[43px] leading-[52.8px] font-medium",
+      body: "text-[18px] font-hind leading-[28.8px] -tracking-[0.18px]",
+      link: "text-[16px] font-hind leading-[19.2px] -tracking-[0.16px]s cursor-pointer",
       caption:
-        "text-[12px] font-inter font-normal leading-[19.2px] tracking-normal",
+        "text-[12px] font-hind font-normal leading-[19.2px] tracking-normal",
       text: "",
     };
 

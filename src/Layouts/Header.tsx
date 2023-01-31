@@ -105,7 +105,7 @@ const PopoverMenu = forwardRef<
           >
             <path
               d="M14.7321 1C13.9622 -0.333333 12.0378 -0.333332 11.2679 1L0.875645 19C0.105845 20.3333 1.0681 22 2.6077 22L23.3923 22C24.9319 22 25.8942 20.3333 25.1244 19L14.7321 1Z"
-              fill={dark ? "#081819" : "#ffffff"}
+              fill={dark ? "#364156" : "#ffffff"}
             ></path>
           </svg>
         </div>
@@ -195,7 +195,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
           links: [
             {
               name: "AutoML",
-              link: "/professional-services#from-design",
+              link: "/platform/key-capabilities#auto-ml",
               hash: true,
             },
             {

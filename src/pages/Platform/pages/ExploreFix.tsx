@@ -10,7 +10,7 @@ import { Testimonial } from "../../../Layouts/Testimonial";
 import { Blog } from '../Layout/Blog';
 
 
-export const ExploreFix = () => {
+export const KeyCapabilities = () => {
   return (
     <>
       <Header darkMode />
@@ -18,9 +18,37 @@ export const ExploreFix = () => {
       <Container
         isDarkMode
         background
-        className="bg-surface pb-10 lg:pb-40 pt-[12rem] lg:pt-[8rem]"
+        className="bg-surface pt-[10rem] lg:pt-[8rem] pb-28"
       >
         <BreadCrumb darkMode />
+        <Typography
+          isDarkMode
+          align="center"
+          variant="display"
+          className="mx-auto mt-4 lg:w-[80rem]"
+        >
+          The power of AI to transform data
+        </Typography>
+        <Typography
+          variant="body"
+          align="center"
+          isDarkMode
+          className="capitalize lg:w-[50rem] mx-auto mt-5"
+        >
+          Welcome to Autogon, where we believe in the power of AI to transform
+          data into actionable insights. We understand that data preparation is
+          a critical step in the AI process, and that's why we provide
+          cutting-edge data preparation tools to help you get the most out of
+          your data
+        </Typography>
+      </Container>
+
+      <Container
+        isDarkMode
+        background
+        className="bg-surface pb-10 lg:pb-40 pt-10"
+      >
+        {/* <BreadCrumb darkMode /> */}
         <div className="lg:flex gap-10 lg:mt-5">
           <div className="w-[95%]">
             <Typography
@@ -28,17 +56,17 @@ export const ExploreFix = () => {
               variant="header"
               className="font-semibold !text-[4.2rem] !leading-[100%] lg:!text-[86px]"
             >
-              Find & fix issues in your ML datasets
+              Data Preparation
             </Typography>
             <img
               src="https://a.storyblok.com/f/139616/2500x1933/a1314fefc1/explore-and-fix-issues.webp"
               className="h-full w-full mt-3 lg:hidden"
             />
             <Typography isDarkMode variant="body" className="mt-6">
-              Supervise quality level & improvements to ensure low-error
-              datasets. Simplify advanced collaboration workflows. Leverage
-              programmatic QA. Explore your datasets and identify the data that
-              matters.
+              Automating the end-to-end process of applying machine learning to
+              real-world problems, including automating tasks such as selecting
+              the appropriate algorithm, tuning the parameters, and
+              preprocessing the data.
             </Typography>
 
             <div className="lg:flex mt-5 lg:mt-20 gap-2">
@@ -70,22 +98,28 @@ export const ExploreFix = () => {
         className="bg-surface flex-col-reverse lg:flex-row-reverse pt-20 gap-10 pb-10 lg:pb-40"
         flex
         direction="row-reverse"
+        id="auto-ml"
       >
         <div className="w-full">
           <Typography isDarkMode variant="body" className="text-[22px]">
-            [1]
+            [-]
           </Typography>
           <Typography
             isDarkMode
             variant="title"
             className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
-            Focus review on data that matters
+            AutoML
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 w-">
-            Create a communication flow between annotators and reviewers.
-            Iterate quickly with annotators on labels to modify. Provide
-            continuous feedback to your labeling team to avoid drift in quality.
+            We give our users the flexibility to create and deploy artificial
+            intelligence (AI) models and applications without the need for prior
+            programming or coding knowledge. We designed these apps to use
+            drag-and-drop interfaces, pre-built templates, and other tools to
+            make it easy for non-technical users to build and deploy AI models
+            and applications, making it easy for businesses and individuals to
+            leverage the power of AI without the need for expensive and
+            time-consuming development resources.
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
@@ -107,21 +141,21 @@ export const ExploreFix = () => {
       >
         <div className="w-full">
           <Typography isDarkMode variant="body" className="text-[22px]">
-            [2]
+            [-]
           </Typography>
           <Typography
             isDarkMode
             variant="title"
             className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
-            Quantify quality with insights from advanced quality metrics
+            No-Code AI Apps
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 w-">
-            Look at the consensus by class to know when your ontology needs to
-            be reshuffled. Look at labelers’ disagreements to identify
-            misunderstandings among your annotator population. Filter on data
-            slices with low quality metrics. Compare quality between labelers or
-            against an industry standard.
+            Empowering Non-Technical Users to Create and Deploy Artificial
+            Intelligence Models and Applications without the need for prior
+            programming or coding knowledge. Autogon is designed to use
+            drag-and-drop interfaces, pre-built templates, and other tools to
+            make it easy.
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
@@ -143,19 +177,23 @@ export const ExploreFix = () => {
       >
         <div className="w-full">
           <Typography isDarkMode variant="body" className="text-[22px]">
-            [3]
+            [-]
           </Typography>
           <Typography
             isDarkMode
             variant="title"
             className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
-            Increase data quality with programmatic error spotting
+            Automated Time Series
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 w-">
-            Programmatically spot errors by building automated QA scripts in the
-            labeling interface. Use error detection models to automatically find
-            and fix issues in your ML datasets.
+            Automated time series is a powerful tool for businesses to
+            understand and make predictions about their data. This technology
+            uses machine learning algorithms to analyze patterns and trends in
+            data over time, allowing companies to make informed decisions based
+            on insights drawn from their data. One of the key benefits of
+            automated time series is the ability to quickly and accurately
+            identify important trends and patterns in large amounts of data.
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
@@ -171,39 +209,45 @@ export const ExploreFix = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
+        className="bg-surface flex-col-reverse items-center lg:flex-row justify-center pb-10 lg:pb-40 gap-3"
         flex
         // direction="row-reverse"
       >
-        <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
-            [4]
-          </Typography>
-          <Typography
+        <div className="w-f">
+          {/* <Typography isDarkMode variant="body" className="text-[22px]">
+            [-]
+          </Typography> */}
+          {/* <Typography
             isDarkMode
             variant="title"
             className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             Orchestrate all your quality strategies with automated workflows
+          </Typography> */}
+          <Typography isDarkMode variant="body" align="center" className="mt-2 lg:w-[80%] mx-auto">
+            Artificial intelligence (AI) has the power to revolutionize the way
+            we live and work. It provides us with the ability to analyze large
+            amounts of data and draw meaningful insights that support decision
+            making. However, the process of creating and deploying AI models and
+            applications can be complex and requires technical expertise. This
+            is where no-code AI apps come in.
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-2 lg;w-[80%]">
-            Fully automate & build custom workflows to scale your labeling
-            operations.
-          </Typography>
+          <div className="grid place-items-center">
+            <Button className="mt-9 mx-auto">Request a demo</Button>
+          </div>
 
-          <Button className="mt-9">Request a demo</Button>
         </div>
-        <div className="lg:w-[90%]">
+        {/* <div className="lg:w-[90%]">
           <img
             src="https://a.storyblok.com/f/139616/3000x3000/795d266d6a/kili_brand_icon_focus_dark.png"
             className="h-full w-full object-contain"
           />
-        </div>
+        </div> */}
       </Container>
 
       <Testimonial isDarkMode />
 
-      <Container isDarkMode background noGutter className=" pb-10 lg:pb-60">
+      {/* <Container isDarkMode background noGutter className=" pb-10 lg:pb-60">
         <Container
           as="div"
           isLightDarkMode
@@ -234,9 +278,9 @@ export const ExploreFix = () => {
             <img src={SOCIcon} className="h-full w-full object-contain" />
           </div>
         </Container>
-      </Container>
+      </Container> */}
 
-      <Blog />
+      {/* <Blog /> */}
 
       <Container
         disableOverflowHidden
