@@ -18,14 +18,14 @@ export const KeyCapabilities = () => {
       <Container
         isDarkMode
         background
-        className="bg-surface pt-[10rem] lg:pt-[8rem] pb-28"
+        className="bg-surface pt-[10rem] lg:pt-[8rem] pb-32"
       >
         <BreadCrumb darkMode />
         <Typography
           isDarkMode
           align="center"
           variant="display"
-          className="mx-auto mt-4 lg:w-[80rem]"
+          className="mx-auto mt-4 lg:w-[70rem]"
         >
           The power of AI to transform data
         </Typography>
@@ -33,7 +33,7 @@ export const KeyCapabilities = () => {
           variant="body"
           align="center"
           isDarkMode
-          className="capitalize lg:w-[50rem] mx-auto mt-5"
+          className="capitalize lg:w-[60rem] mx-auto mt-5"
         >
           Welcome to Autogon, where we believe in the power of AI to transform
           data into actionable insights. We understand that data preparation is

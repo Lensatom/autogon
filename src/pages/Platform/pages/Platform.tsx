@@ -108,7 +108,7 @@ export const PlatformPage = () => {
           <Typography isDarkMode variant="body" className="text-[22px]">
             [1]
           </Typography>
-          <Typography isDarkMode variant="header" lassName="font-semibold">
+          <Typography isDarkMode variant="header" className="font-semibold">
             AUGMENTED INTELLIGENCE
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
@@ -145,7 +145,7 @@ export const PlatformPage = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
+            className="font-semibold"
           >
             DATA ENGINEERING
           </Typography>
