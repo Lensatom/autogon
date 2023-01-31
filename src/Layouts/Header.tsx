@@ -5,7 +5,7 @@ import cn from "classnames";
 import { forwardRef, Fragment, useState } from "react";
 import { MenuDrawerProps, NavLinks, NavMenus } from "../interfaces";
 import { useHover } from "../hooks/useHover.js";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const MenuLinks = ({
@@ -29,11 +29,11 @@ const MenuLinks = ({
         {title}
       </Typography>
       <ul className="mt-4">
-        {links.map((nav) => (
+        {links.map((nav, index) => (
           <li
+            key={index}
             // onClick={() => navigate(nav.link)}
             className="my-2 w-[10rem]"
-            key={nav.id}
           >
             {nav.hash ? (
               <HashLink to={nav.link} smooth>
@@ -111,8 +111,8 @@ const PopoverMenu = forwardRef<
         </div>
         {menus?.map?.((menu, index) => (
           <MenuLinks
-            dark={dark}
             key={index}
+            dark={dark}
             links={menu?.links ?? []}
             title={menu?.title ?? ""}
           />
@@ -434,6 +434,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
           <ul className="items-center gap-12 hidden lg:flex">
             {navLinks.map((nav) => (
               <MenuItem
+                key={nav?.name}
                 id={nav?.name}
                 menu={nav?.menu ?? []}
                 name={nav.name}
@@ -555,10 +556,10 @@ const MenuDrawer = ({ navLinks, dark, isShowing }: MenuDrawerProps) => {
     >
       <div className="flex flex-col h-5/6 justify-between">
         <ul>
-          {navLinks?.map?.((nav) => (
+          {navLinks?.map?.((nav, index) => (
             <li
+              key={index}
               className={cn("py-3", { "mt-32": nav?.id === "1" })}
-              key={nav?.id}
               onClick={() => setActive(nav?.id)}
             >
               <Typography

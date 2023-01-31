@@ -14,7 +14,7 @@ import FixAndFixImage from "../../assets/fix-and-fix-issues-v2-1.webp.png";
 import { IoIosArrowForward } from "react-icons/io";
 
 import Lottie from "lottie-react";
-import animationData from "../../assets/79314-assistant-bot.json";
+import animationData from "../../assets/lf20_lphquaqr.json";
 import { Testimonial } from "../../Layouts/Testimonial";
 import { PartnerCarousel } from "../../Layouts/PartnerCarousel";
 import Draggable from "react-draggable";
@@ -89,7 +89,7 @@ export const LandingPage = () => {
           <meta itemProp="name" content="kili presentation" />
           <meta
             itemProp="thumbnailUrl"
-            content="https://a.storyblok.com/f/139616/2339x1666/31706b2698/annotate-fast.png"
+            content="https://www.youtube.com/watch?v=6WC8Ef4nNjE"
           />
           <meta itemProp="uploadDate" content="2022-11-07 00:00" />
           <meta itemProp="description" content="kili presentation" />
@@ -169,7 +169,10 @@ export const LandingPage = () => {
             Go live in less than 5 minutes, browse through our Marketplace with
             richset of Models designed for various industry
           </Typography>
-          <Typography variant="link" className="text-sm mt-9 !font-extrabold ">
+          <Typography
+            variant="link"
+            className="text-sm mt-9 !font-extrabold text-primary"
+          >
             Learn more
             <IoIosArrowForward className="h-3 w-3 ml-2 inline" />
           </Typography>
@@ -195,7 +198,10 @@ export const LandingPage = () => {
             products irrespective of the industry, serving hundreds of thousands
             of customers. If you can imagine it, you can build it with Autogon.
           </Typography>
-          <Typography variant="link" className="text-sm mt-9 !font-extrabold ">
+          <Typography
+            variant="link"
+            className="text-sm mt-9 !font-extrabold text-primary"
+          >
             Learn more
             <IoIosArrowForward className="h-3 w-3 ml-2 inline" />
           </Typography>
@@ -245,7 +251,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 1}
               onClick={() => setActive(1)}
-              bounds={{ top: -350, left: -200, right: 800, bottom: 300 }}
+              bounds={{ top: -350, left: -200, right: 880, bottom: 300 }}
               src="https://a.storyblok.com/f/139616/160x160/9a8818c603/ml-engineer.png"
               position="ML Engineers"
               className="left"
@@ -256,7 +262,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 2}
               onClick={() => setActive(2)}
-              bounds={{ top: -350, left: -200, right: 800, bottom: 300 }}
+              bounds={{ top: -350, left: -200, right: 700, bottom: 300 }}
               src="https://a.storyblok.com/f/139616/160x160/c468ab2a8f/product-leaders.jpg"
               className="top- left-48"
               position=" Executives and Analytics Leaders"
@@ -266,7 +272,7 @@ export const LandingPage = () => {
             />
             <BenefitCard
               active={active === 3}
-              bounds={{ top: -350, left: -200, right: 800, bottom: 300 }}
+              bounds={{ top: -350, left: -430, right: 460, bottom: 300 }}
               onClick={() => setActive(3)}
               src="https://a.storyblok.com/f/139616/160x160/ead56e9b1f/it-leader.png"
               className="top- left-[26rem]"
@@ -278,7 +284,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 5}
               onClick={() => setActive(5)}
-              bounds={{ top: -350, left: -200, right: 800, bottom: 300 }}
+              bounds={{ top: -350, left: -650, right: 240, bottom: 300 }}
               src="https://a.storyblok.com/f/139616/160x160/b37814d5df/project-managers.jpg"
               position="Data Scientists"
               className="left-[40rem]"
@@ -289,7 +295,7 @@ export const LandingPage = () => {
             <BenefitCard
               active={active === 6}
               onClick={() => setActive(6)}
-              bounds={{ top: -350, left: -200, right: 800, bottom: 300 }}
+              bounds={{ top: -350, left: -900, right: 0, bottom: 300 }}
               src="https://a.storyblok.com/f/139616/160x160/8343df36fa/ai-leaders.jpg"
               className="left-[55rem]"
               position="Business Analysts"
@@ -537,7 +543,11 @@ export const LandingPage = () => {
           >
             Begin your journey
           </Typography>
-          <Typography variant="body" align="center" className="!text-white mt-3">
+          <Typography
+            variant="body"
+            align="center"
+            className="!text-white mt-3"
+          >
             Begin your journey! Start Creating AI Models.
           </Typography>
           <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">

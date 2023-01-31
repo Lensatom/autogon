@@ -112,8 +112,9 @@ export const PartnerCarousel = ({
         )}
       >
         <div className="h-full flex animate-marquee whitespace-nowrap items-center">
-          {brands.map((item) => (
+          {brands.map((item, index) => (
             <img
+              key={index}
               src={darkMode ? item.light : item.dark}
               className="lg:mr-[9.375rem] mr-[4rem] h-[4.0625rem]"
             />

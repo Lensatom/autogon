@@ -35,7 +35,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         <button
           {...rest}
           ref={ref}
-          className={`px-4 h-10 min-w-[60px] bg-transparent border  rounded text-[16px] font-inter leading-4 -tracking-[0.16px] hover:text-neutral hover:bg-primary hover:border-primary hover:shadow ${
+          className={`px-4 h-10 min-w-[60px] bg-transparent border  rounded text-[16px] font-inter leading-4 -tracking-[0.16px] hover:text-white hover:bg-secondary hover:border-secondary hover:shadow ${
             darkMode
               ? "border-white text-white"
               : "border-secondary text-secondary"

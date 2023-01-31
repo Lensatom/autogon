@@ -2,21 +2,16 @@ import { Button, Container, Typography } from "../../../components";
 import Lottie from "lottie-react";
 import animationData from "../../../assets/9gjZm6jqpK.json";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
-import cn from "classnames";
 
 export const HeroPage = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
 
   return (
     <Container className="bg-surface pt-[12rem] lg:pt-[12rem]">
-      <Typography align="center" variant="display" className="mx-auto w-[80%] mb-8">
+      <Typography
+        align="center"
+        variant="display"
+        className="mx-auto w-[85%] mb-8"
+      >
         Artificial Intelligence Platform for Creatives
       </Typography>
       <div className="flex flex-col-reverse lg:flex-row w-full items-center">
@@ -32,10 +27,12 @@ export const HeroPage = () => {
           </Typography>
           <div className="flex lg:gap-2 mt-5 mb-8 lg:mb-0">
             <Button>Case study</Button>
-            <Button className="flex items-center gap-3" variant="outline">
-              Start for free
-              <ArrowTopRightOnSquareIcon className="h-6 w-6" />
-            </Button>
+            <a href="https://console.autogon.ai" target="_blank">
+              <Button className="flex items-center gap-3" variant="outline">
+                Start for free
+                <ArrowTopRightOnSquareIcon className="h-6 w-6" />
+              </Button>
+            </a>
           </div>
         </div>
         <div className="flex-1">
