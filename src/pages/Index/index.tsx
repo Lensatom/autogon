@@ -75,7 +75,7 @@ export const LandingPage = () => {
         itemScope
         itemProp="videoObject"
         itemType="https://scheme.org/videoObject"
-        className="bg-surface pb-14 lg:pb-32"
+        className="bg-surface pb-14 lg:pb-32 pt-10 "
       >
         <meta
           itemProp="contentUrl"
@@ -83,10 +83,9 @@ export const LandingPage = () => {
         />
         <div className="mx-auto lg:px-[1.375em] flex relative overflow-hidden items-center justify-center rounded">
           <iframe
-            className="lg:w-full h-auto border-0"
+            className="lg:w-[60rem] h-auto lg:h-[30rem] md:w-[40rem] md:h-[20rem] border-0 rounded-lg"
             src="https://www.youtube.com/embed/Mi6qFrcPoXE"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
             allowFullScreen
           />
           <meta itemProp="name" content="kili presentation" />
