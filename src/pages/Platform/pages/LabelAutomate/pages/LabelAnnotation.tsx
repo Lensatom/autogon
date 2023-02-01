@@ -9,7 +9,7 @@ import { PartnerCarousel } from "../../../../../Layouts/PartnerCarousel";
 import { Testimonial } from "../../../../../Layouts/Testimonial";
 import { Blog } from "../../../Layout/Blog";
 import Lottie from "lottie-react";
-import animationData from "../../../../../assets/lf30_editor_22k2biyf.json";
+import animationData from "../../../../../assets/iRU7KxwKMP.json";
 
 
 export const LabelAnnotationPage = () => {
