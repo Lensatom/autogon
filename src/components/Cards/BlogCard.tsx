@@ -12,7 +12,8 @@ export const BlogCard = ({
   buttonText = "Read more",
   className,
   titleClass,
-  children
+  children,
+  onClick
 }: BlogCardProps) => {
   let IconComponent = Icon ? <Icon className="h-6 w-6" /> : null;
 
@@ -39,6 +40,7 @@ export const BlogCard = ({
         </div>
         <Button
           className="flex items-center gap-3 !bg-primary border-none absolute bottom-5 left-4"
+          onClick={onClick}
         >
           {buttonText}
           {IconComponent}

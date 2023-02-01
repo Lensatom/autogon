@@ -399,12 +399,14 @@ export const Header = ({ darkMode }: HeaderProps) => {
           Interested in keeping updated with our latest advancement and
           research.
         </Typography>
-        <Typography
-          variant="caption"
-          className="uppercase leading-[19.2px] cursor-pointer hover:underline hidden lg:block"
-        >
-          join our community
-        </Typography>
+        <a href="https://discord.com/channels/1056699131864830042/1056699132955340901">
+          <Typography
+            variant="caption"
+            className="uppercase leading-[19.2px] cursor-pointer hover:underline hidden lg:block"
+          >
+            join our community
+          </Typography>
+        </a>
       </Container>
       <div className="relative">
         <MenuDrawer

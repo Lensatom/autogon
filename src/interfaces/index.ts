@@ -25,6 +25,7 @@ export type BlogCardProps = {
   className?: string;
   titleClass?: string;
   children?: any;
+  onClick?: () => void
 };
 
 export type TestimonialProps = {

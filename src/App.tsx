@@ -7,7 +7,8 @@ import {
   Whitepapers,
   CaseStudies,
   Pricing,
-  SolutionsRoute
+  SolutionsRoute,
+  BlogDetails
 } from "./pages";
 import { ROUTES } from "./utils/routes";
 
@@ -32,6 +33,10 @@ function App() {
     {
       path: "blog",
       element: <Blog />,
+    },
+    {
+      path: "blog/:blogId",
+      element: <BlogDetails />
     },
     {
       path: "whitepaper",

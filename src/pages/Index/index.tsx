@@ -23,6 +23,7 @@ import { Pagination } from "swiper";
 import { BenefitCard } from "./components/BenefitCard";
 import AIMLIcon from '../../assets/AIML.png';
 import { screenshots, screenshots1, screenshots2, screenshots3 } from '../../assets/screenshots';
+import { useNavigate } from "react-router-dom";
 
 
 const BenefitMobileCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
@@ -60,6 +61,7 @@ const BenefitMobileCard = ({ className, position, contents, src, active, onClick
 
 export const LandingPage = () => {
   const [active, setActive] = useState(7);
+  const navigate = useNavigate();
 
   return (
     <>
@@ -431,6 +433,9 @@ export const LandingPage = () => {
           <SwiperSlide className="!w-fit">
             <BlogCard
               caption="Blog"
+              onClick={() =>
+                navigate("blog/2")
+              }
               titleClass="!text-2xl"
               src="https://a.storyblok.com/f/139616/1920x1080/dc2cef422d/ai-for-compliance-what-why-and-how.svg/m/767x0"
               title="Revolutionizing Business Operations: How Autogon's AI/ML Platform is Transforming Industries"
