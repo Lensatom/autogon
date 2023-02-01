@@ -11,7 +11,7 @@ import { Footer } from "../../Layouts/Footer";
 import { IoIosArrowForward } from "react-icons/io";
 
 import Lottie from "lottie-react";
-import animationData from "../../assets/lf20_lphquaqr.json";
+import animationData from "../../assets/iRU7KxwKMP.json";
 import { Testimonial } from "../../Layouts/Testimonial";
 import { PartnerCarousel } from "../../Layouts/PartnerCarousel";
 import { useState } from "react";
