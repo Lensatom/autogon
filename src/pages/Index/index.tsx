@@ -8,20 +8,16 @@ import { BenefitCardProps } from "../../interfaces";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { BlogCard } from "../../components/Cards/BlogCard";
 import { Footer } from "../../Layouts/Footer";
-import DataSetImage from "../../assets/annotate-fast.webp.png";
-import DevopsImage from "../../assets/dataops-2.webp.png";
-import FixAndFixImage from "../../assets/fix-and-fix-issues-v2-1.webp.png";
 import { IoIosArrowForward } from "react-icons/io";
 
 import Lottie from "lottie-react";
 import animationData from "../../assets/lf20_lphquaqr.json";
 import { Testimonial } from "../../Layouts/Testimonial";
 import { PartnerCarousel } from "../../Layouts/PartnerCarousel";
-import Draggable from "react-draggable";
 import { useState } from "react";
 import { Pagination } from "swiper";
 import { BenefitCard } from "./components/BenefitCard";
-import AIMLIcon from '../../assets/AIML.png';
+import AIMLIcon from '../../assets/modelAIML.png';
 import { screenshots, screenshots1, screenshots2, screenshots3 } from '../../assets/screenshots';
 import { useNavigate } from "react-router-dom";
 
@@ -122,11 +118,7 @@ export const LandingPage = () => {
             className="hidden md:block mx-auto"
             alt="Integrate quickly"
           />
-          <img
-            src="https://a.storyblok.com/f/139616/x/945e9b6d8a/diagram-01-mobile-updated-april11th.svg"
-            alt="Integrate quickly"
-            className="md:hidden"
-          />
+          <img src={AIMLIcon} alt="Integrate quickly" className="md:hidden" />
         </div>
       </Container>
 
