@@ -75,7 +75,7 @@ export const LandingPage = () => {
         itemScope
         itemProp="videoObject"
         itemType="https://scheme.org/videoObject"
-        className="bg-surface pb-14 lg:pb-32 pt-10 "
+        className="bg-[#F8F8FF] pb-14 lg:pb-32 pt-10 "
       >
         <meta
           itemProp="contentUrl"
@@ -98,18 +98,18 @@ export const LandingPage = () => {
         </div>
       </Container>
 
-      <Container className="bg-neutral py-10 lg:py-20 pb-32">
+      <Container className="bg-[#FEFEFA] py-10 lg:py-20 pb-32">
         <Typography
           variant="subdisplay"
           align="center"
-          className="!text-white mb-4"
+          className="!text-w mb-4"
         >
           Generate AI models in minutes
         </Typography>
         <Typography
           variant="body"
           align="center"
-          className="!text-white lg:w-[59%] mx-auto mb-[56px]"
+          className="!text-w lg:w-[59%] mx-auto mb-[56px]"
         >
           Autogon makes the process of building, evaluating, and deploying
           machine learning models more efficient, enabling companies to quickly
@@ -131,7 +131,7 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-surface flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-20 gap-10"
+        className="bg-[#FFFAFA] flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-20 gap-10"
         flex
         align="center"
       >
@@ -158,7 +158,7 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-surface flex-col-reverse lg:flex-row-reverse lg:pt-20 lg:pb-28 gap-10"
+        className="bg-[#FFFFF0] flex-col-reverse lg:flex-row-reverse lg:pt-20 lg:pb-28 gap-10"
         flex
         align="center"
       >
@@ -185,7 +185,7 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-surface pt-10 lg:pb-20 gap-10 flex-col-reverse lg:flex-row"
+        className="bg-[#FFFAF0] pt-10 lg:pb-20 gap-10 flex-col-reverse lg:flex-row"
         flex
         align="center"
       >
@@ -214,7 +214,7 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-surface flex-col-reverse lg:flex-row-reverse  pb-40 gap-10"
+        className="bg-[#FFF5EE] flex-col-reverse lg:flex-row-reverse  pb-40 gap-10"
         flex
         align="center"
       >
@@ -239,7 +239,7 @@ export const LandingPage = () => {
         </div>
       </Container>
 
-      <Container className="bg-surface py-10 overflow-hidden lg:h-[70rem] ">
+      <Container className="bg-[#FFFAFA] py-10 overflow-hidden lg:h-[70rem] ">
         <Typography
           variant="subdisplay"
           align="center"
@@ -405,7 +405,7 @@ export const LandingPage = () => {
 
       <PartnerCarousel title="Join an elite group of companies revolutionizing their industries with our AI/ML solutions" />
 
-      <Container noGutter className="bg-surface py-10 pt-5">
+      <Container noGutter className="bg-[#FFF5EE] py-10 pt-5">
         <Typography
           variant="header"
           align="center"

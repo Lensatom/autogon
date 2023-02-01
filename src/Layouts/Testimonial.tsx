@@ -87,7 +87,7 @@ export const Testimonial = ({ isDarkMode }: TestimonialType) => {
   ];
 
   return (
-    <Container isDarkMode={isDarkMode} background noGutter className="bg-surface pt-0 pb-5">
+    <Container isDarkMode={isDarkMode} background noGutter className="bg-[#FFFFF0] pt-10 pb-5">
       <Swiper
         spaceBetween={16}
         slidesPerView="auto"

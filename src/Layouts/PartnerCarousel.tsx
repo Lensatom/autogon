@@ -78,7 +78,7 @@ export const PartnerCarousel = ({
       isDarkMode={darkMode}
       background
       noGutter
-      className="bg-surface pb-32 pt-10 md:pt-0"
+      className="bg-[#FFFAF0] pb-32 pt-10 md:pt-0"
     >
       <Typography
         variant="title"
