@@ -468,10 +468,10 @@ export const PlatformPage = () => {
           <Typography variant="body" align="center" className="!text-white">
             Begin your journey! Start Creating AI Models.
           </Typography>
-          <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
+          <div className="flex mx-auto w-fit gap-2 mt-16 mb-8 lg:mb-0">
             <Button>See Demo</Button>
             <Button
-              className="flex items-center gap-3 !text-white hover:!border-primary !border-white"
+              className="flex items-center gap-3 !text-white hover:!border-secondary !border-white"
               variant="outline"
             >
               Start for free

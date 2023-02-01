@@ -101,7 +101,7 @@ export const Testimonial = ({ isDarkMode }: TestimonialType) => {
           bulletActiveClass: "!bg-primary !opacity-100 !h-3 !w-3",
           bulletClass: "h-3 w-3 inline-block rounded-full bg-black mx-2",
         }}
-        className="pt-20 mb-60 h-[28rem]"
+        className="pt-20 mb-60 h-[32rem] md:h-[28rem]"
         scrollbar={{
           draggable: true,
         }}
@@ -112,7 +112,7 @@ export const Testimonial = ({ isDarkMode }: TestimonialType) => {
         {testimonials.map((testimonial, index) => (
           <SwiperSlide
             key={index}
-            className={`!w-fit rounded-4xl max-h-[370px] shadow-[0_0_16px_rgb(8,24,25/4%)] flex flex-col justify-between py-12 px-8 lg:px-16 ${
+            className={`!w-fit rounded-4xl md:max-h-[370px] shadow-[0_0_16px_rgb(8,24,25/4%)] flex flex-col justify-between py-12 px-8 lg:px-16 ${
               isDarkMode ? "bg-dark-paper" : "bg-white"
             }`}
           >

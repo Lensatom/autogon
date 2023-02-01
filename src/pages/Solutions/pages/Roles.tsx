@@ -52,7 +52,7 @@ export const Roles = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
+            className="font-semibold"
           >
             BUSINESS ANALYSTS
           </Typography>
@@ -90,7 +90,7 @@ export const Roles = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
+            className="font-semibold"
           >
             DATA SCIENTISTS
           </Typography>
@@ -128,7 +128,7 @@ export const Roles = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
+            className="font-semibold"
           >
             IT OPERATIONS
           </Typography>
@@ -166,7 +166,7 @@ export const Roles = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
+            className="font-semibold"
           >
             SOFTWARE ENGINEERS
           </Typography>
@@ -204,7 +204,7 @@ export const Roles = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
+            className="font-semibold"
           >
             EXECUTIVES & ANALYTICS LEADERS
           </Typography>
@@ -234,14 +234,14 @@ export const Roles = () => {
         className="bg-[#162427] pb-28 pt-28"
       >
         <div className="">
-          <img src={Logo} className="relative mx-auto h-20 w-20 mb-5" />
+          <img src={Logo} className="relative mx-auto h-20 w-20 mb-10" />
           <Typography
             variant="subdisplay"
             className="capitalize !text-white text-center"
           >
             Begin your journey
           </Typography>
-          <Typography variant="body" align="center" className="!text-white">
+          <Typography variant="body" align="center" className="!text-white mt-3">
             Begin your journey! Start Creating AI Models.
           </Typography>
           <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">

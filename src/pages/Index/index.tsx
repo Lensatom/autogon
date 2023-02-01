@@ -41,7 +41,7 @@ const BenefitMobileCard = ({ className, position, contents, src, active, onClick
             {position}
           </Typography>
           <div className="mt-2">
-            <ul className="list-disc">
+            <ul className="">
               {contents.map((content, index) => (
                 <li key={index}>
                   <Typography className="my-2" variant="body">
@@ -118,13 +118,13 @@ export const LandingPage = () => {
         <div>
           <img
             src={AIMLIcon}
-            className="hidden lg:block mx-auto"
+            className="hidden md:block mx-auto"
             alt="Integrate quickly"
           />
           <img
             src="https://a.storyblok.com/f/139616/x/945e9b6d8a/diagram-01-mobile-updated-april11th.svg"
             alt="Integrate quickly"
-            className="lg:hidden"
+            className="md:hidden"
           />
         </div>
       </Container>
@@ -233,7 +233,7 @@ export const LandingPage = () => {
           <Lottie
             animationData={animationData}
             loop
-            className="h-[40rem] mx-auto w-[40rem]"
+            className="lg:h-[40rem] mx-auto w-full h-full lg:w-[40rem]"
           />
         </div>
       </Container>
@@ -247,15 +247,15 @@ export const LandingPage = () => {
           You can use Autogon if you are a
         </Typography>
 
-        <div className="grid-rows-1 mt-32 gap-y-9 hidden lg:grid bg-pink-500">
-          <div className="relative w-fit bg-green-700">
+        <div className="grid-rows-1 mt-32 gap-y-9 hidden lg:grid ">
+          <div className="relative w-fit ">
             <BenefitCard
               active={active === 1}
               onClick={() => setActive(1)}
               bounds={{ top: -350, left: -200, right: 880, bottom: 300 }}
               src="https://a.storyblok.com/f/139616/160x160/9a8818c603/ml-engineer.png"
               position="ML Engineers"
-              className="left"
+              className="left hidden lg:block"
               contents={[
                 "Autogon can be used by ML engineers to quickly build and test models, as well as deploy them into production. It also allows for easy monitoring and management of deployed models, which can help ML engineers to ensure that models are performing as expected",
               ]}
@@ -265,8 +265,8 @@ export const LandingPage = () => {
               onClick={() => setActive(2)}
               bounds={{ top: -350, left: -200, right: 700, bottom: 300 }}
               src="https://a.storyblok.com/f/139616/160x160/c468ab2a8f/product-leaders.jpg"
-              className="top- left-48"
-              position=" Executives and Analytics Leaders"
+              className="left-48 hidden lg:block"
+              position="Executives and Analytics Leaders"
               contents={[
                 "Executives and analytics leaders can use Autogon to gain insights from their data and make data-driven decisions. The platform's ability to automate the machine learning process can also help organizations to become more efficient and effective.",
               ]}
@@ -276,7 +276,7 @@ export const LandingPage = () => {
               bounds={{ top: -350, left: -430, right: 460, bottom: 300 }}
               onClick={() => setActive(3)}
               src="https://a.storyblok.com/f/139616/160x160/ead56e9b1f/it-leader.png"
-              className="top- left-[26rem]"
+              className="hidden lg:block left-[26rem]"
               position="Software Engineers"
               contents={[
                 "Software engineers can use Autogon to deploy machine learning models into production quickly and easily. The platform also allows for easy integration with other systems and applications.",
@@ -288,7 +288,7 @@ export const LandingPage = () => {
               bounds={{ top: -350, left: -650, right: 240, bottom: 300 }}
               src="https://a.storyblok.com/f/139616/160x160/b37814d5df/project-managers.jpg"
               position="Data Scientists"
-              className="left-[40rem]"
+              className="left-[40rem] hidden lg:block"
               contents={[
                 "Autogon allows data scientists to quickly and easily build and test machine learning models, without the need for extensive coding. This can save data scientists time and effort and allow them to focus on more complex modeling tasks.",
               ]}
@@ -298,49 +298,13 @@ export const LandingPage = () => {
               onClick={() => setActive(6)}
               bounds={{ top: -350, left: -900, right: 0, bottom: 300 }}
               src="https://a.storyblok.com/f/139616/160x160/8343df36fa/ai-leaders.jpg"
-              className="left-[55rem]"
+              className="left-[55rem] hidden lg:block"
               position="Business Analysts"
               contents={[
                 "Business analysts can use Autogon to quickly create predictive models to support business decisions. The platform's automated machine learning capabilities allow analysts to build models without needing deep technical expertise.",
               ]}
             />
-            {/* <BenefitCard
-              active={active === 4}
-              onClick={() => setActive(4)}
-              bounds={{ top: -350, left: -200, right: 800, bottom: 220 }}
-              src="https://a.storyblok.com/f/139616/160x160/d782b4acd8/cxo.png"
-              className="top-[37rem] left-40"
-              position="CXOs"
-              contents={[
-                "Improve performance of AI projects and ship successful projects on time by using data to unlock and harness the expertise already present in your business.",
-                "Mitigate the risk of running an unreliable and unethical AI.",
-              ]}
-            /> */}
           </div>
-          {/* <div className="relative">
-            <BenefitCard
-              active={active === 5}
-              onClick={() => setActive(5)}
-              bounds={{ top: -350, left: -200, right: 800, bottom: 800 }}
-              src="https://a.storyblok.com/f/139616/160x160/b37814d5df/project-managers.jpg"
-              position="Data Scientists"
-              className="top-96"
-              contents={[
-                "Autogon allows data scientists to quickly and easily build and test machine learning models, without the need for extensive coding. This can save data scientists time and effort and allow them to focus on more complex modeling tasks.",
-              ]}
-            />
-            <BenefitCard
-              active={active === 6}
-              onClick={() => setActive(6)}
-              bounds={{ top: -580, left: -200, right: 800, bottom: 600 }}
-              src="https://a.storyblok.com/f/139616/160x160/8343df36fa/ai-leaders.jpg"
-              className="top-80"
-              position="Business Analysts"
-              contents={[
-                "Business analysts can use Autogon to quickly create predictive models to support business decisions. The platform's automated machine learning capabilities allow analysts to build models without needing deep technical expertise.",
-              ]}
-            />
-          </div> */}
         </div>
         <div className="lg:hidden mt-10">
           <Swiper
@@ -356,7 +320,7 @@ export const LandingPage = () => {
               bulletActiveClass: "!bg-primary !opacity-100 !h-3 !w-3",
               bulletClass: "h-3 w-3 inline-block rounded-full bg-black mx-2",
             }}
-            className="pt-20 mb-40 h-[45rem]"
+            className="pt-20 mb-40 h-[45rem] md:h-[28rem]"
             scrollbar={{
               draggable: true,
             }}
@@ -365,7 +329,7 @@ export const LandingPage = () => {
             }}
           >
             <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-tertiary p-12  shadow-4xl cursor-move select-none`}
+              className={`!h-[40rem] md:!h-[24rem] rounded-6xl bg-tertiary p-12  shadow-4xl cursor-move select-none`}
             >
               <BenefitMobileCard
                 active={active === 1}
@@ -373,100 +337,62 @@ export const LandingPage = () => {
                 src="https://a.storyblok.com/f/139616/160x160/9a8818c603/ml-engineer.png"
                 position="ML Engineers"
                 contents={[
-                  "Industrialize data labeling via cross team collaboration and production of quality data to feed your models.",
-                  "Ship more successful projects in less time with the simple UX of our training data platform, smooth workflows and the ability to handle any and all data.",
+                  "Autogon can be used by ML engineers to quickly build and test models, as well as deploy them into production. It also allows for easy monitoring and management of deployed models, which can help ML engineers to ensure that models are performing as expected",
                 ]}
               />
             </SwiperSlide>
             <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-tertiary  p-12 shadow-4xl cursor-move select-none`}
+              className={`!h-[40rem] md:!h-[24rem] rounded-6xl bg-tertiary  p-12 shadow-4xl cursor-move select-none`}
             >
               <BenefitMobileCard
                 active={active === 2}
                 onClick={() => setActive(2)}
                 src="https://a.storyblok.com/f/139616/160x160/c468ab2a8f/product-leaders.jpg"
                 className="top-52 left-40"
-                position="Project Leaders"
+                position="Executives and Analytics Leaders"
                 contents={[
-                  "Improve performance of AI projects and ship successful projects on time with our training data platform by using data to unlock and harness the expertise already present in your business.",
-                  "Mitigate the risk of running an unreliable and unethical AI.",
+                  "Executives and analytics leaders can use Autogon to gain insights from their data and make data-driven decisions. The platform's ability to automate the machine learning process can also help organizations to become more efficient and effective.",
                 ]}
               />
             </SwiperSlide>
             <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-tertiary p-12 shadow-4xl cursor-move select-none`}
+              className={`!h-[40rem] md:!h-[24rem] rounded-6xl bg-tertiary p-12 shadow-4xl cursor-move select-none`}
             >
-              <BenefitCard
+              <BenefitMobileCard
                 active={active === 3}
                 onClick={() => setActive(3)}
                 src="https://a.storyblok.com/f/139616/160x160/ead56e9b1f/it-leader.png"
                 className="top-[25rem] left-40"
-                position="IT Leaders"
+                position="Software Engineers"
                 contents={[
-                  "Build the data labeling infrastructure that can support scale with total security.",
-                  "Ensure data security and governance: sensitive data is protected.",
-                  "Simplify and rationalize your AI & data tech stack.",
+                  "Software engineers can use Autogon to deploy machine learning models into production quickly and easily. The platform also allows for easy integration with other systems and applications.",
                 ]}
               />
             </SwiperSlide>
             <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-tertiary p-12 shadow-4xl cursor-move select-none`}
+              className={`!h-[40rem] md:!h-[24rem] rounded-6xl bg-tertiary p-12 shadow-4xl cursor-move select-none`}
             >
-              <BenefitCard
+              <BenefitMobileCard
                 active={active === 4}
                 onClick={() => setActive(4)}
                 src="https://a.storyblok.com/f/139616/160x160/d782b4acd8/cxo.png"
                 className="top-[37rem] left-40"
-                position="CXOs"
+                position="Data Scientists"
                 contents={[
-                  "Improve performance of AI projects and ship successful projects on time by using data to unlock and harness the expertise already present in your business.",
-                  "Mitigate the risk of running an unreliable and unethical AI.",
+                  "Autogon allows data scientists to quickly and easily build and test machine learning models, without the need for extensive coding. This can save data scientists time and effort and allow them to focus on more complex modeling tasks.",
                 ]}
               />
             </SwiperSlide>
             <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-tertiary p-12 shadow-4xl cursor-move select-none`}
+              className={`!h-[40rem] md:!h-[24rem] rounded-6xl bg-tertiary p-12 shadow-4xl cursor-move select-none`}
             >
-              <BenefitCard
+              <BenefitMobileCard
                 active={active === 5}
                 onClick={() => setActive(5)}
                 src="https://a.storyblok.com/f/139616/160x160/b37814d5df/project-managers.jpg"
-                position="Project Managers"
+                position="Business Analysts"
                 contents={[
-                  "Facilitate intuitive collaboration on our training data platform between business experts and tech teams to produce quality data.",
-                  "Manage resources within a smooth & controlled process and integrate different users, including non-technical, at the right moment for maximum impact.",
-                ]}
-              />
-            </SwiperSlide>
-            <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-tertiary p-12 shadow-4xl cursor-move select-none`}
-            >
-              <BenefitCard
-                active={active === 6}
-                onClick={() => setActive(6)}
-                src="https://a.storyblok.com/f/139616/160x160/8343df36fa/ai-leaders.jpg"
-                className="top-52"
-                position="AI Leaders"
-                contents={[
-                  "Industrialize data labeling via cross team collaboration and production of quality data to feed models.",
-                  "Gain control over data spread across your organisation and simplify the model training iteration loop.",
-                  "Free your teams from the low value task of labeling with our training data platform",
-                ]}
-              />
-            </SwiperSlide>
-            <SwiperSlide
-              className={`!h-[40rem] rounded-6xl bg-tertiary p-12 shadow-4xl cursor-move select-none`}
-            >
-              <BenefitCard
-                active={active === 7}
-                onClick={() => setActive(7)}
-                src="https://a.storyblok.com/f/139616/160x160/256be6f7e1/ml-engineers.jpg"
-                className="top-[25rem]"
-                position="Data Scientists"
-                contents={[
-                  "Industrialize data labeling via cross team collaboration and production of quality data to feed your models.",
-                  "Access to professional external data labeling workforce matching data security requirements.",
-                  "Unlock broader projects through growing data capabilities.",
+                  "Business analysts can use Autogon to quickly create predictive models to support business decisions. The platform's automated machine learning capabilities allow analysts to build models without needing deep technical expertise.",
                 ]}
               />
             </SwiperSlide>
@@ -551,15 +477,17 @@ export const LandingPage = () => {
           >
             Begin your journey! Start Creating AI Models.
           </Typography>
-          <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
+          <div className="flex mx-auto w-fit gap-2 mt-16 mb-8 lg:mb-0">
             <Button>See Demo</Button>
-            <Button
-              className="flex items-center gap-3 !text-white hover:!border-primary !border-white"
-              variant="outline"
-            >
-              Start for free
-              <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white" />
-            </Button>
+            <a href="https://console.autogon.ai" target="_blank">
+              <Button
+                className="flex items-center gap-3 !text-white hover:!border-secondary !border-white"
+                variant="outline"
+              >
+                Start for free
+                <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white" />
+              </Button>
+            </a>
           </div>
         </div>
       </Container>

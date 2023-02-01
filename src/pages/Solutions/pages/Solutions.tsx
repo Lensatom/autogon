@@ -28,7 +28,7 @@ export const Solutions = () => {
           variant="body"
           align="center"
           isDarkMode
-          className="capitalize lg:w-[50rem] mx-auto mt-5"
+          className="capitalize lg:w-[60rem] mx-auto mt-5"
         >
           At our company, we understand that different industries have different
           needs and challenges when it comes to AI and machine learning. That's
@@ -51,7 +51,7 @@ export const Solutions = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
+            className="font-semibold"
           >
             BANKING
           </Typography>
@@ -90,7 +90,7 @@ export const Solutions = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
+            className="font-semibold"
           >
             HEALTHCARE
           </Typography>
@@ -129,7 +129,7 @@ export const Solutions = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
+            className="font-semibold"
           >
             MANUFACTURING
           </Typography>
@@ -168,7 +168,7 @@ export const Solutions = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
+            className="font-semibold"
           >
             RETAIL
           </Typography>
@@ -207,7 +207,7 @@ export const Solutions = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
+            className="font-semibold"
           >
             FINANCIAL SERVICES
           </Typography>
@@ -246,7 +246,7 @@ export const Solutions = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
+            className="font-semibold"
           >
             OIL AND GAS
           </Typography>
@@ -285,7 +285,7 @@ export const Solutions = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
+            className="font-semibold"
           >
             PUBLIC SECTOR
           </Typography>
@@ -325,7 +325,7 @@ export const Solutions = () => {
           <Typography
             isDarkMode
             variant="title"
-            className="font-semibold text-[60px] lg:text-[80px leading-[100%]"
+            className="font-semibold"
           >
             SPORTS
           </Typography>
@@ -451,17 +451,17 @@ export const Solutions = () => {
         className="bg-[#162427] pb-28 pt-28"
       >
         <div className="">
-          <img src={Logo} className="relative mx-auto h-20 w-20 mb-5" />
+          <img src={Logo} className="relative mx-auto h-20 w-20 mb-10" />
           <Typography
             variant="subdisplay"
             className="capitalize !text-white text-center"
           >
             Begin your journey
           </Typography>
-          <Typography variant="body" align="center" className="!text-white">
+          <Typography variant="body" align="center" className="!text-white mt-3">
             Begin your journey! Start Creating AI Models.
           </Typography>
-          <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
+          <div className="flex mx-auto w-fit gap-2 mt-16 mb-8 lg:mb-0">
             <Button>See a Demo</Button>
             <Button
               className="flex items-center gap-3 !text-white hover:!border-primary !border-white"

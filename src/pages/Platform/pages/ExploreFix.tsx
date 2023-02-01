@@ -46,16 +46,13 @@ export const KeyCapabilities = () => {
       <Container
         isDarkMode
         background
+        id="data-preparation"
         className="bg-surface pb-10 lg:pb-40 pt-10"
       >
         {/* <BreadCrumb darkMode /> */}
         <div className="lg:flex gap-10 lg:mt-5">
           <div className="w-[95%]">
-            <Typography
-              isDarkMode
-              variant="header"
-              className="font-semibold !text-[4.2rem] !leading-[100%] lg:!text-[86px]"
-            >
+            <Typography isDarkMode variant="header" className="font-semibold">
               Data Preparation
             </Typography>
             <img
@@ -69,11 +66,11 @@ export const KeyCapabilities = () => {
               preprocessing the data.
             </Typography>
 
-            <div className="lg:flex mt-5 lg:mt-20 gap-2">
+            <div className="flex mt-5 lg:mt-9 gap-2">
               <Button>Request a demo</Button>
               <Button
                 darkMode
-                className="flex items-center gap-3 mb-3 mt-2 lg:mb-0 group"
+                className="flex items-center gap-3 mb-3 lg:mb-0 group"
                 variant="outline"
               >
                 Start for free
@@ -104,11 +101,7 @@ export const KeyCapabilities = () => {
           <Typography isDarkMode variant="body" className="text-[22px]">
             [-]
           </Typography>
-          <Typography
-            isDarkMode
-            variant="title"
-            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
-          >
+          <Typography isDarkMode variant="title" className="font-semibold">
             AutoML
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 w-">
@@ -138,16 +131,13 @@ export const KeyCapabilities = () => {
         className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-10"
         flex
         // direction="row-reverse"
+        id="no-code"
       >
         <div className="w-full">
           <Typography isDarkMode variant="body" className="text-[22px]">
             [-]
           </Typography>
-          <Typography
-            isDarkMode
-            variant="title"
-            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
-          >
+          <Typography isDarkMode variant="title" className="font-semibold">
             No-Code AI Apps
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 w-">
@@ -179,11 +169,7 @@ export const KeyCapabilities = () => {
           <Typography isDarkMode variant="body" className="text-[22px]">
             [-]
           </Typography>
-          <Typography
-            isDarkMode
-            variant="title"
-            className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
-          >
+          <Typography isDarkMode variant="title" className="font-semibold">
             Automated Time Series
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 w-">
@@ -224,7 +210,12 @@ export const KeyCapabilities = () => {
           >
             Orchestrate all your quality strategies with automated workflows
           </Typography> */}
-          <Typography isDarkMode variant="body" align="center" className="mt-2 lg:w-[80%] mx-auto">
+          <Typography
+            isDarkMode
+            variant="body"
+            align="center"
+            className="mt-2 lg:w-[80%] mx-auto"
+          >
             Artificial intelligence (AI) has the power to revolutionize the way
             we live and work. It provides us with the ability to analyze large
             amounts of data and draw meaningful insights that support decision
@@ -235,7 +226,6 @@ export const KeyCapabilities = () => {
           <div className="grid place-items-center">
             <Button className="mt-9 mx-auto">Request a demo</Button>
           </div>
-
         </div>
         {/* <div className="lg:w-[90%]">
           <img
@@ -289,20 +279,24 @@ export const KeyCapabilities = () => {
         className="bg-[#162427] pb-28 pt-28"
       >
         <div className="">
-          <img src={Smilesvg} className="relative mx-auto h-20 w-20 mb-5" />
+          <img src={Smilesvg} className="relative mx-auto h-20 w-20 mb-10" />
           <Typography
             variant="subdisplay"
             className="capitalize !text-white text-center"
           >
             Begin your journey
           </Typography>
-          <Typography variant="body" align="center" className="!text-white">
+          <Typography
+            variant="body"
+            align="center"
+            className="!text-white mt-3"
+          >
             Begin your journey! Start Creating AI Models.
           </Typography>
-          <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
+          <div className="flex mx-auto w-fit gap-2 mt-16 mb-8 lg:mb-0">
             <Button>See Demo</Button>
             <Button
-              className="flex items-center gap-3 !text-white hover:!border-primary !border-white"
+              className="flex items-center gap-3 !text-white hover:!border-secondary !border-white"
               variant="outline"
             >
               Start for free

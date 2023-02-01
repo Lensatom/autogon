@@ -200,27 +200,27 @@ export const Header = ({ darkMode }: HeaderProps) => {
             },
             {
               name: "DragNDrop AI",
-              link: "/professional-services#trained-workforce",
+              link: "/platform/key-capabilities#",
               hash: true,
             },
             {
               name: "Data Preparation",
-              link: "/professional-services#data-centric",
+              link: "/platform/key-capabilities#data-preparation",
               hash: true,
             },
             {
               name: "Automated Time Series",
-              link: "/professional-services#data-centric",
+              link: "/platform/key-capabilities#data-centric",
               hash: true,
             },
             {
               name: "No-Code AI Apps",
-              link: "/professional-services#data-centric",
+              link: "/platform/key-capabilities#no-code",
               hash: true,
             },
             {
               name: "More Capabilities",
-              link: "/professional-services#data-centric",
+              link: "/platform/key-capabilities#",
               hash: true,
             },
           ],
@@ -451,20 +451,18 @@ export const Header = ({ darkMode }: HeaderProps) => {
               className="relative z-40 flex flex-col justify-center gap-3 w-8 p-0 ease-in-out duration-200 transition-all lg:hidden"
             >
               <div
-                className={cn(
-                  "h-1 w-full bg-neutral ease-in-out duration-200",
-                  {
-                    "rotate-45": isShowing,
-                  }
-                )}
+                className={cn("h-1 w-full ease-in-out duration-200", {
+                  "rotate-45 bg-neutral": isShowing,
+                  "bg-neutral": !darkMode,
+                  "bg-white": darkMode,
+                })}
               />
               <div
-                className={cn(
-                  "h-1 w-full bg-neutral ease-in-out duration-200",
-                  {
-                    "-rotate-45 trans -translate-y-4": isShowing,
-                  }
-                )}
+                className={cn("h-1 w-full ease-in-out duration-200", {
+                  "-rotate-45 trans -translate-y-4 bg-neutral": isShowing,
+                  "bg-neutral": !darkMode,
+                  "bg-white": darkMode,
+                })}
               />
             </div>
             <Button className="hidden lg:block">Request a demo</Button>

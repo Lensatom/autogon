@@ -78,14 +78,14 @@ export const PartnerCarousel = ({
       isDarkMode={darkMode}
       background
       noGutter
-      className="bg-surface pb-32"
+      className="bg-surface pb-32 pt-10 md:pt-0"
     >
       <Typography
         variant="title"
         isDarkMode={darkMode}
         align="center"
         className={classNames(
-          "lg:text- text-[2.5rem] lg:w-[60rem] mx-auto",
+          "lg:text-[2.5rem] lg:w-[60rem] mx-auto",
           titleClassName
         )}
       >

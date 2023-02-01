@@ -10,7 +10,7 @@ export const HeroPage = () => {
       <Typography
         align="center"
         variant="display"
-        className="mx-auto w-[85%] mb-8"
+        className="mx-auto lg:w-[85%] mb-8"
       >
         Artificial Intelligence Platform for Creatives
       </Typography>
@@ -25,7 +25,7 @@ export const HeroPage = () => {
             cutting-edge AI technology, designed to enhance efficiency and drive
             results.
           </Typography>
-          <div className="flex lg:gap-2 mt-5 mb-8 lg:mb-0">
+          <div className="flex gap-2 mt-5 justify-center lg:justify-start mb-8 lg:mb-0">
             <Button>Case study</Button>
             <a href="https://console.autogon.ai" target="_blank">
               <Button className="flex items-center gap-3" variant="outline">
