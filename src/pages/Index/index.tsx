@@ -82,13 +82,13 @@ export const LandingPage = () => {
           content="https://www.youtube.com/watch?v=6WC8Ef4nNjE"
         />
         <div className="mx-auto lg:px-[1.375em] flex relative overflow-hidden items-center justify-center rounded">
-          <video
-            className="h-auto lg:w-[80%] rounded-lg"
-            loop
-            autoPlay
-            typeof="video/mp4"
-            src="https://www.youtube.com/watch?v=6WC8Ef4nNjE"
-          ></video>
+          <iframe
+            className="lg:w-full h-auto border-0"
+            src="https://www.youtube.com/embed/Mi6qFrcPoXE"
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
           <meta itemProp="name" content="kili presentation" />
           <meta
             itemProp="thumbnailUrl"
@@ -433,9 +433,7 @@ export const LandingPage = () => {
           <SwiperSlide className="!w-fit">
             <BlogCard
               caption="Blog"
-              onClick={() =>
-                navigate("blog/2")
-              }
+              onClick={() => navigate("blog/2")}
               titleClass="!text-2xl"
               src="https://a.storyblok.com/f/139616/1920x1080/dc2cef422d/ai-for-compliance-what-why-and-how.svg/m/767x0"
               title="Revolutionizing Business Operations: How Autogon's AI/ML Platform is Transforming Industries"
