@@ -4,6 +4,7 @@ import { BreadCrumb } from "../../../components/BreadCrumb";
 import { Header } from "../../../Layouts/Header";
 import Logo from '../../../assets/logo/Autogon-logo-light.png'
 import { Footer } from "../../../Layouts/Footer";
+import banking from '../../../assets/images/banking.jpg'
 
 export const Solutions = () => {
   return (
@@ -40,7 +41,7 @@ export const Solutions = () => {
       <Container
         background
         isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row-reverse pt-20 pb-40 gap-3"
+        className="bg-surface flex-col-reverse lg:flex-row-reverse pt-20 gap-5"
         flex
         id="banking"
       >
@@ -53,25 +54,141 @@ export const Solutions = () => {
             variant="title"
             className="font-semibold"
           >
-            BANKING
+            AutoGon for Banking
+          </Typography>
+          <Typography
+            isDarkMode
+            variant="body"
+            className="font-semibold mt-8"
+          >
+            Autogon AI is shaking up the banking world with our super-sleek AI tech!
+
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
-            In the banking industry, AI and machine learning can be used to
-            improve fraud detection, risk management, and customer service. Our
-            platform provides a wide range of pre-built models and algorithms
-            for these use cases, as well as a powerful model builder for
-            creating custom models. With our platform, banks can easily
-            implement AI and machine learning to improve their operations and
-            better serve their customers.
+            Technology has largely impacted the banking industry in recent years and allowed
+            significant automation, optimization, and customer experience advancements. One of
+            the most exciting and promising advancements has been the rise of AI and machine learning.
           </Typography>
-
-          <Button className="mt-9">Request a demo</Button>
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+            AI and machine learning are revolutionizing the banking industry with AutoGon,
+            improving risk management, fraud detection, customer experience, and more.
+            And with the help of a cloud-based, no-code platform, banking organizations can
+            harness these technologies in an efficient and accessible manner.
+          </Typography>
         </div>
         <div className="w-full">
           <img
-            src="https://a.storyblok.com/f/139616/2500x1933/037ba66dc0/for-all-data.webp"
+            src={banking}
             className="h-full w-full object-contain"
           />
+        </div>
+      </Container>
+      <Container
+        background
+        isDarkMode
+        className="bg-surface flex-col-reverse items-center lg:flex-row-reverse pt-10 pb-40 gap-3"
+        flex
+      >
+        <div className="w-full">
+          <Typography
+            isDarkMode
+            variant="body"
+            className="font-semibold mt-8"
+          >
+            AI and Machine Learning in Banking with Ease - A Cloud-based, No-Code functionality
+          </Typography>
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+            Our platform is like a personal assistant for banks, helping them streamline
+            their operations and deliver top-notch services to their customers, all with a smile.
+            By leveraging a cloud-based, no-code platform like AutoGon, organizations in the banking
+            sector can benefit from these technologies without requiring a team of data scientists or
+            IT professionals. The platform's drag-and-drop interface allows users to quickly build
+            models and implement AI and machine learning solutions in minutes rather than weeks or months.
+          </Typography>
+          <Typography
+            isDarkMode
+            variant="body"
+            className="font-semibold mt-8"
+          >
+            AI Use Cases In Banking
+          </Typography>
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+            <span className="font-semibold">Improve Risk Management: </span>
+            With the help of machine learning algorithms, banks can:
+            <ul className="list-disc flex flex-col gap-2 mt-2">
+              <li>
+                Identify patterns and trends that may indicate a potential risk.
+              </li>
+              <li>
+                Proactively manage risks before they become a significant issue.
+              </li>
+              <li>
+                Enhance Fraud Detection: Fraudulent activities are becoming increasingly sophisticated, but with AutoGon, banks can
+              </li>
+              <li>
+                detect and prevent fraud in real time.
+              </li>
+              <li>
+                Reduce the losses caused by fraudulent activities
+              </li>
+              <li>
+                Improve the app's overall security.
+              </li>
+            </ul>
+          </Typography>
+        </div>
+        <div>
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+            <span className="font-semibold">Personalized Customer Experience: </span>
+            AI-powered customer service and marketing help banks
+            <ul className="list-disc flex flex-col gap-2 mt-2">
+              <li>
+                provide personalized customer experiences.
+              </li>
+              <li>
+                Introduce tailored product recommendations
+              </li>
+              <li>
+                and automated customer support.
+              </li>
+            </ul>
+          </Typography>
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+            <span className="font-semibold">Streamlined Operations: </span>
+            Using AutoGon, Banks can utilize Machine learning and AI to:
+            <ul className="list-disc flex flex-col gap-2 mt-2">
+              <li>
+                Automate repetitive and time-consuming tasks,
+              </li>
+              <li>
+                Free up time for employees to focus on more strategic initiatives.
+              </li>
+              <li>
+                Increase efficiency, improve productivity, and reduce operational costs.
+              </li>
+            </ul>
+          </Typography>
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+            <span className="font-semibold">Increased Speed and Accuracy: </span>
+            With the help of machine learning algorithms on AutoGon, banks can:
+            <ul className="list-disc flex flex-col gap-2 mt-2">
+              <li>
+                Process vast amounts of data in a fraction of the time it would take a human.
+              </li>
+              <li>
+                Make faster and more accurate decision-making,
+              </li>
+              <li>
+                Improve the overall customer experience.
+              </li>
+            </ul>
+          </Typography>
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+            With AI Platforms for Banking, commercial and retail banks can use data-driven solutions
+            to resolve their most pressing challenges while focusing on providing positive customer experiences.
+            Get Started with AutoGon today
+          </Typography>
+          <Button className="mt-9">Request a demo</Button>
         </div>
       </Container>
 
@@ -94,16 +211,52 @@ export const Solutions = () => {
           >
             HEALTHCARE
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
-            In the healthcare industry, AI and machine learning can be used to
-            improve patient outcomes, streamline operations, and reduce costs.
-            Our platform provides a wide range of pre-built models and
-            algorithms for these use cases, as well as a powerful model builder
-            for creating custom models. With our platform, healthcare providers
-            can easily implement AI and machine learning to improve patient care
-            and streamline their operations
+          <Typography
+            isDarkMode
+            variant="body"
+            className="font-semibold mt-8"
+          >
+            AutoGon for Healthcare
           </Typography>
-
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+            Unleash the power of AI in healthcare with Autogon!
+            <span>
+              Our fancy technology is crafted with love to tackle the unique challenges
+              faced by the healthcare industry.
+            </span>
+            No more guesswork, no more long hours pouring over data - with Autogon, you'll
+            have faster, smarter and more accurate answers at your fingertips.
+          </Typography>
+          <Typography
+            isDarkMode
+            variant="body"
+            className="font-semibold mt-8"
+          >
+            Machine Learning in HealthCare
+          </Typography>
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+            The healthcare industry is one of the world's most dynamic and rapidly evolving
+            sectors. Healthcare organizations are constantly looking for new and innovative ways
+            to improve their operations and services to meet the growing demand for better and
+            more efficient patient care. This is where a machine learning and AI cloud, the
+            no-code platform, can help to transform the industry.
+          </Typography>
+          <Typography
+            isDarkMode
+            variant="body"
+            className="font-semibold mt-8"
+          >
+            Use Cases of AI Cloud Platforms in Healthcare
+          </Typography>
+          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+            AI cloud platforms in healthcare have a wide range of use cases, including but not
+            limited to data analysis, drug discovery, predictive maintenance, and personalized
+            medicine. By leveraging cloud computing and AI technologies, healthcare organizations
+            can more effectively manage, analyze and utilize vast amounts of patient data to improve
+            patient outcomes and streamline operations. Additionally, AI cloud platforms can provide
+            secure, scalable, and cost-effective solutions for healthcare organizations looking to
+            incorporate AI into their operations.
+          </Typography>
           <Button className="mt-9">Request a demo</Button>
         </div>
         <div className="w-full">

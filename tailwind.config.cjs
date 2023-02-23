@@ -8,10 +8,11 @@ module.exports = {
         primary: "#FF9900",
         neutral: "#11151C",
         secondary: "#232F3E",
-        surface: "#EBF2FA",
+        surface: "#232F3E",
         "dark-surface": "#364156",
         accent: "#78A1BB",
-        tertiary: "#7F9172"
+        tertiary: "#7F9172",
+        screen: "#FFFAFA",
       },
       backgroundColor: {
         "dark-paper": "#162427",

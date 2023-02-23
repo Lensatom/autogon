@@ -17,7 +17,7 @@ export const BenefitCard = ({
       <div
         onClick={onClick}
         className={cn(
-          "h-[27rem] w-[35rem] rounded-6xl bg-[#EDE6E3] p-12 absolute shadow-4xl cursor-move select-none",
+          "h-[27rem] w-[35rem] rounded-6xl bg-screen p-12 absolute shadow-4xl cursor-move select-none",
           className,
           { "bg-accent z-30": active }
         )}

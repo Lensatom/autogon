@@ -71,13 +71,17 @@ export const LandingPage = () => {
         itemScope
         itemProp="videoObject"
         itemType="https://scheme.org/videoObject"
-        className="bg-[#F8F8FF] pb-14 lg:pb-32 pt-10 "
+        className="bg-screen pb-14 lg:pb-32 pt-10 "
       >
         <meta
           itemProp="contentUrl"
           content="https://www.youtube.com/watch?v=6WC8Ef4nNjE"
         />
         <div className="mx-auto lg:px-[1.375em] flex relative overflow-hidden items-center justify-center rounded">
+        <video controls>
+          <source src="https://www.youtube.com/embed/Mi6qFrcPoXE" type="video/mp4" />
+          <source src="myVideo.webm" type="video/webm" />
+        </video>
           <iframe
             className="lg:w-[60rem] h-auto lg:h-[30rem] md:w-[40rem] md:h-[20rem] border-0 rounded-lg"
             src="https://www.youtube.com/embed/Mi6qFrcPoXE"
@@ -94,7 +98,7 @@ export const LandingPage = () => {
         </div>
       </Container>
 
-      <Container className="bg-[#FEFEFA] py-10 lg:py-20 pb-32">
+      <Container className="bg-screen py-10 lg:py-20 pb-32">
         <Typography
           variant="subdisplay"
           align="center"
@@ -123,7 +127,7 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-[#FFFAFA] flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-20 gap-10"
+        className="bg-screen flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-20 gap-10"
         flex
         align="center"
       >
@@ -150,7 +154,7 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-[#FFFFF0] flex-col-reverse lg:flex-row-reverse lg:pt-20 lg:pb-28 gap-10"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse lg:pt-20 lg:pb-28 gap-10"
         flex
         align="center"
       >
@@ -177,7 +181,7 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-[#FFFAF0] pt-10 lg:pb-20 gap-10 flex-col-reverse lg:flex-row"
+        className="bg-screen pt-10 lg:pb-20 gap-10 flex-col-reverse lg:flex-row"
         flex
         align="center"
       >
@@ -206,7 +210,7 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-[#FFF5EE] flex-col-reverse lg:flex-row-reverse  pb-40 gap-10"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse  pb-40 gap-10"
         flex
         align="center"
       >
@@ -231,7 +235,7 @@ export const LandingPage = () => {
         </div>
       </Container>
 
-      <Container className="bg-[#FFFAFA] py-10 overflow-hidden lg:h-[70rem] ">
+      <Container className="bg-screen py-10 overflow-hidden lg:h-[70rem] ">
         <Typography
           variant="subdisplay"
           align="center"
@@ -313,7 +317,7 @@ export const LandingPage = () => {
               bulletActiveClass: "!bg-primary !opacity-100 !h-3 !w-3",
               bulletClass: "h-3 w-3 inline-block rounded-full bg-black mx-2",
             }}
-            className="pt-20 mb-40 h-[45rem] md:h-[28rem]"
+            className="!bg-screen pt-20 mb-40 h-[45rem] md:h-[28rem]"
             scrollbar={{
               draggable: true,
             }}
@@ -322,7 +326,7 @@ export const LandingPage = () => {
             }}
           >
             <SwiperSlide
-              className={`!h-[40rem] md:!h-[24rem] rounded-6xl bg-tertiary p-12  shadow-4xl cursor-move select-none`}
+              className={`!h-[40rem] md:!h-[24rem] rounded-6xl bg-white p-12  shadow-4xl cursor-move select-none`}
             >
               <BenefitMobileCard
                 active={active === 1}
@@ -397,7 +401,7 @@ export const LandingPage = () => {
 
       <PartnerCarousel title="Join an elite group of companies revolutionizing their industries with our AI/ML solutions" />
 
-      <Container noGutter className="bg-[#FFF5EE] py-10 pt-5">
+      <Container noGutter className="bg-screen py-10 pt-5">
         <Typography
           variant="header"
           align="center"

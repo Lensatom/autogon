@@ -105,14 +105,9 @@ export const KeyCapabilities = () => {
             AutoML
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 w-">
-            We give our users the flexibility to create and deploy artificial
-            intelligence (AI) models and applications without the need for prior
-            programming or coding knowledge. We designed these apps to use
-            drag-and-drop interfaces, pre-built templates, and other tools to
-            make it easy for non-technical users to build and deploy AI models
-            and applications, making it easy for businesses and individuals to
-            leverage the power of AI without the need for expensive and
-            time-consuming development resources.
+            Supplement your expertise with extraordinary automation. Create and set 
+            up best-in-class machine learning models to maximize the value of AI in 
+            your organization.
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
@@ -138,14 +133,14 @@ export const KeyCapabilities = () => {
             [-]
           </Typography>
           <Typography isDarkMode variant="title" className="font-semibold">
-            No-Code AI Apps
+            Empower your predictions with the ease of AutoML - Machine Learning for all, code-free!
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 w-">
-            Empowering Non-Technical Users to Create and Deploy Artificial
-            Intelligence Models and Applications without the need for prior
-            programming or coding knowledge. Autogon is designed to use
-            drag-and-drop interfaces, pre-built templates, and other tools to
-            make it easy.
+            AutoML is the future of machine learning and AI, changing how organizations approach
+            data science and predictive modeling.  With our bias testing and customizable
+            compliance documentation, you can have peace of mind knowing that your AI
+            solutions are reliable and ethical. You can now develop and train models in
+            a fraction of the time without writing a single line of code.
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
@@ -170,16 +165,80 @@ export const KeyCapabilities = () => {
             [-]
           </Typography>
           <Typography isDarkMode variant="title" className="font-semibold">
-            Automated Time Series
+            Unleash the Power of Machine Learning: With AutoGon, Data Science is for Everyone!
           </Typography>
           <Typography isDarkMode variant="body" className="mt-8 w-">
-            Automated time series is a powerful tool for businesses to
-            understand and make predictions about their data. This technology
-            uses machine learning algorithms to analyze patterns and trends in
-            data over time, allowing companies to make informed decisions based
-            on insights drawn from their data. One of the key benefits of
-            automated time series is the ability to quickly and accurately
-            identify important trends and patterns in large amounts of data.
+            Deploying your models has never been easier. With a single click or line of
+            code, you can take your models from development to production and operationalize
+            AI across your organization. Anyone can easily create accurate and effective
+            models regardless of their technical expertise. AutoGon assists you in quickly
+            and efficiently processing large amounts of data, identifying patterns, and
+            confidently making predictions. Empower frontline decision-makers and simplify
+            AI consumption with AI-powered apps built with your deployed models.
+          </Typography>
+
+          <Button className="mt-9">Request a demo</Button>
+        </div>
+        <div className="lg:w-[90%]">
+          <img
+            src="https://a.storyblok.com/f/139616/2500x1933/355881270f/programmatic-error-spotting-1.webp"
+            className="h-full w-full object-contain"
+          />
+        </div>
+      </Container>
+
+      <Container
+        background
+        isDarkMode
+        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-10"
+        flex
+        // direction="row-reverse"
+        id="no-code"
+      >
+        <div className="w-full">
+          <Typography isDarkMode variant="body" className="text-[22px]">
+            [-]
+          </Typography>
+          <Typography isDarkMode variant="title" className="font-semibold">
+            Simplify Your Model Building: Let AutoML do the Heavy Lifting!
+          </Typography>
+          <Typography isDarkMode variant="body" className="mt-8 w-">
+            AutoML uses a combination of algorithms and machine learning techniques to automate
+            the process of model building. It starts by analyzing your data and identifying the
+            most appropriate algorithms and methods. Then, it automatically trains, validates,
+            and optimizes the models, so you don't have to. The platform also provides visualizations
+            and feedback, so you can understand the performance of your models and make informed decisions.
+          </Typography>
+
+          <Button className="mt-9">Request a demo</Button>
+        </div>
+        <div className="lg:w-[90%]">
+          <img
+            src="https://a.storyblok.com/f/139616/2500x1933/8289083871/quantify-quality.webp"
+            className="h-full w-full object-contain"
+          />
+        </div>
+      </Container>
+
+      <Container
+        background
+        isDarkMode
+        className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
+        flex
+        direction="row-reverse"
+      >
+        <div className="w-full">
+          <Typography isDarkMode variant="body" className="text-[22px]">
+            [-]
+          </Typography>
+          <Typography isDarkMode variant="title" className="font-semibold">
+            Unlock the Insights in Your Data - AutoML, the Smart Way to Build Models!
+          </Typography>
+          <Typography isDarkMode variant="body" className="mt-8 w-">
+            AutoGon offers cutting-edge AutoML technology that automates the process of building
+            machine-learning models, allowing you to focus on what matters – understanding and
+            acting on your data. With a drag-and-drop interface, AutoGon enables you to analyze
+            your data and generate a custom machine-learning model optimized for your specific use case.
           </Typography>
 
           <Button className="mt-9">Request a demo</Button>
@@ -199,17 +258,17 @@ export const KeyCapabilities = () => {
         flex
         // direction="row-reverse"
       >
-        <div className="w-f">
-          {/* <Typography isDarkMode variant="body" className="text-[22px]">
+        {/* <div className="w-f">
+          <Typography isDarkMode variant="body" className="text-[22px]">
             [-]
-          </Typography> */}
-          {/* <Typography
+          </Typography>
+          <Typography
             isDarkMode
             variant="title"
             className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             Orchestrate all your quality strategies with automated workflows
-          </Typography> */}
+          </Typography>
           <Typography
             isDarkMode
             variant="body"
@@ -227,7 +286,7 @@ export const KeyCapabilities = () => {
             <Button className="mt-9 mx-auto">Request a demo</Button>
           </div>
         </div>
-        {/* <div className="lg:w-[90%]">
+        <div className="lg:w-[90%]">
           <img
             src="https://a.storyblok.com/f/139616/3000x3000/795d266d6a/kili_brand_icon_focus_dark.png"
             className="h-full w-full object-contain"

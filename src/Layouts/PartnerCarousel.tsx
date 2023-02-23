@@ -78,7 +78,7 @@ export const PartnerCarousel = ({
       isDarkMode={darkMode}
       background
       noGutter
-      className="bg-[#FFFAF0] pb-32 pt-10 md:pt-0"
+      className="bg-screen pb-32 pt-10 md:pt-0"
     >
       <Typography
         variant="title"
@@ -107,7 +107,7 @@ export const PartnerCarousel = ({
         noGutter
         as="div"
         className={classNames(
-          "bg-tertiary overflow-x-hidden flex mt-5 lg:mt-16 h-[128px] lg:h-[12.5rem]",
+          "bg-white overflow-x-hidden flex mt-5 lg:mt-16 h-[128px] lg:h-[12.5rem]",
           carouselContainerClassName
         )}
       >

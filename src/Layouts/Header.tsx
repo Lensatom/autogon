@@ -423,7 +423,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
           flex
           smallGutter
           align="center"
-          className="bg-surface py-5 gap-x-16 justify-between"
+          className="bg-screen py-5 gap-x-16 justify-between"
           disableOverflowHidden
         >
           <Link to="/">
@@ -547,7 +547,7 @@ const MenuDrawer = ({ navLinks, dark, isShowing }: MenuDrawerProps) => {
   return (
     <div
       className={cn(
-        "bg-surface w-full h-screen flex flex-col lg:hidden px-5 ease-in-out overflow-auto absolute select-none z-10 duration-300",
+        "bg-primary w-full h-screen flex flex-col lg:hidden px-5 ease-in-out overflow-auto absolute select-none z-10 duration-300",
         {
           "-translate-y-0": isShowing,
           "-translate-y-full": !isShowing,
