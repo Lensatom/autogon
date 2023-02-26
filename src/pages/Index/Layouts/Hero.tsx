@@ -1,12 +1,12 @@
 import { Button, Container, Typography } from "../../../components";
 import Lottie from "lottie-react";
-import animationData from "../../../assets/127763-computer-window-animation.gif";
+import animationData from "../../../assets/iRU7KxwKMP.json";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 
 export const HeroPage = () => {
 
   return (
-    <Container className="bg-screen pt-[12rem] lg:pt-[12rem]">
+    <Container className="bg-screen h-screen flex flex-col justify-betweenpt-[12rem] lg:pt-[10rem]">
       <Typography
         align="center"
         variant="display"
@@ -35,13 +35,13 @@ export const HeroPage = () => {
             </a>
           </div>
         </div>
-        <div className="flex-1">
-          {/* <Lottie
+        <div className="flex-1 md:mt-[-50px]">
+          <Lottie
             animationData={animationData}
             loop
-            className="h-[3orem] mx-auto w-[3orem]"
-          /> */}
-          <img src={animationData} className="h-[30rem]" />
+            className="mx-auto"
+          />
+          {/* <img src={animationData} className="h-[30rem]" /> */}
         </div>
       </div>
     </Container>
