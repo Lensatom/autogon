@@ -79,15 +79,15 @@ export const LandingPage = () => {
         />
         <div className="mx-auto lg:px-24 mt-16 flex relative overflow-hidden items-center justify-center rounded">
           <video className='rounded-xl' autoPlay muted loop>
-            <source src="https://cp.sync.com/mfs-60:b19906c3b98965fb2a97fc0b1093872f=============================/u/Creating%20Awesome%20UI's%20that%20Animate%20Only%20On%20Scroll.mp4?cachekey=60:b19906c3b98965fb2a97fc0b1093872f=============================&datakey=dHYwbFirK2fIKDyqlEgI6xlwQdeHIIrAqtqo6QsRpvbtiX3d9Lm4h6Yr/m+CTLxnz5xt+daT7Est4WZnEQCr/OMoPvub3RMCxC8ulnHR+yCH92fiCtPi/e1C/nm90fnzRzYEvy4kQykVi4ZuplRDhCbusCnE8WxeGQx7J770hkAAuUVB1Jk9/gwq6eWf0sQbr5Sr2GkVzh5bQGqtUQ8zc8fASSN1x6HrBpg9e+AETbQ5L9H044fn10DA+OJx/fHqb+grLMK9kz10bQ+NtlvthYugIulchgjKCfYkCDG9IYNGFsUd/Ij2HN6ybHepWEsC5ORfyDIRoyUOQ9C+w2MG1g&mode=101&api_version=1&header1=Q29udGVudC1UeXBlOiB2aWRlby9tcDQ&header2=Q29udGVudC1EaXNwb3NpdGlvbjogaW5saW5lOyBmaWxlbmFtZT0iQ3JlYXRpbmclMjBBd2Vzb21lJTIwVUkncyUyMHRoYXQlMjBBbmltYXRlJTIwT25seSUyME9uJTIwU2Nyb2xsLm1wNCI7ZmlsZW5hbWUqPVVURi04JydDcmVhdGluZyUyMEF3ZXNvbWUlMjBVSSdzJTIwdGhhdCUyMEFuaW1hdGUlMjBPbmx5JTIwT24lMjBTY3JvbGwubXA0Ow&servtime=1677488266563&engine=cp-3.1.17&userid=1589120012&deviceid=3323620012&devicetypeid=3&access_token=ca8b5e8014ca7321499f7a671b0612112432d0de4adaf786374cebd2d38942bb" type="video/mp4" />
+            <source src="https://m109.syncusercontent.com/mfs-60:b19906c3b98965fb2a97fc0b1093872f=============================/p/Creating%20Awesome%20UI's%20that%20Animate%20Only%20On%20Scroll.mp4?allowdd=0&datakey=LP6uHxh2aTiVIo5QSDVtPnCWWfGns5zgBhdzm2KfQ6Xq3sJWC8beyMV7Kwoc4zE81OAG7YukclFFPXksdLMEtKbCscy+hGnU4fpeOFRjbMS/pwMk0EoEssk1SNpZPRiiJ0r2NWfvzqQKHmHemd9jVHvWNY+zyRo4nrrNAQy8OCObSMo+gYGOGzDUfwB8VypEZtPLLOk8vezUxCz0u52LiDxnOi3fudJC9v7D0QbMT9PSAsE8nbJY7sNl67weXv5x1YAEttkMmtEae7RBn4WSgFGltXikjibaxNyUP3wTMWPS6hUpfq2q1CbfMfaoCIcsD5YylE0W6NEWa/Rgn2hNmA&engine=ln-3.1.17&errurl=coN/CC9L80ct/goKzABRqf0IrsoTxtm9JOd7+qRcjF+qH0s4mNPdsGJFiaRWVyY+7b0rnSLGjeZ3K6kkfO4RLHHvQNNWNxW04tvbCkmfj/YdQ34QEj+13+Ed+5G3x6lDCabjjnbM0jagDhQ2PARx8DehxRaXRWdeAo9aiXFPAK70oAXNnlfxtfubrXvyWQUxjZaotTh3FYzPWV0iAl72IV+eIlZUST9WWHXqCs3SNVbuq5zSGBbnkL/2e4w2nRXnnsVFzssH6Kf86ARxkGEe9Wcc1dQa23FzVpAP2xKMcHPUtrmHjgJid20SFOf6l8sUVnYmp04pIbyerZ8xCVMSlg==&header1=Q29udGVudC1UeXBlOiB2aWRlby9tcDQ&header2=Q29udGVudC1EaXNwb3NpdGlvbjogaW5saW5lOyBmaWxlbmFtZT0iQ3JlYXRpbmclMjBBd2Vzb21lJTIwVUkncyUyMHRoYXQlMjBBbmltYXRlJTIwT25seSUyME9uJTIwU2Nyb2xsLm1wNCI7ZmlsZW5hbWUqPVVURi04JydDcmVhdGluZyUyMEF3ZXNvbWUlMjBVSSdzJTIwdGhhdCUyMEFuaW1hdGUlMjBPbmx5JTIwT24lMjBTY3JvbGwubXA0Ow&ipaddress=1717114411&linkcachekey=e538079c0&linkoid=1589120012&mode=101&sharelink_id=8189967760012&timestamp=1677489061276&uagent=2c4ecd7a2ef5387fbf9ac3f62cdd576556faa53e&signature=2e268d177c00da28cd950ff6adf1ce3d6c147aac&cachekey=60:b19906c3b98965fb2a97fc0b1093872f=============================" type="video/mp4" />
           </video>
-          {/* <meta itemProp="name" content="kili presentation" />
+          <meta itemProp="name" content="kili presentation" />
           <meta
             itemProp="thumbnailUrl"
             content="https://www.youtube.com/watch?v=6WC8Ef4nNjE"
           />
           <meta itemProp="uploadDate" content="2022-11-07 00:00" />
-          <meta itemProp="description" content="kili presentation" /> */}
+          <meta itemProp="description" content="kili presentation" />
         </div>
       </Container>
 
