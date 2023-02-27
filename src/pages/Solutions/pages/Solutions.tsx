@@ -4,7 +4,7 @@ import { BreadCrumb } from "../../../components/BreadCrumb";
 import { Header } from "../../../Layouts/Header";
 import Logo from '../../../assets/logo/Autogon-logo-light.png'
 import { Footer } from "../../../Layouts/Footer";
-import Banking from '../../../assets/images/banking.jpg'
+// import Banking from '../../../assets/images/banking.jpg'
 export const Solutions = () => {
   return (
     <>
@@ -75,7 +75,8 @@ export const Solutions = () => {
         </div>
         <div className="w-full">
           <img
-            src={Banking}
+            src=""
+            alt="banking"
             className="h-full w-full object-contain"
           />
         </div>
