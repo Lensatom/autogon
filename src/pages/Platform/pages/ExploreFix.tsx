@@ -13,16 +13,14 @@ import { Blog } from '../Layout/Blog';
 export const KeyCapabilities = () => {
   return (
     <>
-      <Header darkMode />
+      <Header />
 
       <Container
-        isDarkMode
         background
-        className="bg-surface pt-[10rem] lg:pt-[8rem] pb-32"
+        className="bg-screen pt-[10rem] lg:pt-[8rem] pb-32"
       >
-        <BreadCrumb darkMode />
+        <BreadCrumb />
         <Typography
-          isDarkMode
           align="center"
           variant="display"
           className="mx-auto mt-4 lg:w-[70rem]"
@@ -32,7 +30,6 @@ export const KeyCapabilities = () => {
         <Typography
           variant="body"
           align="center"
-          isDarkMode
           className="capitalize lg:w-[60rem] mx-auto mt-5"
         >
           Welcome to Autogon, where we believe in the power of AI to transform
@@ -44,22 +41,21 @@ export const KeyCapabilities = () => {
       </Container>
 
       <Container
-        isDarkMode
         background
         id="data-preparation"
-        className="bg-surface pb-10 lg:pb-40 pt-10"
+        className="bg-screen pb-10 lg:pb-40 pt-10"
       >
         {/* <BreadCrumb darkMode /> */}
         <div className="lg:flex gap-10 lg:mt-5">
           <div className="w-[95%]">
-            <Typography isDarkMode variant="header" className="font-semibold">
+            <Typography variant="header" className="font-semibold">
               Data Preparation
             </Typography>
             <img
               src="https://a.storyblok.com/f/139616/2500x1933/a1314fefc1/explore-and-fix-issues.webp"
               className="h-full w-full mt-3 lg:hidden"
             />
-            <Typography isDarkMode variant="body" className="mt-6">
+            <Typography variant="body" className="mt-6">
               Automating the end-to-end process of applying machine learning to
               real-world problems, including automating tasks such as selecting
               the appropriate algorithm, tuning the parameters, and
@@ -87,24 +83,23 @@ export const KeyCapabilities = () => {
         </div>
       </Container>
 
-      <PartnerCarousel darkMode />
+      <PartnerCarousel />
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row-reverse pt-20 gap-10 pb-10 lg:pb-40"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse pt-20 gap-10 pb-10 lg:pb-40"
         flex
         direction="row-reverse"
         id="auto-ml"
       >
         <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [-]
           </Typography>
-          <Typography isDarkMode variant="title" className="font-semibold">
+          <Typography variant="title" className="font-semibold">
             AutoML
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 w-">
+          <Typography variant="body" className="mt-8 w-">
             Supplement your expertise with extraordinary automation. Create and set 
             up best-in-class machine learning models to maximize the value of AI in 
             your organization.
@@ -122,20 +117,20 @@ export const KeyCapabilities = () => {
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-10"
+         
+        className=" bg-screen flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-10"
         flex
         // direction="row-reverse"
         id="no-code"
       >
         <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [-]
           </Typography>
-          <Typography isDarkMode variant="title" className="font-semibold">
+          <Typography variant="title" className="font-semibold">
             Empower your predictions with the ease of AutoML - Machine Learning for all, code-free!
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 w-">
+          <Typography variant="body" className="mt-8 w-">
             AutoML is the future of machine learning and AI, changing how organizations approach
             data science and predictive modeling.  With our bias testing and customizable
             compliance documentation, you can have peace of mind knowing that your AI
@@ -155,19 +150,19 @@ export const KeyCapabilities = () => {
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
+         
+        className=" bg-screen flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
         direction="row-reverse"
       >
         <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [-]
           </Typography>
-          <Typography isDarkMode variant="title" className="font-semibold">
+          <Typography variant="title" className="font-semibold">
             Unleash the Power of Machine Learning: With AutoGon, Data Science is for Everyone!
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 w-">
+          <Typography variant="body" className="mt-8 w-">
             Deploying your models has never been easier. With a single click or line of
             code, you can take your models from development to production and operationalize
             AI across your organization. Anyone can easily create accurate and effective
@@ -189,20 +184,20 @@ export const KeyCapabilities = () => {
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-10"
+         
+        className=" bg-screen flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-10"
         flex
         // direction="row-reverse"
         id="no-code"
       >
         <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [-]
           </Typography>
-          <Typography isDarkMode variant="title" className="font-semibold">
+          <Typography variant="title" className="font-semibold">
             Simplify Your Model Building: Let AutoML do the Heavy Lifting!
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 w-">
+          <Typography variant="body" className="mt-8 w-">
             AutoML uses a combination of algorithms and machine learning techniques to automate
             the process of model building. It starts by analyzing your data and identifying the
             most appropriate algorithms and methods. Then, it automatically trains, validates,
@@ -222,19 +217,19 @@ export const KeyCapabilities = () => {
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
+         
+        className=" bg-screen flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
         direction="row-reverse"
       >
         <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [-]
           </Typography>
-          <Typography isDarkMode variant="title" className="font-semibold">
+          <Typography variant="title" className="font-semibold">
             Unlock the Insights in Your Data - AutoML, the Smart Way to Build Models!
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 w-">
+          <Typography variant="body" className="mt-8 w-">
             AutoGon offers cutting-edge AutoML technology that automates the process of building
             machine-learning models, allowing you to focus on what matters – understanding and
             acting on your data. With a drag-and-drop interface, AutoGon enables you to analyze
@@ -253,24 +248,24 @@ export const KeyCapabilities = () => {
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse items-center lg:flex-row justify-center pb-10 lg:pb-40 gap-3"
+         
+        className=" bg-screen flex-col-reverse items-center lg:flex-row justify-center pb-10 lg:pb-40 gap-3"
         flex
         // direction="row-reverse"
       >
         {/* <div className="w-f">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [-]
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="title"
             className="font-semibold text-[60px] lg:text-[80px] leading-[100%]"
           >
             Orchestrate all your quality strategies with automated workflows
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="body"
             align="center"
             className="mt-2 lg:w-[80%] mx-auto"
@@ -294,9 +289,9 @@ export const KeyCapabilities = () => {
         </div> */}
       </Container>
 
-      <Testimonial isDarkMode />
+      <Testimonial />
 
-      {/* <Container isDarkMode background noGutter className=" pb-10 lg:pb-60">
+      {/* <Container background noGutter className=" pb-10 lg:pb-60">
         <Container
           as="div"
           isLightDarkMode
@@ -305,13 +300,13 @@ export const KeyCapabilities = () => {
         >
           <div className="w-full pt-12 lg:mt-0">
             <Typography
-              isDarkMode
+               
               variant="header"
               className="font-semibold lg:text-[90px] lg:mt-4 !leading-[4rem] lg:!leading-[5rem]"
             >
               A qualified workforce for all of your labeling needs
             </Typography>
-            <Typography variant="body" isDarkMode className="mt-4 lg:w-[36rem]">
+            <Typography variant="body" className="mt-4 lg:w-[36rem]">
               Data labeling takes time and resources that some organizations
               simply don’t have. That’s why Kili offers annotation services on
               premise or offshore, for adhoc missions or end-to-end projects.

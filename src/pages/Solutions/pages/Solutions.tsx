@@ -8,27 +8,25 @@ import Banking from '../../../assets/images/banking.jpg'
 export const Solutions = () => {
   return (
     <>
-      <Header darkMode />
+      <Header />
 
       <Container
-        isDarkMode
+         
         background
-        className="bg-surface pt-[10rem] lg:pt-[8rem] pb-28"
+        className="bg-screen pt-[10rem] lg:pt-[8rem] pb-28"
       >
         <BreadCrumb darkMode />
         <Typography
-          isDarkMode
           align="center"
           variant="display"
-          className="mx-auto mt-4 lg:w-[80rem]"
+          className="mx-auto mt-20 lg:w-2/3"
         >
           Solutions designed for industry-specific
         </Typography>
         <Typography
           variant="body"
           align="center"
-          isDarkMode
-          className="capitalize lg:w-[60rem] mx-auto mt-5"
+          className="capitalize lg:w-1/2 mx-auto mt-5"
         >
           At our company, we understand that different industries have different
           needs and challenges when it comes to AI and machine learning. That's
@@ -39,36 +37,36 @@ export const Solutions = () => {
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row-reverse pt-20 gap-5"
+         
+        className="bg-screen flex-col-reverse lg:flex-row-reverse pt-20 gap-5"
         flex
         id="banking"
       >
         <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [1]
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="title"
             className="font-semibold"
           >
             AutoGon for Banking
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="body"
             className="font-semibold mt-8"
           >
             Autogon AI is shaking up the banking world with our super-sleek AI tech!
 
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             Technology has largely impacted the banking industry in recent years and allowed
             significant automation, optimization, and customer experience advancements. One of
             the most exciting and promising advancements has been the rise of AI and machine learning.
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             AI and machine learning are revolutionizing the banking industry with AutoGon,
             improving risk management, fraud detection, customer experience, and more.
             And with the help of a cloud-based, no-code platform, banking organizations can
@@ -84,19 +82,19 @@ export const Solutions = () => {
       </Container>
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse items-center lg:flex-row-reverse pt-10 pb-40 gap-3"
+         
+        className="bg-screen flex-col-reverse items-center lg:flex-row-reverse pt-10 pb-40 gap-3"
         flex
       >
         <div className="w-full">
           <Typography
-            isDarkMode
+             
             variant="body"
             className="font-semibold mt-8"
           >
             AI and Machine Learning in Banking with Ease - A Cloud-based, No-Code functionality
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             Our platform is like a personal assistant for banks, helping them streamline
             their operations and deliver top-notch services to their customers, all with a smile.
             By leveraging a cloud-based, no-code platform like AutoGon, organizations in the banking
@@ -105,13 +103,13 @@ export const Solutions = () => {
             models and implement AI and machine learning solutions in minutes rather than weeks or months.
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="body"
             className="font-semibold mt-8"
           >
             AI Use Cases In Banking
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             <span className="font-semibold">Improve Risk Management: </span>
             With the help of machine learning algorithms, banks can:
             <ul className="list-disc flex flex-col gap-2 mt-2">
@@ -137,7 +135,7 @@ export const Solutions = () => {
           </Typography>
         </div>
         <div>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             <span className="font-semibold">Personalized Customer Experience: </span>
             AI-powered customer service and marketing help banks
             <ul className="list-disc flex flex-col gap-2 mt-2">
@@ -152,7 +150,7 @@ export const Solutions = () => {
               </li>
             </ul>
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             <span className="font-semibold">Streamlined Operations: </span>
             Using AutoGon, Banks can utilize Machine learning and AI to:
             <ul className="list-disc flex flex-col gap-2 mt-2">
@@ -167,7 +165,7 @@ export const Solutions = () => {
               </li>
             </ul>
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             <span className="font-semibold">Increased Speed and Accuracy: </span>
             With the help of machine learning algorithms on AutoGon, banks can:
             <ul className="list-disc flex flex-col gap-2 mt-2">
@@ -182,7 +180,7 @@ export const Solutions = () => {
               </li>
             </ul>
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             With AI Platforms for Banking, commercial and retail banks can use data-driven solutions
             to resolve their most pressing challenges while focusing on providing positive customer experiences.
             Get Started with AutoGon today
@@ -193,31 +191,31 @@ export const Solutions = () => {
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
+         
+        className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
         flex
         id="healthcare"
         // direction="row-reverse"
       >
         <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [2]
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="title"
             className="font-semibold"
           >
             HEALTHCARE
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="body"
             className="font-semibold mt-8"
           >
             AutoGon for Healthcare
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             Unleash the power of AI in healthcare with Autogon!
             <span>
               Our fancy technology is crafted with love to tackle the unique challenges
@@ -227,13 +225,13 @@ export const Solutions = () => {
             have faster, smarter and more accurate answers at your fingertips.
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="body"
             className="font-semibold mt-8"
           >
             Machine Learning in HealthCare
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             The healthcare industry is one of the world's most dynamic and rapidly evolving
             sectors. Healthcare organizations are constantly looking for new and innovative ways
             to improve their operations and services to meet the growing demand for better and
@@ -241,13 +239,13 @@ export const Solutions = () => {
             no-code platform, can help to transform the industry.
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="body"
             className="font-semibold mt-8"
           >
             Use Cases of AI Cloud Platforms in Healthcare
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             AI cloud platforms in healthcare have a wide range of use cases, including but not
             limited to data analysis, drug discovery, predictive maintenance, and personalized
             medicine. By leveraging cloud computing and AI technologies, healthcare organizations
@@ -268,24 +266,24 @@ export const Solutions = () => {
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
+         
+        className="bg-screen flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
         direction="row-reverse"
         id="manufacturing"
       >
         <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [3]
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="title"
             className="font-semibold"
           >
             MANUFACTURING
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             In the manufacturing industry, AI and machine learning can be used
             to improve efficiency, reduce costs, and increase safety. Our
             platform provides a wide range of pre-built models and algorithms
@@ -307,24 +305,24 @@ export const Solutions = () => {
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
+         
+        className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
         flex
         // direction="row-reverse"
         id="retail"
       >
         <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [4]
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="title"
             className="font-semibold"
           >
             RETAIL
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             In the retail industry, AI and machine learning can be used to
             improve customer service, personalization, and inventory management.
             Our platform provides a wide range of pre-built models and
@@ -346,24 +344,24 @@ export const Solutions = () => {
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
+         
+        className="bg-screen flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
         direction="row-reverse"
         id="financial-services"
       >
         <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [5]
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="title"
             className="font-semibold"
           >
             FINANCIAL SERVICES
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             In the financial services industry, AI and machine learning can be
             used to improve risk management, fraud detection, and customer
             service. Our platform provides a wide range of pre-built models and
@@ -385,24 +383,24 @@ export const Solutions = () => {
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
+         
+        className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
         flex
         // direction="row-reverse"
         id="oil-and-gas"
       >
         <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [6]
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="title"
             className="font-semibold"
           >
             OIL AND GAS
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             In the oil and gas industry, AI and machine learning can be used to
             improve efficiency, reduce costs, and increase safety. Our platform
             provides a wide range of pre-built models and algorithms for these
@@ -424,24 +422,24 @@ export const Solutions = () => {
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
+         
+        className="bg-screen flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
         direction="row-reverse"
         id="public-sector"
       >
         <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [7]
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="title"
             className="font-semibold"
           >
             PUBLIC SECTOR
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             In the public sector, AI and machine learning can be used to improve
             the delivery of services, streamline operations, and increase
             transparency. Our platform provides a wide range of pre-built models
@@ -464,24 +462,24 @@ export const Solutions = () => {
 
       <Container
         background
-        isDarkMode
-        className="bg-surface flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
+         
+        className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
         flex
         // direction="row-reverse"
         id="sports"
       >
         <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
+          <Typography variant="body" className="text-[22px]">
             [8]
           </Typography>
           <Typography
-            isDarkMode
+             
             variant="title"
             className="font-semibold"
           >
             SPORTS
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-[80%]">
             In the sports industry, AI and machine learning can be used to
             improve player performance, analyze game data, and increase fan
             engagement. Our platform provides a wide range of pre-built models
@@ -501,9 +499,9 @@ export const Solutions = () => {
         </div>
       </Container>
 
-      {/* <Container isDarkMode background className="pt-20 pb-10">
+      {/* <Container background className="pt-20 pb-10">
         <div className="lg:mx-auto">
-          <Typography isDarkMode variant="body" className="lg:w-3/4 mx-auto">
+          <Typography variant="body" className="lg:w-3/4 mx-auto">
             Whether the use case at hand involves computer vision, natural
             language processing, or speech recognition, Kili empowers teams of
             annotators, engineers, data scientists, business stakeholders, and
@@ -523,11 +521,11 @@ export const Solutions = () => {
         </div>
       </Container> */}
 
-      {/* <Container isDarkMode background className="pt-20">
+      {/* <Container background className="pt-20">
         <Typography
           variant="header"
           align="center"
-          isDarkMode
+           
           className="!font-extrabold"
         >
           Training data platform for Enterprise AI
@@ -535,7 +533,7 @@ export const Solutions = () => {
         <Typography
           variant="body"
           align="center"
-          isDarkMode
+           
           className="lg:w-1/2 mx-auto mt-5"
         >
           Kili is the platform that accelerates the creation and deployment of
@@ -546,7 +544,7 @@ export const Solutions = () => {
       </Container>
 
       <Container
-        isDarkMode
+         
         background
         className="lg:pt-40 pt-10 lg:pb-40 pb-20"
       >
@@ -562,7 +560,7 @@ export const Solutions = () => {
         </div>
       </Container>
 
-      <Container isDarkMode background noGutter className="pb-60">
+      <Container background noGutter className="pb-60">
         <Container
           as="div"
           isLightDarkMode
@@ -570,17 +568,17 @@ export const Solutions = () => {
           className="lg:flex items-center gap-3 rounded lg:rounded-2xl lg:h-[50rem] lg:!px-20"
         >
           <div className="w-full pt-12 lg:mt-0">
-            <Typography isDarkMode variant="caption">
+            <Typography variant="caption">
               SECURITY AND COMPLIANCE
             </Typography>
             <Typography
-              isDarkMode
+               
               variant="header"
               className="font-semibold lg:text-[90px] lg:mt-4 !leading-[4rem] lg:!leading-[5rem]"
             >
               Security that scales
             </Typography>
-            <Typography variant="body" isDarkMode className="mt-4 lg:w-[36rem]">
+            <Typography variant="body" className="mt-4 lg:w-[36rem]">
               Whatever the size of your organization, our intelligent security
               measures are built to scale. Our rigorous security program is
               informed by the needs of our customers and industry standards,
