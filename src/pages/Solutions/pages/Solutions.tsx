@@ -15,7 +15,7 @@ export const Solutions = () => {
         background
         className="bg-screen pt-[10rem] lg:pt-[8rem] pb-28"
       >
-        <BreadCrumb darkMode />
+        <BreadCrumb />
         <Typography
           align="center"
           variant="display"
@@ -267,14 +267,73 @@ export const Solutions = () => {
             patient outcomes and streamline operations. Additionally, AI cloud platforms can provide
             secure, scalable, and cost-effective solutions for healthcare organizations looking to
             incorporate AI into their operations.
+            <ol className="list-decimal flex flex-col gap-3">
+              <li>
+                Improved patient Care: By leveraging the power of machine learning and AI,
+                healthcare organizations can:
+                <ul className="list-disc flex flex-col gap-1 pl-3">
+                  <li>Gain access to a wealth of data to improve patient care.</li>
+                  <li>Build predictive models to identify potential health risks</li>
+                  <li>Help healthcare providers proactively intervene to prevent illness or injury.</li>
+                </ul>
+              </li>
+              <li>
+                Seamless Integration: Healthcare organizations can use machine learning and AI to:
+                <ul className="list-disc flex flex-col gap-1 pl-3">
+                  <li>Streamline their operations and automate many manual tasks.</li>
+                  <li>Develop algorithms to analyze Patient data</li>
+                  <li>Identify trends and make care recommendations.</li>
+                </ul>
+              </li>
+            </ol>
           </Typography>
           <Button className="mt-9">Request a demo</Button>
+        </div>
+        <div className="w-full">
+          <Typography variant="body" className="mt-8">
+            <ol className="list-decimal flex flex-col gap-3" start={3}>
+              <li>
+                Improved Data Analysis: AutoGon's Machine learning and AI cloud solutions can help
+                healthcare organizations make sense of the vast amounts of data they collect.
+                Healthcare providers can:
+                <ul className="list-disc flex flex-col gap-1 pl-3">
+                  <li>Automate the data analysis process,</li>
+                  <li>Quickly identify patterns and trends that can inform treatment decisions</li>
+                  <li>Improve patient outcomes.</li>
+                </ul>
+              </li>
+              <li>
+                Better Decision-Making: Machine learning and AI can be used to:
+                <ul className="list-disc flex flex-col gap-1 pl-3">
+                  <li>Develop predictive models that can help healthcare providers make better decisions.</li>
+                  <li>
+                    Develop algorithms to analyze patient data and identify individuals at risk of certain
+                    conditions. Make recovery interventions early,
+                  </li>
+                  <li>Reduce the risk of severe health problems.</li>
+                </ul>
+              </li>
+              <li>
+                Increased Efficiency: Healthcare organizations can use machine learning and AI
+                to improve the efficiency of their operations by
+                <ul className="list-disc flex flex-col gap-1 pl-3 pb-5">
+                  <li>
+                    Developing algorithms to automate appointment scheduling, prescription renewals,
+                    and patient follow-ups.
+                  </li>
+                  <li>Improve the overall patient experience.</li>
+                </ul>
+                <i className="font-semibold">Say goodbye to endless hours of data analysis and hello to improved patient care with Autogon AI. </i>
+                Our user-friendly and efficient platform lets you focus on what truly matters - giving your patients the best possible care.
+                Come on, give it a try, and experience the magic of AI in healthcare!
+              </li>
+            </ol>
+          </Typography>
         </div>
       </Container>
 
       <Container
         background
-         
         className="bg-screen flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
         flex
         direction="row-reverse"
