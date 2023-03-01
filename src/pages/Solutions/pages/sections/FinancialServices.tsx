@@ -59,7 +59,7 @@ const FinancialServices = () => {
       </Container>
       <Container
         background
-        className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pt-2 lg:pb-40 gap-3 items-start"
+        className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pt-2 lg:pb-10 gap-3 items-start"
         flex
         id="healthcare"
         // direction="row-reverse"
