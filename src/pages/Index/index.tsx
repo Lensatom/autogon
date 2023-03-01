@@ -18,6 +18,7 @@ import { useState } from "react";
 import { Pagination } from "swiper";
 import { BenefitCard } from "./components/BenefitCard";
 import AIMLIcon from '../../assets/modelAIML.png';
+import MlFlow from '../../assets/images/mlFlow.png'
 import { screenshots, screenshots1, screenshots2, screenshots3 } from '../../assets/screenshots';
 import { useNavigate } from "react-router-dom";
 
@@ -91,7 +92,7 @@ export const LandingPage = () => {
         </div>
       </Container>
 
-      <Container className="bg-screen py-10 lg:py-20 pb-32">
+      <Container className="bg-screen py-10 lg:py-10 pb-32">
         <Typography
           variant="subdisplay"
           align="center"
@@ -111,11 +112,11 @@ export const LandingPage = () => {
 
         <div>
           <img
-            src={AIMLIcon}
+            src={MlFlow}
             className="hidden md:block mx-auto"
             alt="Integrate quickly"
           />
-          <img src={AIMLIcon} alt="Integrate quickly" className="md:hidden" />
+          <img src={MlFlow} alt="Integrate quickly" className="md:hidden" />
         </div>
       </Container>
 

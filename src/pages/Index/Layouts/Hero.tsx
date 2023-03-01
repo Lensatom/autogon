@@ -6,7 +6,7 @@ import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 export const HeroPage = () => {
 
   return (
-    <Container className="bg-screen h-screen flex flex-col justify-betweenpt-[12rem] lg:pt-[10rem]">
+    <Container className="bg-screen h-screen flex flex-col justify-betweenpt-[12rem] pt-44 lg:pt-[10rem]">
       <Typography
         align="center"
         variant="display"
