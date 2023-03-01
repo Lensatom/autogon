@@ -5,7 +5,7 @@ const Manufacturing = () => {
     <>
       <Container
         background
-        className="bg-screen flex-col-reverse lg:flex-row-reverse pb-10 lg:pt-24 gap-8 items-start"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse pb-10 lg:pt-24 gap-8 items-center"
         flex
         id="manufacturing"
         // direction="row-reverse"
@@ -15,14 +15,12 @@ const Manufacturing = () => {
             [3]
           </Typography>
           <Typography
-             
             variant="title"
             className="font-semibold"
           >
             MANUFACTURING
           </Typography>
           <Typography
-             
             variant="body"
             className="font-semibold mt-8"
           >

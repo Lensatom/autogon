@@ -5,8 +5,7 @@ const Banking = () => {
     <>
       <Container
         background
-         
-        className="bg-screen flex-col-reverse lg:flex-row-reverse pt-20 gap-8"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse pt-20 gap-8 items-center"
         flex
         id="banking"
       >

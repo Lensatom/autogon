@@ -4,7 +4,7 @@ import { BreadCrumb } from "../../../components/BreadCrumb";
 import { Header } from "../../../Layouts/Header";
 import Logo from '../../../assets/logo/Autogon-logo-light.png'
 import { Footer } from "../../../Layouts/Footer";
-import { Banking, Healthcare, Manufacturing, Retail } from "./sections";
+import { Banking, FinancialServices, Healthcare, Manufacturing, Retail } from "./sections";
 
 export const Solutions = () => {
   return (
@@ -43,44 +43,7 @@ export const Solutions = () => {
 
       <Retail />
 
-      <Container
-        background
-         
-        className="bg-screen flex-col-reverse lg:flex-row-reverse pb-10 lg:pb-40 gap-3"
-        flex
-        direction="row-reverse"
-        id="financial-services"
-      >
-        <div className="w-full">
-          <Typography variant="body" className="text-[22px]">
-            [5]
-          </Typography>
-          <Typography
-             
-            variant="title"
-            className="font-semibold"
-          >
-            FINANCIAL SERVICES
-          </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
-            In the financial services industry, AI and machine learning can be
-            used to improve risk management, fraud detection, and customer
-            service. Our platform provides a wide range of pre-built models and
-            algorithms for these use cases, as well as a powerful model builder
-            for creating custom models. With our platform, financial services
-            companies can easily implement AI and machine learning to improve
-            their operations and better serve their customers.
-          </Typography>
-
-          <Button className="mt-9">Request a demo</Button>
-        </div>
-        <div className="w-full">
-          <img
-            src="https://a.storyblok.com/f/139616/2500x1933/9316e5479f/automation-tools.webp"
-            className="h-full w-full object-contain"
-          />
-        </div>
-      </Container>
+      <FinancialServices />
 
       <Container
         background
