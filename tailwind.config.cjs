@@ -23,7 +23,8 @@ module.exports = {
         inter: "'Inter', sans-serif",
         montserrat: "'Montserrat', sans-serif",
         hind: "'Hind', sans-serif",
-        lora: "'Lora', serif;"
+        lora: "'Lora', serif;",
+        warp: ["Tilt Warp, cursive"]
       },
       boxShadow: {
         "3xl": "0 35px 60px -15px rgba(0, 0, 0, 0.3)",
