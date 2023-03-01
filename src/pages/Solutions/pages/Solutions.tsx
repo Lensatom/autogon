@@ -38,7 +38,7 @@ export const Solutions = () => {
       <Container
         background
          
-        className="bg-screen flex-col-reverse lg:flex-row-reverse pt-20 gap-5"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse pt-20 gap-8"
         flex
         id="banking"
       >
@@ -75,16 +75,15 @@ export const Solutions = () => {
         </div>
         <div className="w-full">
           <img
-            src=""
+            src="./banking.jpg"
             alt="banking"
-            className="h-full w-full object-contain"
+            className="w-full object-contain rounded-xl"
           />
         </div>
       </Container>
       <Container
         background
-         
-        className="bg-screen flex-col-reverse items-center lg:flex-row-reverse pt-10 pb-40 gap-3"
+        className="bg-screen flex-col-reverse items-start lg:flex-row-reverse pt-10 gap-8"
         flex
       >
         <div className="w-full">
@@ -135,7 +134,7 @@ export const Solutions = () => {
             </ul>
           </Typography>
         </div>
-        <div>
+        <div className="w-full">
           <Typography variant="body" className="mt-8 lg:w-[80%]">
             <span className="font-semibold">Personalized Customer Experience: </span>
             AI-powered customer service and marketing help banks
@@ -192,8 +191,7 @@ export const Solutions = () => {
 
       <Container
         background
-         
-        className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pb-40 gap-3"
+        className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pt-24 gap-3 items-start"
         flex
         id="healthcare"
         // direction="row-reverse"
@@ -239,8 +237,23 @@ export const Solutions = () => {
             more efficient patient care. This is where a machine learning and AI cloud, the
             no-code platform, can help to transform the industry.
           </Typography>
+        </div>
+        <div className="w-full">
+          <img
+            src="https://a.storyblok.com/f/139616/2500x1933/e9ce2bb4e6/powerful-worksflows.webp"
+            className="h-full w-full object-contain"
+          />
+        </div>
+      </Container>
+      <Container
+        background
+        className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pt-2 lg:pb-40 gap-3 items-start"
+        flex
+        id="healthcare"
+        // direction="row-reverse"
+      >
+        <div className="w-full">
           <Typography
-             
             variant="body"
             className="font-semibold mt-8"
           >
@@ -256,12 +269,6 @@ export const Solutions = () => {
             incorporate AI into their operations.
           </Typography>
           <Button className="mt-9">Request a demo</Button>
-        </div>
-        <div className="w-full">
-          <img
-            src="https://a.storyblok.com/f/139616/2500x1933/e9ce2bb4e6/powerful-worksflows.webp"
-            className="h-full w-full object-contain"
-          />
         </div>
       </Container>
 
