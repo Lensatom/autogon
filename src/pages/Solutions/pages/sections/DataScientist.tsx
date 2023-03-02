@@ -7,7 +7,7 @@ const DataScientist = () => {
         background
         className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pt-24 gap-8 items-center"
         flex
-        id="business-analyst"
+        id="data-scientists"
         // direction="row-reverse"
       >
         <div className="w-full">
@@ -41,7 +41,7 @@ const DataScientist = () => {
         </div>
         <div className="w-full">
           <img
-            src="./financial services.jpg"
+            src="./Data scientist.jpg"
             className="w-full object-contain rounded-xl"
           />
         </div>

@@ -7,7 +7,7 @@ const ItOperations = () => {
         background
         className="bg-screen flex-col-reverse lg:flex-row-reverse pb-10 lg:pt-24 gap-8 items-center"
         flex
-        id="business-analyst"
+        id="it-operations"
         // direction="row-reverse"
       >
         <div className="w-full">

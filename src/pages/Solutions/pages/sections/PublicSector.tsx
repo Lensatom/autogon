@@ -7,7 +7,7 @@ const PublicSector = () => {
         background
         className="bg-screen flex-col-reverse lg:flex-row-reverse pb-10 lg:pt-24 gap-8 items-center"
         flex
-        id="oil-and-gas"
+        id="from-design"
         // direction="row-reverse"
       >
         <div className="w-full">
@@ -52,7 +52,7 @@ const PublicSector = () => {
         </div>
         <div className="w-full">
           <img
-            src="./financial services.jpg"
+            src="./public sector.jpg"
             className="w-full object-contain rounded-xl"
           />
         </div>

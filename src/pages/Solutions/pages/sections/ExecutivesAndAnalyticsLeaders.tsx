@@ -7,7 +7,7 @@ const ExecutivesAndAnalyticsLeaders = () => {
         background
         className="bg-screen flex-col-reverse lg:flex-row-reverse pb-10 lg:pt-24 gap-8 items-center"
         flex
-        id="oil-and-gas"
+        id="executives"
         // direction="row-reverse"
       >
         <div className="w-full">
@@ -48,7 +48,7 @@ const ExecutivesAndAnalyticsLeaders = () => {
         </div>
         <div className="w-full">
           <img
-            src="./oil and gas.jpg"
+            src="./executives.jpg"
             className="w-full object-contain rounded-xl"
           />
         </div>
@@ -57,7 +57,7 @@ const ExecutivesAndAnalyticsLeaders = () => {
         background
         className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pt-2 lg:pb-10 gap-3 items-start"
         flex
-        id="healthcare"
+        id="executives"
         // direction="row-reverse"
       >
         <div className="w-full">
