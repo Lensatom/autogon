@@ -1,6 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
 
-const AutoML = () => {
+const DataLabelling = () => {
   return (
     <>
       <Container
@@ -11,18 +11,21 @@ const AutoML = () => {
       >
         <div className="w-full">
           <Typography variant="body" className="text-[22px]">
-            [-]
+            [6]
           </Typography>
           <Typography
             variant="title"
             className="font-semibold"
           >
-            Auto ML
+            DATA LABELLING
+          </Typography>
+          <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+            Unlock the full power of AI and drive innovation in your industry.
           </Typography>
           <Typography variant="body" className="mt-8 lg:w-[80%]">
-            Supplement your expertise with extraordinary automation.
-            Create and set up best-in-class machine learning models
-            to maximize the value of AI in your organization.
+            Creating high-quality training datasets for machine learning models should be simple
+            and hassle-free. With Autogon's cloud-based, no-code platform, it's now easier for users
+            and organizations to build and label their datasets, all within a short time frame.
           </Typography>
         </div>
         <div className="w-full">
@@ -43,30 +46,32 @@ const AutoML = () => {
             variant="body"
             className="font-semibold mt-8"
           >
-            Unleash the Power of Machine Learning: With AutoGon, Data Science is for Everyone!
+            Label Your Data with Ease, Build Better AI Models with Confidence.
           </Typography>
           <Typography variant="body" className="mt-8 lg:w-[80%]">
-            Deploying your models has never been easier. With a single click or line of code,
-            you can take your models from development to production and operationalize AI across
-            your organization. Anyone can easily create accurate and effective models regardless
-            of their technical expertise. AutoGon assists you in quickly and efficiently processing
-            large amounts of data, identifying patterns, and confidently making predictions.
-            Empower frontline decision-makers and simplify AI consumption with AI-powered apps
-            built with your deployed models.
+            Autogon provides an easy-to-use, drag-and-drop interface that allows you to easily upload
+            and label your data without coding knowledge. Our platform streamlines the labeling of images,
+            videos, audio, or text. It saves you time, allowing you to focus on what matters: building the
+            best machine-learning models possible.
           </Typography>
           <Typography 
             variant="body"
             className="font-semibold mt-8"
           >
-            Simplify Your Model Building: Let AutoML do the Heavy Lifting!
+            Collaborate smarter, label faster: Advanced features for efficient dataset building on our platform.
           </Typography>
           <Typography variant="body" className="mt-8 lg:w-[80%]">
-            AutoML uses a combination of algorithms and machine learning techniques to automate
-            the process of model building. It starts by analyzing your data and identifying the
-            most appropriate algorithms and methods. Then, it automatically trains, validates,
-            and optimizes the models, so you don't have to. The platform also provides visualizations
-            and feedback, so you can understand the performance of your models and make informed
-            decisions.
+            With Autogon, you'll have many pre-built templates and tools for labeling and annotating your data.
+            Our platform also includes the following:
+            <ul>
+              <li>Advanced collaboration features.</li>
+              <li>Allowing you to collaborate with others to tag and build your datasets quickly.</li>
+              <li>Making the process faster and more efficient.</li>
+            </ul>
+            We understand that accurate machine-learning model require high-quality training datasets.
+            Because of this, our platform employs cutting-edge algorithms to validate and verify labels,
+            ensuring the accuracy and quality of your data. With our platform, you can be confident that
+            your machine-learning models are based on the best data available.
           </Typography>
         </div>
         <div className="w-full">
@@ -97,4 +102,4 @@ const AutoML = () => {
   )
 }
 
-export default AutoML
+export default DataLabelling

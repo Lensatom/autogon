@@ -7,7 +7,7 @@ const AutomatedTimeSeries = () => {
         background
         className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 items-center"
         flex
-        id="banking"
+        id="data-centric"
       >
         <div className="w-full">
           <Typography variant="body" className="text-[22px]">
