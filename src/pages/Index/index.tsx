@@ -407,7 +407,7 @@ export const LandingPage = () => {
           src='https://widgets.sociablekit.com/medium-publication-feed/iframe/121811'
           frameBorder='0'
           width='80%'
-          height='1000'
+          height='500'
           className='rounded-xl'
         ></iframe>
       </Container>
