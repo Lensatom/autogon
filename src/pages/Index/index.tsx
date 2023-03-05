@@ -395,7 +395,7 @@ export const LandingPage = () => {
 
       <PartnerCarousel title="Join an elite group of companies revolutionizing their industries with our AI/ML solutions" />
 
-      <Container noGutter className="bg-screen py-10 pt-5">
+      <Container noGutter className="bg-screen py-10 pt-5 flex flex-col items-center">
         <Typography
           variant="header"
           align="center"
@@ -403,50 +403,13 @@ export const LandingPage = () => {
         >
           Recent news
         </Typography>
-
-        <Swiper
-          spaceBetween={16}
-          slidesPerView="auto"
-          centeredSlides
-          allowTouchMove
-          initialSlide={1}
-          className="mt-20 mb-60"
-          scrollbar={{
-            draggable: true,
-          }}
-          breakpoints={{
-            959: { spaceBetween: 22 },
-            1100: { allowTouchMove: true, scrollbar: { draggable: false } },
-          }}
-        >
-          <SwiperSlide className="!w-fit">
-            <BlogCard
-              caption="Blog"
-              onClick={() => navigate("blog/2")}
-              titleClass="!text-2xl"
-              src="https://a.storyblok.com/f/139616/1920x1080/dc2cef422d/ai-for-compliance-what-why-and-how.svg/m/767x0"
-              title="Revolutionizing Business Operations: How Autogon's AI/ML Platform is Transforming Industries"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide className="!w-fit">
-            <BlogCard
-              caption="blog"
-              titleClass="!text-2xl"
-              src="https://a.storyblok.com/f/139616/1920x1080/dc2cef422d/ai-for-compliance-what-why-and-how.svg/m/767x0"
-              title="Unlocking the Potential of Data: How Autogon's AI/ML Platform is Empowering Businesses of All Sizes"
-            />
-          </SwiperSlide>
-
-          <SwiperSlide className="!w-fit">
-            <BlogCard
-              caption="blog"
-              titleClass="!text-2xl"
-              src="https://a.storyblok.com/f/139616/1920x1080/dc2cef422d/ai-for-compliance-what-why-and-how.svg/m/767x0"
-              title="Disrupting the Fintech Industry: How Autogon's AI/ML Platform is Revolutionizing Financial Services"
-            />
-          </SwiperSlide>
-        </Swiper>
+        <iframe
+          src='https://widgets.sociablekit.com/medium-publication-feed/iframe/121811'
+          frameBorder='0'
+          width='80%'
+          height='1000'
+          className='rounded-xl'
+        ></iframe>
       </Container>
 
       <Container
