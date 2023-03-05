@@ -8,11 +8,19 @@ import { BrowserRouter } from "react-router-dom";
 import CookieConsent from "react-cookie-consent";
 import { Typography } from "./components";
 import { HiOutlineCog } from "react-icons/hi";
+// @ts-ignore: explanation here
+import TawkMessengerReact from '@tawk.to/tawk-messenger-react'; 
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
+      <div className="App">
+        <TawkMessengerReact
+          propertyId="6404981031ebfa0fe7f0c720"
+          widgetId="1gqov40cn"
+        />
+      </div>
       <CookieConsent
         buttonWrapperClasses="flex flex-col-reverse gap-3 w-60 py-5"
         declineButtonClasses="w-full !m-0 !border-2 !rounded-full !border-white !bg-transparent "
