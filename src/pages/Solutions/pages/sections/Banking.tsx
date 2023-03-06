@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
+import BankingImage from '../../../../assets/images/banking.jpg'
 
 const Banking = () => {
   return (
@@ -10,11 +11,7 @@ const Banking = () => {
         id="banking"
       >
         <div className="w-full">
-          <Typography variant="body" className="text-[22px]">
-            [1]
-          </Typography>
-          <Typography
-             
+          <Typography variant="body" className="text-[22px]"
             variant="title"
             className="font-semibold"
           >
@@ -42,7 +39,7 @@ const Banking = () => {
         </div>
         <div className="w-full">
           <img
-            src="./banking.jpg"
+            src={BankingImage}
             alt="banking"
             className="w-full object-contain rounded-xl"
           />
