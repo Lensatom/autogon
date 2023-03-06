@@ -11,6 +11,7 @@ import {
 } from "react-icons/fa";
 import cn from "classnames";
 import { FooterLinks } from "../components/FooterLinks";
+import { NavLink } from "react-router-dom";
 
 interface FooterProps {
   darkMode?: boolean;
@@ -215,7 +216,9 @@ export const Footer = ({ darkMode }: FooterProps) => {
 
       <div className="absolute h-10 flex flex-col-reverse lg:flex-row lg:items-center bottom-10 lg:bottom-3 lg:gap-16 gap-4">
         <div className="flex items-center gap-x-4">
-          <div
+          <a
+            target='__blank'
+            href='https://web.facebook.com/people/Autogon/100088750542777/'
             className={`rounded-full w-7 h-7 grid place-items-center ${
               darkMode ? "bg-surface" : "bg-black"
             }`}
@@ -223,7 +226,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
             <FaFacebookF
               className={`h-5 w-5 ${darkMode ? "text-neutral" : "text-white"}`}
             />
-          </div>
+          </a>
           <div
             className={`rounded-full w-7 h-7 grid place-items-center ${
               darkMode ? "bg-surface" : "bg-black"

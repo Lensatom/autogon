@@ -9,7 +9,7 @@ import CookieConsent from "react-cookie-consent";
 import { Typography } from "./components";
 import { HiOutlineCog } from "react-icons/hi";
 // @ts-ignore: explanation here
-import TawkMessengerReact from '@tawk.to/tawk-messenger-react'; 
+import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
