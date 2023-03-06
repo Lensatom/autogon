@@ -1,5 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
-import BankingImage from '../../../../assets/images/banking.jpg'
+import BankingImage from '../../../../assets/images/banking.'
 
 const Banking = () => {
   return (
@@ -11,7 +11,10 @@ const Banking = () => {
         id="banking"
       >
         <div className="w-full">
-          <Typography variant="body" className="text-[22px]"
+          <Typography variant="body" className="text-[22px]">
+            [1]
+          </Typography>
+          <Typography
             variant="title"
             className="font-semibold"
           >
