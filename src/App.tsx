@@ -16,7 +16,7 @@ import { Router, Route } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import ReactGA from 'react-ga'
 
-ReactGA.initialize('356663250')
+ReactGA.initialize('G-CBKWFLHR4B')
 const browserHistory = createBrowserHistory()
 // @ts-ignore: explanation here
 browserHistory.listen((location, action) => {
