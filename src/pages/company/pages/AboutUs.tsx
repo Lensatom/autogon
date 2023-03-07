@@ -11,15 +11,15 @@ export const Company = () => {
     <>
       <Header />
 
-      <Container className="bg-surface lg:pb-40 pt-[8rem]">
+      <Container className="bg-screen lg:pb-40 pt-[8rem]">
         <BreadCrumb />
         <Typography align="center" variant="display" className="mb-1 mt-10">
-          Why kili
+          Why Autogon
         </Typography>
-        <Typography align="center" variant="body">
+        <Typography align="center" variant="body" className="mt-5">
           You might not know this, but:
         </Typography>
-        <Typography align="center" variant="body" className="mt-2">
+        <Typography align="center" variant="body">
           MNIST’s dataset has an error rate of 3.4%, and is still cited by more
           than 38,000 papers.
         </Typography>
@@ -48,7 +48,7 @@ export const Company = () => {
         </Typography>
       </Container>
 
-      <Container className={"bg-surface pt-1 lg:pb-40 "}>
+      <Container className={"bg-screen pt-1 lg:pb-40 "}>
         <Typography
           align="center"
           variant="display"
@@ -94,7 +94,7 @@ export const Company = () => {
 
       <Container
         background
-        className="bg-surface pt-20 gap-10 lg:pb-40 flex-col-reverse lg:flex-row-reverse"
+        className="bg-screen pt-20 gap-10 lg:pb-40 flex-col-reverse lg:flex-row-reverse"
         flex
       >
         <div className="w-full">
@@ -131,7 +131,7 @@ export const Company = () => {
 
       <Container
         background
-        className="bg-surface lg:pb-40 gap-10 flex-col-reverse lg:flex-row pt-10 lg:pt-0"
+        className="bg-screen lg:pb-40 gap-10 flex-col-reverse lg:flex-row pt-10 lg:pt-0"
         flex
         // direction="row-reverse"
       >
@@ -168,7 +168,7 @@ export const Company = () => {
             adjustments to datasets has lagged.
           </Typography>
           <Typography variant="body" className="mt-4 w-">
-            At Kili Technology, we want to reverse this and find new and
+            At Autogon Technology, we want to reverse this and find new and
             systematic ways to promote seamless interactions between humans and
             data.
           </Typography>
@@ -183,7 +183,7 @@ export const Company = () => {
 
       <Container
         background
-        className="bg-surface lg:pb-20 gap-3 lg:flex-row-reverse flex-col-reverse"
+        className="bg-screen lg:pb-20 gap-3 lg:flex-row-reverse flex-col-reverse"
         flex
       >
         <div className="w-full">
@@ -222,13 +222,13 @@ export const Company = () => {
         </div>
       </Container>
 
-      <Container background className="bg-surface pt-2 pb-20 gap-3">
+      <Container background className="bg-screen pt-2 pb-20 gap-3">
         <Typography
           variant="body"
           align="center"
           className="lg:w-[60rem] mx-auto"
         >
-          At Kili Technology, we firmly believe that focusing on high-quality
+          At Autogon Technology, we firmly believe that focusing on high-quality
           training data, that is consistently labeled, is the way to unlock the
           value of AI.
         </Typography>
@@ -242,7 +242,7 @@ export const Company = () => {
         </Typography>
       </Container>
 
-      <Container className="bg-surface pb-40 pt-10">
+      <Container className="bg-screen pb-40 pt-10">
         <Typography align="center" variant="display" className="mb-1">
           The Company
         </Typography>
@@ -252,7 +252,7 @@ export const Company = () => {
           variant="body"
           className="mt-4 lg:w-[60rem] mx-auto"
         >
-          Kili Technology began as an idea in 2018. Edouard d’Archimbaud, our
+          Autogon Technology began as an idea in 2018. Edouard d’Archimbaud, our
           co-founder and CTO, was working at BNP Paribas, where he built one of
           the most advanced AI Labs in Europe from scratch. François-Xavier
           Leduc, our co-founder and CEO, knew how to take a powerful insight and
@@ -265,10 +265,10 @@ export const Company = () => {
           variant="body"
           className="mt-6 lg:w-[60rem] mx-auto"
         >
-          Together, they founded Kili Technology to ensure data was no longer a
-          barrier to good AI. By July 2020, the Kili Technology platform was
+          Together, they founded Autogon Technology to ensure data was no longer a
+          barrier to good AI. By July 2020, the Autogon Technology platform was
           live and by the end of the year, the first customers had renewed their
-          contract, and the pipeline was full. In 2021, Kili Technology raised
+          contract, and the pipeline was full. In 2021, Autogon Technology raised
           over $30M from Serena, Headline and Balderton.
         </Typography>
         <Typography
@@ -276,12 +276,12 @@ export const Company = () => {
           variant="body"
           className="lg:mt-10 mt-5 lg:w-[60rem] mx-auto"
         >
-          Today Kili Technology continues its journey to enable businesses
+          Today Autogon Technology continues its journey to enable businesses
           around the world to build trustworthy AI with high-quality data.
         </Typography>
       </Container>
 
-      <Container className="bg-surface pb-40 pt-5">
+      <Container className="bg-screen pb-40 pt-5">
         <Typography align="center" variant="display" className="mb-1">
           Our Values
         </Typography>
@@ -341,9 +341,9 @@ export const Company = () => {
 
       <PartnerCarousel
         title="Trusted by the world’s best companies"
-        subtitle="Our clients and investors trust Kili to take the AI industry to new and exciting places."
+        subtitle="Our clients and investors trust Autogon to take the AI industry to new and exciting places."
       />
-      <Container className="h-40 bg-surface hidden lg:block"></Container>
+      <Container className="h-40 bg-screen hidden lg:block"></Container>
       <Container
         disableOverflowHidden
         isDarkMode
