@@ -26,27 +26,27 @@ export const Footer = ({ darkMode }: FooterProps) => {
       },
       {
         name: "Augmented Intelligence",
-        link: "/platform/label-annotate",
+        link: "/platform#augmented-intelligence",
       },
       {
         name: "Data Engineering",
-        link: "/platform/explore-and-fix",
-      },
-      {
-        name: "Machine Learninge",
-        link: "/platform/integrate-automate",
+        link: "/platform/data-engineering",
       },
       {
         name: "MLOps",
-        link: "/professional-services",
+        link: "/platform#mlops",
       },
       {
         name: "Decision Intelligence",
-        link: "pricing",
+        link: "/platform#data-intelligence",
       },
       {
-        name: "Data Visualization. Data Labeling",
-        link: "pricing",
+        name: "Data Visualization",
+        link: "/platform#data-visualization",
+      },
+      {
+        name: "Data Labeling",
+        link: "/platform#data-labelling",
       },
       {
         name: "Plan & Features",
@@ -60,59 +60,100 @@ export const Footer = ({ darkMode }: FooterProps) => {
     links: [
       {
         name: "AutoML",
-        link: "/professional-services#from-design",
+        link: "/key-capabilities#auto-ml",
         hash: true,
       },
       {
         name: "DragNDrop AI",
-        link: "/professional-services#trained-workforce",
+        link: "/key-capabilities#drag-drop",
         hash: true,
       },
       {
         name: "Data Preparation",
-        link: "/professional-services#data-centric",
+        link: "/key-capabilities#data-preparation",
         hash: true,
       },
       {
         name: "Automated Time Series",
-        link: "/professional-services#data-centric",
+        link: "/key-capabilities#automated-time",
         hash: true,
       },
       {
         name: "No-Code AI Apps",
-        link: "/professional-services#data-centric",
-        hash: true,
-      },
-      {
-        name: "More Capabilities",
-        link: "/professional-services#data-centric",
+        link: "/key-capabilities#no-code",
         hash: true,
       },
     ],
   };
+
+  let solutionLinks = {
+    title: "BY INDUSTRY",
+    links: [
+      {
+        name: "Banking",
+        link: "/solutions#banking",
+        hash: true,
+      },
+      {
+        name: "Healthcare",
+        link: "/solutions#healthcare",
+        hash: true,
+      },
+      {
+        name: "Manufacturing",
+        link: "/solutions#manufacturing",
+        hash: true,
+      },
+      {
+        name: "Retail",
+        link: "/solutions#retail",
+        hash: true,
+      },
+      {
+        name: "Financial Services",
+        link: "/solutions#financial-services",
+        hash: true,
+      },
+      {
+        name: "Oil and Gas",
+        link: "/solutions#oil-gas",
+        hash: true,
+      },
+      {
+        name: "Public Sector",
+        link: "/solutions#public-sector",
+        hash: true,
+      },
+      {
+        name: "Sports",
+        link: "/solutions#sports",
+        hash: true,
+      },
+    ],
+  }
 
   let guidesLinks = {
     title: "Solutions By Roles",
     links: [
       {
         name: "Business Analysis",
-        link: "",
+        link: "/roles#business-analysis",
       },
       {
         name: "Data Scientists",
-        link: "",
+        link: "/roles#data-scientists",
       },
       {
         name: "IT Operations",
-        link: "",
+        link: "/roles#it-operations",
       },
       {
         name: "Software Engineers",
-        link: "",
+        link: "/roles#software-engineers",
       },
       {
         name: "Executives & Analytics Leaders",
-        link: "",
+        link: "/roles#executives",
       },
     ],
   };
@@ -190,6 +231,11 @@ export const Footer = ({ darkMode }: FooterProps) => {
           darkMode={darkMode}
           links={toolLinks.links}
           title={toolLinks.title}
+        />
+        <FooterLinks
+          darkMode={darkMode}
+          links={solutionLinks.links}
+          title={solutionLinks.title}
         />
         <FooterLinks
           darkMode={darkMode}

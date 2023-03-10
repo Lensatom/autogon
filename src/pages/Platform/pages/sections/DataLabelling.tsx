@@ -7,7 +7,7 @@ const DataLabelling = () => {
         background
         className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 items-center"
         flex
-        id="auto-ml"
+        id="data-labelling"
       >
         <div className="w-full">
           <Typography variant="body" className="text-[22px]">

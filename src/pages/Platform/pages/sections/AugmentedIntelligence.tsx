@@ -7,7 +7,7 @@ const AugmentedIntelligence = () => {
         background
         className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 items-center"
         flex
-        id="auto-ml"
+        id="augmented-intelligence"
       >
         <div className="w-full">
           <Typography variant="body" className="text-[22px]">

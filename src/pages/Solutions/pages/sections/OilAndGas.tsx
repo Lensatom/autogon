@@ -7,7 +7,7 @@ const OilAndGas = () => {
         background
         className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pt-24 gap-8 items-center"
         flex
-        id="public-sector"
+        id="oil-gas"
         // direction="row-reverse"
       >
         <div className="w-full">

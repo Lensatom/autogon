@@ -169,11 +169,6 @@ export const Header = ({ darkMode }: HeaderProps) => {
               hash: true,
             },
             {
-              name: "Machine Learninge",
-              link: "/platform#machine-learning",
-              hash: true,
-            },
-            {
               name: "MLOps",
               link: "/platform#mlops",
               hash: true,
@@ -184,8 +179,13 @@ export const Header = ({ darkMode }: HeaderProps) => {
               hash: true,
             },
             {
-              name: "Data Visualization. Data Labeling",
+              name: "Data Visualization",
               link: "/platform#data-visualization",
+              hash: true,
+            },
+            {
+              name: "Data Labelling",
+              link: "/platform#data-labelling",
               hash: true,
             },
           ],
@@ -200,7 +200,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
             },
             {
               name: "DragNDrop AI",
-              link: "/platform/key-capabilities#",
+              link: "/platform/key-capabilities#drag-drop",
               hash: true,
             },
             {
@@ -210,19 +210,14 @@ export const Header = ({ darkMode }: HeaderProps) => {
             },
             {
               name: "Automated Time Series",
-              link: "/platform/key-capabilities#data-centric",
+              link: "/platform/key-capabilities#automated-time",
               hash: true,
             },
             {
               name: "No-Code AI Apps",
               link: "/platform/key-capabilities#no-code",
               hash: true,
-            },
-            {
-              name: "More Capabilities",
-              link: "/platform/key-capabilities#",
-              hash: true,
-            },
+            }
           ],
         },
       ],
@@ -258,17 +253,17 @@ export const Header = ({ darkMode }: HeaderProps) => {
             },
             {
               name: "Financial Services",
-              link: "/solutions#oil-and-gas",
+              link: "/solutions#financial-services",
               hash: true,
             },
             {
               name: "Oil and Gas",
-              link: "/solutions#public-sector",
+              link: "/solutions#oil-gas",
               hash: true,
             },
             {
               name: "Public Sector",
-              link: "/solutions#from-design",
+              link: "/solutions#public-sector",
               hash: true,
             },
             {
@@ -298,7 +293,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
             },
             {
               name: "Software Engineers",
-              link: "/solutions/roles#software-engineering",
+              link: "/solutions/roles#software-engineers",
               hash: true,
             },
             {

@@ -7,7 +7,7 @@ const DragNDrop = () => {
         background
         className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 items-center"
         flex
-        id="banking"
+        id="drag-drop"
       >
         <div className="w-full">
           <Typography variant="body" className="text-[22px]">
