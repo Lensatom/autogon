@@ -1,5 +1,6 @@
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import { Avatar, Button, Container, Typography } from "../../components";
+import { NavLink } from 'react-router-dom'
 import { Header } from "../../Layouts/Header";
 import { HeroPage } from "./Layouts/Hero";
 import Smilesvg from "../../assets/logo/Autogon-logo-light.png";
@@ -138,8 +139,10 @@ export const LandingPage = () => {
             variant="link"
             className="text-sm mt-9 !font-extrabold text-primary"
           >
-            Learn more
-            <IoIosArrowForward className="h-3 w-3 ml-2 inline" />
+            <NavLink to='/solutions'>
+              Learn more
+              <IoIosArrowForward className="h-3 w-3 ml-2 inline" />
+            </NavLink>
           </Typography>
         </div>
         <div className="w-full p-5">
@@ -165,8 +168,10 @@ export const LandingPage = () => {
             variant="link"
             className="text-sm mt-9 !font-extrabold text-primary"
           >
-            Learn more
-            <IoIosArrowForward className="h-3 w-3 ml-2 inline" />
+            <NavLink to='/solutions'>
+              Learn more
+              <IoIosArrowForward className="h-3 w-3 ml-2 inline" />
+            </NavLink>
           </Typography>
         </div>
         <div className="w-full p-5">
@@ -194,8 +199,10 @@ export const LandingPage = () => {
             variant="link"
             className="text-sm mt-9 !font-extrabold text-primary"
           >
-            Learn more
-            <IoIosArrowForward className="h-3 w-3 ml-2 inline" />
+            <NavLink to='/solutions'>
+              Learn more
+              <IoIosArrowForward className="h-3 w-3 ml-2 inline" />
+            </NavLink>
           </Typography>
         </div>
         <div className="w-full p-5">
@@ -218,7 +225,6 @@ export const LandingPage = () => {
             automatically get the best neural network architecture for a given
             issue with meterics on accuracy
           </Typography>
-          <Button className="flex items-center gap-3 mt-9">Chat to us</Button>
         </div>
         <div className="w-full">
           <Lottie
