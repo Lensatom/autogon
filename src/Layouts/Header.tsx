@@ -283,7 +283,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
             },
             {
               name: "Data Scientists",
-              link: "/solutions/roles#data-scientisits",
+              link: "/solutions/roles#data-scientists",
               hash: true,
             },
             {

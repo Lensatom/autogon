@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
+import RetailImage from '../../../../assets/images/retail.jpg'
 
 const Retail = () => {
   return (
@@ -47,7 +48,7 @@ const Retail = () => {
         </div>
         <div className="w-full">
           <img
-            src="./retail.jpg"
+            src={RetailImage}
             className="w-full object-contain rounded-xl"
           />
         </div>

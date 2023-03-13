@@ -16,327 +16,60 @@ export const Company = () => {
         <Typography align="center" variant="display" className="mb-1 mt-10">
           Why Autogon
         </Typography>
-        <Typography align="center" variant="body" className="mt-5">
-          You might not know this, but:
+        <Typography align="center" variant="body" className="mt-5 lg:px-[20%]">
+          Welcome to Autogon, the leading company in the field of artificial
+          intelligence and machine learning. Our mission is to provide businesses
+          with the most advanced AI-powered solutions that allow them to make
+          data-driven decisions and stay ahead of the competition.
         </Typography>
-        <Typography align="center" variant="body">
-          MNIST’s dataset has an error rate of 3.4%, and is still cited by more
-          than 38,000 papers.
-        </Typography>
-        <Typography
-          align="center"
-          variant="body"
-          className="mt-4 lg:w-[60rem] mx-auto"
-        >
-          The ImageNet dataset, with its crowdsourced labels, has an error rate
-          of 6%. This dataset arguably underpins the most popular image
-          recognition systems developed by Google and Facebook. Systemic errors
-          in these datasets have real-world consequences. Models trained on
-          error-containing data are forced to learn those errors, leading to
-          false predictions or a need for retraining on ever-increasing amounts
-          of data to “wash out” the errors.
+        <Typography align="center" variant="body" className="mt-5 lg:px-[20%]">
+          At Autogon, we understand that the world of AI and machine learning can be
+          complex and overwhelming, which is why we've made it our priority to develop
+          cutting-edge technologies that are easy to use and accessible to everyone.
+          Our team of experts has spent years researching and developing state-of-the-art
+          algorithms that can be applied to a wide range of industries, from finance and
+          healthcare to marketing and retail.
         </Typography>
         <Typography
           align="center"
           variant="body"
-          className="mt-8 lg:w-[60rem] mx-auto"
+          className="mt-4 lg:px-[20%]"
         >
-          Every industry has begun to understand the transformative potential of
-          AI and have started investing in it. But the revolution of ML
-          transformers and the relentless focus on ML model optimization is
-          reaching the point of diminishing returns. What else is there?
-        </Typography>
-      </Container>
-
-      <Container className={"bg-screen pt-1 lg:pb-40 "}>
-        <Typography
-          align="center"
-          variant="display"
-          className="mb-1 mt-10 lg:w-[40rem] mx-auto"
-        >
-          Data Quality is critical
-        </Typography>
-        <Typography align="center" variant="body">
-          You might not know this, but:
+          We pride ourselves on our commitment to innovation and continuous improvement.
+          That's why we invest heavily in research and development to ensure that our
+          solutions are always at the forefront of the industry. Our mission is to help
+          our clients achieve their business goals by providing them with the most powerful
+          and effective AI tools available.
         </Typography>
         <Typography
           align="center"
           variant="body"
-          className="mt-2 lg:w-[60rem] mx-auto"
+          className="mt-8 lg:px-[20%]"
         >
-          Reducing or eliminating labeling errors, getting the right annotations
-          the first time, and focusing on the final input to good machine
-          learning models are now paying huge dividends
+          At Autogon, we believe that the key to success is collaboration.
+          That's why we work closely with our clients to understand their
+          unique needs and develop solutions that meet their specific requirements.
+          We pride ourselves on our ability to build long-lasting relationships with
+          our clients and provide them with unparalleled customer service and support.
         </Typography>
         <Typography
           align="center"
           variant="body"
-          className="mt-4 lg:w-[60rem] mx-auto"
+          className="mt-8 lg:px-[20%]"
         >
-          However, data quality can be the most difficult part of developing a
-          reliable model. This is because there is a need for coordination
-          between human intelligence, modeling expertise, project management,
-          and the technology that binds them all together.
+          We are passionate about what we do, and we are driven by a desire to make a difference
+          in the world. We believe that AI has the power to transform the way we do business,
+          and we are committed to being at the forefront of this exciting and rapidly evolving
+          field.
         </Typography>
         <Typography
           align="center"
           variant="body"
-          className="mt-4 lg:w-[60rem] mx-auto"
+          className="mt-8 lg:px-[20%]"
         >
-          This can oftentimes be a painful endeavor. The real differentiator
-          between businesses that are successful at AI and those that aren’t is
-          data quality: what data is used to train & test the algorithm, how is
-          it gathered and labeled, and how is it governed? Our customers’
-          experience and our experience is that the move to Data-Centric AI
-          (DCAI) is the most important shift businesses need to make today.
+          Thank you for considering Autogon for your AI and machine learning needs. We look forward to
+          working with you and helping you achieve your business goals.
         </Typography>
-      </Container>
-
-      <Container
-        background
-        className="bg-screen pt-20 gap-10 lg:pb-40 flex-col-reverse lg:flex-row-reverse"
-        flex
-      >
-        <div className="w-full">
-          <Typography variant="body" className="text-[22px]">
-            [1]
-          </Typography>
-          <Typography
-            variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
-          >
-            Data Quality is priceless
-          </Typography>
-          <Typography variant="body" className="mt-7 w-">
-            Human-labeled data is becoming the fuel and compass for AI-based
-            software systems. But the increasing focus on the scale, speed, and
-            cost of building and improving datasets has impacted the data's
-            quality and thus the models' quality.
-          </Typography>
-          <Typography variant="body" className="mt-4 w-">
-            We have seen reasons for concern first-hand: fairness and bias
-            issues in labeled datasets, quality issues in benchmark datasets,
-            benchmark limitations, reproducibility issues in machine learning
-            research, lack of documentation and data replication, and
-            unrealistic performance measures.
-          </Typography>
-        </div>
-        <div className="w-[90%]">
-          <img
-            src="https://a.storyblok.com/f/139616/3544x3544/3ed35e693f/kili_core_illustration_shapes_1.png"
-            className="h-full w-full object-contain"
-          />
-        </div>
-      </Container>
-
-      <Container
-        background
-        className="bg-screen lg:pb-40 gap-10 flex-col-reverse lg:flex-row pt-10 lg:pt-0"
-        flex
-        // direction="row-reverse"
-      >
-        <div className="w-full">
-          <Typography variant="body" className="text-[22px]">
-            [2]
-          </Typography>
-          <Typography
-            variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
-          >
-            Data Quality is complex
-          </Typography>
-          <Typography variant="body" className="mt-8 w-">
-            While the quality of datasets remains everyone's primary concern,
-            the way it is measured in practice is poorly understood and
-            sometimes just plain wrong.
-          </Typography>
-          <Typography variant="body" className="mt-4 w-">
-            Data quality is complex—it is not just software bugs or human
-            errors. It is typically the result of how well the annotation is
-            done, how well a dataset and annotation ontology represents the
-            actual task, and if the quality metrics that are available, are
-            suitable for the job.
-          </Typography>
-          <Typography variant="body" className="mt-4 w-">
-            Data annotation is complex because there are multiple
-            interpretations of the truth, because some gestures are hard, and
-            because collaboration induces complex communication and
-            synchronization.
-          </Typography>
-          <Typography variant="body" className="mt-4 w-">
-            The development of tools to make repeatable and systematic
-            adjustments to datasets has lagged.
-          </Typography>
-          <Typography variant="body" className="mt-4 w-">
-            At Autogon Technology, we want to reverse this and find new and
-            systematic ways to promote seamless interactions between humans and
-            data.
-          </Typography>
-        </div>
-        <div className="w-[90%]">
-          <img
-            src="https://a.storyblok.com/f/139616/3544x3544/a841213243/kili_core_illustration_shapes_2-1.png"
-            className="h-full w-full object-contain"
-          />
-        </div>
-      </Container>
-
-      <Container
-        background
-        className="bg-screen lg:pb-20 gap-3 lg:flex-row-reverse flex-col-reverse"
-        flex
-      >
-        <div className="w-full">
-          <Typography variant="body" className="text-[22px]">
-            [3]
-          </Typography>
-          <Typography
-            variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
-          >
-            Models have to be developed iteratively
-          </Typography>
-          <Typography variant="body" className="mt-8 w-">
-            When developing a model, labeling and model testing should work at
-            the same time to remove the unnecessary trial-and-error time spent
-            on improving the model without having to worry or change
-            inconsistent data.
-          </Typography>
-          <Typography variant="body" className="mt-4 w-">
-            So, if we want to be cost effective, the model development
-            infrastructure must be tightly integrated with a supervision layer
-            so that labeling, model training, and model diagnostics can work in
-            parallel and directly influence the data used for the AI system.
-          </Typography>
-          <Typography variant="body" className="mt-4 w-">
-            The future of AI is getting the best out of humans and machines by
-            creating a human-in-the-loop machine learning process, thus
-            dramatically accelerating the set up of reliable AI applications.
-          </Typography>
-        </div>
-        <div className="w-[90%]">
-          <img
-            src="https://a.storyblok.com/f/139616/5906x5907/4e539934a5/kili_why_illustration_lighter_loads.png"
-            className="h-full w-full object-contain"
-          />
-        </div>
-      </Container>
-
-      <Container background className="bg-screen pt-2 pb-20 gap-3">
-        <Typography
-          variant="body"
-          align="center"
-          className="lg:w-[60rem] mx-auto"
-        >
-          At Autogon Technology, we firmly believe that focusing on high-quality
-          training data, that is consistently labeled, is the way to unlock the
-          value of AI.
-        </Typography>
-        <Typography
-          variant="body"
-          align="center"
-          className="mt-2 lg:w-[60rem] mx-auto"
-        >
-          Our platform’s purpose is to enable businesses to label high-quality
-          datasets to train trustworthy AI.
-        </Typography>
-      </Container>
-
-      <Container className="bg-screen pb-40 pt-10">
-        <Typography align="center" variant="display" className="mb-1">
-          The Company
-        </Typography>
-
-        <Typography
-          align="center"
-          variant="body"
-          className="mt-4 lg:w-[60rem] mx-auto"
-        >
-          Autogon Technology began as an idea in 2018. Edouard d’Archimbaud, our
-          co-founder and CTO, was working at BNP Paribas, where he built one of
-          the most advanced AI Labs in Europe from scratch. François-Xavier
-          Leduc, our co-founder and CEO, knew how to take a powerful insight and
-          build a company around it. While all the AI hype was on the models,
-          they focused on helping people understand what was truly important:
-          the data.
-        </Typography>
-        <Typography
-          align="center"
-          variant="body"
-          className="mt-6 lg:w-[60rem] mx-auto"
-        >
-          Together, they founded Autogon Technology to ensure data was no longer a
-          barrier to good AI. By July 2020, the Autogon Technology platform was
-          live and by the end of the year, the first customers had renewed their
-          contract, and the pipeline was full. In 2021, Autogon Technology raised
-          over $30M from Serena, Headline and Balderton.
-        </Typography>
-        <Typography
-          align="center"
-          variant="body"
-          className="lg:mt-10 mt-5 lg:w-[60rem] mx-auto"
-        >
-          Today Autogon Technology continues its journey to enable businesses
-          around the world to build trustworthy AI with high-quality data.
-        </Typography>
-      </Container>
-
-      <Container className="bg-screen pb-40 pt-5">
-        <Typography align="center" variant="display" className="mb-1">
-          Our Values
-        </Typography>
-        <Typography
-          align="center"
-          variant="body"
-          className="mt-2 lg:w-[60rem] mx-auto"
-        >
-          Without them, are we even human?
-        </Typography>
-
-        <div className="flex items-center mt-20 gap-6 justify-center lg:flex-row flex-col lg:mx-auto lg:w-10/12">
-          <div className="lg:w-[60%] rounded-xl overflow-hidden">
-            <img
-              src="https://a.storyblok.com/f/139616/638x762/b7ff186f47/staff.webp"
-              className="h-full w-full object-cover"
-            />
-          </div>
-          <div className="lg:w-[60%]">
-            <div className="py-5 bg-[rgba(234,238,226,.4)] rounded-3xl shadow-sm px-4 lg:px-8">
-              <Typography variant="title">Ambition</Typography>
-              <Typography variant="body">
-                keeps us climbing the highest peaks
-              </Typography>
-            </div>
-
-            <div className="py-5 bg-[#eaeee2] rounded-3xl mt-3 shadow-sm px-4 lg:px-8">
-              <Typography variant="title">Curiosity</Typography>
-              <Typography variant="body">
-                keeps us trying and discovering things anew
-              </Typography>
-            </div>
-
-            <div className="py-5 bg-[rgba(234,238,226,.4)] mt-3 rounded-3xl shadow-sm px-4 lg:px-8">
-              <Typography variant="title">Care</Typography>
-              <Typography variant="body">
-                keeps us focused on what matters most: people
-              </Typography>
-            </div>
-
-            <div className="py-5 bg-[#eaeee2] rounded-3xl mt-3 shadow-sm px-4 lg:px-8">
-              <Typography variant="title">Honesty</Typography>
-              <Typography variant="body">
-                keeps us from going in circles
-              </Typography>
-            </div>
-
-            <div className="py-5 bg-[rgba(234,238,226,.4)] mt-3 rounded-3xl shadow-sm px-4 lg:px-8">
-              <Typography variant="title">Collaboration</Typography>
-              <Typography variant="body">
-                keeps us in the winning team
-              </Typography>
-            </div>
-          </div>
-        </div>
       </Container>
 
       <PartnerCarousel

@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
+import DataPreparationImage from '../../../../assets/images/data preparation.jpg'
 
 const DataPreparation = () => {
   return (

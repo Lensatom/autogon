@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
+import MLOPsImage from '../../../../assets/images/MLOP.jpg'
 
 const MLOPs = () => {
   return (
@@ -36,7 +37,7 @@ const MLOPs = () => {
         </div>
         <div className="w-full">
           <img
-            src="./banking.jpg"
+            src={MLOPsImage}
             alt="banking"
             className="w-full object-contain rounded-xl"
           />

@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
+import FinancialServicesImage from '../../../../assets/images/financial services.jpg'
 
 const FinancialServices = () => {
   return (
@@ -52,7 +53,7 @@ const FinancialServices = () => {
         </div>
         <div className="w-full">
           <img
-            src="./financial services.jpg"
+            src={FinancialServicesImage}
             className="w-full object-contain rounded-xl"
           />
         </div>

@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
+import PublicSectorImage from '../../../../assets/images/public sector.jpg'
 
 const PublicSector = () => {
   return (
@@ -52,7 +53,7 @@ const PublicSector = () => {
         </div>
         <div className="w-full">
           <img
-            src="./public sector.jpg"
+            src={PublicSectorImage}
             className="w-full object-contain rounded-xl"
           />
         </div>

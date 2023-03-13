@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
+import HealthcareImage from '../../../../assets/images/healthcare.jpg'
 
 const Healthcare = () => {
   return (
@@ -37,7 +38,6 @@ const Healthcare = () => {
             have faster, smarter and more accurate answers at your fingertips.
           </Typography>
           <Typography
-             
             variant="body"
             className="font-semibold mt-8"
           >
@@ -53,7 +53,7 @@ const Healthcare = () => {
         </div>
         <div className="w-full">
           <img
-            src="./healthcare.jpg"
+            src={HealthcareImage}
             className="w-full object-contain rounded-xl"
           />
         </div>

@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
+import DataVisualizationImage from '../../../../assets/images/data visualization.jpg'
 
 const DataVisualization = () => {
   return (

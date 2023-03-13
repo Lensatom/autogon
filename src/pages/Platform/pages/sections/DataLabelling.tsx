@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
+import DataLabellingImage from '../../../../assets/images/data labeling.jpg'
 
 const DataLabelling = () => {
   return (
@@ -30,7 +31,7 @@ const DataLabelling = () => {
         </div>
         <div className="w-full">
           <img
-            src="./banking.jpg"
+            src={DataLabellingImage}
             alt="banking"
             className="w-full object-contain rounded-xl"
           />
