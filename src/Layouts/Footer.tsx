@@ -304,7 +304,9 @@ export const Footer = ({ darkMode }: FooterProps) => {
               className={`h-4 w-4 ${darkMode ? "text-neutral" : "text-white"}`}
             />
           </div>
-          <div
+          <a
+            href='https://www.youtube.com/@autogonai'
+            target='__blank'
             className={`rounded-full w-7 h-7 grid place-items-center ${
               darkMode ? "bg-surface" : "bg-black"
             }`}
@@ -312,7 +314,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
             <FaYoutube
               className={`h-5 w-5 ${darkMode ? "text-neutral" : "text-white"}`}
             />
-          </div>
+          </a>
           <div
             className={`rounded-full w-7 h-7 grid place-items-center ${
               darkMode ? "bg-surface" : "bg-black"
