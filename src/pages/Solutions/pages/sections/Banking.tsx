@@ -1,5 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
-import BankingImage from '../../../../assets/images/banking.jpg'
+import BankingImage from '../../../../assets/images/BANKING.jpg'
 
 const Banking = () => {
   return (
