@@ -6,14 +6,11 @@ const DataLabelling = () => {
     <>
       <Container
         background
-        className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row gap-8 items-center"
         flex
         id="data-labelling"
       >
         <div className="w-full">
-          <Typography variant="body" className="text-[22px]">
-            [6]
-          </Typography>
           <Typography
             variant="title"
             className="font-semibold"

@@ -12,9 +12,6 @@ const DataScientist = () => {
         // direction="row-reverse"
       >
         <div className="w-full">
-          <Typography variant="body" className="text-[22px]">
-            [2]
-          </Typography>
           <Typography
             variant="title"
             className="font-semibold"

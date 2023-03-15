@@ -19,8 +19,8 @@ export const BlogCard = ({
 
   return (
     <div className="cursor-pointer select-none w-fit">
-      <div className="h-[33rem] rounded-xl w-[22rem] bg-white shadow-md overflow-hidden relative ">
-        <div className="h-[40%] rounded-tl-xl rounded-tr-xl overflow-hidden snap-center">
+      <div className="h-[650px] rounded-xl w-[22rem] bg-white shadow-md overflow-hidden relative ">
+        <div className="h-[250px] rounded-tl-xl rounded-tr-xl overflow-hidden snap-center">
           <img src={src} className="h-full w-full object-cover" />
         </div>
         <div className="p-4">
@@ -39,7 +39,7 @@ export const BlogCard = ({
           {children}
         </div>
         <Button
-          className="flex items-center gap-3 !bg-primary border-none absolute bottom-5 left-4"
+          className="flex items-center gap-3 m-4 mt-0 !bg-primary border-none"
           onClick={onClick}
         >
           {buttonText}

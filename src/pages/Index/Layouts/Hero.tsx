@@ -2,15 +2,16 @@ import { Button, Container, Typography } from "../../../components";
 import Lottie from "lottie-react";
 import animationData from "../../../assets/iRU7KxwKMP.json";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
+import Animation from '../../../assets/images/artificial intelligence.gif'
 
 export const HeroPage = () => {
 
   return (
-    <Container className="bg-screen h-screen flex flex-col justify-between pt-[12rem] pt-44 lg:pt-[10rem]">
+    <Container className="bg-screen h-screen flex flex-col justify-between pt-44 lg:pt-[10rem]">
       <Typography
         align="center"
         variant="display"
-        className="mx-auto lg:w-[60%] mb-8 text-secondary font-warp font-thin"
+        className="z-[5] mx-auto lg:w-[60%] mb-8 text-secondary font-warp font-thin"
       >
         Artificial Intelligence Platform for Creatives
       </Typography>
@@ -29,19 +30,14 @@ export const HeroPage = () => {
             <Button>Case study</Button>
             <a href="https://console.autogon.ai" target="_blank">
               <Button className="flex items-center gap-3" variant="outline">
-                Start for free
+                Get started
                 <ArrowTopRightOnSquareIcon className="h-6 w-6" />
               </Button>
             </a>
           </div>
         </div>
-        <div className="flex-1 md:mt-[-50px]">
-          <Lottie
-            animationData={animationData}
-            loop
-            className="mx-auto"
-          />
-          {/* <img src={animationData} className="h-[30rem]" /> */}
+        <div className="flex-1 md:mt-[-100px]">
+          <img src={Animation} alt='Loading...' className='w-[80%]' />
         </div>
       </div>
     </Container>

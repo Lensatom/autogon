@@ -111,72 +111,35 @@ export const Blog = () => {
   return (
     <>
       <Header />
-      <Container noGutter className="bg-surface pt-[8rem]">
+      <Container noGutter className="bg-screen pt-[8rem]">
         <Container>
           <BreadCrumb />
         </Container>
-        <Container className="bg-[#eaeee2] pt-[7.5rem] pb-[2.5rem] pl-2">
+        <Container className="bg-screen pt-[7.5rem] pb-[2.5rem] pl-2">
           <Typography
             variant="header"
-            className="max-w-[47.625rem] text-[46px] lg:!text-[65px] !leading-[98%] font-semibold"
+            className="max-w-[47.625rem] text-[46px] lg:!text-[65px] leading-normal !font-normal font-warp"
           >
             We help customers to build AI that matters across industries
           </Typography>
         </Container>
       </Container>
 
-      <Container className="bg-surface pt-16 lg:pb-40">
-        {/* <div className="flex items-center gap-3 lg:pl-28 flex-wrap">
-          <Typography variant="caption">Filter Events:</Typography>
-          <div className="flex gap-3 items-center flex-wrap">
-            <Button
-              onClick={() => setQuery("")}
-              variant={query === "" ? "" : "outline"}
-            >
-              All Event
-            </Button>
-            <Button
-              onClick={() => setQuery("new")}
-              variant={query === "new" ? "" : "outline"}
-            >
-              Upcoming Event
-            </Button>
-            <Button
-              onClick={() => setQuery("upcoming")}
-              variant={query === "upcoming" ? "" : "outline"}
-            >
-              Past Event
-            </Button>
-          </div>
-        </div> */}
-        <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 mt-10 lg:w-[85%] mx-auto gap-y-6">
-          {blogs.map((blog) => (
-            <BlogCard
-              {...blog}
-              titleClass="!text-[28px] !leading-[30px] font-semibold"
-              children={
-                <Typography
-                  variant="body"
-                  className="mt-2 !leading-6 !text-[16px] "
-                >
-                  {blog.content}
-                </Typography>
-              }
-            />
-          ))}
-        </div>
-        <div className="grid place-items-center w-full lg:mt-40 mt-10">
-          <Button>Load more</Button>
-        </div>
+      <Container className="bg-screen pt-16 lg:pb-40 flex flex-col items-center">
+        <iframe
+          src='https://widgets.sociablekit.com/medium-publication-feed/iframe/121811'
+          width='90%'
+          height='500'
+          className='rounded-xl'
+        ></iframe>
       </Container>
 
       <PartnerCarousel />
 
       <Container className="bg-surface h-40"></Container>
 
-      <Container disableOverflowHidden isDarkMode background className="pb-28">
+      <Container disableOverflowHidden isDarkMode background className="pt-5 pb-28">
         <div className="mx-auto w-fit ">
-          <img src={Smilesvg} className="relative -top-24 mx-auto z-[1999]" />
           <Typography variant="subdisplay" className="capitalize !text-white">
             get started
           </Typography>
@@ -190,7 +153,7 @@ export const Blog = () => {
               className="flex items-center gap-3 !text-white border-white"
               variant="outline"
             >
-              Start for free
+              Get started
               <ArrowTopRightOnSquareIcon className={`h-6 w-6 text-white`} />
             </Button>
           </div>

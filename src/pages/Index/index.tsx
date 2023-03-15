@@ -7,7 +7,6 @@ import Smilesvg from "../../assets/logo/Autogon-logo-light.png";
 import cn from "classnames";
 import { BenefitCardProps } from "../../interfaces";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { BlogCard } from "../../components/Cards/BlogCard";
 import { Footer } from "../../Layouts/Footer";
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -18,13 +17,12 @@ import { PartnerCarousel } from "../../Layouts/PartnerCarousel";
 import { useState } from "react";
 import { Pagination } from "swiper";
 import { BenefitCard } from "./components/BenefitCard";
-import AIMLIcon from '../../assets/modelAIML.png';
 import MlFlow from '../../assets/images/mlFlow.png'
-import { screenshots, screenshots1, screenshots2, screenshots3 } from '../../assets/screenshots';
-import { useNavigate } from "react-router-dom";
+import { screenshots, screenshots1, screenshots2 } from '../../assets/screenshots';
 
 
 const BenefitMobileCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
+
   return (
       <div
         // onClick={onClick}
@@ -59,7 +57,6 @@ const BenefitMobileCard = ({ className, position, contents, src, active, onClick
 
 export const LandingPage = () => {
   const [active, setActive] = useState(7);
-  const navigate = useNavigate();
 
   return (
     <>
@@ -79,17 +76,10 @@ export const LandingPage = () => {
           itemProp="contentUrl"
           content="https://www.youtube.com/watch?v=6WC8Ef4nNjE"
         />
-        <div className="mx-auto lg:px-24 mt-16 flex relative overflow-hidden items-center justify-center rounded">
-          <video className='rounded-xl' autoPlay muted loop>
+        <div className="reltive first:mx-auto lg:mx-24 mt-16 flex relative overflow-hidden items-center justify-center rounded">
+          <video className='rounded-xl' controls>
             <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4" />
           </video>
-          <meta itemProp="name" content="kili presentation" />
-          <meta
-            itemProp="thumbnailUrl"
-            content="https://www.youtube.com/watch?v=6WC8Ef4nNjE"
-          />
-          <meta itemProp="uploadDate" content="2022-11-07 00:00" />
-          <meta itemProp="description" content="kili presentation" />
         </div>
       </Container>
 
@@ -411,7 +401,6 @@ export const LandingPage = () => {
         </Typography>
         <iframe
           src='https://widgets.sociablekit.com/medium-publication-feed/iframe/121811'
-          frameBorder='0'
           width='80%'
           height='500'
           className='rounded-xl'
@@ -419,6 +408,8 @@ export const LandingPage = () => {
       </Container>
 
       <Container
+        isLightDarkMode
+        background
         disableOverflowHidden
         grid
         className="bg-[#162427] pb-28 pt-28 place-items-center"
@@ -439,13 +430,13 @@ export const LandingPage = () => {
             Begin your journey! Start Creating AI Models.
           </Typography>
           <div className="flex mx-auto w-fit gap-2 mt-16 mb-8 lg:mb-0">
-            <Button>See Demo</Button>
+            <Button>Request a demo</Button>
             <a href="https://console.autogon.ai" target="_blank">
               <Button
                 className="flex items-center gap-3 !text-white hover:!border-secondary !border-white"
                 variant="outline"
               >
-                Start for free
+                Get started
                 <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white" />
               </Button>
             </a>
@@ -453,7 +444,7 @@ export const LandingPage = () => {
         </div>
       </Container>
 
-      <Footer />
+      <Footer darkMode />
     </>
   );
 };

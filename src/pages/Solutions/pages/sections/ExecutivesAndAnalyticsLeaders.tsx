@@ -12,9 +12,6 @@ const ExecutivesAndAnalyticsLeaders = () => {
         // direction="row-reverse"
       >
         <div className="w-full">
-          <Typography variant="body" className="text-[22px]">
-            [5]
-          </Typography>
           <Typography
              
             variant="title"

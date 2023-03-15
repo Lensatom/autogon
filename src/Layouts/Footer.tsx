@@ -60,27 +60,27 @@ export const Footer = ({ darkMode }: FooterProps) => {
     links: [
       {
         name: "AutoML",
-        link: "/key-capabilities#auto-ml",
+        link: "/platform/key-capabilities#auto-ml",
         hash: true,
       },
       {
         name: "DragNDrop AI",
-        link: "/key-capabilities#drag-drop",
+        link: "/platform/key-capabilities#drag-drop",
         hash: true,
       },
       {
         name: "Data Preparation",
-        link: "/key-capabilities#data-preparation",
+        link: "/platform/key-capabilities#data-preparation",
         hash: true,
       },
       {
         name: "Automated Time Series",
-        link: "/key-capabilities#automated-time",
+        link: "/platform/key-capabilities#automated-time",
         hash: true,
       },
       {
         name: "No-Code AI Apps",
-        link: "/key-capabilities#no-code",
+        link: "/platform/key-capabilities#no-code",
         hash: true,
       },
     ],
@@ -137,23 +137,23 @@ export const Footer = ({ darkMode }: FooterProps) => {
     links: [
       {
         name: "Business Analysis",
-        link: "/roles#business-analysis",
+        link: "/solutions/roles#business-analysis",
       },
       {
         name: "Data Scientists",
-        link: "/roles#data-scientists",
+        link: "/solutions/roles#data-scientists",
       },
       {
         name: "IT Operations",
-        link: "/roles#it-operations",
+        link: "/solutions/roles#it-operations",
       },
       {
         name: "Software Engineers",
-        link: "/roles#software-engineers",
+        link: "/solutions/roles#software-engineers",
       },
       {
         name: "Executives & Analytics Leaders",
-        link: "/roles#executives",
+        link: "/solutions/roles#executives",
       },
     ],
   };
@@ -163,12 +163,15 @@ export const Footer = ({ darkMode }: FooterProps) => {
     links: [
       {
         name: "Contact Us",
+        link: 'link'
       },
       {
         name: "Careers",
+        link: '/careers'
       },
       {
         name: "Press",
+        link: '/blog'
       },
     ],
   };
@@ -181,9 +184,11 @@ export const Footer = ({ darkMode }: FooterProps) => {
       },
       {
         name: "Blog",
+        link: '/blog'
       },
       {
         name: "Webinars",
+        link: '/events-list'
       },
       {
         name: "Community",
@@ -193,6 +198,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
       },
       {
         name: "Events",
+        link: '/events-list'
       },
     ],
   };
@@ -266,7 +272,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
             target='__blank'
             href='https://web.facebook.com/people/Autogon/100088750542777/'
             className={`rounded-full w-7 h-7 grid place-items-center ${
-              darkMode ? "bg-surface" : "bg-black"
+              darkMode ? "bg-screen" : "bg-black"
             }`}
           >
             <FaFacebookF
@@ -277,7 +283,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
             href="https://github.com/autogonai/"
             target='__blank'
             className={`rounded-full w-7 h-7 grid place-items-center ${
-              darkMode ? "bg-surface" : "bg-black"
+              darkMode ? "bg-screen" : "bg-black"
             }`}
           >
             <FaGithub
@@ -288,7 +294,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
             href='https://www.linkedin.com/company/autogon/'
             target='__blank'
             className={`rounded-full w-7 h-7 grid place-items-center ${
-              darkMode ? "bg-surface" : "bg-black"
+              darkMode ? "bg-screen" : "bg-black"
             }`}
           >
             <FaLinkedinIn
@@ -297,7 +303,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
           </a>
           <div
             className={`rounded-full w-7 h-7 grid place-items-center ${
-              darkMode ? "bg-surface" : "bg-black"
+              darkMode ? "bg-screen" : "bg-black"
             }`}
           >
             <FaTwitter
@@ -308,7 +314,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
             href='https://www.youtube.com/@autogonai'
             target='__blank'
             className={`rounded-full w-7 h-7 grid place-items-center ${
-              darkMode ? "bg-surface" : "bg-black"
+              darkMode ? "bg-screen" : "bg-black"
             }`}
           >
             <FaYoutube
@@ -317,7 +323,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
           </a>
           <div
             className={`rounded-full w-7 h-7 grid place-items-center ${
-              darkMode ? "bg-surface" : "bg-black"
+              darkMode ? "bg-screen" : "bg-black"
             }`}
           >
             <FaSlack
@@ -344,24 +350,6 @@ export const Footer = ({ darkMode }: FooterProps) => {
             )}
           >
             Legal Notice
-          </Typography>
-          <Typography
-            isDarkMode={darkMode}
-            variant="caption"
-            className={cn(
-              "uppercase cursor-pointer !text-white hover:underline"
-            )}
-          >
-            Security Info
-          </Typography>
-          <Typography
-            isDarkMode={darkMode}
-            variant="caption"
-            className={cn(
-              "uppercase cursor-pointer !text-white hover:underline"
-            )}
-          >
-            Status
           </Typography>
         </div>
       </div>

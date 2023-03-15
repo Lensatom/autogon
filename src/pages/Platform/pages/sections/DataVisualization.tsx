@@ -11,9 +11,6 @@ const DataVisualization = () => {
         id="data-visualization"
       >
         <div className="w-full">
-          <Typography variant="body" className="text-[22px]">
-            [5]
-          </Typography>
           <Typography
             variant="title"
             className="font-semibold"
@@ -31,7 +28,7 @@ const DataVisualization = () => {
         </div>
         <div className="w-full">
           <img
-            src="./banking.jpg"
+            src={DataVisualizationImage}
             alt="banking"
             className="w-full object-contain rounded-xl"
           />

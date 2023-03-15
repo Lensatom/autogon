@@ -12,9 +12,6 @@ const Healthcare = () => {
         // direction="row-reverse"
       >
         <div className="w-full">
-          <Typography variant="body" className="text-[22px] pt-5 lg:pt-0">
-            [2]
-          </Typography>
           <Typography
             variant="title"
             className="font-semibold"

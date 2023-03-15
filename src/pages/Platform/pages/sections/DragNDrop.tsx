@@ -10,9 +10,6 @@ const DragNDrop = () => {
         id="drag-drop"
       >
         <div className="w-full">
-          <Typography variant="body" className="text-[22px]">
-            [-]
-          </Typography>
           <Typography
             variant="title"
             className="font-semibold"

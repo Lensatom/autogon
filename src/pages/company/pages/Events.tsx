@@ -15,98 +15,47 @@ export const Event = () => {
     {
       caption: "upcoming event",
       src: "https://a.storyblok.com/f/139616/3750x1959/f207b200cb/sap-rectangle.png/m/767x0",
-      title: "How SAP trains ML for Document Information Ex...",
+      title: "How to Get Ahead with AI: Discover Automated Machine Learning for Quick and Efficient AI Models",
       content:
-        "Principal Data Scientist shares insights on how SAP overcomes the challenges of complex ontologies.",
+        "This webinar will show you how to take advantage of automated machine learning to build and deploy AI models quickly, saving you time and resources with Autogon.",
       // Icon: null,
       buttonText: "Register",
     },
     {
       caption: "ON-DEMAND EVENT",
       src: "https://a.storyblok.com/f/139616/1200x627/7136ba8df3/1.png/m/767x0",
-      title: "Data annotation in AgriTech: How to overcome ...",
+      title: "Boost Your Bottom Line with Autogon: See How Other Companies Saw Significant ROI",
       // Icon: null,
       content:
-        "A guide on how to scale data labeling, manage the required level of expertise & identify the various...",
+        "In this webinar, we'll share a real-life success story of a company that used Autogon's AI technology and saw great returns on their investment.",
       buttonText: "Watch the replay",
     },
     {
       caption: "ON-DEMAND EVENT",
       src: "https://a.storyblok.com/f/139616/1200x627/12826d5965/1-1.png/m/767x0",
-      title: "Insider tips on data annotation project manag...",
+      title: "Exploring the Exciting World of AI Trends: From Natural Language Processing to Computer Vision",
       // Icon: null,
       content:
-        "85% of ALL machine learning projects NEVER reach real-world deployment – most often due to a lack of...",
+        "Join us for a fascinating discussion on some of the latest and most promising trends in AI, including topics like natural language processing and computer vision with Autogon.",
       buttonText: "Watch the replay",
     },
     {
       caption: "ON-DEMAND EVENT",
       src: "https://a.storyblok.com/f/139616/1200x628/c20478254f/webinar-thumbnail-replay-data-labeling-solution.png/m/767x0",
-      title: "Data Labeling: What are my options?",
+      title: "Ethical AI: Ensuring Fairness and Transparency in the Age of Artificial Intelligence",
       // Icon: null,
       content:
-        "What data labeling solution should I go for? Struggling to make up your mind? We know the feeling....",
+        "This webinar will dive into the important topic of ethical considerations in AI, giving you practical advice on how to make sure your AI models are transparent and fair with Autogon.",
       buttonText: "Watch the replay",
     },
     {
       caption: "ON-DEMAND EVENT",
       src: "https://a.storyblok.com/f/139616/1200x628/0f6d2bb323/webinar-thumbnail-quality-unboxed-beta.png/m/767x0",
-      title: "3 steps towards data labeling excellence.",
+      title: "Revolutionizing Healthcare with Autogon's AI Technology: The Future of Precision Medicine and Predictive Analytics",
       // Icon: null,
       content:
-        "50% of the time of labeling projects is around data quality.The increasing focus on the scale, speed...",
-    },
-    {
-      caption: "PAST EVENT",
-      src: "https://a.storyblok.com/f/139616/782x322/464b9e5e5e/kili_ai_bigdata_expo.png/m/767x0",
-      title: "AI and Big Data Expo",
-      Icon: null,
-      content:
-        "TechEx North America is an enterprise technology exhibition and conference consisting of six co-loca...",
-      buttonText: "Book a meeting",
-    },
-    // {
-    //   caption: "",
-    //   src: "",
-    //   title: "",
-    //   Icon: null,
-    //   content: "",
-    //   buttonText: "Watch the replay",
-    // },
-    // {
-    //   caption: "",
-    //   src: "",
-    //   title: "",
-    //   Icon: null,
-    //   content: "",
-    // },
-    // {
-    //   caption: "",
-    //   src: "",
-    //   title: "",
-    //   Icon: null,
-    //   content: "",
-    // },
-    // {
-    //   caption: "",
-    //   src: "",
-    //   title: "",
-    //   Icon: null,
-    // },
-    // {
-    //   caption: "",
-    //   src: "",
-    //   title: "",
-    //   Icon: null,
-    //   content: "",
-    // },
-    // {
-    //   caption: "",
-    //   src: "",
-    //   title: "",
-    //   Icon: null,
-    //   content: "",
-    // },
+        "Join us to learn about how Autogon is leading the way in AI innovation in the healthcare industry, with a focus on exciting topics like precision medicine and predictive analytics.",
+    }
   ];
 
    let filteredBlog = blogs?.filter((blog) => {
@@ -118,21 +67,21 @@ export const Event = () => {
   return (
     <>
       <Header />
-      <Container noGutter className="bg-surface pt-[8rem]">
+      <Container noGutter className="bg-screen pt-[8rem]">
         <Container>
           <BreadCrumb />
         </Container>
-        <Container className="bg-[#eaeee2] pt-[7.5rem] pb-[2.5rem] pl-2">
+        <Container className="bg-screen py-24 pl-2">
           <Typography
             variant="header"
-            className="max-w-[47.625rem] text-[46px] lg:!text-[65px] !leading-[98%] font-semibold"
+            className="max-w-[47.625rem] text-[46px] lg:!text-[65px] leading-normal !font-normal font-warp"
           >
             Join us at the most influential AI events in the world
           </Typography>
         </Container>
       </Container>
 
-      <Container className="bg-surface pt-16 lg:pb-72">
+      <Container className="bg-screen pt-16 lg:pb-72">
         <div className="flex items-center gap-3 lg:pl-28 flex-wrap">
           <Typography variant="caption">Filter Events:</Typography>
           <div className="flex gap-3 items-center flex-wrap">
@@ -189,9 +138,8 @@ export const Event = () => {
 
       <PartnerCarousel />
 
-      <Container disableOverflowHidden isDarkMode background className="pb-28">
+      <Container disableOverflowHidden isDarkMode background className="pt-5 pb-28">
         <div className="mx-auto w-fit ">
-          <img src={Smilesvg} className="relative -top-24 mx-auto z-[1999]" />
           <Typography variant="subdisplay" className="capitalize !text-white">
             get started
           </Typography>

@@ -12,11 +12,7 @@ const OilAndGas = () => {
         // direction="row-reverse"
       >
         <div className="w-full">
-          <Typography variant="body" className="text-[22px]">
-            [6]
-          </Typography>
           <Typography
-             
             variant="title"
             className="font-semibold"
           >

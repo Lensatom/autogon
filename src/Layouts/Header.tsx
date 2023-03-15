@@ -7,6 +7,7 @@ import { MenuDrawerProps, NavLinks, NavMenus } from "../interfaces";
 import { useHover } from "../hooks/useHover.js";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { NavLink } from "react-router-dom";
 
 const MenuLinks = ({
   links,
@@ -125,15 +126,11 @@ const PopoverMenu = forwardRef<
           className="bg-surface w-fit min-w-[14rem] h-fit flex-col min-h-[14.6875rem] pt-6 pr-4 pb-4 pl-4 rounded-xl hidden lg:flex"
         >
           <img
-            src="https://a.storyblok.com/f/139616/300x300/bf794cd0b7/sap-square-preview.png"
-            className="h-28 mb-7 object-contain object-center"
+            src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Advantages_and_Disadvantages_of_artificial_intelligence.jpg"
+            className="w-full mb-7 rounded-lg object-contain object-center"
           />
-          <p className="mb-1 text-[0.75rem] leading-[130%] -tracking-[.01em] text-center">
-            WEBINAR: How SAP trains ML for Document Information Extraction
-            Application?
-          </p>
           <a className="text-center text-[12px] leading-[140%] cursor-pointer -tracking-[.01em] uppercase text-primary">
-            Register now
+            Get started
           </a>
         </Container>
       </div>
@@ -319,8 +316,12 @@ export const Header = ({ darkMode }: HeaderProps) => {
               link: "/company",
             },
             {
+              name: "Contact us",
+              link: "/company/contact",
+            },
+            {
               name: "Careers",
-              // link: "/company/events-list",
+              link: "/company/careers",
             },
             {
               name: "Events",
@@ -384,12 +385,12 @@ export const Header = ({ darkMode }: HeaderProps) => {
         align="center"
         as="div"
         smallGutter
-        className="bg-accent lg:flex lg:w-full py-[6.4px] relative z-20"
+        className="bg-dark-surface lg:flex lg:w-full py-[6.4px] relative z-20"
       >
         <Typography
           variant="caption"
           align="center"
-          className="uppercase lg:text-left"
+          className="uppercase lg:text-left !text-gray-200"
         >
           Interested in keeping updated with our latest advancement and
           research.
@@ -397,7 +398,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
         <a href="https://discord.com/channels/1056699131864830042/1056699132955340901">
           <Typography
             variant="caption"
-            className="uppercase leading-[19.2px] cursor-pointer hover:underline hidden lg:block"
+            className="uppercase leading-[19.2px] !text-gray-200 cursor-pointer hover:underline hidden lg:block"
           >
             join our community
           </Typography>
@@ -462,13 +463,15 @@ export const Header = ({ darkMode }: HeaderProps) => {
                 })}
               />
             </div>
-            <Button className="hidden lg:block">Request a demo</Button>
+            <Button className="hidden lg:block">
+                Request a demo
+            </Button>
             <Button
               darkMode={darkMode}
               className="hidden lg:block"
               variant="outline"
             >
-              Talk to sales
+              Get started
             </Button>
           </div>
         </Container>
@@ -584,7 +587,7 @@ const MenuDrawer = ({ navLinks, dark, isShowing }: MenuDrawerProps) => {
           </Typography>
           <div className="flex justify-center mt-8">
             <Button variant="outline" className="self-center">
-              Talk to sales
+              Get Started
             </Button>
           </div>
         </div>

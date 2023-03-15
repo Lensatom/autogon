@@ -1,9 +1,10 @@
 import classNames from "classnames";
 import { forwardRef } from "react";
+import { NavLink } from "react-router-dom";
 import { ButtonProps } from "./type";
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ variant, className, darkMode, color = "primary", ...rest }, ref) => {
+  ({ variant, children, className, darkMode, color = "primary", ...rest }, ref) => {
 
     let colors = {
       primary: {
@@ -40,8 +41,21 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
               ? "border-white text-white"
               : "border-secondary text-secondary"
           } ${className}`}
-        />
+        >{children}</button>
       );
+    }
+
+    if(children === 'Request a demo') {
+      <button
+        {...rest}
+        ref={ref}
+        className={classNames(`px-4 h-10 min-w-[60px] text-neutral rounded text-[16px] font-inter leading-4 -tracking-[0.16px] group`, className, {
+          [colors[color].container.dark]: darkMode,
+          [colors.primary['container'].light]: !darkMode
+        })}
+      >
+        <NavLink to='/request'>{children}</NavLink>
+      </button>
     }
 
     return (
@@ -52,7 +66,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
           [colors[color].container.dark]: darkMode,
           [colors.primary['container'].light]: !darkMode
         })}
-      />
+      >{children}</button>
     );
   }
 );
