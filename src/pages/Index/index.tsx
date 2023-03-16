@@ -78,7 +78,7 @@ export const LandingPage = () => {
         />
         <div className="reltive first:mx-auto lg:mx-24 mt-16 flex relative overflow-hidden items-center justify-center rounded">
           <video className='rounded-xl' controls>
-            <source src="https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4" type="video/mp4" />
+            <source src="https://s3.amazonaws.com/cloud.autogonai/autogonai-intro.mp4" type="video/mp4" />
           </video>
         </div>
       </Container>
