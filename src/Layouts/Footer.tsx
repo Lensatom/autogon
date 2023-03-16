@@ -207,7 +207,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
     title: "United States",
     links: [
       {
-        name: "524 Broadway, New York, NY 10012",
+        name: "3002 Falls at Fairdale Houston, Texas, United states",
       },
     ],
   };
