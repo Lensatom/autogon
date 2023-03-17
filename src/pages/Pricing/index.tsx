@@ -116,7 +116,7 @@ export const Pricing = () => {
               "Cloud only",
               "Community support",
             ]}
-            buttonText="Request a demo"
+            buttonText="<NavLink to='/request'>Request a demo</NavLink>"
           />
 
           <PricingCard
@@ -180,7 +180,7 @@ export const Pricing = () => {
               predictions.
             </Typography>
             {/* <div className="lg:flex mt-9 gap-2">
-              <Button>Request a demo</Button>
+              <Button><NavLink to='/request'>Request a demo</NavLink></Button>
               <Button
                 darkMode
                 className="flex items-center gap-3 mb-3 lg:mb-0 group"
@@ -218,7 +218,7 @@ export const Pricing = () => {
             </Typography>
 
             {/* <div className="lg:flex mt-20 gap-2">
-              <Button>Request a demo</Button>
+              <Button><NavLink to='/request'>Request a demo</NavLink></Button>
               <Button
                 darkMode
                 className="flex items-center gap-3 mb-3 lg:mb-0 group"
@@ -257,7 +257,7 @@ export const Pricing = () => {
             </Typography>
 
             {/* <div className="lg:flex mt-9 gap-2">
-              <Button>Request a demo</Button>
+              <Button><NavLink to='/request'>Request a demo</NavLink></Button>
               <Button
                 darkMode
                 className="flex items-center gap-3 mb-3 lg:mb-0 group"

@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
 import DataScientistImage from '../../../../assets/images/data scientist.jpg'
+import { NavLink } from "react-router-dom";
 
 const DataScientist = () => {
   return (
@@ -78,7 +79,7 @@ const DataScientist = () => {
             <ul className="list-disc flex flex-col gap-3">
             </ul>
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <Typography variant="body" className="mt-8">

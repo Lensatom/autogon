@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
 import SportsImage from '../../../../assets/images/sports-tools.jpg'
+import { NavLink } from "react-router-dom";
 
 const Sports = () => {
   return (
@@ -96,7 +97,7 @@ const Sports = () => {
               </li>
             </ul>
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <Typography variant="body" className="mt-8">

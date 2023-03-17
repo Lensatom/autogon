@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
 import DataPreparationImage from '../../../../assets/images/data preparation.jpg'
+import { NavLink } from "react-router-dom";
 
 const DataPreparation = () => {
   return (
@@ -75,7 +76,7 @@ const DataPreparation = () => {
             easier to identify any issues with your data and to get a better understanding of your data before
             you start building your models.
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
       </Container>
     </>

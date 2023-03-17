@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
 import PublicSectorImage from '../../../../assets/images/public sector.jpg'
+import { NavLink } from "react-router-dom";
 
 const PublicSector = () => {
   return (
@@ -89,7 +90,7 @@ const PublicSector = () => {
               </li>
             </ul>
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <Typography variant="body" className="mt-8">

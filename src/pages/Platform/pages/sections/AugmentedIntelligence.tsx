@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
 import AugmentedIntelligenceImage from '../../../../assets/images/augmented intelligence.jpg'
+import { NavLink } from "react-router-dom";
 
 const AugmentedIntelligence = () => {
   return (
@@ -80,7 +81,7 @@ const AugmentedIntelligence = () => {
             Take advantage of the benefits of Augmented Intelligence. Get started today and see how
             Autogon can transform your experience.
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
       </Container>
     </>

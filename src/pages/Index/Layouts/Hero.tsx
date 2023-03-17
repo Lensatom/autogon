@@ -37,7 +37,7 @@ export const HeroPage = () => {
           </div>
         </div>
         <div className="flex-1 md:mt-[-100px]">
-          <img src={Animation} alt='Loading...' className='w-[80%]' />
+          <img src={Animation} alt='Loading...' className='w-[80%] mx-auto' />
         </div>
       </div>
     </Container>

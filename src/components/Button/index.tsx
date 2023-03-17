@@ -45,19 +45,6 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       );
     }
 
-    if(children === 'Request a demo') {
-      <button
-        {...rest}
-        ref={ref}
-        className={classNames(`px-4 h-10 min-w-[60px] text-neutral rounded text-[16px] font-inter leading-4 -tracking-[0.16px] group`, className, {
-          [colors[color].container.dark]: darkMode,
-          [colors.primary['container'].light]: !darkMode
-        })}
-      >
-        <NavLink to='/request'>{children}</NavLink>
-      </button>
-    }
-
     return (
       <button
         {...rest}

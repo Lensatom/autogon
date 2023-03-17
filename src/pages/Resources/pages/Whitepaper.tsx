@@ -7,6 +7,7 @@ import { Header } from "../../../Layouts/Header";
 import { PartnerCarousel } from "../../../Layouts/PartnerCarousel";
 import Smilesvg from "../../../assets/kili-icon-dark-mode.svg.svg";
 import { Footer } from "../../../Layouts/Footer";
+import { NavLink } from "react-router-dom";
 
 export const Whitepapers = () => {
 
@@ -155,7 +156,7 @@ export const Whitepapers = () => {
             Get started! Build better data, now.
           </Typography>
           <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
-            <Button>Request a demo</Button>
+            <Button><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               darkMode
               className="flex items-center gap-3 !text-white border-white"

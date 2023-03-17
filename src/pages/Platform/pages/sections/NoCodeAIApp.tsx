@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
+import { NavLink } from "react-router-dom";
 
 const NoCodeAIApp = () => {
   return (
@@ -75,7 +76,7 @@ const NoCodeAIApp = () => {
             use in their decision-making process. With responsive design, you can create an app once and
             then preview and run it at any resolution on any mobile device or tablet.
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
       </Container>
     </>

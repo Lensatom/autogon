@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
 import DataVisualizationImage from '../../../../assets/images/data visualization.jpg'
+import { NavLink } from "react-router-dom";
 
 const DataVisualization = () => {
   return (
@@ -95,7 +96,7 @@ const DataVisualization = () => {
             enables you to analyze your data and generate a custom machine-learning model
             optimized for your specific use case.
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
       </Container>
     </>

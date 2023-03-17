@@ -67,7 +67,7 @@ export const ProfessionalService = () => {
             </Typography>
 
             <div className="lg:flex mt-12">
-              <Button>Request a demo</Button>
+              <Button><NavLink to='/request'>Request a demo</NavLink></Button>
             </div>
           </div>
           <div className="w-[70%] hidden lg:block">
@@ -104,7 +104,7 @@ export const ProfessionalService = () => {
             Kili manages the execution, from design to deployment.
           </Typography>
 
-          <Button className="mt-12">Request a demo</Button>
+          <Button className="mt-12"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-[90%]">
           <img
@@ -138,7 +138,7 @@ export const ProfessionalService = () => {
             execution of adhoc labeling jobs.
           </Typography>
 
-          <Button className="mt-6">Request a demo</Button>
+          <Button className="mt-6"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="lg:w-[90%]">
           <img
@@ -174,7 +174,7 @@ export const ProfessionalService = () => {
             successfully.
           </Typography>
 
-          <Button className="mt-6">Request a demo</Button>
+          <Button className="mt-6"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="lg:w-[90%]">
           <img
@@ -266,7 +266,7 @@ export const ProfessionalService = () => {
             Get started! Build better data, now.
           </Typography>
           <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
-            <Button>Request a demo</Button>
+            <Button><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               darkMode
               className="flex items-center gap-3 !text-white border-white"

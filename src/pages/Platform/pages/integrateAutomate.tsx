@@ -42,7 +42,7 @@ export const IntegrateAutomate = () => {
             </Typography>
 
             <div className="lg:flex mt-9 gap-2">
-              <Button>Request a demo</Button>
+              <Button><NavLink to='/request'>Request a demo</NavLink></Button>
               <Button
                 darkMode
                 className="flex items-center mt-2 lg:mt-0 gap-3 mb-3 lg:mb-0 group"
@@ -89,7 +89,7 @@ export const IntegrateAutomate = () => {
             directly in the format of your model (YOLO, PASCAL VOC, etc).
           </Typography>
 
-          <Button className="mt-12">Request a demo</Button>
+          <Button className="mt-12"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="lg:w-[90%]">
           <img
@@ -124,7 +124,7 @@ export const IntegrateAutomate = () => {
             Ensure the highest level of data governance & security.
           </Typography>
 
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="lg:w-[90%]">
           <img
@@ -160,7 +160,7 @@ export const IntegrateAutomate = () => {
             connect any ML stack.
           </Typography>
 
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="lg:w-[90%]">
           <img
@@ -193,7 +193,7 @@ export const IntegrateAutomate = () => {
             operations.
           </Typography>
 
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-[90%]">
           <img

@@ -464,7 +464,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
               />
             </div>
             <Button className="hidden lg:block">
-                Request a demo
+                <NavLink to='/request'>Request a demo</NavLink>
             </Button>
             <Button
               darkMode={darkMode}
@@ -583,7 +583,7 @@ const MenuDrawer = ({ navLinks, dark, isShowing }: MenuDrawerProps) => {
               "uppercase cursor-pointer hover:text-primary mt-12 mb-5 block"
             )}
           >
-            request a demo
+            <NavLink to='/request'>Request a demo</NavLink>
           </Typography>
           <div className="flex justify-center mt-8">
             <Button variant="outline" className="self-center">

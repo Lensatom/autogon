@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
 import DataLabellingImage from '../../../../assets/images/data labeling.jpg'
+import { NavLink } from "react-router-dom";
 
 const DataLabelling = () => {
   return (
@@ -93,7 +94,7 @@ const DataLabelling = () => {
             enables you to analyze your data and generate a custom machine-learning model
             optimized for your specific use case.
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
       </Container>
     </>

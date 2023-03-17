@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
 import DataEngineeringImage from '../../../../assets/images/data engineering.jpg'
+import { NavLink } from "react-router-dom";
 
 const DataEngineering = () => {
   return (
@@ -119,7 +120,7 @@ const DataEngineering = () => {
             Don't just take our word for it! Schedule a demo with us today and experience the power of
             Autogon AI for yourself. The future is now, and it's time to join the revolution!
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
       </Container>
     </>

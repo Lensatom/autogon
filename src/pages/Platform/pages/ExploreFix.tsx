@@ -10,6 +10,7 @@ import { Testimonial } from "../../../Layouts/Testimonial";
 import { Blog } from '../Layout/Blog';
 import { AutomatedTimeSeries, AutoML, DataPreparation, DragNDrop } from "./sections";
 import NoCodeAIApp from "./sections/NoCodeAIApp";
+import { NavLink } from "react-router-dom";
 
 
 export const KeyCapabilities = () => {
@@ -65,7 +66,7 @@ export const KeyCapabilities = () => {
             </Typography>
 
             <div className="flex mt-5 lg:mt-9 gap-2">
-              <Button>Request a demo</Button>
+              <Button><NavLink to='/request'>Request a demo</NavLink></Button>
               <Button
                 darkMode
                 className="flex items-center gap-3 mb-3 lg:mb-0 group"

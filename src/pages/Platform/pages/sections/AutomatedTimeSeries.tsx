@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
+import { NavLink } from "react-router-dom";
 
 const AutomatedTimeSeries = () => {
   return (
@@ -87,7 +88,7 @@ const AutomatedTimeSeries = () => {
             and assist your organization in adjusting to economic or environmental shocks that erode historical
             data.
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
       </Container>
     </>

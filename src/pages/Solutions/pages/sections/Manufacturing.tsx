@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
 import ManufacturingImage from '../../../../assets/images/manufacturing.jpg'
+import { NavLink } from "react-router-dom";
 
 const Manufacturing = () => {
   return (
@@ -86,7 +87,7 @@ const Manufacturing = () => {
               </li>
             </ol>
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <Typography variant="body" className="mt-8">

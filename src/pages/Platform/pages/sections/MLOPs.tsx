@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
-import MLOPsImage from '../../../../assets/images/MLOP.jpg'
+import MLOPsImage from '../../../../assets/images/MLOP.jpg';
+import { NavLink } from "react-router-dom";
 
 const MLOPs = () => {
   return (
@@ -103,7 +104,7 @@ const MLOPs = () => {
             a unified environment for the entire machine learning journey, so you can tackle any challenge
             together.
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
       </Container>
     </>

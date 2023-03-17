@@ -49,7 +49,7 @@ const BenefitMobileCard = ({ className, position, contents, src, active, onClick
             </ul>
           </div>
         </div>
-        <Button className="absolute bottom-10">Request a Demo</Button>
+        <Button className="absolute bottom-10"><NavLink to='/request'>Request a demo</NavLink></Button>
       </div>
   );
 };
@@ -430,7 +430,7 @@ export const LandingPage = () => {
             Begin your journey! Start Creating AI Models.
           </Typography>
           <div className="flex mx-auto w-fit gap-2 mt-16 mb-8 lg:mb-0">
-            <Button>Request a demo</Button>
+            <Button><NavLink to='/request'>Request a demo</NavLink></Button>
             <a href="https://console.autogon.ai" target="_blank">
               <Button
                 className="flex items-center gap-3 !text-white hover:!border-secondary !border-white"

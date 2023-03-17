@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
 import BankingImage from '../../../../assets/images/BANKING.jpg'
+import { NavLink } from "react-router-dom";
 
 const Banking = () => {
   return (
@@ -149,7 +150,7 @@ const Banking = () => {
             to resolve their most pressing challenges while focusing on providing positive customer experiences.
             Get Started with AutoGon today
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
       </Container>
     </>

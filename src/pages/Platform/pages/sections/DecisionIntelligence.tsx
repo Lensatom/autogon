@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
 import DataIntelligenceImage from '../../../../assets/images/decision intelligence.jpg'
+import { NavLink } from "react-router-dom";
 
 const DecisionIntelligence = () => {
   return (
@@ -75,7 +76,7 @@ const DecisionIntelligence = () => {
             to build and refine models. With the ability to share and review models, teams can
             collaborate to make better decisions and achieve their goals faster.
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
       </Container>
     </>

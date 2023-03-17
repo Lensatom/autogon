@@ -1,4 +1,5 @@
 import { Button, Container, Typography } from "../../../../components";
+import { NavLink } from "react-router-dom";
 
 const DragNDrop = () => {
   return (
@@ -75,7 +76,7 @@ const DragNDrop = () => {
             models in no time. You never have to worry about getting stuck or being unable to figure
             something out.
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
       </Container>
     </>

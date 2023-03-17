@@ -2,6 +2,7 @@ import Draggable from "react-draggable";
 import { BenefitCardProps } from "../../../interfaces";
 import cn from "classnames";
 import { Avatar, Button, Typography } from "../../../components";
+import { NavLink } from "react-router-dom";
 
 export const BenefitCard = ({
   className,
@@ -43,7 +44,7 @@ export const BenefitCard = ({
             </div>
           </div>
         </div>
-        <Button className="absolute bottom-10">Request a Demo</Button>
+        <Button className="absolute bottom-10"><NavLink to='/request'>Request a demo</NavLink></Button>
       </div>
     </Draggable>
   );

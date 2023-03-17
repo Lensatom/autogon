@@ -72,7 +72,7 @@ export const NplTextAnnotationTool = () => {
               predictions.
             </Typography>
             <div className="lg:flex mt-9 gap-2">
-              <Button>Request a demo</Button>
+              <Button><NavLink to='/request'>Request a demo</NavLink></Button>
               <Button
                 darkMode
                 className="flex items-center gap-3 mb-3 mt-3 lg:mb-0 group"
@@ -134,7 +134,7 @@ export const NplTextAnnotationTool = () => {
             predictions to further accelerate labeling and boost quality.
           </Typography>
 
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <img
@@ -174,7 +174,7 @@ export const NplTextAnnotationTool = () => {
             performance.
           </Typography>
 
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <img
@@ -220,7 +220,7 @@ export const NplTextAnnotationTool = () => {
             Python SDK and API to integrate with all machine learning stacks.
           </Typography>
 
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <img

@@ -1,5 +1,6 @@
 import { Button, Container, Typography } from "../../../../components";
 import SoftwareEngineersImage from '../../../../assets/images/software engineers.jpg'
+import { NavLink } from "react-router-dom";
 
 const SoftwareEngineers = () => {
   return (
@@ -92,7 +93,7 @@ const SoftwareEngineers = () => {
               </li>
             </ul>
           </Typography>
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <Typography variant="body" className="mt-8">

@@ -46,7 +46,7 @@ export const LabelAnnotationPage = () => {
               predictions.
             </Typography>
             <div className="lg:flex mt-9 gap-2">
-              <Button>Request a demo</Button>
+              <Button><NavLink to='/request'>Request a demo</NavLink></Button>
               <Button
                 darkMode
                 className="flex items-center gap-3 mb-3 mt-3 lg:mb-0 group"
@@ -92,7 +92,7 @@ export const LabelAnnotationPage = () => {
             validation rules based on your use case, and labeling process.
           </Typography>
 
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <img
@@ -126,7 +126,7 @@ export const LabelAnnotationPage = () => {
             spot inconsistencies and send assets back to the labelers.
           </Typography>
 
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <img
@@ -161,7 +161,7 @@ export const LabelAnnotationPage = () => {
             where it will have the most impact.
           </Typography>
 
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <img
@@ -195,7 +195,7 @@ export const LabelAnnotationPage = () => {
             quality problems, and take corrective action.
           </Typography>
 
-          <Button className="mt-9">Request a demo</Button>
+          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <img
