@@ -344,21 +344,21 @@ export const Header = ({ darkMode }: HeaderProps) => {
               name: "Blog",
               link: "/blog",
             },
-            {
-              name: "Whitepapers",
-              link: "/whitepaper",
-            },
-            {
-              name: "Case Studies",
-              link: "/case-studies",
-            },
+            // {
+            //   name: "Whitepapers",
+            //   link: "/whitepaper",
+            // },
+            // {
+            //   name: "Case Studies",
+            //   link: "/case-studies",
+            // },
             {
               name: "Community",
-              link: "/case-studies",
+              link: "https://discord.com/channels/1056699131864830042/1056699132955340901",
             },
             {
               name: "Marketplace",
-              link: "/case-studies",
+              link: "https://console.autogon.ai/marketplace/",
             },
           ],
         },

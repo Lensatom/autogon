@@ -27,30 +27,37 @@ export const Footer = ({ darkMode }: FooterProps) => {
       {
         name: "Augmented Intelligence",
         link: "/platform#augmented-intelligence",
+        hash: true,
       },
       {
         name: "Data Engineering",
         link: "/platform/data-engineering",
+        hash: true,
       },
       {
         name: "MLOps",
         link: "/platform#mlops",
+        hash: true,
       },
       {
         name: "Decision Intelligence",
         link: "/platform#data-intelligence",
+        hash: true,
       },
       {
         name: "Data Visualization",
         link: "/platform#data-visualization",
+        hash: true,
       },
       {
         name: "Data Labeling",
         link: "/platform#data-labelling",
+        hash: true,
       },
       {
         name: "Plan & Features",
-        link: "pricing",
+        link: "/pricing",
+        hash: true,
       },
     ],
   };
@@ -138,22 +145,27 @@ export const Footer = ({ darkMode }: FooterProps) => {
       {
         name: "Business Analysis",
         link: "/solutions/roles#business-analysis",
+        hash: true,
       },
       {
         name: "Data Scientists",
         link: "/solutions/roles#data-scientists",
+        hash: true,
       },
       {
         name: "IT Operations",
         link: "/solutions/roles#it-operations",
+        hash: true,
       },
       {
         name: "Software Engineers",
         link: "/solutions/roles#software-engineers",
+        hash: true,
       },
       {
         name: "Executives & Analytics Leaders",
         link: "/solutions/roles#executives",
+        hash: true,
       },
     ],
   };
@@ -163,7 +175,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
     links: [
       {
         name: "Contact Us",
-        link: 'link'
+        link: '/contact'
       },
       {
         name: "Careers",
@@ -192,9 +204,11 @@ export const Footer = ({ darkMode }: FooterProps) => {
       },
       {
         name: "Community",
+        link: 'https://discord.com/channels/1056699131864830042/1056699132955340901'
       },
       {
         name: "Documentation",
+        link: 'https://docs.autogon.ai'
       },
       {
         name: "Events",

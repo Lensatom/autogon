@@ -6,6 +6,7 @@ import { Header } from "../../Layouts/Header";
 import { PartnerCarousel } from "../../Layouts/PartnerCarousel";
 import Smilesvg from "../../assets/logo/Autogon-logo-light.png";
 import { Footer } from "../../Layouts/Footer";
+import Checked from "./Checked";
 
 type PricingCardTypes = {
   img: string;
@@ -58,22 +59,20 @@ const PricingCard = ({ img, title, type, benefits, buttonText, isDarkButton, but
 export const Pricing = () => {
   return (
     <>
-      <Header darkMode />
+      <Header />
 
-      <Container isDarkMode background className="bg-surface pt-[10rem] pb-28">
-        <BreadCrumb darkMode />
+      <Container className="bg-screen pt-28 h-screen">
+        <BreadCrumb />
         <Typography
-          isDarkMode
           align="center"
           variant="display"
-          className="mx-auto mt-4 lg:w-[80rem]"
+          className="mx-auto mt-4 lg:w-[70%] pt-16"
         >
           Choose the right plan for your AI journey
         </Typography>
         <Typography
           variant="body"
           align="center"
-          isDarkMode
           className="capitalize lg:w-[45rem] mx-auto mt-5"
         >
           Welcome to the pricing page of our platform! We understand that every
@@ -82,221 +81,155 @@ export const Pricing = () => {
         </Typography>
       </Container>
 
-      <Container disableOverflowHidden isDarkMode background className="pb-20">
-        <div className="lg:w-[80%] gap-5 grid grid-cols-1 md:grid-cols-2 md:items-center lg:grid-cols-3 mx-auto pb-2">
-          <PricingCard
-            img="https://a.storyblok.com/f/139616/x/cf6dd89b57/discover.svg"
-            title="community"
-            type="Basic Plan"
-            isDarkButton
-            buttonType="outline"
-            benefits={[
-              "Limited number of models",
-              "All interfaces & standard quality workflows features available",
-              "API limited to 1000 predictions**/month",
-              "Cloud only",
-              "Community support",
-            ]}
-            buttonText={
-              <>
-                Start for free
-                <ArrowTopRightOnSquareIcon className="h-5 w-5 text-white group-hover:text-neutral" />
-              </>
-            }
-          />
-          <PricingCard
-            img="https://a.storyblok.com/f/139616/x/cf6dd89b57/discover.svg"
-            title="start"
-            type="Custom Plan"
-            buttonType="contained"
-            benefits={[
-              "Limited to 5 users and 1k annotations*/month",
-              "All interfaces & standard quality workflows features available",
-              "API limited to 1000 predictions**/month",
-              "Cloud only",
-              "Community support",
-            ]}
-            buttonText="<NavLink to='/request'>Request a demo</NavLink>"
-          />
-
-          <PricingCard
-            img="https://a.storyblok.com/f/139616/x/cf6dd89b57/discover.svg"
-            title="Enterprise"
-            type="Custom Plan"
-            isDarkButton
-            buttonType="contained"
-            benefits={[
-              "Limited number of models",
-              "All interfaces & standard quality workflows features available",
-              "API limited to 1000 predictions**/month",
-              "Cloud only",
-              "Community support",
-            ]}
-            buttonText={
-              <>
-                Start for free
-                <ArrowTopRightOnSquareIcon className="h-5 w-5 text-neutral group-hover:text-neutral" />
-              </>
-            }
-          />
-        </div>
-        <Typography
-          isDarkMode
-          variant="caption"
-          align="center"
-          className="w-[80%] mx-auto mt-3 text-[13px]"
-        >
-          Our pricing is based on the number of models you want to build and
-          deploy, and the volume of data you want to use. We offer different
-          pricing plans that range from a basic plan for small businesses, to an
-          enterprise plan for large organizations.
-        </Typography>
+      <Container className="w-full overflow-x-scroll pb-20 bg-screen">
+        <table className="w-[300%] lg:w-full">
+          <thead className="w-full">
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold text-gray-600 flex flex-col items-start justify-start gap-2">
+                <h2 className="font-bold text-lg text-black">On all plans</h2>
+                <span className="flex items-center gap-1"><Checked />Upgrade anytime</span>
+                <span className="flex items-center gap-1"><Checked />Downgrade anytime</span>
+                <span className="flex items-center gap-1"><Checked />Cancel anytime</span>
+              </td>
+              <td className="flex flex-col items-center gap-1">
+                <h2 className="font-bold text-lg">Automate</h2>
+                <div className="flex items-start">
+                  <span className="text-sm pt-1">$</span>
+                  <span className="text-2xl font-bold">49</span>
+                </div>
+                <span className="text-xs text-gray-500 font-semibold">USD / month</span>
+                <Button>Start a Free Trial</Button>
+                <span className="text-sm font-semibold">Automate your marketing</span>
+              </td>
+              <td className="flex flex-col items-center gap-1">
+                <h2 className="font-bold text-lg">Scale</h2>
+                <div className="flex items-start">
+                  <span className="text-sm pt-1">$</span>
+                  <span className="text-2xl font-bold">149</span>
+                </div>
+                <span className="text-xs text-gray-500 font-semibold">USD / month</span>
+                <Button>Start a Free Trial</Button>
+                <span className="text-sm font-semibold">Scale your marketing</span>
+              </td>
+              <td className="flex flex-col items-center gap-1">
+                <h2 className="font-bold text-lg">Automate</h2>
+                <div className="flex items-start">
+                  <span className="text-sm pt-1">$</span>
+                  <span className="text-2xl font-bold">299</span>
+                </div>
+                <span className="text-xs text-gray-500 font-semibold">USD / month</span>
+                <Button>Start a Free Trial</Button>
+                <span className="text-sm font-semibold">High volume access</span>
+              </td>
+            </tr>
+          </thead>
+          <tbody className="w-full">
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-bold">Quotas</td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">API Credits</td>
+              <td>
+                <select className="w-full border-2 rounded-md p-2">
+                  <option>1000</option>
+                </select>
+              </td>
+              <td>
+                <select className="w-full border-2 rounded-md p-2">
+                  <option>10000</option>
+                </select>
+              </td>
+              <td>
+                <select className="w-full border-2 rounded-md p-2">
+                  <option>10000</option>
+                </select>
+              </td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Bandwidth (GB)</td>
+              <td className="text-center">10</td>
+              <td className="text-center">50</td>
+              <td className="text-center">100</td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-bold">Integrations</td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">REST API</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Zapier</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Make.com</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Airtable</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Forms</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Simple URL's</td>
+              <td className="text-center text-lg">--</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Signed URL's</td>
+              <td className="text-center text-lg">--</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-bold">Security</td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">2FA</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-bold">Support</td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Email</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Priority</td>
+              <td className="text-center text-lg">--</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Zoom</td>
+              <td className="text-center text-lg">--</td>
+              <td className="text-center text-lg">--</td>
+              <td><Checked /></td>
+            </tr>
+          </tbody>
+        </table>
       </Container>
-
-      <PartnerCarousel
-        darkMode
-        title="They trust us"
-        titleClassName="lg:!text-[100px] !text-[60px] !font-bold mt-10"
-        carouselContainerClassName="lg:mt-8 mt-4"
-      />
-
-      <Container isDarkMode background className="bg-surface pt-1 pb-40 ">
-        <div className="flex flex-col-reverse lg:flex-row lg:mt-5">
-          <div className="w-[95%]">
-            <Typography
-              isDarkMode
-              variant="header"
-              className="font-semibold !text-[4.2rem] leading-[90%] lg:!text-[86px]"
-            >
-              Create training datasets fast
-            </Typography>
-            <Typography isDarkMode variant="body" className="mt-6">
-              Annotate all types of unstructured data rapidly and accurately
-              with customizable annotation tasks & an interface optimized for
-              productivity & quality.
-            </Typography>
-            <Typography isDarkMode variant="body" className="mt-3">
-              Automate labeling to save time with smart tools & model
-              predictions.
-            </Typography>
-            {/* <div className="lg:flex mt-9 gap-2">
-              <Button><NavLink to='/request'>Request a demo</NavLink></Button>
-              <Button
-                darkMode
-                className="flex items-center gap-3 mb-3 lg:mb-0 group"
-                variant="outline"
-              >
-                Start for free
-                <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white group-hover:text-neutral" />
-              </Button>
-            </div> */}
-          </div>
-          <div className="w-full mb-8 lg:mb-0">
-            <img
-              src="https://a.storyblok.com/f/139616/2339x1666/0054abe91a/annotate-fast.webp"
-              className="h-full w-full object-contain"
-            />
-          </div>
-        </div>
-      </Container>
-
-      <Container isDarkMode background classNam>
-        <div className="flex gap-10 flex-col-reverse lg:flex-row-reverse lg:mt-5">
-          <div className="w-[95%]">
-            <Typography
-              isDarkMode
-              variant="header"
-              className="font-semibold !text-[4.2rem] !leading-[100%] lg:!text-[86px]"
-            >
-              Find & fix issues in your ML datasets
-            </Typography>
-            <Typography isDarkMode variant="body" className="mt-6">
-              Supervise quality level & improvements to ensure low-error
-              datasets. Simplify advanced collaboration workflows. Leverage
-              programmatic QA. Explore your datasets and identify the data that
-              matters.
-            </Typography>
-
-            {/* <div className="lg:flex mt-20 gap-2">
-              <Button><NavLink to='/request'>Request a demo</NavLink></Button>
-              <Button
-                darkMode
-                className="flex items-center gap-3 mb-3 lg:mb-0 group"
-                variant="outline"
-              >
-                Start for free
-                <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white group-hover:text-neutral" />
-              </Button>
-            </div> */}
-          </div>
-          <div className="w-full">
-            <img
-              src="https://a.storyblok.com/f/139616/2500x1933/a1314fefc1/explore-and-fix-issues.webp"
-              className="h-full w-full object-contain"
-            />
-          </div>
-        </div>
-      </Container>
-
-      <Container isDarkMode background className="bg-surface pb-20">
-        <div className="flex flex-col-reverse items-center lg:flex-row gap-10">
-          <div className="w-[95%]">
-            <Typography
-              isDarkMode
-              variant="header"
-              className="font-semibold !text-[4.2rem] !leading-[100%] lg:!text-[86px]"
-            >
-              Simplify your LabelingOps
-            </Typography>
-            <Typography isDarkMode variant="body" className="mt-6">
-              Integrate labeling operations with your existing ML stack, easily
-              import and export data, create and manage labeling projects, and
-              manage the entire training data lifecycle of your ML project on
-              Kili. Use the CLI & our SDK to upload and download vast amounts of
-              data quickly.
-            </Typography>
-
-            {/* <div className="lg:flex mt-9 gap-2">
-              <Button><NavLink to='/request'>Request a demo</NavLink></Button>
-              <Button
-                darkMode
-                className="flex items-center gap-3 mb-3 lg:mb-0 group"
-                variant="outline"
-              >
-                Start for free
-                <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white group-hover:text-neutral" />
-              </Button>
-            </div> */}
-          </div>
-          <div className="w-full">
-            <img
-              src="https://a.storyblok.com/f/139616/2500x1933/68c38b951d/dataops-1.webp"
-              className="h-full w-full object-contain"
-            />
-          </div>
-        </div>
-      </Container>
-
-      <Container
-        className="bg-surface flex-col-reverse lg:flex-row-reverse pt-1 pb-60 gap-10"
-        flex
-        isDarkMode
-        background
-        align="center"
-      >
-        <div className="w-full">
-          <Typography isDarkMode variant="header" className="font-semibold">
-            Augment your team
-          </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 w-[85%]">
-            Get ahead of the game with expert labeling workforce. Strengthen
-            your project management & ML teams with Kili experts.
-          </Typography>
-        </div>
-        <div className="w-full">
-          {/* <img src={DataSetImage} className="h-full w-full object-contain" /> */}
-        </div>
-      </Container>
+        
 
       <Container
         disableOverflowHidden
