@@ -7,6 +7,7 @@ import { BreadCrumb } from "../../../components/BreadCrumb";
 import { PartnerCarousel } from "../../../Layouts/PartnerCarousel";
 import { Testimonial } from "../../../Layouts/Testimonial";
 import { Blog } from "../Layout/Blog";
+import {NavLink } from 'react-router-dom';
 
 export const IntegrateAutomate = () => {
 

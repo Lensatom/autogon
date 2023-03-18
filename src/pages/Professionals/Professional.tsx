@@ -11,6 +11,7 @@ import { BreadCrumb } from "../../components/BreadCrumb";
 import { BsLink45Deg } from "react-icons/bs";
 import { useWindowScrollPositions } from "../../hooks/useWindowScroll";
 import classNames from "classnames";
+import {NavLink } from 'react-router-dom';
 
 const ResourcePoints = ({ index, body }: { index: string; body: string }) => {
   return (
