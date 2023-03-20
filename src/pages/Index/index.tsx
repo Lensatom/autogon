@@ -10,8 +10,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Footer } from "../../Layouts/Footer";
 import { IoIosArrowForward } from "react-icons/io";
 
-import Lottie from "lottie-react";
-import animationData from "../../assets/iRU7KxwKMP.json";
 import { Testimonial } from "../../Layouts/Testimonial";
 import { PartnerCarousel } from "../../Layouts/PartnerCarousel";
 import { useState } from "react";
@@ -19,7 +17,9 @@ import { Pagination } from "swiper";
 import { BenefitCard } from "./components/BenefitCard";
 import MlFlow from '../../assets/images/mlFlow.png'
 import SideMlFlow from '../../assets/images/sideMlFlow.png'
-import { screenshots, screenshots1, screenshots2 } from '../../assets/screenshots';
+import screenshots from '../../assets/images/screenshot1.png';
+import screenshots1 from '../../assets/images/screenshot2.png';
+import screenshots2 from '../../assets/images/screenshot3.png';
 
 
 const BenefitMobileCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
@@ -202,7 +202,7 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-screen flex-col-reverse lg:flex-row-reverse  pb-40 gap-10"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse mt-10 pb-40 gap-10"
         flex
         align="center"
       >
