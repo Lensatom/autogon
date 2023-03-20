@@ -18,6 +18,7 @@ import { useState } from "react";
 import { Pagination } from "swiper";
 import { BenefitCard } from "./components/BenefitCard";
 import MlFlow from '../../assets/images/mlFlow.png'
+import SideMlFlow from '../../assets/images/sideMlFlow.png'
 import { screenshots, screenshots1, screenshots2 } from '../../assets/screenshots';
 
 
@@ -217,11 +218,7 @@ export const LandingPage = () => {
           </Typography>
         </div>
         <div className="w-full">
-          <Lottie
-            animationData={animationData}
-            loop
-            className="lg:h-[40rem] mx-auto w-full h-full lg:w-[40rem]"
-          />
+          <img src={SideMlFlow} alt='loading...' />
         </div>
       </Container>
 
