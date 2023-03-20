@@ -554,27 +554,44 @@ const MenuDrawer = ({ navLinks, dark, isShowing }: MenuDrawerProps) => {
     >
       <div className="flex flex-col h-5/6 justify-between">
         <ul>
-          {navLinks?.map?.((nav, index) => (
-            <li
-              key={index}
-              className={cn("py-3", { "mt-32": nav?.id === "1" })}
-              onClick={() => setActive(nav?.id)}
-            >
-              <Typography
-                variant="body"
-                className={cn("capitalize cursor-pointer text-[20px]", {
-                  "hover:text-primary": !nav?.hover,
-                  "text-primary": active === nav?.id,
-                })}
+          {navLinks?.map?.((nav, index) => {
+            if (nav?.name === 'pricing') {
+              return (
+                <li>
+                  <Typography
+                  variant="body"
+                  className={cn("capitalize cursor-pointer text-[20px]", {
+                    "hover:text-primary": !nav?.hover,
+                    "text-primary": active === nav?.id,
+                  })}
+                >
+                  <NavLink to='/pricing'>{nav?.name}</NavLink>
+                </Typography>
+                </li>
+              )
+            }
+            return (
+              <li
+                key={index}
+                className={cn("py-3", { "mt-32": nav?.id === "1" })}
+                onClick={() => setActive(nav?.id)}
               >
-                {nav?.name}
-              </Typography>
-              {typeof nav?.menu?.length !== "undefined" &&
-                active === nav.id && (
-                  <PopoverMenu dark={dark} noAbsolute menus={nav?.menu ?? []} />
-                )}
-            </li>
-          ))}
+                <Typography
+                  variant="body"
+                  className={cn("capitalize cursor-pointer text-[20px]", {
+                    "hover:text-primary": !nav?.hover,
+                    "text-primary": active === nav?.id,
+                  })}
+                >
+                  {nav?.name}
+                </Typography>
+                {typeof nav?.menu?.length !== "undefined" &&
+                  active === nav.id && (
+                    <PopoverMenu dark={dark} noAbsolute menus={nav?.menu ?? []} />
+                  )}
+              </li>
+            )
+          })}
         </ul>
         <div>
           <Typography
