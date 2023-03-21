@@ -7,7 +7,7 @@ const Healthcare = () => {
     <>
       <Container
         background
-        className="bg-screen flex-col-reverse lg:flex-row pt-10 pb-10 lg:pt-24 gap-3 items-center"
+        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-3 items-center"
         flex
         id="healthcare"
         // direction="row-reverse"

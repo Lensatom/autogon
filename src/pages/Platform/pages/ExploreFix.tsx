@@ -45,7 +45,7 @@ export const KeyCapabilities = () => {
 
       <Container
         background
-        id="data-preparation"
+        id=""
         className="bg-screen pb-10 lg:pb-40 pt-10"
       >
         {/* <BreadCrumb darkMode /> */}

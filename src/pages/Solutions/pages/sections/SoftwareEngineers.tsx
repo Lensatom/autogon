@@ -7,9 +7,9 @@ const SoftwareEngineers = () => {
     <>
       <Container
         background
-        className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pt-24 gap-8 items-center"
+        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-8 items-center"
         flex
-        id="software-engineering"
+        id="software-engineers"
         // direction="row-reverse"
       >
         <div className="w-full">
@@ -54,7 +54,7 @@ const SoftwareEngineers = () => {
         background
         className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pt-2 lg:pb-10 gap-3 items-start"
         flex
-        id="healthcare"
+        id=""
         // direction="row-reverse"
       >
         <div className="w-full">

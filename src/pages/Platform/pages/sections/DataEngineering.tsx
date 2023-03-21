@@ -7,7 +7,7 @@ const DataEngineering = () => {
     <>
       <Container
         background
-        className="bg-screen flex-col-reverse lg:flex-row gap-8 items-center"
+        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-8 items-center"
         flex
         id="data-engineering"
       >

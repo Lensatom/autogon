@@ -7,7 +7,7 @@ const Sports = () => {
     <>
       <Container
         background
-        className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pt-24 gap-8 items-center"
+        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-8 items-center"
         flex
         id="sports"
         // direction="row-reverse"

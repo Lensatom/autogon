@@ -137,7 +137,7 @@ export const LandingPage = () => {
           </Typography>
         </div>
         <div className="w-full p-5">
-          <img src={screenshots} className="h-full w-full object-contain" />
+          <img src={screenshots2} className="h-full w-full object-contain" />
         </div>
       </Container>
 
@@ -197,7 +197,7 @@ export const LandingPage = () => {
           </Typography>
         </div>
         <div className="w-full p-5">
-          <img src={screenshots2} className="h-full w-full object-contain" />
+          <img src={screenshots} className="h-full w-full object-contain" />
         </div>
       </Container>
 
