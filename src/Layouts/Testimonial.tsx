@@ -87,7 +87,7 @@ export const Testimonial = ({ isDarkMode }: TestimonialType) => {
   ];
 
   return (
-    <Container isDarkMode={isDarkMode} background noGutter className="bg-screen pt-10 pb-5">
+    <Container isDarkMode={isDarkMode} background noGutter className="bg-screen mt-[200px] pb-5">
       <Swiper
         spaceBetween={16}
         slidesPerView="auto"
@@ -101,7 +101,7 @@ export const Testimonial = ({ isDarkMode }: TestimonialType) => {
           bulletActiveClass: "!bg-primary !opacity-100 !h-3 !w-3",
           bulletClass: "h-3 w-3 inline-block rounded-full bg-black mx-2",
         }}
-        className="pt-20 mb-60 h-[32rem] md:h-[28rem]"
+        className="mb-28 h-[32rem] md:h-[28rem]"
         scrollbar={{
           draggable: true,
         }}

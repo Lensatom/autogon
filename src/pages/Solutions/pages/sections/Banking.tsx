@@ -148,7 +148,7 @@ const Banking = () => {
           <Typography variant="body" className="mt-8 lg:w-[80%]">
             With AI Platforms for Banking, commercial and retail banks can use data-driven solutions
             to resolve their most pressing challenges while focusing on providing positive customer experiences.
-            Get Started with AutoGon today
+            <a href="http://console.autogon.ai/">Get started</a> with AutoGon today
           </Typography>
           <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>

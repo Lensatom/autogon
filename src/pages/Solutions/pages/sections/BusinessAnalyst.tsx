@@ -80,7 +80,7 @@ const BusinessAnalyst = () => {
                 With a no-code approach, you can quickly and easily build models to help you make
                 better, more informed decisions. Whether you're looking to develop a predictive model,
                 a recommendation engine, or a decision tree, these platforms provide all the tools
-                you need to get started. You can also use pre-built templates to help you get started
+                you need to <a href="http://console.autogon.ai/">Get started</a>. You can also use pre-built templates to help you <a href="http://console.autogon.ai/">Get started</a>
                 quickly or create your custom models from scratch.
               </li>
             </ul>

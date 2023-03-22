@@ -103,10 +103,10 @@ export const CaseStudies = () => {
         <div className="mx-auto w-fit ">
           <img src={Smilesvg} className="relative -top-24 mx-auto z-[1999]" />
           <Typography variant="subdisplay" className="capitalize !text-white">
-            get started
+            <a href="http://console.autogon.ai/">Get started</a>
           </Typography>
           <Typography variant="body" align="center" className="!text-white">
-            Get started! Build better data, now.
+            <a href="http://console.autogon.ai/">Get started</a>! Build better data, now.
           </Typography>
           <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
             <Button><NavLink to='/request'>Request a demo</NavLink></Button>

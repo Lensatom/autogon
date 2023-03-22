@@ -72,7 +72,7 @@ const DragNDrop = () => {
             DragNDrop AI is the ideal platform for organizations and individuals who want to harness
             the power of AI and machine learning but need more technical expertise or resources. One
             of the best things about DragNDrop AI is how user-friendly it is. Autogon is intuitive,
-            and even if you don't have a technical background, you can still get started and build
+            and even if you don't have a technical background, you can still <a href="http://console.autogon.ai/">Get started</a> and build
             models in no time. You never have to worry about getting stuck or being unable to figure
             something out.
           </Typography>

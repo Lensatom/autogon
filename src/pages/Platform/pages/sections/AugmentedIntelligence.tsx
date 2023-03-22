@@ -75,10 +75,10 @@ const AugmentedIntelligence = () => {
             or gain valuable insights, our platform is your first stop.
           </Typography>
           <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
-            Get Started Today
+            <a href="http://console.autogon.ai/">Get started</a> Today
           </Typography>
           <Typography variant="body" className="mt-8 lg:w-[80%]">
-            Take advantage of the benefits of Augmented Intelligence. Get started today and see how
+            Take advantage of the benefits of Augmented Intelligence. <a href="http://console.autogon.ai/">Get started</a> today and see how
             Autogon can transform your experience.
           </Typography>
           <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>

@@ -23,21 +23,41 @@ export const FooterLinks = ({
         {title}
       </Typography>
       <ul className="w-[17rem]">
-        {links.map((nav) => (
-          <li className="my-2 w-fit" key={nav.name}>
-            <Link to={nav?.link}>
-              <Typography
-                isDarkMode={darkMode}
-                variant="link"
-                className={cn(
-                  "capitalize cursor-pointer !text-white hover:underline w-fit"
-                )}
-              >
-                {nav.name}
-              </Typography>
-            </Link>
-          </li>
-        ))}
+        {links.map((nav) => {
+          const name = nav.name.toLowerCase();
+          if (name === 'community' || name === 'documentation') {
+            return (
+              <li className="my-2 w-fit" key={nav.name}>
+                <a href={nav?.link} target='__blank'>
+                  <Typography
+                    isDarkMode={darkMode}
+                    variant="link"
+                    className={cn(
+                      "capitalize cursor-pointer !text-white hover:underline w-fit"
+                    )}
+                  >
+                    {nav.name}
+                  </Typography>
+                </a>
+              </li>
+            )
+          }
+          return (
+            <li className="my-2 w-fit" key={nav.name}>
+              <Link to={nav?.link}>
+                <Typography
+                  isDarkMode={darkMode}
+                  variant="link"
+                  className={cn(
+                    "capitalize cursor-pointer !text-white hover:underline w-fit"
+                  )}
+                >
+                  {nav.name}
+                </Typography>
+              </Link>
+            </li>
+          )
+        })}
       </ul>
     </div>
   );

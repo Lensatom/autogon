@@ -200,7 +200,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
       },
       {
         name: "Webinars",
-        link: '/events-list'
+        link: '/company/events-list'
       },
       {
         name: "Community",
@@ -212,7 +212,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
       },
       {
         name: "Events",
-        link: '/events-list'
+        link: '/company/events-list'
       },
     ],
   };

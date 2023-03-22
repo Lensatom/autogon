@@ -140,10 +140,10 @@ export const Blog = () => {
       <Container disableOverflowHidden isDarkMode background className="pt-5 pb-28">
         <div className="mx-auto w-fit ">
           <Typography variant="subdisplay" className="capitalize !text-white">
-            get started
+            <a href="http://console.autogon.ai/">Get started</a>
           </Typography>
           <Typography variant="body" align="center" className="!text-white">
-            Get started! Build better data, now.
+            <a href="http://console.autogon.ai/">Get started</a>! Build better data, now.
           </Typography>
           <div className="flex mx-auto w-fit lg:gap-2 mt-16 mb-8 lg:mb-0">
             <Button><NavLink to='/request'>Request a demo</NavLink></Button>
@@ -152,7 +152,7 @@ export const Blog = () => {
               className="flex items-center gap-3 !text-white border-white"
               variant="outline"
             >
-              Get started
+              <a href="http://console.autogon.ai/">Get started</a>
               <ArrowTopRightOnSquareIcon className={`h-6 w-6 text-white`} />
             </Button>
           </div>

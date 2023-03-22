@@ -30,7 +30,30 @@ const MenuLinks = ({
         {title}
       </Typography>
       <ul className="mt-4">
-        {links.map((nav, index) => (
+        {links.map((nav, index) => {
+          const name = nav.name.toLowerCase()
+          if (name === 'community' || name === 'marketplace'){
+            return (
+              <li
+                key={index}
+                // onClick={() => navigate(nav.link)}
+                className="my-2 w-[10rem]"
+              >
+                <a href={nav.link} target="__blank">
+                  <Typography
+                    variant="link"
+                    isDarkMode={dark}
+                    className={cn(
+                      "capitalize text-sm cursor-pointer hover:text-primary !font-thin hover:no-underline text-[1rem]"
+                    )}
+                  >
+                    {nav.name}
+                  </Typography>
+                </a>
+              </li>
+            )
+          }
+          return (
           <li
             key={index}
             // onClick={() => navigate(nav.link)}
@@ -62,7 +85,8 @@ const MenuLinks = ({
               </Link>
             )}
           </li>
-        ))}
+          )
+        })}
       </ul>
     </div>
   );
@@ -130,7 +154,7 @@ const PopoverMenu = forwardRef<
             className="w-full mb-7 rounded-lg object-contain object-center"
           />
           <a className="text-center text-[12px] leading-[140%] cursor-pointer -tracking-[.01em] uppercase text-primary">
-            Get started
+            <a href="http://console.autogon.ai/">Get started</a>
           </a>
         </Container>
       </div>
@@ -367,7 +391,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
     {
       id: "5",
       name: "docs",
-      link: "",
+      link: "doc.autogon.ai",
       hover: false,
     },
     {
@@ -471,7 +495,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
               className="hidden lg:block"
               variant="outline"
             >
-              Get started
+              <a href="http://console.autogon.ai/">Get started</a>
             </Button>
           </div>
         </Container>
@@ -498,19 +522,35 @@ const MenuItem = forwardRef<
     <div className="relative">
       {link ? (
         <li key={id}>
-          <Link to={link}>
-            <Typography
-              ref={hoverRef}
-              variant="link"
-              isDarkMode={dark}
-              className={cn("capitalize cursor-pointer", {
-                "hover:underline hover:text-blue-800": !hover,
-                "hover:no-underline": hover,
-              })}
-            >
-              {name}
-            </Typography>
-          </Link>
+          {name === 'docs' ?
+            <Link to={link}>
+              <Typography
+                ref={hoverRef}
+                variant="link"
+                isDarkMode={dark}
+                className={cn("capitalize cursor-pointer", {
+                  "hover:underline hover:text-blue-800": !hover,
+                  "hover:no-underline": hover,
+                })}
+              >
+                {name}
+              </Typography>
+            </Link>
+          :
+            <Link to={link}>
+              <Typography
+                ref={hoverRef}
+                variant="link"
+                isDarkMode={dark}
+                className={cn("capitalize cursor-pointer", {
+                  "hover:underline hover:text-blue-800": !hover,
+                  "hover:no-underline": hover,
+                })}
+              >
+                {name}
+              </Typography>
+            </Link>
+          }
         </li>
       ) : (
         <li key={id}>
@@ -570,6 +610,21 @@ const MenuDrawer = ({ navLinks, dark, isShowing }: MenuDrawerProps) => {
                 </li>
               )
             }
+            if (nav?.name === 'docs') {
+              return (
+                <li>
+                  <Typography
+                  variant="body"
+                  className={cn("capitalize cursor-pointer text-[20px]", {
+                    "hover:text-primary": !nav?.hover,
+                    "text-primary": active === nav?.id,
+                  })}
+                >
+                  <a href='https://docs.autogon.ai'>{nav?.name}</a>
+                </Typography>
+                </li>
+              )
+            }
             return (
               <li
                 key={index}
@@ -604,7 +659,7 @@ const MenuDrawer = ({ navLinks, dark, isShowing }: MenuDrawerProps) => {
           </Typography>
           <div className="flex justify-center mt-8">
             <Button variant="outline" className="self-center">
-              Get Started
+              <a href="http://console.autogon.ai/">Get started</a>
             </Button>
           </div>
         </div>

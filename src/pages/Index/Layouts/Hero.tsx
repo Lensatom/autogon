@@ -30,7 +30,7 @@ export const HeroPage = () => {
             <Button>Case study</Button>
             <a href="https://console.autogon.ai" target="_blank">
               <Button className="flex items-center gap-3" variant="outline">
-                Get started
+                <a href="http://console.autogon.ai/">Get started</a>
                 <ArrowTopRightOnSquareIcon className="h-6 w-6" />
               </Button>
             </a>

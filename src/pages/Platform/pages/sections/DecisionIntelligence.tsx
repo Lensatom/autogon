@@ -57,7 +57,7 @@ const DecisionIntelligence = () => {
             variant="body"
             className="font-semibold mt-8"
           >
-            Get started right away with a range of pre-built models
+            <a href="http://console.autogon.ai/">Get started</a> right away with a range of pre-built models
           </Typography>
           <Typography variant="body" className="mt-8 lg:w-[80%]">
             <ul>

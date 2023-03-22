@@ -202,7 +202,7 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-screen flex-col-reverse lg:flex-row-reverse mt-10 pb-40 gap-10"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse pt-10 pb-40 gap-10"
         flex
         align="center"
       >
@@ -222,7 +222,7 @@ export const LandingPage = () => {
         </div>
       </Container>
 
-      <Container className="bg-screen py-10 overflow-hidden lg:h-[70rem] ">
+      <Container className="bg-screen pt-10 overflow-hidden lg:h-[700px]">
         <Typography
           variant="subdisplay"
           align="center"
@@ -433,7 +433,7 @@ export const LandingPage = () => {
                 className="flex items-center gap-3 !text-white hover:!border-secondary !border-white"
                 variant="outline"
               >
-                Get started
+                <a href="http://console.autogon.ai/">Get started</a>
                 <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white" />
               </Button>
             </a>
