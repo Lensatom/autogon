@@ -32,9 +32,9 @@ function App() {
     ReactGA.pageview(window.location.pathname + window.location.search)
   }, [])
 
-  // useEffect(() => {
-  //   window.scrollTo(0, 0)
-  // }, [pathname])
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
 
   return useRoutes([
     {
