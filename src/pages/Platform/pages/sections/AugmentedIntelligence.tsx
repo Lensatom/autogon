@@ -1,8 +1,12 @@
 import { Button, Container, Typography } from "../../../../components";
 import AugmentedIntelligenceImage from '../../../../assets/images/augmented intelligence.jpg'
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 const AugmentedIntelligence = () => {
+
+  const [display, setDisplay] = useState('hidden')
+
   return (
     <>
       <Container
@@ -28,6 +32,16 @@ const AugmentedIntelligence = () => {
             machine learning algorithms and artificial intelligence, you can streamline your operations,
             make better and faster decisions, and stay ahead of the competition.
           </Typography>
+          <div className="flex gap-5">
+            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
         </div>
         <div className="w-full">
           <img
@@ -39,7 +53,7 @@ const AugmentedIntelligence = () => {
       </Container>
       <Container
         background
-        className="bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8"
+        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
         flex
       >
         <div className="w-full">
@@ -81,7 +95,6 @@ const AugmentedIntelligence = () => {
             Take advantage of the benefits of Augmented Intelligence. <a href="http://console.autogon.ai/">Get started</a> today and see how
             Autogon can transform your experience.
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
       </Container>
     </>

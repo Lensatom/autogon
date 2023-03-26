@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
 import RetailImage from '../../../../assets/images/retail.jpg'
 import { NavLink } from "react-router-dom";
 
 const Retail = () => {
+  
+  const [display, setDisplay] = useState('hidden')
+
   return (
     <>
       <Container
@@ -42,6 +46,16 @@ const Retail = () => {
             with its user-friendly drag-and-drop interface. As a result, retail organizations can
             save valuable time and resources.
           </Typography>
+          <div className="flex gap-5">
+            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
         </div>
         <div className="w-full">
           <img
@@ -52,7 +66,7 @@ const Retail = () => {
       </Container>
       <Container
         background
-        className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pt-2 lg:pb-10 gap-3 items-start"
+        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
         flex
         id="healthcare"
         // direction="row-reverse"

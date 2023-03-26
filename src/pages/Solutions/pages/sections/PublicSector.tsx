@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
 import PublicSectorImage from '../../../../assets/images/public sector.jpg'
 import { NavLink } from "react-router-dom";
 
 const PublicSector = () => {
+  
+  const [display, setDisplay] = useState('hidden')
+
   return (
     <>
       <Container
@@ -48,6 +52,16 @@ const PublicSector = () => {
             to create and deploy AI models without the need for extensive coding expertise, making
             it possible for the public sector to take advantage of AI's capabilities on a much larger scale.
           </Typography>
+          <div className="flex gap-5">
+            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
         </div>
         <div className="w-full">
           <img
@@ -58,7 +72,7 @@ const PublicSector = () => {
       </Container>
       <Container
         background
-        className="bg-screen flex-col-reverse lg:flex-row pb-10 lg:pt-2 lg:pb-10 gap-3 items-start"
+        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
         flex
         id="healthcare"
         // direction="row-reverse"

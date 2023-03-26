@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
 import MLOPsImage from '../../../../assets/images/MLOP.jpg';
 import { NavLink } from "react-router-dom";
 
 const MLOPs = () => {
+  
+  const [display, setDisplay] = useState('hidden')
+
   return (
     <>
       <Container
@@ -18,10 +22,8 @@ const MLOPs = () => {
           >
             MLOPs
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
-            Welcome to your premier Machine Learning Operations and Production AI hub.
-          </Typography>
           <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+            Welcome to your premier Machine Learning Operations and Production AI hub.
             Create and deploy machine learning models that can solve real-world problems.
           </Typography>
           <Typography variant="body" className="mt-8 lg:w-[80%]">
@@ -32,6 +34,16 @@ const MLOPs = () => {
             to create your model. Autogon also includes a range of pre-built models that you can use as
             a starting point or modify to suit your needs.
           </Typography>
+          <div className="flex gap-5">
+            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
         </div>
         <div className="w-full">
           <img
@@ -43,7 +55,7 @@ const MLOPs = () => {
       </Container>
       <Container
         background
-        className="bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8"
+        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
         flex
       >
         <div className="w-full">

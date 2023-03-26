@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
 import DataPreparationImage from '../../../../assets/images/data preparation.jpg'
 import { NavLink } from "react-router-dom";
 
 const DataPreparation = () => {
+  
+  const [display, setDisplay] = useState('hidden')
+
   return (
     <>
       <Container
@@ -37,6 +41,16 @@ const DataPreparation = () => {
             code in the background. This means you can focus on getting your data ready for analysis and
             modeling rather than worrying about the technical details.
           </Typography>
+          <div className="flex gap-5">
+            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
         </div>
         <div className="w-full">
           <img
@@ -48,7 +62,7 @@ const DataPreparation = () => {
       </Container>
       <Container
         background
-        className="bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8"
+        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
         flex
       >
         <div className="w-full">

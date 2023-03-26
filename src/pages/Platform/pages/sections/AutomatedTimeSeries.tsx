@@ -1,7 +1,11 @@
+import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
 import { NavLink } from "react-router-dom";
 
 const AutomatedTimeSeries = () => {
+  
+  const [display, setDisplay] = useState('hidden')
+
   return (
     <>
       <Container
@@ -20,6 +24,16 @@ const AutomatedTimeSeries = () => {
           <Typography variant="body" className="mt-8 lg:w-[80%]">
             Design, deploy, and maintain high-impact forecasts across your organization with convenience.
           </Typography>
+          <div className="flex gap-5">
+            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
         </div>
         <div className="w-full">
           <img
@@ -31,7 +45,7 @@ const AutomatedTimeSeries = () => {
       </Container>
       <Container
         background
-        className="bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8"
+        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
         flex
       >
         <div className="w-full">
@@ -88,7 +102,6 @@ const AutomatedTimeSeries = () => {
             and assist your organization in adjusting to economic or environmental shocks that erode historical
             data.
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
       </Container>
     </>

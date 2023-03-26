@@ -1,8 +1,12 @@
+import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
 import DataIntelligenceImage from '../../../../assets/images/decision intelligence.jpg'
 import { NavLink } from "react-router-dom";
 
 const DecisionIntelligence = () => {
+  
+  const [display, setDisplay] = useState('hidden')
+
   return (
     <>
       <Container
@@ -26,6 +30,16 @@ const DecisionIntelligence = () => {
             your business decisions. Make data-driven decisions easily and quickly with our Decision
             Intelligence solution.
           </Typography>
+          <div className="flex gap-5">
+            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
         </div>
         <div className="w-full">
           <img
@@ -37,7 +51,7 @@ const DecisionIntelligence = () => {
       </Container>
       <Container
         background
-        className="bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8"
+        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
         flex
       >
         <div className="w-full">

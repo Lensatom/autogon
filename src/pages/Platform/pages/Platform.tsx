@@ -106,7 +106,7 @@ export const PlatformPage = () => {
 
       <DataVisualization />
 
-      <DataLabelling />
+      <DataLabelling /><br /><br /><br />
 
       <Container
         isLightDarkMode
