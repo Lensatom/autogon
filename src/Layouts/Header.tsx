@@ -2,7 +2,7 @@ import { Button, Container, Typography } from "../components";
 import DarkLogo from "../assets/logo/Autogon-full-logo.png";
 import Logo from "../assets/logo/Autogon-full-logo-light.png";
 import cn from "classnames";
-import { forwardRef, Fragment, useState } from "react";
+import { forwardRef, Fragment, useState, useEffect } from "react";
 import { MenuDrawerProps, NavLinks, NavMenus } from "../interfaces";
 import { useHover } from "../hooks/useHover.js";
 import { Link } from "react-router-dom";
@@ -402,8 +402,24 @@ export const Header = ({ darkMode }: HeaderProps) => {
     },
   ];
 
+  const [position, setPosition] = useState('absolute')
+  useEffect(() => {
+    let prevOffset = 0
+    window.addEventListener('scroll', () => {
+      const offset = window.pageYOffset;
+      if (offset < prevOffset) {
+        setPosition('fixed')
+      } else {
+        setPosition('absolute')
+      }
+      if ((offset - prevOffset)**2 >= 1000) {
+        prevOffset = offset
+      }
+    })
+  }, [])
+
   return (
-    <header className="fixed w-full max-w-full z-50 top-0 left-0">
+    <header className={`${position} w-full max-w-full z-50 top-0 left-0`}>
       <Container
         justify="between"
         align="center"

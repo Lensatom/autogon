@@ -22,7 +22,7 @@ const DataPreparation = () => {
           >
             Data Preparation
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Explore, combine, and shape diverse datasets visually and interactively to create
             data ready for AI and machine learning applications at exponential speed.
           </Typography>
@@ -32,7 +32,7 @@ const DataPreparation = () => {
           >
             Streamline your data journey with DragNDrop AI: the no-code platform for a Seamless preparation.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Data is the cornerstone of successful AI implementation, but unlocking its potential requires
             fast and easy access for all data users. Autogon Data Prep makes data preparation a breeze for
             novice and expert users. Our no-code platform lets you easily clean, transform, and visualize
@@ -72,7 +72,7 @@ const DataPreparation = () => {
           >
             Data Preparation for Smarter AI with DragNDrop AI
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             As part of the Autogon AI Cloud platform, Data Prep allows every analyst and citizen data
             scientist to explore, profile, clean, and shape diverse data into ready-to-use AI assets.
             One of the critical features of our data preparation process is the ability to handle missing
@@ -81,10 +81,10 @@ const DataPreparation = () => {
           </Typography>
         </div>
         <div className="w-full">
-          <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+          <Typography variant="body" className="mt-8  font-semibold">
             Unlock Insights Smoothly with Visualization.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Our data preparation process allows you to visualize your data through interactive visualizations
             that enable you to easily see patterns, trends, and anomalies in your data. This helps to make it
             easier to identify any issues with your data and to get a better understanding of your data before

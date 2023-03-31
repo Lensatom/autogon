@@ -23,7 +23,7 @@ const SoftwareEngineers = () => {
           >
             SOFTWARE ENGINEERS
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Welcome to Autogon, your solution for software engineering! AutoGon's innovative AI Cloud
             platform helps you establish a dependable end-to-end AI pipeline that you can bank on.
           </Typography>
@@ -66,13 +66,13 @@ const SoftwareEngineers = () => {
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
         flex
         id=""
         // direction="row-reverse"
       >
         <div className="w-full">
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             <ul className="list-disc flex flex-col gap-3">
               <li>
                 <span className="font-semibold">Simplifying the Model Building Process</span><br />

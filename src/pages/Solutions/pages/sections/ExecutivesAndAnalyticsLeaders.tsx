@@ -24,7 +24,7 @@ const ExecutivesAndAnalyticsLeaders = () => {
           >
             EXECUTIVES & ANALYTICS LEADERS
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Join forces with the premier provider of automated machine learning to discover innovative
             ways to incorporate AI and cultivate a data-driven decision-making mindset throughout
             your organization.
@@ -68,16 +68,16 @@ const ExecutivesAndAnalyticsLeaders = () => {
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
         flex
         id="executives"
         // direction="row-reverse"
       >
         <div className="w-full">
-          <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+          <Typography variant="body" className="mt-8  font-semibold">
             With our AutoGon, executive and analytics leaders can:
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             <ol className="list-decimal flex flex-col gap-3">
               <li>
                 <span className="font-semibold">Boost and Streamline Efficiency: </span><br />

@@ -6,15 +6,19 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { BrowserRouter } from "react-router-dom";
 import CookieConsent from "react-cookie-consent";
-import { Typography } from "./components";
+import { Button, Typography } from "./components";
 import { HiOutlineCog } from "react-icons/hi";
 // @ts-ignore: explanation here
 import TawkMessengerReact from '@tawk.to/tawk-messenger-react';
+import { NavLink } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
+      <Button className="fixed lg:hidden bottom-5 left-5">
+        <NavLink to='/request'>Request a demo</NavLink>
+      </Button>
       <div className="App">
         <TawkMessengerReact
           propertyId="6404981031ebfa0fe7f0c720"

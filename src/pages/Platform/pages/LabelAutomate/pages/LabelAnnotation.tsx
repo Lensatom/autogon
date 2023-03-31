@@ -86,7 +86,7 @@ export const LabelAnnotationPage = () => {
           >
             Customizable interfaces for all your data
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography isDarkMode variant="body" className="mt-8 ">
             Kili natively supports image, video, text, PDF documents, satellite
             imagery, and conversations. Leverage advanced UX that speeds up
             labeling and prevents tagging errors. Customize interfaces and
@@ -121,7 +121,7 @@ export const LabelAnnotationPage = () => {
           >
             Powerful workflows for fast & accurate annotation
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography isDarkMode variant="body" className="mt-8 ">
             Control your labeling queue to prioritize assets, assign assets to
             specific labelers or add validation rules. Set a review pipeline to
             spot inconsistencies and send assets back to the labelers.
@@ -155,7 +155,7 @@ export const LabelAnnotationPage = () => {
           >
             Automation tools to speed-up labeling
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography isDarkMode variant="body" className="mt-8 ">
             Apply interactive segmentation and tracking to accelerate labeling
             without compromising quality. Leverage your own-model predictions to
             pre-label. Use active learning to focus on human labeling and review
@@ -190,7 +190,7 @@ export const LabelAnnotationPage = () => {
           >
             Analytics & Reporting
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography isDarkMode variant="body" className="mt-8 ">
             Monitor your collaborative data labeling projects to ensure project
             progress and label accuracy at scale. Diagnose productivity and
             quality problems, and take corrective action.

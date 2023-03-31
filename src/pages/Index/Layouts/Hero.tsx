@@ -11,7 +11,7 @@ export const HeroPage = () => {
       <Typography
         align="center"
         variant="display"
-        className="z-[5] mx-auto lg:w-[60%] mb-8 text-secondary font-warp font-thin"
+        className="z-[5] mx-auto lg:w-3/4 mb-8 text-secondary font-warp font-thin"
       >
         Artificial Intelligence Platform for Creatives
       </Typography>

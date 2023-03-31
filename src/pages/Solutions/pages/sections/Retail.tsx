@@ -11,23 +11,48 @@ const Retail = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-8 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="retail"
         // direction="row-reverse"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
             variant="title"
             className="font-semibold"
           >
             Retail
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8">
             An AI platform designed for the retail industry offers retailers a solution to tackle
             current challenges and seize future opportunities. By delivering insightful and impactful
             data, AutoGon empowers retailers to drive significant changes and advancements in the industry.
           </Typography>
+          <div className="flex gap-5">
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
+        </div>
+        <div className="w-full">
+          <img
+            src={RetailImage}
+            className="w-full object-contain"
+          />
+        </div>
+      </Container>
+      <Container
+        background
+        className={`${display} bg-screen flex-col items-start lg:!px-44 pb-16 lg:pt-10`}
+        flex
+        id="healthcare"
+        // direction="row-reverse"
+      >
+        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
@@ -46,39 +71,13 @@ const Retail = () => {
             with its user-friendly drag-and-drop interface. As a result, retail organizations can
             save valuable time and resources.
           </Typography>
-          <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
-            <Button
-              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
-              variant="outline"
-              className="mt-9"
-            >
-              Read {display === 'hidden' ? 'more' : 'less'}
-            </Button>
-          </div>
-        </div>
-        <div className="w-full">
-          <img
-            src={RetailImage}
-            className="w-full object-contain rounded-xl"
-          />
-        </div>
-      </Container>
-      <Container
-        background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
-        flex
-        id="healthcare"
-        // direction="row-reverse"
-      >
-        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
           >
             Use cases of the Nocode AI platform for Retail Providers
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Retail is becoming more multifaceted, connected, agile, competitive,
             and, most importantly, responsive to the constantly changing demands
             of the empowered consumer. The no-code AI Platform for Retail provides
@@ -94,7 +93,6 @@ const Retail = () => {
               </li>
             </ol>
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <Typography variant="body" className="mt-8">
@@ -125,6 +123,13 @@ const Retail = () => {
               </li>
             </ol>
           </Typography>
+          <Button
+            onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+            variant="outline"
+            className="mt-9"
+          >
+            Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

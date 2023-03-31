@@ -14,3 +14,9 @@ td {
   justify-content: center;
   align-items: center;
 }
+ol li{
+  padding: 6px 0px;
+}
+ol ul li {
+  padding: 3px 0px;
+}

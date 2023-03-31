@@ -21,7 +21,7 @@ const DragNDrop = () => {
           >
             DragNDrop AI
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Build complex models quickly, and leverage the power of AI and machine
             learning without any technical background.
           </Typography>
@@ -31,7 +31,7 @@ const DragNDrop = () => {
           >
             Revolutionize Your Data Analysis - DragNDrop AI, The Code-Free Way to AI Success!
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Our drag-and-drop interface makes it easy for you to create powerful machine-learning solutions,
             even if you have no prior coding or algorithm knowledge. Simply bring your data and let Autogon
             do the rest. AutoGon's drag-and-drop interface enables you to build and deploy models in
@@ -70,7 +70,7 @@ const DragNDrop = () => {
           >
             Release the Power of Your Data with AutoGon: Building Models Made Simple.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             AutoGon supports a variety of use cases, from natural language processing and image
             recognition to recommendation systems and time series analysis. With pre-built templates
             and customizable blocks, you can start building your model immediately, and our platform
@@ -79,10 +79,10 @@ const DragNDrop = () => {
           </Typography>
         </div>
         <div className="w-full">
-          <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+          <Typography variant="body" className="mt-8  font-semibold">
           Effortlessly build AI models with DragNDrop AI - where user-friendliness meets expert support.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             DragNDrop AI is the ideal platform for organizations and individuals who want to harness
             the power of AI and machine learning but need more technical expertise or resources. One
             of the best things about DragNDrop AI is how user-friendly it is. Autogon is intuitive,

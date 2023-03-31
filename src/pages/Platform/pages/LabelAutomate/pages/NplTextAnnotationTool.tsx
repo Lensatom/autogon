@@ -163,7 +163,7 @@ export const NplTextAnnotationTool = () => {
           >
             Generate High Quality Text Annotation
           </Typography>
-          <Typography isDarkMode variant="body" className="mt-8 lg:w-[80%]">
+          <Typography isDarkMode variant="body" className="mt-8 ">
             Identify the right data to annotate to maximize your model's
             performance. Streamline collaboration between labelers, reviewers,
             and MLEs to quickly iterate on your text annotation projects.

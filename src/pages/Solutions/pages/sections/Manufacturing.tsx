@@ -11,29 +11,48 @@ const Manufacturing = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row-reverse gap-8 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 lg:gap-0 items-center !px-0"
         flex
         id="manufacturing"
         // direction="row-reverse"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
             variant="title"
             className="font-semibold"
           >
             MANUFACTURING
           </Typography>
-          <Typography
-            variant="body"
-            className="font-semibold mt-8"
-          >
-            No-code Platform for Manufacturing
-          </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8">
             AutoGon's no-code platform for Manufacturing is specifically designed for today's
             manufacturing challenges and opportunities and lays the groundwork for the next generation
             of intelligent businesses.
           </Typography>
+          <div className="flex gap-5">
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
+        </div>
+        <div className="w-full">
+          <img
+            src={ManufacturingImage}
+            className="w-full object-contain rounded-x"
+          />
+        </div>
+      </Container>
+      <Container
+        background
+        className={`${display} bg-screen flex-col items-start lg:!px-44 pb-16 lg:pt-10`}
+        flex
+        id="healthcare"
+        // direction="row-reverse"
+      >
+        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
@@ -50,39 +69,13 @@ const Manufacturing = () => {
             The platform's drag-and-drop interface makes it easy for users to create models quickly,
             saving organizations time and money.
           </Typography>
-          <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
-            <Button
-              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
-              variant="outline"
-              className="mt-9"
-            >
-              Read {display === 'hidden' ? 'more' : 'less'}
-            </Button>
-          </div>
-        </div>
-        <div className="w-full">
-          <img
-            src={ManufacturingImage}
-            className="w-full object-contain rounded-xl"
-          />
-        </div>
-      </Container>
-      <Container
-        background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
-        flex
-        id="healthcare"
-        // direction="row-reverse"
-      >
-        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
           >
             Optimize every aspect of your operations
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             No-code platforms have several valuable use cases in the Manufacturing sector,
             including automating manual processes, creating custom applications, and
             streamlining data management. No-code platforms enable manufacturers to quickly
@@ -101,7 +94,6 @@ const Manufacturing = () => {
               </li>
             </ol>
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <Typography variant="body" className="mt-8">
@@ -132,6 +124,13 @@ const Manufacturing = () => {
               </li>
             </ol>
           </Typography>
+          <Button
+            onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+            variant="outline"
+            className="mt-9"
+          >
+            Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

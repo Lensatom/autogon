@@ -13,13 +13,13 @@ export const Solutions = () => {
 
       <Container
         background
-        className="bg-screen pt-[10rem] lg:pt-[8rem] pb-28"
+        className="bg-screen w-full h-screen pt-[10rem] lg:pt-[8rem] pb-28"
       >
         <BreadCrumb />
         <Typography
           align="center"
           variant="display"
-          className="mx-auto mt-20 lg:w-2/3"
+          className="mx-auto mt-20 lg:w-3/4"
         >
           Solutions designed for industry-specific
         </Typography>
@@ -35,21 +35,16 @@ export const Solutions = () => {
         </Typography>
       </Container>
 
-      <Banking />
-
-      <Healthcare />
-
-      <Manufacturing />
-
-      <Retail />
-
-      <FinancialServices />
-
-      <OilAndGas />
-
-      <PublicSector />
-
-      <Sports /><br /><br /><br />
+      <div className="flex flex-col gap-8 lg:gap-0 bg-screen">
+        <Banking />
+        <Healthcare />
+        <Manufacturing />
+        <Retail />
+        <FinancialServices />
+        <OilAndGas />
+        <PublicSector />
+        <Sports />
+      </div><br />
 
       <Container
         isLightDarkMode

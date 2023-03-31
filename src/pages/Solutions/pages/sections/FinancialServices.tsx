@@ -11,12 +11,12 @@ const FinancialServices = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row-reverse gap-8 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 lg:gap-0 items-center !px-0"
         flex
         id="financial-services"
         // direction="row-reverse"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
              
             variant="title"
@@ -24,20 +24,38 @@ const FinancialServices = () => {
           >
             Financial Services
           </Typography>
-          <Typography
-             
-            variant="body"
-            className="font-semibold mt-8"
-          >
-            AutoGon for Financial Services
-          </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8">
             Financial Services AI enables banks and financial institutions to handle
             increasing regulations and competitive pressures using trustworthy and
             comprehensible artificial intelligence. This technology can be deployed
             at any location, including on-site, allowing financial organizations to
             utilize AI to address their challenges confidently.
           </Typography>
+          <div className="flex gap-5">
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
+        </div>
+        <div className="w-full">
+          <img
+            src={FinancialServicesImage}
+            className="w-full object-contain"
+          />
+        </div>
+      </Container>
+      <Container
+        background
+        className={`${display} bg-screen flex-col items-start lg:!px-44 pb-16 lg:pt-10`}
+        flex
+        id="healthcare"
+        // direction="row-reverse"
+      >
+        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
@@ -52,39 +70,13 @@ const FinancialServices = () => {
             risks, and elevate customer satisfaction. In this section, we will examine the
             advantages that the financial sector can gain from a no-code AI cloud platform.
           </Typography>
-          <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
-            <Button
-              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
-              variant="outline"
-              className="mt-9"
-            >
-              Read {display === 'hidden' ? 'more' : 'less'}
-            </Button>
-          </div>
-        </div>
-        <div className="w-full">
-          <img
-            src={FinancialServicesImage}
-            className="w-full object-contain rounded-xl"
-          />
-        </div>
-      </Container>
-      <Container
-        background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
-        flex
-        id="healthcare"
-        // direction="row-reverse"
-      >
-        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
           >
             Use cases of AI for Financial Service Providers
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             <ul className="list-disc flex flex-col gap-3">
               <li>
                 <span className="font-semibold">Simplify Operations and Increase Efficiency</span><br />
@@ -105,7 +97,6 @@ const FinancialServices = () => {
               </li>
             </ul>
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <Typography variant="body" className="mt-8">
@@ -148,6 +139,13 @@ const FinancialServices = () => {
               </li>
             </ul>
           </Typography>
+          <Button
+            onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+            variant="outline"
+            className="mt-9"
+          >
+            Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

@@ -21,7 +21,7 @@ const AutoML = () => {
           >
             Auto ML
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Supplement your expertise with extraordinary automation.
             Create and set up best-in-class machine learning models
             to maximize the value of AI in your organization.
@@ -57,7 +57,7 @@ const AutoML = () => {
           >
             Unleash the Power of Machine Learning: With AutoGon, Data Science is for Everyone!
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Deploying your models has never been easier. With a single click or line of code,
             you can take your models from development to production and operationalize AI across
             your organization. Anyone can easily create accurate and effective models regardless
@@ -72,7 +72,7 @@ const AutoML = () => {
           >
             Simplify Your Model Building: Let AutoML do the Heavy Lifting!
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             AutoML uses a combination of algorithms and machine learning techniques to automate
             the process of model building. It starts by analyzing your data and identifying the
             most appropriate algorithms and methods. Then, it automatically trains, validates,
@@ -82,20 +82,20 @@ const AutoML = () => {
           </Typography>
         </div>
         <div className="w-full">
-          <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+          <Typography variant="body" className="mt-8  font-semibold">
             Empower your predictions with the ease of AutoML - Machine Learning for all, code-free!
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             AutoML is the future of machine learning and AI, changing how organizations approach
             data science and predictive modeling.  With our bias testing and customizable
             compliance documentation, you can have peace of mind knowing that your AI solutions
             are reliable and ethical. You can now develop and train models in a fraction of the
             time without writing a single line of code.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+          <Typography variant="body" className="mt-8  font-semibold">
             Unlock the Insights in Your Data - AutoML, the Smart Way to Build Models!
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             AutoGon offers cutting-edge AutoML technology that automates the process of
             building machine-learning models, allowing you to focus on what matters –
             understanding and acting on your data. With a drag-and-drop interface, AutoGon

@@ -21,7 +21,7 @@ const NoCodeAIApp = () => {
           >
             No-code AI App
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Create AI-powered applications to maximize the return on your machine learning investments.
           </Typography>
           <div className="flex gap-5">
@@ -49,7 +49,7 @@ const NoCodeAIApp = () => {
         flex
       >
         <div className="w-full">
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Converting installed models into simple, usable decision-intelligence solutions for front-line
             business users is one of the challenges organizations face when scaling AI. Everyone, regardless
             of industry or background, should have access to the power of AI. That's why we built a platform
@@ -62,7 +62,7 @@ const NoCodeAIApp = () => {
           >
             Transform Your AI Vision into Reality with Our No-code AI Apps.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Our No-code AI Apps platform is the future of AI development, allowing you to benefit from the
             most recent advances in machine learning, deep learning, and computer vision without hassle.
             Without worrying about the underlying technicalities, you can easily design and implement complex
@@ -71,19 +71,19 @@ const NoCodeAIApp = () => {
           </Typography>
         </div>
         <div className="w-full">
-          <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+          <Typography variant="body" className="mt-8  font-semibold">
             Simplify Integration, Iteration, and Collaboration
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Autogon provides a wide range of pre-trained AI models and components and a robust API that allows
             you to integrate your AI models with any other software or platform you use. Iterate and improve ML
             models by involving your business community and sharing results with your AI consumers in an
             easy-to-use app.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+          <Typography variant="body" className="mt-8  font-semibold">
             Create Powerful AI Applications in Record Time
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Transform any deployed model into a secure AI application in minutes; utilize our pre-built
             templates and drag-and-drop widgets to configure your apps quickly; there is no need for a
             single line of code. Select the model features and data visualizations your app users will

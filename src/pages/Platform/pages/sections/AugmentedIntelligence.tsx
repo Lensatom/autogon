@@ -22,10 +22,10 @@ const AugmentedIntelligence = () => {
           >
             AUGMENTED INTELLIGENCE
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Empowering Your Business with AI
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Autogon' unique capability to explore and incorporate both human and artificial intelligence
             makes it even more powerful. Autogon (AI) remains the best solution to overcome manual processes
             and keep up with the fast-paced demands of the modern business world. By leveraging the power of
@@ -63,7 +63,7 @@ const AugmentedIntelligence = () => {
           >
             Get a Robust Insight into How Augmented Intelligence Works
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             At the core of Autogon is the technology of Augmented Intelligence. Autogon is built on
             machine learning principles, allowing it to learn from data and make predictions based
             on that learning.<br />
@@ -80,7 +80,7 @@ const AugmentedIntelligence = () => {
           >
             Build AI Models in Minutes with Autogon
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Autogon is designed to make AI accessible and manageable for businesses of all sizes.
             With our intuitive drag-and-drop interface, you can build AI models in minutes without
             any prior knowledge or technical skills.<br />
@@ -88,10 +88,10 @@ const AugmentedIntelligence = () => {
             scaling your business. Whether you want to automate tedious tasks, improve customer service,
             or gain valuable insights, our platform is your first stop.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+          <Typography variant="body" className="mt-8  font-semibold">
             <a href="http://console.autogon.ai/">Get started</a> Today
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Take advantage of the benefits of Augmented Intelligence. <a href="http://console.autogon.ai/">Get started</a> today and see how
             Autogon can transform your experience.
           </Typography>

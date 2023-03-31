@@ -23,7 +23,7 @@ const ItOperations = () => {
           >
             IT OPERATIONS
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Maximize your machine learning potential with Autogon. Unsuccessful
             AI projects can impact your bottom line and undermine your big data investments.
             Autogon streamlines the expertise of world-renowned data scientists into a
@@ -65,7 +65,7 @@ const ItOperations = () => {
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
         flex
         id="healthcare"
         // direction="row-reverse"
@@ -77,7 +77,7 @@ const ItOperations = () => {
           >
             Benefits to IT Operations
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             AutoGon is programmed to meet the IT operations' needs and the organizations
             they support. It is a no-code platform that allows users and organizations
             to build models through a simple drag-and-drop process. This means you don't
@@ -85,7 +85,7 @@ const ItOperations = () => {
             quickly and easily create models that deliver valuable insights and drive
             business outcomes.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             <ul className="list-decimal flex flex-col gap-3">
               <li>
                 <span className="font-semibold">Deploy with zero code: </span>

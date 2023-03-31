@@ -78,7 +78,7 @@ export const PlatformPage = () => {
         <Typography
           align="center"
           variant="display"
-          className="mx-auto mt-36 lg:w-[80%]"
+          className="mx-auto mt-36 "
         >
           The most advanced platform for enterprise AI
         </Typography>

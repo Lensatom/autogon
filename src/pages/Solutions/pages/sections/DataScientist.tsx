@@ -23,7 +23,7 @@ const DataScientist = () => {
           >
             DATA SCIENTISTS
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Expand your Expertise with Unmatched Capabilities and Resources.
             Autogon AI Cloud - A Have n for Data Scientists, Built by Data Scientists.
           </Typography>
@@ -61,7 +61,7 @@ const DataScientist = () => {
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
         flex
         id="healthcare"
         // direction="row-reverse"
@@ -73,7 +73,7 @@ const DataScientist = () => {
           >
             Built by Data Scientists for the next generation of Data Scientists
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             AutoGon provides a one-of-a-kind solution for data scientists who want to build models
             and derive insights from their data while maintaining the quality and accuracy of their
             work. You can build models quickly and easily with a no-code approach without spending
@@ -81,7 +81,7 @@ const DataScientist = () => {
             understanding your data, identifying key trends and patterns, and communicating your
             findings to your stakeholders.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Our platform also offers the unique expertise of our team of data scientists, providing
             insights from professionals with real-world experience in deploying AI to solve complex
             business challenges. You'll be able to build with your preferred tools and languages,
@@ -89,7 +89,7 @@ const DataScientist = () => {
             With Autogon, you can innovate and experiment faster, taking advantage of the power of our
             AI Cloud platform and delivering unique insights from any data.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             <ul className="list-disc flex flex-col gap-3">
             </ul>
           </Typography>

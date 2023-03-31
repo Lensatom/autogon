@@ -21,7 +21,7 @@ const AutomatedTimeSeries = () => {
           >
             Automated Time Series
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Design, deploy, and maintain high-impact forecasts across your organization with convenience.
           </Typography>
           <div className="flex gap-5">
@@ -55,7 +55,7 @@ const AutomatedTimeSeries = () => {
           >
             AutoGon: Simplifying AI, Revolutionizing Predictions.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             AutoGon, a leading machine learning and AI cloud platform has made it simpler and faster for users
             and organizations to build models. The Automated Time Series feature is a unique and innovative
             feature that simplifies the process of analyzing time-based data and making accurate predictions.
@@ -71,7 +71,7 @@ const AutomatedTimeSeries = () => {
           >
             Get Accurate Forecasts at Scale
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Quickly identify trends, patterns, and anomalies in your data, and make accurate predictions
             about future trends and values. Autogon offers a wide range of customization options, so you
             can fine-tune your models to meet your specific needs. You can choose from various algorithms,
@@ -81,19 +81,19 @@ const AutomatedTimeSeries = () => {
           </Typography>
         </div>
         <div className="w-full">
-          <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+          <Typography variant="body" className="mt-8  font-semibold">
             Empower Your Time Series Analysis with Automated Time Series: Simplify, Predict, Succeed.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Whether you're a business owner, data analyst, or machine learning expert, Automated Time Series
             is the perfect solution for all your time series analysis needs. Start building and training your
             models and see the difference that our platform can make for your organization. You will be impressed
             with the power and ease of Automated Time Series.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+          <Typography variant="body" className="mt-8  font-semibold">
             Get Real-Time Insights with Nowcasting
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Quickly develop models that estimate current conditions and help you understand factors contributing
             to those conditions at that exact moment. Use nowcasting to make critical decisions, like determining
             asset pricing based on current market conditions. AutoGon Automated Time Series can handle series with

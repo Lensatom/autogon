@@ -11,7 +11,7 @@ const BusinessAnalyst = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row-reverse gap-8 items-center"
+        className="bg-screen pt-32 flex-col-reverse lg:flex-row-reverse gap-8 items-center lg:items-start"
         flex
         id="business-analysis"
         // direction="row-reverse"
@@ -23,7 +23,7 @@ const BusinessAnalyst = () => {
           >
             BUSINESS ANALYSTS
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             As a business analyst, you play a critical role in helping organizations make
             data-driven decisions. With the rise of artificial intelligence, you must keep
             up with the latest tools and technologies to help you do your job better, faster,
@@ -67,7 +67,7 @@ const BusinessAnalyst = () => {
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
         flex
         id="healthcare"
         // direction="row-reverse"
@@ -79,7 +79,7 @@ const BusinessAnalyst = () => {
           >
             Use cases of Autogon
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             <ul className="list-decimal flex flex-col gap-3">
               <li>
                 <span className="font-semibold">Data exploration made seamless: </span>

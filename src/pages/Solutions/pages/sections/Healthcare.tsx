@@ -11,26 +11,19 @@ const Healthcare = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-3 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="healthcare"
         // direction="row-reverse"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
             variant="title"
             className="font-semibold"
           >
             HEALTHCARE
           </Typography>
-          <Typography
-             
-            variant="body"
-            className="font-semibold mt-8"
-          >
-            AutoGon for Healthcare
-          </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Unleash the power of AI in healthcare with Autogon!
             <span>
               Our fancy technology is crafted with love to tackle the unique challenges
@@ -39,21 +32,7 @@ const Healthcare = () => {
             No more guesswork, no more long hours pouring over data - with Autogon, you'll
             have faster, smarter and more accurate answers at your fingertips.
           </Typography>
-          <Typography
-            variant="body"
-            className="font-semibold mt-8"
-          >
-            Machine Learning in HealthCare
-          </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
-            The healthcare industry is one of the world's most dynamic and rapidly evolving
-            sectors. Healthcare organizations are constantly looking for new and innovative ways
-            to improve their operations and services to meet the growing demand for better and
-            more efficient patient care. This is where a machine learning and AI cloud, the
-            no-code platform, can help to transform the industry.
-          </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
@@ -66,13 +45,13 @@ const Healthcare = () => {
         <div className="w-full">
           <img
             src={HealthcareImage}
-            className="w-full object-contain rounded-xl"
+            className="w-full object-contain"
           />
         </div>
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
         flex
         id="healthcare"
         // direction="row-reverse"
@@ -82,9 +61,22 @@ const Healthcare = () => {
             variant="body"
             className="font-semibold mt-8"
           >
+            Machine Learning in HealthCare
+          </Typography>
+          <Typography variant="body" className="mt-8">
+            The healthcare industry is one of the world's most dynamic and rapidly evolving
+            sectors. Healthcare organizations are constantly looking for new and innovative ways
+            to improve their operations and services to meet the growing demand for better and
+            more efficient patient care. This is where a machine learning and AI cloud, the
+            no-code platform, can help to transform the industry.
+          </Typography>
+          <Typography
+            variant="body"
+            className="font-semibold mt-8"
+          >
             Use Cases of AI Cloud Platforms in Healthcare
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-full">
             AI cloud platforms in healthcare have a wide range of use cases, including but not
             limited to data analysis, drug discovery, predictive maintenance, and personalized
             medicine. By leveraging cloud computing and AI technologies, healthcare organizations
@@ -112,10 +104,9 @@ const Healthcare = () => {
               </li>
             </ol>
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
-          <Typography variant="body" className="mt-8">
+          <Typography variant="body" className="">
             <ol className="list-decimal flex flex-col gap-3" start={3}>
               <li>
                 Improved Data Analysis: AutoGon's Machine learning and AI cloud solutions can help
@@ -154,6 +145,13 @@ const Healthcare = () => {
               </li>
             </ol>
           </Typography>
+          <Button
+            onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+            variant="outline"
+            className="mt-9"
+          >
+            Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

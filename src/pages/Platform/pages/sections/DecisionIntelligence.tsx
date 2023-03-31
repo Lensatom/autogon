@@ -22,10 +22,10 @@ const DecisionIntelligence = () => {
           >
             DECISION INTELLIGENCE
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+          <Typography variant="body" className="mt-8  font-semibold">
             Revolutionize Your Decision-Making Technique with Autogon's Decision Intelligence
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             You don't need to spend a time-consuming and complicated process building models for
             your business decisions. Make data-driven decisions easily and quickly with our Decision
             Intelligence solution.
@@ -61,7 +61,7 @@ const DecisionIntelligence = () => {
           >
             Harness the power of machine learning to make informed decisions.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Unlock data's potential and transform it into actionable insights with machine learning.
             Say goodbye to manual analysis and hello to real-time, accurate predictions with our cutting-edge
             technology. With Autogon, you can confidently make data-driven decisions and stay ahead of the
@@ -73,7 +73,7 @@ const DecisionIntelligence = () => {
           >
             <a href="http://console.autogon.ai/">Get started</a> right away with a range of pre-built models
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             <ul>
               <li>Predict customer behavior</li>
               <li>Optimize supply chain processes</li>
@@ -82,10 +82,10 @@ const DecisionIntelligence = () => {
           </Typography>
         </div>
         <div className="w-full">
-          <Typography variant="body" className="mt-8 lg:w-[80%] font-semibold">
+          <Typography variant="body" className="mt-8  font-semibold">
             Collaborate with your team to create and improve models.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Autogon offers collaboration features that make it easy for teams to work together
             to build and refine models. With the ability to share and review models, teams can
             collaborate to make better decisions and achieve their goals faster.

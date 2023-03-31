@@ -28,7 +28,7 @@ export const Blog = () => {
 
   return (
     <Container isDarkMode background className="pt-5">
-      <div className="lg:w-[80%] mx-auto pb-20">
+      <div className=" mx-auto pb-20">
         <Typography
           isDarkMode
           align="center"

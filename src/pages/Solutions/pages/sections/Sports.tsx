@@ -11,30 +11,49 @@ const Sports = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-8 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="sports"
         // direction="row-reverse"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
             variant="title"
             className="font-semibold"
           >
             Sports
           </Typography>
-          <Typography
-            variant="body"
-            className="font-semibold mt-8"
-          >
-            Outscore Your Competitors with AI and Machine Learning!
-          </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 lg:w-full">
             As the sports industry continues to evolve, technology plays an increasingly important role
             in improving performance, enhancing fan engagement, and streamlining operations. With the rise
             of machine intelligence and AI, there is now a powerful tool that organizations in the sports
             sector can use to gain a competitive advantage and unlock new opportunities. See how AutoGon can help
           </Typography>
+          <div className="flex gap-5">
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
+        </div>
+        <div className="w-full">
+          <img
+            src={SportsImage}
+            className="w-full object-contain"
+          />
+        </div>
+      </Container>
+      <Container
+        background
+        className={`${display} bg-screen flex-col items-start lg:!px-44 pb-16 lg:pt-10`}
+        flex
+        id="healthcare"
+        // direction="row-reverse"
+      >
+        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
@@ -51,46 +70,20 @@ const Sports = () => {
             to combine AI, machine learning, and sports to power insights and decisions on and off
             the field.
           </Typography>
-          <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
-            <Button
-              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
-              variant="outline"
-              className="mt-9"
-            >
-              Read {display === 'hidden' ? 'more' : 'less'}
-            </Button>
-          </div>
-        </div>
-        <div className="w-full">
-          <img
-            src={SportsImage}
-            className="w-full object-contain rounded-xl"
-          />
-        </div>
-      </Container>
-      <Container
-        background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
-        flex
-        id="healthcare"
-        // direction="row-reverse"
-      >
-        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
           >
             No-code Use Cases In Sports
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 w-full">
             AI and machine intelligence can analyze large amounts of data and turn it into actionable
             insights. In the sports sector, this can be used to track player performance, identify
             gameplay trends, and predict future outcomes. From unlocking new insights and enhancing
             the fan experience to streamlining operations and reducing costs, AutoGon's no-code
             solution is poised to revolutionize how the industry operates.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             <ul className="list-disc flex flex-col gap-3">
               <li>
                 <span className="font-semibold">Player statistics Analysis</span><br />
@@ -111,7 +104,6 @@ const Sports = () => {
               </li>
             </ul>
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <Typography variant="body" className="mt-8">
@@ -146,6 +138,13 @@ const Sports = () => {
               </li>
             </ul>
           </Typography>
+          <Button
+            onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+            variant="outline"
+            className="mt-9"
+          >
+            Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

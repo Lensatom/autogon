@@ -11,38 +11,23 @@ const Banking = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row-reverse gap-8 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 lg:gap-0 items-center !px-0"
         flex
         id="banking"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
             variant="title"
             className="font-semibold"
           >
             AutoGon for Banking
           </Typography>
-          <Typography
-             
-            variant="body"
-            className="font-semibold mt-8"
-          >
-            Autogon AI is shaking up the banking world with our super-sleek AI tech!
-
-          </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Technology has largely impacted the banking industry in recent years and allowed
             significant automation, optimization, and customer experience advancements. One of
             the most exciting and promising advancements has been the rise of AI and machine learning.
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
-            AI and machine learning are revolutionizing the banking industry with AutoGon,
-            improving risk management, fraud detection, customer experience, and more.
-            And with the help of a cloud-based, no-code platform, banking organizations can
-            harness these technologies in an efficient and accessible manner.
-          </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
@@ -56,24 +41,29 @@ const Banking = () => {
           <img
             src={BankingImage}
             alt="banking"
-            className="w-full object-contain rounded-xl"
+            className="w-full object-contain"
           />
         </div>
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start lg:!px-44 pb-16 lg:pt-10`}
         flex
       >
         <div className="w-full">
+          <Typography variant="body">
+            AI and machine learning are revolutionizing the banking industry with AutoGon,
+            improving risk management, fraud detection, customer experience, and more.
+            And with the help of a cloud-based, no-code platform, banking organizations can
+            harness these technologies in an efficient and accessible manner.
+          </Typography>
           <Typography
-             
             variant="body"
             className="font-semibold mt-8"
           >
             AI and Machine Learning in Banking with Ease - A Cloud-based, No-Code functionality
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             Our platform is like a personal assistant for banks, helping them streamline
             their operations and deliver top-notch services to their customers, all with a smile.
             By leveraging a cloud-based, no-code platform like AutoGon, organizations in the banking
@@ -88,7 +78,7 @@ const Banking = () => {
           >
             AI Use Cases In Banking
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             <span className="font-semibold">Improve Risk Management: </span>
             With the help of machine learning algorithms, banks can:
             <ul className="list-disc flex flex-col gap-2 mt-2">
@@ -114,7 +104,7 @@ const Banking = () => {
           </Typography>
         </div>
         <div className="w-full">
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             <span className="font-semibold">Personalized Customer Experience: </span>
             AI-powered customer service and marketing help banks
             <ul className="list-disc flex flex-col gap-2 mt-2">
@@ -129,7 +119,7 @@ const Banking = () => {
               </li>
             </ul>
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             <span className="font-semibold">Streamlined Operations: </span>
             Using AutoGon, Banks can utilize Machine learning and AI to:
             <ul className="list-disc flex flex-col gap-2 mt-2">
@@ -144,7 +134,7 @@ const Banking = () => {
               </li>
             </ul>
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             <span className="font-semibold">Increased Speed and Accuracy: </span>
             With the help of machine learning algorithms on AutoGon, banks can:
             <ul className="list-disc flex flex-col gap-2 mt-2">
@@ -159,12 +149,18 @@ const Banking = () => {
               </li>
             </ul>
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-[80%]">
+          <Typography variant="body" className="mt-8 ">
             With AI Platforms for Banking, commercial and retail banks can use data-driven solutions
             to resolve their most pressing challenges while focusing on providing positive customer experiences.
             <a href="http://console.autogon.ai/">Get started</a> with AutoGon today
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+          <Button
+            onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+            variant="outline"
+            className="mt-9"
+          >
+            Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>
