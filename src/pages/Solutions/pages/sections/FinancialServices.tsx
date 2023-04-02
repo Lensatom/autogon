@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import FinancialServicesImage from '../../../../assets/images/financial services.jpg'
+import FinancialServicesImage from '../../../../assets/images/2.jpg'
 import { NavLink } from "react-router-dom";
 
 const FinancialServices = () => {
@@ -11,7 +11,7 @@ const FinancialServices = () => {
     <>
       <Container
         background
-        className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 lg:gap-0 items-center !px-0"
+        className="bg-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="financial-services"
         // direction="row-reverse"

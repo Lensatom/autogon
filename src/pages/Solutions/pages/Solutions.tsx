@@ -44,7 +44,7 @@ export const Solutions = () => {
         <OilAndGas />
         <PublicSector />
         <Sports />
-      </div><br />
+      </div>
 
       <Container
         isLightDarkMode

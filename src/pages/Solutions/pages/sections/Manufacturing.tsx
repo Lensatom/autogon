@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import ManufacturingImage from '../../../../assets/images/manufacturing.jpg'
+import ManufacturingImage from '../../../../assets/images/3.jpg'
 import { NavLink } from "react-router-dom";
 
 const Manufacturing = () => {

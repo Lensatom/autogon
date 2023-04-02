@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import PublicSectorImage from '../../../../assets/images/public sector.jpg'
+import PublicSectorImage from '../../../../assets/images/5.jpg'
 import { NavLink } from "react-router-dom";
 
 const PublicSector = () => {
@@ -11,7 +11,7 @@ const PublicSector = () => {
     <>
       <Container
         background
-        className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 lg:gap-0 items-center !px-0"
+        className="bg-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="public-sector"
         // direction="row-reverse"

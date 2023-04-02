@@ -118,7 +118,7 @@ export const LandingPage = () => {
         align="center"
       >
         <div className="w-full">
-          <Typography variant="header" className="font-semibold">
+          <Typography variant="header" className="font-semibold !font-montserrat">
             NO CODE experience doing the complex but keeping it simple
           </Typography>
           <Typography variant="body" className="mt-8 w-[80%]">
@@ -147,7 +147,7 @@ export const LandingPage = () => {
         align="center"
       >
         <div className="w-full">
-          <Typography variant="header" className="font-semibold">
+          <Typography variant="header" className="font-semibold !font-montserrat">
             Quickly purchase and deploy powerful ML Models for your intended
             usecase
           </Typography>
@@ -176,7 +176,7 @@ export const LandingPage = () => {
         align="center"
       >
         <div className="w-full">
-          <Typography variant="header" className="font-semibold">
+          <Typography variant="header" className="font-semibold !font-montserrat">
             Build custom software experiences with well-documented APIs and
             Integration SDK's
           </Typography>
@@ -207,7 +207,7 @@ export const LandingPage = () => {
         align="center"
       >
         <div className="w-full">
-          <Typography variant="header" className="font-semibold">
+          <Typography variant="header" className="font-semibold !font-montserrat">
             Tap into the power of our AutoML engine
           </Typography>
           <Typography variant="body" className="mt-8 w-[80%]">

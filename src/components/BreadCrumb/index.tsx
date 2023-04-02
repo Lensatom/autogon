@@ -26,7 +26,7 @@ export const BreadCrumb = ({
       aria-label="Breadcrumb"
     >
       <ol className="list-none p-0 inline-flex">
-        <li className="flex items-center">
+        <li className="flex items-center !mt-0">
           <Typography
             isDarkMode={darkMode}
             variant="link"

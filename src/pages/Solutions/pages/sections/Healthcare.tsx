@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import HealthcareImage from '../../../../assets/images/healthcare.jpg'
+import HealthcareImage from '../../../../assets/images/4.jpg'
 import { NavLink } from "react-router-dom";
 
 const Healthcare = () => {

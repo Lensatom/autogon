@@ -1,29 +1,35 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import SportsImage from '../../../../assets/images/sports-tools.jpg'
+import SportsImage from '../../../../assets/images/8.jpg'
 import { NavLink } from "react-router-dom";
 
 const Sports = () => {
   
   const [display, setDisplay] = useState('hidden')
+  const backdrop = {
+    backgroundImage: `url(${SportsImage})`,
+    backgroundPosition: 'top left',
+    backgroundSize: 'cover',
+  }
 
   return (
     <>
       <Container
         background
-        className="bg-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
+        style={backdrop}
+        className="bg-screen !backdrop-brightness-50 relative h-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="sports"
         // direction="row-reverse"
       >
-        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
+        <div className="w-full h-full backdrop-brightness-[0.2] lg:px-[5%] px-5 flex flex-col justify-center">
           <Typography
             variant="title"
-            className="font-semibold"
+            className="font-semibold !text-white"
           >
             Sports
           </Typography>
-          <Typography variant="body" className="mt-8 lg:w-full">
+          <Typography variant="body" className="mt-8 !text-white lg:w-1/2">
             As the sports industry continues to evolve, technology plays an increasingly important role
             in improving performance, enhancing fan engagement, and streamlining operations. With the rise
             of machine intelligence and AI, there is now a powerful tool that organizations in the sports
@@ -33,17 +39,11 @@ const Sports = () => {
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
-              className="mt-9"
+              className="mt-9 !text-gray-300"
             >
               Read {display === 'hidden' ? 'more' : 'less'}
             </Button>
           </div>
-        </div>
-        <div className="w-full">
-          <img
-            src={SportsImage}
-            className="w-full object-contain"
-          />
         </div>
       </Container>
       <Container

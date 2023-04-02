@@ -42,7 +42,7 @@ export const Typography = forwardRef(
         " text-2xl lg:text-6xl font-montserrat font-bold",
       header:
         "font-lora text-2xl lg:text-4xl font-semibold lg:!leading-[50px]",
-      title: "font-lora text-xl md:text-2xl lg:text-3xl font-medium",
+      title: "text-xl uppercase font-montserrat md:text-2xl lg:text-3xl font-medium",
       body: "text-[18px] font-hind leading-[28.8px] -tracking-[0.18px]",
       link: "text-[16px] font-hind leading-[19.2px] -tracking-[0.16px] cursor-pointer",
       caption:

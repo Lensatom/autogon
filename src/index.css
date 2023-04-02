@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+ol li:nth-child(1) {
+  margin-top: 20px;
+}
 table{
   border-collapse: collapse;
 }

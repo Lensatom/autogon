@@ -1,29 +1,35 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import RetailImage from '../../../../assets/images/retail.jpg'
+import RetailImage from '../../../../assets/images/6.jpg'
 import { NavLink } from "react-router-dom";
 
 const Retail = () => {
   
   const [display, setDisplay] = useState('hidden')
+  const backdrop = {
+    backgroundImage: `url(${RetailImage})`,
+    backgroundPosition: 'top left',
+    backgroundSize: 'cover',
+  }
 
   return (
     <>
       <Container
         background
-        className="bg-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
+        style={backdrop}
+        className="bg-screen !backdrop-brightness-50 relative h-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="retail"
         // direction="row-reverse"
       >
-        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
+        <div className="w-full h-full backdrop-brightness-50 lg:px-[5%] px-5 flex flex-col justify-center">
           <Typography
             variant="title"
-            className="font-semibold"
+            className="font-semibold !text-white"
           >
             Retail
           </Typography>
-          <Typography variant="body" className="mt-8">
+          <Typography variant="body" className="mt-8 !text-white w-1/2">
             An AI platform designed for the retail industry offers retailers a solution to tackle
             current challenges and seize future opportunities. By delivering insightful and impactful
             data, AutoGon empowers retailers to drive significant changes and advancements in the industry.
@@ -32,17 +38,11 @@ const Retail = () => {
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
-              className="mt-9"
+              className="mt-9 !text-gray-300"
             >
               Read {display === 'hidden' ? 'more' : 'less'}
             </Button>
           </div>
-        </div>
-        <div className="w-full">
-          <img
-            src={RetailImage}
-            className="w-full object-contain"
-          />
         </div>
       </Container>
       <Container

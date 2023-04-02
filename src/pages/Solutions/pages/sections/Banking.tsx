@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import BankingImage from '../../../../assets/images/BANKING.jpg'
+import BankingImage from '../../../../assets/images/1.jpg'
 import { NavLink } from "react-router-dom";
 
 const Banking = () => {
