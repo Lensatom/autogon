@@ -1,32 +1,34 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import MLOPsImage from '../../../../assets/images/MLOP.jpg';
+import MLOPsImage from '../../../../assets/images/mlop.jpg';
 import { NavLink } from "react-router-dom";
 
 const MLOPs = () => {
   
   const [display, setDisplay] = useState('hidden')
+  const backdrop = {
+    backgroundImage: `url(${MLOPsImage})`,
+    backgroundPosition: 'top left',
+    backgroundSize: 'cover',
+  }
 
   return (
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row-reverse gap-8 items-center"
+        style={backdrop}
+        className="bg-screen !backdrop-brightness-50 relative h-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="mlops"
       >
-        <div className="w-full">
+        <div className="w-full h-full backdrop-brightness-[0.2] lg:px-[5%] px-5 flex flex-col justify-center">
           <Typography
             variant="title"
-            className="font-semibold"
+            className="font-semibold !text-white"
           >
             MLOPs
           </Typography>
-          <Typography variant="body" className="mt-8  font-semibold">
-            Welcome to your premier Machine Learning Operations and Production AI hub.
-            Create and deploy machine learning models that can solve real-world problems.
-          </Typography>
-          <Typography variant="body" className="mt-8 ">
+          <Typography variant="body" className="mt-8 !text-white lg:w-1/2">
             Machine learning operations are the fundamental building blocks of machine learning
             models. With Autogon, you can Unlock the power of AI to tackle complex challenges easily.
             Our intuitive interface empowers you to train, test and deploy ML models with just a few
@@ -35,27 +37,19 @@ const MLOPs = () => {
             a starting point or modify to suit your needs.
           </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
-              className="mt-9"
+              className="mt-9 !text-gray-300"
             >
               Read {display === 'hidden' ? 'more' : 'less'}
             </Button>
           </div>
         </div>
-        <div className="w-full">
-          <img
-            src={MLOPsImage}
-            alt="banking"
-            className="w-full object-contain rounded-xl"
-          />
-        </div>
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start lg:!px-44 pb-16 lg:pt-10`}
         flex
       >
         <div className="w-full">
@@ -116,7 +110,13 @@ const MLOPs = () => {
             a unified environment for the entire machine learning journey, so you can tackle any challenge
             together.
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

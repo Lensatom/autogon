@@ -72,13 +72,13 @@ export const PlatformPage = () => {
 
       <Container
         background
-        className="bg-screen pt-[10rem] lg:pt-[8rem] pb-28"
+        className="h-screen bg-screen pt-[10rem] lg:pt-[8rem]"
       >
         <BreadCrumb />
         <Typography
           align="center"
           variant="display"
-          className="mx-auto mt-36 "
+          className="mx-auto pt-36 lg:w-[80%]"
         >
           The most advanced platform for enterprise AI
         </Typography>
@@ -106,7 +106,7 @@ export const PlatformPage = () => {
 
       <DataVisualization />
 
-      <DataLabelling /><br /><br /><br />
+      <DataLabelling />
 
       <Container
         isLightDarkMode

@@ -1,29 +1,34 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import ItOperationsImage from '../../../../assets/images/it operator.jpg'
+import ItOperationsImage from '../../../../assets/images/itOperator.jpg'
 import { NavLink } from "react-router-dom";
 
 const ItOperations = () => {
   
   const [display, setDisplay] = useState('hidden')
+  const backdrop = {
+    backgroundImage: `url(${ItOperationsImage})`,
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+  }
 
   return (
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row-reverse gap-8 items-center"
+        style={backdrop}
+        className="bg-screen relative h-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="it-operations"
-        // direction="row-reverse"
       >
-        <div className="w-full">
+        <div className="w-full h-full backdrop-brightness-[0.2] lg:px-[5%] px-5 flex flex-col justify-center">
           <Typography
             variant="title"
-            className="font-semibold"
+            className="font-semibold !text-white"
           >
             IT OPERATIONS
           </Typography>
-          <Typography variant="body" className="mt-8 ">
+          <Typography variant="body" className="mt-8 !text-white lg:w-1/2">
             Maximize your machine learning potential with Autogon. Unsuccessful
             AI projects can impact your bottom line and undermine your big data investments.
             Autogon streamlines the expertise of world-renowned data scientists into a
@@ -33,6 +38,25 @@ const ItOperations = () => {
             learning models into production, regardless of the required prediction method,
             whether real-time, batch, or scoring on Hadoop.
           </Typography>
+          <div className="flex gap-5">
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9 !text-gray-300"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
+        </div>
+      </Container>
+      <Container
+        background
+        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
+        flex
+        id="healthcare"
+        // direction="row-reverse"
+      >
+        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
@@ -45,32 +69,6 @@ const ItOperations = () => {
             organization forward, but you also want to do so in a way that is efficient, scalable,
             and cost-effective. This is where AutoGon AI cloud comes in.
           </Typography>
-          <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
-            <Button
-              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
-              variant="outline"
-              className="mt-9"
-            >
-              Read {display === 'hidden' ? 'more' : 'less'}
-            </Button>
-          </div>
-        </div>
-        <div className="w-full">
-          <img
-            src={ItOperationsImage}
-            className="w-full object-contain rounded-xl"
-          />
-        </div>
-      </Container>
-      <Container
-        background
-        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
-        flex
-        id="healthcare"
-        // direction="row-reverse"
-      >
-        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
@@ -95,7 +93,6 @@ const ItOperations = () => {
               </li>
             </ul>
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <Typography variant="body" className="mt-8">
@@ -126,6 +123,13 @@ const ItOperations = () => {
               </li>
             </ol>
           </Typography>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

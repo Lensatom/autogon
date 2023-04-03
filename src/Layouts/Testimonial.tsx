@@ -53,7 +53,7 @@ export const Testimonial = ({ isDarkMode }: TestimonialType) => {
         '"Autogon has been a game changer for our company. Their AI/ML solutions have allowed us to automate processes and gain insights that were previously impossible. Their team of experts provided invaluable guidance throughout the entire process, and we are seeing significant improvements in efficiency and accuracy. We highly recommend Autogon to any company looking to take their business to the next level."',
       name: "John",
       img: "https://a.storyblok.com/f/139616/800x800/1937b81e0c/jellysmack2.jpeg",
-      positionandcompany: "CEO of Fictitious Company A",
+      positionandcompany: "CEO of Innovatex",
     },
     {
       comment:
@@ -67,7 +67,7 @@ export const Testimonial = ({ isDarkMode }: TestimonialType) => {
         '"Autogon\'s AI/ML solutions have been a huge asset to our organization. Their platform has allowed us to gain insights that have led to new business opportunities and increased efficiency. The team at Autogon provided excellent support and guidance throughout the entire process. We highly recommend Autogon to any company looking to stay ahead of the competition."',
       name: "Michael",
       img: "https://a.storyblok.com/f/139616/500x500/3dd69add65/thales.jpeg",
-      positionandcompany: "CTO of Fictitious Company C",
+      positionandcompany: "CTO of Tech Wave",
     },
     // {
     //   comment:

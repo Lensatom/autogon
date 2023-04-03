@@ -11,19 +11,19 @@ const BusinessAnalyst = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row-reverse gap-8 items-center lg:items-start"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 lg:gap-0 items-center !px-0"
         flex
         id="business-analysis"
         // direction="row-reverse"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
             variant="title"
             className="font-semibold"
           >
             BUSINESS ANALYSTS
           </Typography>
-          <Typography variant="body" className="mt-8 ">
+          <Typography variant="body" className="mt-8">
             As a business analyst, you play a critical role in helping organizations make
             data-driven decisions. With the rise of artificial intelligence, you must keep
             up with the latest tools and technologies to help you do your job better, faster,
@@ -33,6 +33,31 @@ const BusinessAnalyst = () => {
             into a Powerhouse.
 
           </Typography>
+          <div className="flex gap-5">
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
+        </div>
+        <div className="w-full">
+          <img
+            src={BusinessAnalystImage}
+            className="w-full object-contain"
+          />
+        </div>
+      </Container>
+      <Container
+        background
+        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
+        flex
+        id="healthcare"
+        // direction="row-reverse"
+      >
+        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
@@ -47,32 +72,6 @@ const BusinessAnalyst = () => {
             the things that matter most, like understanding your data, identifying key trends
             and patterns, and communicating your findings to your stakeholders.
           </Typography>
-          <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
-            <Button
-              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
-              variant="outline"
-              className="mt-9"
-            >
-              Read {display === 'hidden' ? 'more' : 'less'}
-            </Button>
-          </div>
-        </div>
-        <div className="w-full">
-          <img
-            src={BusinessAnalystImage}
-            className="w-full object-contain rounded-xl"
-          />
-        </div>
-      </Container>
-      <Container
-        background
-        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
-        flex
-        id="healthcare"
-        // direction="row-reverse"
-      >
-        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
@@ -99,7 +98,6 @@ const BusinessAnalyst = () => {
               </li>
             </ul>
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <Typography variant="body" className="mt-8">
@@ -123,6 +121,13 @@ const BusinessAnalyst = () => {
               </li>
             </ol>
           </Typography>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

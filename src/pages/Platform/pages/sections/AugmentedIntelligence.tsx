@@ -11,19 +11,16 @@ const AugmentedIntelligence = () => {
     <>
       <Container
         background
-        className="bg-screen flex-col-reverse pt-32 lg:flex-row-reverse gap-8 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 lg:gap-0 items-center !px-0"
         flex
         id="augmented-intelligence"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
             variant="title"
             className="font-semibold"
           >
             AUGMENTED INTELLIGENCE
-          </Typography>
-          <Typography variant="body" className="mt-8 ">
-            Empowering Your Business with AI
           </Typography>
           <Typography variant="body" className="mt-8 ">
             Autogon' unique capability to explore and incorporate both human and artificial intelligence
@@ -33,7 +30,6 @@ const AugmentedIntelligence = () => {
             make better and faster decisions, and stay ahead of the competition.
           </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
@@ -47,13 +43,13 @@ const AugmentedIntelligence = () => {
           <img
             src={AugmentedIntelligenceImage}
             alt="banking"
-            className="w-full object-contain rounded-xl"
+            className="w-full object-contain"
           />
         </div>
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start lg:!px-44 pb-16 lg:pt-10`}
         flex
       >
         <div className="w-full">
@@ -95,6 +91,13 @@ const AugmentedIntelligence = () => {
             Take advantage of the benefits of Augmented Intelligence. <a href="http://console.autogon.ai/">Get started</a> today and see how
             Autogon can transform your experience.
           </Typography>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

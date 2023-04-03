@@ -11,27 +11,17 @@ const DataScientist = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-8 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="data-scientists"
         // direction="row-reverse"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
             variant="title"
             className="font-semibold"
           >
             DATA SCIENTISTS
-          </Typography>
-          <Typography variant="body" className="mt-8 ">
-            Expand your Expertise with Unmatched Capabilities and Resources.
-            Autogon AI Cloud - A Have n for Data Scientists, Built by Data Scientists.
-          </Typography>
-          <Typography
-            variant="body"
-            className="font-semibold mt-8"
-          >
-            One Tool, Endless Possibilities - Satisfy All Your Requirements
           </Typography>
           <Typography variant="body" className="mt-8">
             Maximize Your Team's Potential with AutoGon - Designed to Empower Your Highly
@@ -42,7 +32,6 @@ const DataScientist = () => {
             Tap into the Wealth of Knowledge from Machine learning and AI
           </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
@@ -55,7 +44,7 @@ const DataScientist = () => {
         <div className="w-full">
           <img
             src={DataScientistImage}
-            className="w-full object-contain rounded-xl"
+            className="w-full object-contain"
           />
         </div>
       </Container>
@@ -93,7 +82,6 @@ const DataScientist = () => {
             <ul className="list-disc flex flex-col gap-3">
             </ul>
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
           <Typography variant="body" className="mt-8">
@@ -132,6 +120,13 @@ const DataScientist = () => {
               </li>
             </ol>
           </Typography>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

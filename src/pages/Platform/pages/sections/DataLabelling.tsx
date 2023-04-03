@@ -1,57 +1,52 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import DataLabellingImage from '../../../../assets/images/data labeling.jpg'
+import DataLabellingImage from '../../../../assets/images/dataLabeling.jpg'
 import { NavLink } from "react-router-dom";
 
 const DataLabelling = () => {
   
   const [display, setDisplay] = useState('hidden')
+  const backdrop = {
+    backgroundImage: `url(${DataLabellingImage})`,
+    backgroundPosition: 'top left',
+    backgroundSize: 'cover',
+  }
 
   return (
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-8 items-center"
+        style={backdrop}
+        className="bg-screen !backdrop-brightness-50 relative h-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="data-labelling"
       >
-        <div className="w-full">
+        <div className="w-full h-full backdrop-brightness-[0.2] lg:px-[5%] px-5 flex flex-col justify-center">
           <Typography
             variant="title"
-            className="font-semibold"
+            className="font-semibold !text-white"
           >
             DATA LABELLING
           </Typography>
-          <Typography variant="body" className="mt-8  font-semibold">
-            Unlock the full power of AI and drive innovation in your industry.
-          </Typography>
-          <Typography variant="body" className="mt-8 ">
+          <Typography variant="body" className="mt-8 !text-white lg:w-1/2">
             Creating high-quality training datasets for machine learning models should be simple
             and hassle-free. With Autogon's cloud-based, no-code platform, it's now easier for users
             and organizations to build and label their datasets, all within a short time frame.
           </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
-              className="mt-9"
+              className="mt-9 !text-gray-300"
             >
               Read {display === 'hidden' ? 'more' : 'less'}
             </Button>
           </div>
         </div>
-        <div className="w-full">
-          <img
-            src={DataLabellingImage}
-            alt="banking"
-            className="w-full object-contain rounded-xl"
-          />
-        </div>
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start lg:!px-44 pb-16 lg:pt-10`}
         flex
       >
         <div className="w-full">
@@ -108,7 +103,13 @@ const DataLabelling = () => {
             enables you to analyze your data and generate a custom machine-learning model
             optimized for your specific use case.
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

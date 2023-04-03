@@ -11,19 +11,16 @@ const DecisionIntelligence = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-8 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 lg:gap-0 items-center !px-0"
         flex
         id="decision-intelligence"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
             variant="title"
             className="font-semibold"
           >
             DECISION INTELLIGENCE
-          </Typography>
-          <Typography variant="body" className="mt-8  font-semibold">
-            Revolutionize Your Decision-Making Technique with Autogon's Decision Intelligence
           </Typography>
           <Typography variant="body" className="mt-8 ">
             You don't need to spend a time-consuming and complicated process building models for
@@ -31,7 +28,6 @@ const DecisionIntelligence = () => {
             Intelligence solution.
           </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
@@ -45,13 +41,13 @@ const DecisionIntelligence = () => {
           <img
             src={DataIntelligenceImage}
             alt="banking"
-            className="w-full object-contain rounded-xl"
+            className="w-full object-contain"
           />
         </div>
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start lg:!px-44 pb-16 lg:pt-10`}
         flex
       >
         <div className="w-full">
@@ -90,7 +86,13 @@ const DecisionIntelligence = () => {
             to build and refine models. With the ability to share and review models, teams can
             collaborate to make better decisions and achieve their goals faster.
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

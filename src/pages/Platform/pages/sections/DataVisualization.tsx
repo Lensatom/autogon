@@ -11,11 +11,11 @@ const DataVisualization = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row-reverse gap-8 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="data-visualization"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
             variant="title"
             className="font-semibold"
@@ -23,15 +23,11 @@ const DataVisualization = () => {
             DATA VISUALIZATION
           </Typography>
           <Typography variant="body" className="mt-8 ">
-            Empowering your data journey, one drag and drop at a time.
-          </Typography>
-          <Typography variant="body" className="mt-8 ">
             At Autogon, making sense of data is simple, easy, and enjoyable. Our cloud-based, no-code
             platform enables users and organizations of all sizes to transform their data into meaningful
             insights with a simple drag-and-drop process.
           </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
@@ -45,13 +41,13 @@ const DataVisualization = () => {
           <img
             src={DataVisualizationImage}
             alt="banking"
-            className="w-full object-contain rounded-xl"
+            className="w-full object-contain"
           />
         </div>
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start lg:!px-44 pb-16 lg:pt-10`}
         flex
       >
         <div className="w-full">
@@ -110,7 +106,13 @@ const DataVisualization = () => {
             enables you to analyze your data and generate a custom machine-learning model
             optimized for your specific use case.
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

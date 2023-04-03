@@ -11,12 +11,12 @@ const ExecutivesAndAnalyticsLeaders = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row-reverse gap-8 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="executives"
         // direction="row-reverse"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
              
             variant="title"
@@ -29,6 +29,31 @@ const ExecutivesAndAnalyticsLeaders = () => {
             ways to incorporate AI and cultivate a data-driven decision-making mindset throughout
             your organization.
           </Typography>
+          <div className="flex gap-5">
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
+        </div>
+        <div className="w-full">
+          <img
+            src={ExecutivesAndAnalyticsLeadersImage}
+            className="w-full object-contain"
+          />
+        </div>
+      </Container>
+      <Container
+        background
+        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
+        flex
+        id="executives"
+        // direction="row-reverse"
+      >
+        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
@@ -48,32 +73,6 @@ const ExecutivesAndAnalyticsLeaders = () => {
             interface and advanced algorithms, Autogon provides actionable insights in real-time,
             giving you the power to make informed decisions that drive results.
           </Typography>
-          <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
-            <Button
-              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
-              variant="outline"
-              className="mt-9"
-            >
-              Read {display === 'hidden' ? 'more' : 'less'}
-            </Button>
-          </div>
-        </div>
-        <div className="w-full">
-          <img
-            src={ExecutivesAndAnalyticsLeadersImage}
-            className="w-full object-contain rounded-xl"
-          />
-        </div>
-      </Container>
-      <Container
-        background
-        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
-        flex
-        id="executives"
-        // direction="row-reverse"
-      >
-        <div className="w-full">
           <Typography variant="body" className="mt-8  font-semibold">
             With our AutoGon, executive and analytics leaders can:
           </Typography>
@@ -113,6 +112,13 @@ const ExecutivesAndAnalyticsLeaders = () => {
               </li>
             </ol>
           </Typography>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

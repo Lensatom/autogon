@@ -11,12 +11,12 @@ const SoftwareEngineers = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-8 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse gap-8 lg:gap-0 items-center !px-0"
         flex
         id="software-engineers"
         // direction="row-reverse"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
             variant="title"
             className="font-semibold"
@@ -27,6 +27,31 @@ const SoftwareEngineers = () => {
             Welcome to Autogon, your solution for software engineering! AutoGon's innovative AI Cloud
             platform helps you establish a dependable end-to-end AI pipeline that you can bank on.
           </Typography>
+          <div className="flex gap-5">
+            <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+            </Button>
+          </div>
+        </div>
+        <div className="w-full">
+          <img
+            src={SoftwareEngineersImage}
+            className="w-full object-contain"
+          />
+        </div>
+      </Container>
+      <Container
+        background
+        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
+        flex
+        id=""
+        // direction="row-reverse"
+      >
+        <div className="w-full">
           <Typography
             variant="body"
             className="font-semibold mt-8"
@@ -46,32 +71,6 @@ const SoftwareEngineers = () => {
             Our solution is designed to help you focus on what you do best: writing code, solving problems,
             and building new applications.
           </Typography>
-          <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
-            <Button
-              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
-              variant="outline"
-              className="mt-9"
-            >
-              Read {display === 'hidden' ? 'more' : 'less'}
-            </Button>
-          </div>
-        </div>
-        <div className="w-full">
-          <img
-            src={SoftwareEngineersImage}
-            className="w-full object-contain rounded-xl"
-          />
-        </div>
-      </Container>
-      <Container
-        background
-        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
-        flex
-        id=""
-        // direction="row-reverse"
-      >
-        <div className="w-full">
           <Typography variant="body" className="mt-8 ">
             <ul className="list-disc flex flex-col gap-3">
               <li>
@@ -147,6 +146,13 @@ const SoftwareEngineers = () => {
               </li>
             </ul>
           </Typography>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

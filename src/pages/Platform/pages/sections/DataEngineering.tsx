@@ -11,19 +11,16 @@ const DataEngineering = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-8 items-center"
+        className="bg-screen flex-col-reverse lg:flex-row gap-8 lg:gap-0 items-center !px-0"
         flex
         id="data-engineering"
       >
-        <div className="w-full">
+        <div className="lg:w-[90%] lg:px-[5%] w-full px-5">
           <Typography
             variant="title"
             className="font-semibold"
           >
             DATA ENGINEERING
-          </Typography>
-          <Typography variant="body" className="mt-8  font-semibold">
-            Autogon Data Engineering - The foundation for valuable business decisions.
           </Typography>
           <Typography variant="body" className="mt-8 ">
             Autogon Data Engineering is a new technique for collecting, transforming, and preparing data for
@@ -31,7 +28,6 @@ const DataEngineering = () => {
             results produced by users using these models are accurate, relevant, and valuable business decisions.
           </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
@@ -45,13 +41,13 @@ const DataEngineering = () => {
           <img
             src={DataEngineeringImage}
             alt="banking"
-            className="w-full object-contain rounded-xl"
+            className="w-full object-contain"
           />
         </div>
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start lg:!px-44 pb-16 lg:pt-10`}
         flex
       >
         <div className="w-full">
@@ -134,7 +130,13 @@ const DataEngineering = () => {
             Don't just take our word for it! Schedule a demo with us today and experience the power of
             Autogon AI for yourself. The future is now, and it's time to join the revolution!
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>
