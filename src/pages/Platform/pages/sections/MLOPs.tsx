@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import MLOPsImage from '../../../../assets/images/MLOP.jpg';
+import MLOPsImage from '../../../../assets/images/hand.jpg';
 import { NavLink } from "react-router-dom";
 
 const MLOPs = () => {
