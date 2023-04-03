@@ -96,17 +96,14 @@ export const PlatformPage = () => {
         </Typography>
       </Container>
 
-      <AugmentedIntelligence />
-
-      <DataEngineering />
-
-      <MLOPs />
-
-      <DecisionIntelligence />
-
-      <DataVisualization />
-
-      <DataLabelling />
+      <div className="flex flex-col gap-8 lg:gap-0 bg-screen pb-16 lg:pb-0">
+        <AugmentedIntelligence />
+        <DataEngineering />
+        <MLOPs />
+        <DecisionIntelligence />
+        <DataVisualization />
+        <DataLabelling />
+      </div>
 
       <Container
         isLightDarkMode

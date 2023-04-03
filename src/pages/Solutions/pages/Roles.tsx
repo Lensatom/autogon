@@ -13,13 +13,13 @@ export const Roles = () => {
 
       <Container
         background
-        className="bg-screen pt-[10rem] lg:pt-[8rem] pb-28"
+        className="bg-screen h-screen pt-[10rem] lg:pt-[8rem] pb-28"
       >
         <BreadCrumb />
         <Typography
           align="center"
           variant="display"
-          className="mx-auto mt-16 lg:w-[60%]"
+          className="mx-auto pt-16 lg:w-[60%]"
         >
           Solutions designed for role-specific
         </Typography>
@@ -36,15 +36,13 @@ export const Roles = () => {
         </Typography>
       </Container>
 
-      <BusinessAnalyst />
-
-      <DataScientist />
-
-      <ItOperations />
-
-      <SoftwareEngineers />
-
-      <ExecutivesAndAnalyticsLeaders />
+      <div className="flex flex-col gap-8 lg:gap-0 bg-screen pb-16 lg:pb-0">
+        <BusinessAnalyst />
+        <DataScientist />
+        <ItOperations />
+        <SoftwareEngineers />
+        <ExecutivesAndAnalyticsLeaders />
+      </div>
 
       <Container
         isLightDarkMode

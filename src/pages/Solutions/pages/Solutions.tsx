@@ -35,7 +35,7 @@ export const Solutions = () => {
         </Typography>
       </Container>
 
-      <div className="flex flex-col gap-8 lg:gap-0 bg-screen">
+      <div className="flex flex-col gap-8 lg:gap-0 bg-screen pb-16 lg:pb-0">
         <Banking />
         <Healthcare />
         <Manufacturing />
