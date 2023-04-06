@@ -25,7 +25,6 @@ const NoCodeAIApp = () => {
             Create AI-powered applications to maximize the return on your machine learning investments.
           </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
@@ -90,7 +89,13 @@ const NoCodeAIApp = () => {
             use in their decision-making process. With responsive design, you can create an app once and
             then preview and run it at any resolution on any mobile device or tablet.
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

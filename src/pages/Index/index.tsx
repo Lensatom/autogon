@@ -20,6 +20,7 @@ import SideMlFlow from '../../assets/images/sideMlFlow.png'
 import screenshots from '../../assets/images/screenshot1.png';
 import screenshots1 from '../../assets/images/screenshot2.png';
 import screenshots2 from '../../assets/images/screenshot3.png';
+import snip from '../../assets/images/snip.jpg'
 
 
 const BenefitMobileCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
@@ -77,8 +78,8 @@ export const LandingPage = () => {
           itemProp="contentUrl"
           content="https://www.youtube.com/watch?v=6WC8Ef4nNjE"
         />
-        <div className="reltive first:mx-auto lg:mx-24 mt-16 flex relative overflow-hidden items-center justify-center rounded">
-          <video className='rounded-xl' controls>
+        <div className="reltive first:mx-auto lg:mx-24 mt-16 w-full flex relative overflow-hidden items-center justify-center rounded">
+          <video className='rounded-xl w-full' controls poster={snip}>
             <source src="https://s3.amazonaws.com/cloud.autogonai/autogonai-intro.mp4" type="video/mp4" />
           </video>
         </div>
@@ -113,11 +114,11 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-screen flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-20 gap-10"
+        className="bg-screen flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-20 gap-10 lg:gap-0"
         flex
         align="center"
       >
-        <div className="w-full">
+        <div className="w-full lg:w-3/4">
           <Typography variant="header" className="font-semibold !font-montserrat">
             NO CODE experience doing the complex but keeping it simple
           </Typography>
@@ -142,11 +143,11 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-screen flex-col-reverse lg:flex-row-reverse lg:pt-20 lg:pb-28 gap-10"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse pt-20 pb-10 lg:pb-20 gap-10 lg:gap-5"
         flex
         align="center"
       >
-        <div className="w-full">
+        <div className="w-full lg:w-3/4">
           <Typography variant="header" className="font-semibold !font-montserrat">
             Quickly purchase and deploy powerful ML Models for your intended
             usecase
@@ -165,22 +166,22 @@ export const LandingPage = () => {
             </NavLink>
           </Typography>
         </div>
-        <div className="w-full p-5">
+        <div className="w-full">
           <img src={screenshots1} className="h-full w-full object-contain" />
         </div>
       </Container>
 
       <Container
-        className="bg-screen pt-10 lg:pb-20 gap-10 flex-col-reverse lg:flex-row"
+        className="bg-screen flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-20 gap-10 lg:gap-0"
         flex
         align="center"
       >
-        <div className="w-full">
+        <div className="w-full lg:w-3/4">
           <Typography variant="header" className="font-semibold !font-montserrat">
             Build custom software experiences with well-documented APIs and
             Integration SDK's
           </Typography>
-          <Typography variant="body" className="mt-8 w-[90%]">
+          <Typography variant="body" className="mt-8 w-[100%]">
             Developers love our thorough, well-documented APIs and SDK's that
             let you to build everything from simple weekend projects, to complex
             products irrespective of the industry, serving hundreds of thousands
@@ -196,13 +197,13 @@ export const LandingPage = () => {
             </NavLink>
           </Typography>
         </div>
-        <div className="w-full p-5">
+        <div className="w-full">
           <img src={screenshots} className="h-full w-full object-contain" />
         </div>
       </Container>
 
       <Container
-        className="bg-screen flex-col-reverse lg:flex-row-reverse pt-10 pb-40 gap-10"
+        className="bg-screen flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-20 gap-10"
         flex
         align="center"
       >

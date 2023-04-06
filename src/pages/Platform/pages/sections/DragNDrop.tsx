@@ -10,7 +10,7 @@ const DragNDrop = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row-reverse gap-8 items-center"
+        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-8 items-center"
         flex
         id="drag-drop"
       >
@@ -22,16 +22,6 @@ const DragNDrop = () => {
             DragNDrop AI
           </Typography>
           <Typography variant="body" className="mt-8 ">
-            Build complex models quickly, and leverage the power of AI and machine
-            learning without any technical background.
-          </Typography>
-          <Typography
-            variant="body"
-            className="font-semibold mt-8"
-          >
-            Revolutionize Your Data Analysis - DragNDrop AI, The Code-Free Way to AI Success!
-          </Typography>
-          <Typography variant="body" className="mt-8 ">
             Our drag-and-drop interface makes it easy for you to create powerful machine-learning solutions,
             even if you have no prior coding or algorithm knowledge. Simply bring your data and let Autogon
             do the rest. AutoGon's drag-and-drop interface enables you to build and deploy models in
@@ -40,7 +30,6 @@ const DragNDrop = () => {
             get results faster.
           </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
@@ -90,7 +79,13 @@ const DragNDrop = () => {
             models in no time. You never have to worry about getting stuck or being unable to figure
             something out.
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

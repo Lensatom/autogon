@@ -9,6 +9,7 @@ import { PartnerCarousel } from "../../../Layouts/PartnerCarousel";
 import { Testimonial } from "../../../Layouts/Testimonial";
 import { Blog } from '../Layout/Blog';
 import { AutomatedTimeSeries, AutoML, DataPreparation, DragNDrop } from "./sections";
+import Screenshot from '../../../assets/images/screenshot2.png';
 import NoCodeAIApp from "./sections/NoCodeAIApp";
 import { NavLink } from "react-router-dom";
 
@@ -55,7 +56,7 @@ export const KeyCapabilities = () => {
               Data Preparation
             </Typography>
             <img
-              src="https://a.storyblok.com/f/139616/2500x1933/a1314fefc1/explore-and-fix-issues.webp"
+              src={Screenshot}
               className="h-full w-full mt-3 lg:hidden"
             />
             <Typography variant="body" className="mt-6">
@@ -68,18 +69,17 @@ export const KeyCapabilities = () => {
             <div className="flex mt-5 lg:mt-9 gap-2">
               <Button><NavLink to='/request'>Request a demo</NavLink></Button>
               <Button
-                darkMode
                 className="flex items-center gap-3 mb-3 lg:mb-0 group"
                 variant="outline"
               >
                 Start for free
-                <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white group-hover:text-neutral" />
+                <ArrowTopRightOnSquareIcon className="h-6 w-6 group-hover:text-neutral" />
               </Button>
             </div>
           </div>
           <div className="w-full hidden lg:block">
             <img
-              src="https://a.storyblok.com/f/139616/2500x1933/a1314fefc1/explore-and-fix-issues.webp"
+              src={Screenshot}
               className="h-full w-full object-contain"
             />
           </div>
@@ -96,7 +96,7 @@ export const KeyCapabilities = () => {
 
       <AutomatedTimeSeries />
 
-      <NoCodeAIApp />
+      <NoCodeAIApp /><br />
 
       <Container
         disableOverflowHidden

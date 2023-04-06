@@ -27,7 +27,6 @@ const AutoML = () => {
             to maximize the value of AI in your organization.
           </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
@@ -102,7 +101,13 @@ const AutoML = () => {
             enables you to analyze your data and generate a custom machine-learning model
             optimized for your specific use case.
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

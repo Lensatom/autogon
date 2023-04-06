@@ -23,16 +23,6 @@ const DataPreparation = () => {
             Data Preparation
           </Typography>
           <Typography variant="body" className="mt-8 ">
-            Explore, combine, and shape diverse datasets visually and interactively to create
-            data ready for AI and machine learning applications at exponential speed.
-          </Typography>
-          <Typography
-            variant="body"
-            className="font-semibold mt-8"
-          >
-            Streamline your data journey with DragNDrop AI: the no-code platform for a Seamless preparation.
-          </Typography>
-          <Typography variant="body" className="mt-8 ">
             Data is the cornerstone of successful AI implementation, but unlocking its potential requires
             fast and easy access for all data users. Autogon Data Prep makes data preparation a breeze for
             novice and expert users. Our no-code platform lets you easily clean, transform, and visualize
@@ -42,7 +32,6 @@ const DataPreparation = () => {
             modeling rather than worrying about the technical details.
           </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
@@ -90,7 +79,13 @@ const DataPreparation = () => {
             easier to identify any issues with your data and to get a better understanding of your data before
             you start building your models.
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

@@ -10,7 +10,7 @@ const AutomatedTimeSeries = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row-reverse gap-8 items-center"
+        className="bg-screen pt-32 flex-col-reverse lg:flex-row gap-8 items-center"
         flex
         id="automated-time"
       >
@@ -25,7 +25,6 @@ const AutomatedTimeSeries = () => {
             Design, deploy, and maintain high-impact forecasts across your organization with convenience.
           </Typography>
           <div className="flex gap-5">
-            <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
             <Button
               onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
               variant="outline"
@@ -102,6 +101,13 @@ const AutomatedTimeSeries = () => {
             and assist your organization in adjusting to economic or environmental shocks that erode historical
             data.
           </Typography>
+          <Button
+              onClick={() => display === 'hidden' ? setDisplay('flex') : setDisplay('hidden')}
+              variant="outline"
+              className="mt-9"
+            >
+              Read {display === 'hidden' ? 'more' : 'less'}
+          </Button>
         </div>
       </Container>
     </>

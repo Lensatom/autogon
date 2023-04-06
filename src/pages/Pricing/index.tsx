@@ -61,7 +61,7 @@ export const Pricing = () => {
     <>
       <Header />
 
-      <Container className="bg-screen pt-28 h-screen">
+      <Container className="bg-screen pt-28">
         <BreadCrumb />
         <Typography
           align="center"
@@ -81,7 +81,7 @@ export const Pricing = () => {
         </Typography>
       </Container>
 
-      <Container className="w-full overflow-x-scroll pb-20 bg-screen">
+      <Container className="w-full overflow-x-scroll pb-20 pt-28 bg-screen">
         <table className="w-[300%] lg:w-full">
           <thead className="w-full">
             <tr className="w-full grid grid-cols-4 justify-between">
@@ -125,105 +125,105 @@ export const Pricing = () => {
           </thead>
           <tbody className="w-full">
             <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-bold">Quotas</td>
-            </tr>
-            <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-semibold">API Credits</td>
-              <td>
-                <select className="w-full border-2 rounded-md p-2">
-                  <option>1000</option>
-                </select>
-              </td>
-              <td>
-                <select className="w-full border-2 rounded-md p-2">
-                  <option>10000</option>
-                </select>
-              </td>
-              <td>
-                <select className="w-full border-2 rounded-md p-2">
-                  <option>10000</option>
-                </select>
-              </td>
-            </tr>
-            <tr className="w-full grid grid-cols-4 justify-between">
               <td className="font-semibold">Bandwidth (GB)</td>
               <td className="text-center">10</td>
               <td className="text-center">50</td>
               <td className="text-center">100</td>
             </tr>
             <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-bold">Integrations</td>
+              <td className="font-semibold">Maximum number of Models</td>
+              <td className="text-center">10</td>
+              <td className="text-center">50</td>
+              <td className="text-center">Unlimited</td>
             </tr>
             <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-semibold">REST API</td>
-              <td><Checked /></td>
-              <td><Checked /></td>
-              <td><Checked /></td>
-            </tr>
-            <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-semibold">Zapier</td>
+              <td className="font-semibold">Support</td>
               <td><Checked /></td>
               <td><Checked /></td>
               <td><Checked /></td>
             </tr>
             <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-semibold">Make.com</td>
+              <td className="font-semibold">All channels</td>
               <td><Checked /></td>
               <td><Checked /></td>
               <td><Checked /></td>
             </tr>
             <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-semibold">Airtable</td>
+              <td className="font-semibold">Multi-Tenant SaaS</td>
               <td><Checked /></td>
               <td><Checked /></td>
               <td><Checked /></td>
             </tr>
             <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-semibold">Forms</td>
+              <td className="font-semibold">Bias and fairness</td>
               <td><Checked /></td>
               <td><Checked /></td>
               <td><Checked /></td>
             </tr>
             <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-semibold">Simple URL's</td>
+              <td className="font-semibold">Usage reports</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Deploy to external environments</td>
               <td className="text-center text-lg">--</td>
               <td><Checked /></td>
               <td><Checked /></td>
             </tr>
             <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-semibold">Signed URL's</td>
-              <td className="text-center text-lg">--</td>
-              <td><Checked /></td>
-              <td><Checked /></td>
-            </tr>
-            <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-bold">Security</td>
-            </tr>
-            <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-semibold">2FA</td>
-              <td><Checked /></td>
-              <td><Checked /></td>
-              <td><Checked /></td>
-            </tr>
-            <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-bold">Support</td>
-            </tr>
-            <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-semibold">Email</td>
-              <td><Checked /></td>
-              <td><Checked /></td>
-              <td><Checked /></td>
-            </tr>
-            <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-semibold">Priority</td>
-              <td className="text-center text-lg">--</td>
-              <td><Checked /></td>
-              <td><Checked /></td>
-            </tr>
-            <tr className="w-full grid grid-cols-4 justify-between">
-              <td className="font-semibold">Zoom</td>
+              <td className="font-semibold">Manage and monitor external models</td>
               <td className="text-center text-lg">--</td>
               <td className="text-center text-lg">--</td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Real-time predictions</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Service health monitoring</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Customer interference models</td>
+              <td className="text-center text-lg">--</td>
+              <td className="text-center text-lg">--</td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Studio</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">No-code data prep</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">Automated deep learning</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">multilabel classification</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+              <td><Checked /></td>
+            </tr>
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">multi-model</td>
+              <td><Checked /></td>
+              <td><Checked /></td>
               <td><Checked /></td>
             </tr>
           </tbody>

@@ -92,10 +92,9 @@ const ExecutivesAndAnalyticsLeaders = () => {
               </li>
             </ol>
           </Typography>
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
         </div>
         <div className="w-full">
-          <Typography variant="body" className="mt-8">
+          <Typography variant="body">
             <ol start={3} className="list-decimal flex flex-col gap-3">
               <li>
                 <span className="font-semibold">Access Valuable Insights: </span><br />
