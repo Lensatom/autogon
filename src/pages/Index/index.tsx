@@ -17,8 +17,8 @@ import { Pagination } from "swiper";
 import { BenefitCard } from "./components/BenefitCard";
 import MlFlow from '../../assets/images/mlFlow.png'
 import SideMlFlow from '../../assets/images/sideMlFlow.png'
-import screenshots from '../../assets/images/screenshot1.png';
-import screenshots1 from '../../assets/images/screenshot2.png';
+import screenshots from '../../assets/images/screenshot3.jpg';
+import screenshots1 from '../../assets/images/screenshot2.jpg';
 import screenshots2 from '../../assets/images/screenshot3.png';
 import snip from '../../assets/images/snip.jpg'
 
@@ -118,7 +118,7 @@ export const LandingPage = () => {
         flex
         align="center"
       >
-        <div className="w-full lg:w-3/4">
+        <div className="w-full gap-10">
           <Typography variant="header" className="font-semibold !font-montserrat">
             NO CODE experience doing the complex but keeping it simple
           </Typography>
@@ -147,7 +147,7 @@ export const LandingPage = () => {
         flex
         align="center"
       >
-        <div className="w-full lg:w-3/4">
+        <div className="w-full gap-10">
           <Typography variant="header" className="font-semibold !font-montserrat">
             Quickly purchase and deploy powerful ML Models for your intended
             usecase
@@ -176,7 +176,7 @@ export const LandingPage = () => {
         flex
         align="center"
       >
-        <div className="w-full lg:w-3/4">
+        <div className="w-full gap-10">
           <Typography variant="header" className="font-semibold !font-montserrat">
             Build custom software experiences with well-documented APIs and
             Integration SDK's
