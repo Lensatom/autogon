@@ -16,6 +16,7 @@ import { Router, Route } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import ReactGA from 'react-ga'
 import DemoRequestForm from "./pages/company/pages/DemoRequestForm";
+import PrivacyAndPolicy from "./pages/PrivacyAndPolicy";
 
 ReactGA.initialize('G-CBKWFLHR4B')
 const browserHistory = createBrowserHistory()
@@ -72,6 +73,10 @@ function App() {
     {
       path: "pricing",
       element: <Pricing />,
+    },
+    {
+      path: "privacy-and-policy",
+      element: <PrivacyAndPolicy />,
     },
     {
       path: "request",

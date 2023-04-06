@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
+import DragnDrop from '../../../../assets/images/screenshot3.png'
 import { NavLink } from "react-router-dom";
 
 const AutomatedTimeSeries = () => {
@@ -36,15 +37,15 @@ const AutomatedTimeSeries = () => {
         </div>
         <div className="w-full">
           <img
-            src="./banking.jpg"
-            alt="banking"
+            src={DragnDrop}
+            alt="Automated time series image"
             className="w-full object-contain rounded-xl"
           />
         </div>
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start lg:px-44 pb-16 pt-10 gap-8`}
         flex
       >
         <div className="w-full">
@@ -54,7 +55,7 @@ const AutomatedTimeSeries = () => {
           >
             AutoGon: Simplifying AI, Revolutionizing Predictions.
           </Typography>
-          <Typography variant="body" className="mt-8 ">
+          <Typography variant="body" className="mt-8">
             AutoGon, a leading machine learning and AI cloud platform has made it simpler and faster for users
             and organizations to build models. The Automated Time Series feature is a unique and innovative
             feature that simplifies the process of analyzing time-based data and making accurate predictions.
@@ -70,7 +71,7 @@ const AutomatedTimeSeries = () => {
           >
             Get Accurate Forecasts at Scale
           </Typography>
-          <Typography variant="body" className="mt-8 ">
+          <Typography variant="body" className="">
             Quickly identify trends, patterns, and anomalies in your data, and make accurate predictions
             about future trends and values. Autogon offers a wide range of customization options, so you
             can fine-tune your models to meet your specific needs. You can choose from various algorithms,
@@ -80,10 +81,10 @@ const AutomatedTimeSeries = () => {
           </Typography>
         </div>
         <div className="w-full">
-          <Typography variant="body" className="mt-8  font-semibold">
+          <Typography variant="body" className="font-semibold">
             Empower Your Time Series Analysis with Automated Time Series: Simplify, Predict, Succeed.
           </Typography>
-          <Typography variant="body" className="mt-8 ">
+          <Typography variant="body" className="mt-8">
             Whether you're a business owner, data analyst, or machine learning expert, Automated Time Series
             is the perfect solution for all your time series analysis needs. Start building and training your
             models and see the difference that our platform can make for your organization. You will be impressed

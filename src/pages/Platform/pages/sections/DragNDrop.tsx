@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
+import DragnDrop from '../../../../assets/images/screenshot3.png'
 import { NavLink } from "react-router-dom";
 
 const DragNDrop = () => {
@@ -41,15 +42,15 @@ const DragNDrop = () => {
         </div>
         <div className="w-full">
           <img
-            src="./banking.jpg"
-            alt="banking"
+            src={DragnDrop}
+            alt="Drag & drop image"
             className="w-full object-contain rounded-xl"
           />
         </div>
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start lg:px-44 pb-16 pt-10 gap-8`}
         flex
       >
         <div className="w-full">
@@ -68,7 +69,7 @@ const DragNDrop = () => {
           </Typography>
         </div>
         <div className="w-full">
-          <Typography variant="body" className="mt-8  font-semibold">
+          <Typography variant="body" className="font-semibold">
           Effortlessly build AI models with DragNDrop AI - where user-friendliness meets expert support.
           </Typography>
           <Typography variant="body" className="mt-8 ">

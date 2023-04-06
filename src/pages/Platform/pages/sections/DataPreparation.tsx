@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import DataPreparationImage from '../../../../assets/images/data preparation.jpg'
+import DataPrep from '../../../../assets/images/screenshot2.jpg'
 import { NavLink } from "react-router-dom";
 
 const DataPreparation = () => {
@@ -43,15 +43,15 @@ const DataPreparation = () => {
         </div>
         <div className="w-full">
           <img
-            src="./banking.jpg"
-            alt="banking"
+            src={DataPrep}
+            alt="Data preparation image"
             className="w-full object-contain rounded-xl"
           />
         </div>
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start lg:px-44 pb-16 pt-10 gap-8`}
         flex
       >
         <div className="w-full">
@@ -61,7 +61,7 @@ const DataPreparation = () => {
           >
             Data Preparation for Smarter AI with DragNDrop AI
           </Typography>
-          <Typography variant="body" className="mt-8 ">
+          <Typography variant="body" className="mt-8">
             As part of the Autogon AI Cloud platform, Data Prep allows every analyst and citizen data
             scientist to explore, profile, clean, and shape diverse data into ready-to-use AI assets.
             One of the critical features of our data preparation process is the ability to handle missing
@@ -70,7 +70,7 @@ const DataPreparation = () => {
           </Typography>
         </div>
         <div className="w-full">
-          <Typography variant="body" className="mt-8  font-semibold">
+          <Typography variant="body" className="font-semibold">
             Unlock Insights Smoothly with Visualization.
           </Typography>
           <Typography variant="body" className="mt-8 ">

@@ -12,6 +12,8 @@ import {
 import cn from "classnames";
 import { FooterLinks } from "../components/FooterLinks";
 import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 interface FooterProps {
   darkMode?: boolean;
@@ -354,7 +356,9 @@ export const Footer = ({ darkMode }: FooterProps) => {
               "uppercase cursor-pointer !text-white hover:underline"
             )}
           >
-            Privacy Policy
+            <NavHashLink to="/privacy-and-policy#privacyPolicy">
+              Privacy Policy
+            </NavHashLink>
           </Typography>
           <Typography
             isDarkMode={darkMode}
@@ -363,7 +367,9 @@ export const Footer = ({ darkMode }: FooterProps) => {
               "uppercase cursor-pointer !text-white hover:underline"
             )}
           >
-            Legal Notice
+            <NavHashLink to="/privacy-and-policy#legalNotice">
+              Legal Notice
+            </NavHashLink>
           </Typography>
         </div>
       </div>

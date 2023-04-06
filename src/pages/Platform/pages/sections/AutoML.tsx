@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
+import MlFlow from '../../../../assets/images/sideMlFlow.png'
 import { NavLink } from "react-router-dom";
 
 const AutoML = () => {
@@ -38,15 +39,15 @@ const AutoML = () => {
         </div>
         <div className="w-full">
           <img
-            src="./banking.jpg"
-            alt="banking"
+            src={MlFlow}
+            alt="Auto ML screenshot"
             className="w-full object-contain rounded-xl"
           />
         </div>
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start lg:px-44 pb-16 pt-10 gap-8`}
         flex
       >
         <div className="w-full">
@@ -67,7 +68,7 @@ const AutoML = () => {
           </Typography>
           <Typography 
             variant="body"
-            className="font-semibold mt-8"
+            className="font-semibold"
           >
             Simplify Your Model Building: Let AutoML do the Heavy Lifting!
           </Typography>
@@ -81,10 +82,10 @@ const AutoML = () => {
           </Typography>
         </div>
         <div className="w-full">
-          <Typography variant="body" className="mt-8  font-semibold">
+          <Typography variant="body" className="font-semibold">
             Empower your predictions with the ease of AutoML - Machine Learning for all, code-free!
           </Typography>
-          <Typography variant="body" className="mt-8 ">
+          <Typography variant="body" className="mt-8">
             AutoML is the future of machine learning and AI, changing how organizations approach
             data science and predictive modeling.  With our bias testing and customizable
             compliance documentation, you can have peace of mind knowing that your AI solutions

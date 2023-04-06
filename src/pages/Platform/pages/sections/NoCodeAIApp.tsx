@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
+import NoCode from '../../../../assets/images/screenshot3.png'
 import { NavLink } from "react-router-dom";
 
 const NoCodeAIApp = () => {
@@ -36,19 +37,19 @@ const NoCodeAIApp = () => {
         </div>
         <div className="w-full">
           <img
-            src="./banking.jpg"
-            alt="banking"
+            src={NoCode}
+            alt="No-code AI Image"
             className="w-full object-contain rounded-xl"
           />
         </div>
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start lg:flex-row-reverse pb-16 pt-10 gap-8`}
+        className={`${display} bg-screen flex-col items-start lg:px-44 pb-16 pt-10 gap-8`}
         flex
       >
         <div className="w-full">
-          <Typography variant="body" className="mt-8 ">
+          <Typography variant="body">
             Converting installed models into simple, usable decision-intelligence solutions for front-line
             business users is one of the challenges organizations face when scaling AI. Everyone, regardless
             of industry or background, should have access to the power of AI. That's why we built a platform
