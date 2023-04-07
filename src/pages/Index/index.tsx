@@ -398,7 +398,7 @@ export const LandingPage = () => {
           Recent news
         </Typography>
         <iframe
-          src='https://widgets.sociablekit.com/medium-publication-feed/iframe/130883'
+          src='https://widgets.sociablekit.com/medium-publication-feed/iframe/131290'
           width='80%'
           height='500'
           className='rounded-xl'
