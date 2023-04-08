@@ -8,6 +8,7 @@ import { Footer } from "../../../Layouts/Footer";
 import { BreadCrumb } from "../../../components/BreadCrumb";
 import DataSetImage from "../../../assets/kili_product_platform_hero.png.png";
 import { AugmentedIntelligence, DataEngineering, DataLabelling, DataVisualization, DecisionIntelligence, MLOPs } from "./sections";
+import { NavLink } from "react-router-dom";
 
 
 type IconSectionTypes = {
@@ -122,7 +123,11 @@ export const PlatformPage = () => {
             Begin your journey! Start Creating AI Models.
           </Typography>
           <div className="flex mx-auto w-fit gap-2 mt-16 mb-8 lg:mb-0">
-            <Button>See Demo</Button>
+            <NavLink to="/request">
+              <Button>
+                Request a Demo
+              </Button>
+            </NavLink>
             <Button
               className="flex items-center gap-3 !text-white hover:!border-secondary !border-white"
               variant="outline"

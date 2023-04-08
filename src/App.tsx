@@ -17,6 +17,7 @@ import { createBrowserHistory } from 'history'
 import ReactGA from 'react-ga'
 import DemoRequestForm from "./pages/company/pages/DemoRequestForm";
 import PrivacyAndPolicy from "./pages/PrivacyAndPolicy";
+import LegalNotice from "./pages/PrivacyAndPolicy/LegalNotice";
 
 ReactGA.initialize('G-CBKWFLHR4B')
 const browserHistory = createBrowserHistory()
@@ -77,6 +78,10 @@ function App() {
     {
       path: "privacy-and-policy",
       element: <PrivacyAndPolicy />,
+    },
+    {
+      path: "legal-notice",
+      element: <LegalNotice />,
     },
     {
       path: "request",

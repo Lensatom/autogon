@@ -63,48 +63,6 @@ export const Blog = () => {
         "At Kili, we believe the quality of the data is what differentiates a successful AI project from one ...",
       buttonText: "Read",
     },
-    // {
-    //   caption: "",
-    //   src: "",
-    //   title: "",
-    //   Icon: null,
-    //   content: "",
-    //   buttonText: "Watch the replay",
-    // },
-    // {
-    //   caption: "",
-    //   src: "",
-    //   title: "",
-    //   Icon: null,
-    //   content: "",
-    // },
-    // {
-    //   caption: "",
-    //   src: "",
-    //   title: "",
-    //   Icon: null,
-    //   content: "",
-    // },
-    // {
-    //   caption: "",
-    //   src: "",
-    //   title: "",
-    //   Icon: null,
-    // },
-    // {
-    //   caption: "",
-    //   src: "",
-    //   title: "",
-    //   Icon: null,
-    //   content: "",
-    // },
-    // {
-    //   caption: "",
-    //   src: "",
-    //   title: "",
-    //   Icon: null,
-    //   content: "",
-    // },
   ];
 
   return (
@@ -126,7 +84,7 @@ export const Blog = () => {
 
       <Container className="bg-screen pt-16 lg:pb-40 flex flex-col items-center">
         <iframe
-          src='https://widgets.sociablekit.com/medium-publication-feed/iframe/121811'
+          src='https://widgets.sociablekit.com/medium-publication-feed/iframe/131290'
           width='90%'
           height='500'
           className='rounded-xl'

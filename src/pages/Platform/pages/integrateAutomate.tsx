@@ -171,73 +171,7 @@ export const IntegrateAutomate = () => {
         </div>
       </Container>
 
-      {/* <Container
-        background
-        isDarkMode
-        className="bg-surface pb-40 gap-3"
-        flex
-        // direction="row-reverse"
-      >
-        <div className="w-full">
-          <Typography isDarkMode variant="body" className="text-[22px]">
-            [4]
-          </Typography>
-          <Typography
-            isDarkMode
-            variant="title"
-            className="font-semibold text-[80px] leading-[100%]"
-          >
-            Orchestrate all your quality strategies with automated workflows
-          </Typography>
-          <Typography isDarkMode variant="body" className="mt-2 w-[80%]">
-            Fully automate & build custom workflows to scale your labeling
-            operations.
-          </Typography>
-
-          <Button className="mt-9"><NavLink to='/request'>Request a demo</NavLink></Button>
-        </div>
-        <div className="w-[90%]">
-          <img
-            src="https://a.storyblok.com/f/139616/3000x3000/795d266d6a/kili_brand_icon_focus_dark.png"
-            className="h-full w-full object-contain"
-          />
-        </div>
-      </Container> */}
-
       <Testimonial isDarkMode />
-
-      {/* <Container isDarkMode background noGutter className="pb-60">
-        <Container
-          as="div"
-          isLightDarkMode
-          background
-          className="lg:flex items-center gap-3 rounded lg:rounded-2xl lg:h-[50rem] lg:!px-20"
-        >
-          <div className="w-full pt-12 lg:mt-0">
-            <Typography
-              isDarkMode
-              variant="header"
-              className="font-semibold lg:text-[90px] lg:mt-4 !leading-[4rem] lg:!leading-[5rem]"
-            >
-              A qualified workforce for all of your labeling needs
-            </Typography>
-            <Typography variant="body" isDarkMode className="mt-4 lg:w-[36rem]">
-              Data labeling takes time and resources that some organizations
-              simply don’t have. That’s why Kili offers annotation services on
-              premise or offshore, for adhoc missions or end-to-end projects.
-              We’ve taken the time to source the very best so you can focus on
-              the rest.
-            </Typography>
-            <Button className="flex items-center gap-3 mt-5">
-              Learn more
-              <ArrowTopRightOnSquareIcon className="h-6 w-6 text-black" />
-            </Button>
-          </div>
-          <div className="w-full">
-            <img src={SOCIcon} className="h-full w-full object-contain" />
-          </div>
-        </Container>
-      </Container> */}
 
       <Blog />
 

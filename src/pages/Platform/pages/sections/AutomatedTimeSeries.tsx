@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import DragnDrop from '../../../../assets/images/screenshot3.png'
+import DragnDrop from '../../../../assets/images/automated.png'
 import { NavLink } from "react-router-dom";
 
 const AutomatedTimeSeries = () => {

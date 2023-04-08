@@ -1,6 +1,6 @@
 import { Container, Typography } from "../components";
 import Logo from "../assets/logo/Autogon-full-logo-light.png";
-import DarkLogo from "../assets/logo/Autogon-logo-light.png";
+import DarkLogo from "../assets/logo/Autogon-full-logo-light.png";
 import {
   FaFacebookF,
   FaGithub,
@@ -23,9 +23,6 @@ export const Footer = ({ darkMode }: FooterProps) => {
   let productLinks = {
     title: "Product",
     links: [
-      {
-        name: "AI cloud platform",
-      },
       {
         name: "Augmented Intelligence",
         link: "/platform#augmented-intelligence",
@@ -195,6 +192,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
     links: [
       {
         name: "Integration Library",
+        link: 'https://doc.autogon.ai'
       },
       {
         name: "Blog",
@@ -215,15 +213,6 @@ export const Footer = ({ darkMode }: FooterProps) => {
       {
         name: "Events",
         link: '/company/events-list'
-      },
-    ],
-  };
-
-  let usaLink = {
-    title: "United States",
-    links: [
-      {
-        name: "3002 Falls at Fairdale Houston, Texas, United states",
       },
     ],
   };
@@ -275,11 +264,24 @@ export const Footer = ({ darkMode }: FooterProps) => {
           links={companyLink.links}
           title={companyLink.title}
         />
-        <FooterLinks
-          darkMode={darkMode}
-          links={usaLink.links}
-          title={usaLink.title}
-        />
+        <div className="flex flex-col gap-2">
+          <Typography
+            isDarkMode={darkMode}
+            variant="title"
+            className="!text-[23px] !text-white font-bold !leading-6"
+          >
+            United States
+          </Typography>
+          <Typography
+            isDarkMode={darkMode}
+            variant="body"
+            className={cn(
+              "capitalize cursor-pointer !text-white w-fit"
+            )}
+          >
+            3002 Falls at Fairdale Houston, Texas, United states
+          </Typography>
+        </div>
       </div>
 
       <div className="absolute h-10 flex flex-col-reverse lg:flex-row lg:items-center bottom-10 lg:bottom-3 lg:gap-16 gap-4">
@@ -317,7 +319,9 @@ export const Footer = ({ darkMode }: FooterProps) => {
               className={`h-4 w-4 ${darkMode ? "text-neutral" : "text-white"}`}
             />
           </a>
-          <div
+          <a
+            href='https://twitter.com/AutogonInc'
+            target='__blank'
             className={`rounded-full w-7 h-7 grid place-items-center ${
               darkMode ? "bg-screen" : "bg-black"
             }`}
@@ -325,7 +329,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
             <FaTwitter
               className={`h-4 w-4 ${darkMode ? "text-neutral" : "text-white"}`}
             />
-          </div>
+          </a>
           <a
             href='https://www.youtube.com/@autogonai'
             target='__blank'
@@ -367,7 +371,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
               "uppercase cursor-pointer !text-white hover:underline"
             )}
           >
-            <NavHashLink to="/privacy-and-policy#legalNotice">
+            <NavHashLink to="/legal-notice">
               Legal Notice
             </NavHashLink>
           </Typography>

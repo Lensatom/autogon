@@ -98,7 +98,9 @@ export const Pricing = () => {
                   <span className="text-2xl font-bold">49</span>
                 </div>
                 <span className="text-xs text-gray-500 font-semibold">USD / month</span>
-                <Button>Start a Free Trial</Button>
+                <a href="https://console.autogon.ai">
+                  <Button>Start a Free Trial</Button>
+                </a>
                 <span className="text-sm font-semibold">Automate your marketing</span>
               </td>
               <td className="flex flex-col items-center gap-1">
@@ -108,22 +110,44 @@ export const Pricing = () => {
                   <span className="text-2xl font-bold">149</span>
                 </div>
                 <span className="text-xs text-gray-500 font-semibold">USD / month</span>
-                <Button>Start a Free Trial</Button>
+                <a href="https://console.autogon.ai">
+                  <Button>Start a Free Trial</Button>
+                </a>
                 <span className="text-sm font-semibold">Scale your marketing</span>
               </td>
               <td className="flex flex-col items-center gap-1">
-                <h2 className="font-bold text-lg">Automate</h2>
+                <h2 className="font-bold text-lg">Enterprise</h2>
                 <div className="flex items-start">
                   <span className="text-sm pt-1">$</span>
                   <span className="text-2xl font-bold">299</span>
                 </div>
                 <span className="text-xs text-gray-500 font-semibold">USD / month</span>
-                <Button>Start a Free Trial</Button>
+                <a href="https://console.autogon.ai">
+                  <Button>Start a Free Trial</Button>
+                </a>
                 <span className="text-sm font-semibold">High volume access</span>
               </td>
             </tr>
           </thead>
           <tbody className="w-full">
+            <tr className="w-full grid grid-cols-4 justify-between">
+              <td className="font-semibold">API Calls</td>
+              <td className="text-center">
+                <select className="bg-white w-1/2 px-2 py-1">
+                  <option>1000</option>
+                </select>
+              </td>
+              <td className="text-center">
+                <select className="bg-white w-1/2 px-2 py-1">
+                  <option>1000</option>
+                </select>
+              </td>
+              <td className="text-center">
+                <select className="bg-white w-1/2 px-2 py-1">
+                  <option>1000</option>
+                </select>
+              </td>
+            </tr>
             <tr className="w-full grid grid-cols-4 justify-between">
               <td className="font-semibold">Bandwidth (GB)</td>
               <td className="text-center">10</td>

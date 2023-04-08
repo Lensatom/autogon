@@ -147,12 +147,12 @@ export const LandingPage = () => {
         flex
         align="center"
       >
-        <div className="w-full gap-10">
-          <Typography variant="header" className="font-semibold !font-montserrat">
+        <div className="w-full flex flex-col items-end">
+          <Typography variant="header" className="font-semibold !font-montserrat text-right">
             Quickly purchase and deploy powerful ML Models for your intended
             usecase
           </Typography>
-          <Typography variant="body" className="mt-8 w-[85%]">
+          <Typography variant="body" className="mt-8 w-[85%] text-right">
             Go live in less than 5 minutes, browse through our Marketplace with
             richset of Models designed for various industry
           </Typography>
@@ -172,7 +172,7 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-screen flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-20 gap-10 lg:gap-0"
+        className="bg-screen flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-20 gap-10 lg:gap-10"
         flex
         align="center"
       >
@@ -203,15 +203,15 @@ export const LandingPage = () => {
       </Container>
 
       <Container
-        className="bg-screen flex-col-reverse lg:flex-row pt-20 pb-10 lg:pb-20 gap-10"
+        className="bg-screen flex-col-reverse lg:flex-row-reverse pt-20 pb-10 lg:pb-20 gap-10"
         flex
         align="center"
       >
-        <div className="w-full">
-          <Typography variant="header" className="font-semibold !font-montserrat">
+        <div className="w-full flex flex-col items-end">
+          <Typography variant="header" className="font-semibold !font-montserrat text-right">
             Tap into the power of our AutoML engine
           </Typography>
-          <Typography variant="body" className="mt-8 w-[80%]">
+          <Typography variant="body" className="mt-8 w-[90%] text-right">
             Save time and complete task in minutes by leaveraging the power of
             our AUTOML by simply transfering data to our training algorithms and
             automatically get the best neural network architecture for a given

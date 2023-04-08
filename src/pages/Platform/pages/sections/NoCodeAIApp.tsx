@@ -11,7 +11,7 @@ const NoCodeAIApp = () => {
     <>
       <Container
         background
-        className="bg-screen pt-32 flex-col-reverse lg:flex-row-reverse gap-8 items-center"
+        className="bg-screen pt-32 pb-24 flex-col-reverse lg:flex-row-reverse gap-8 items-center"
         flex
         id="no-code"
       >

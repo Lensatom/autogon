@@ -96,7 +96,7 @@ export const KeyCapabilities = () => {
 
       <AutomatedTimeSeries />
 
-      <NoCodeAIApp /><br />
+      <NoCodeAIApp />
 
       <Container
         disableOverflowHidden
@@ -120,12 +120,18 @@ export const KeyCapabilities = () => {
             Begin your journey! Start Creating AI Models.
           </Typography>
           <div className="flex mx-auto w-fit gap-2 mt-16 mb-8 lg:mb-0">
-            <Button>See Demo</Button>
+            <NavLink to='/request'>
+              <Button>
+                Rquest a Demo
+              </Button>
+            </NavLink>
             <Button
               className="flex items-center gap-3 !text-white hover:!border-secondary !border-white"
               variant="outline"
             >
-              Start for free
+              <a href='https://console.autogon.ai'>
+                Start for free
+              </a>
               <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white" />
             </Button>
           </div>

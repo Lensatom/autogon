@@ -25,7 +25,7 @@ export const FooterLinks = ({
       <ul className="w-[17rem]">
         {links.map((nav) => {
           const name = nav.name.toLowerCase();
-          if (name === 'community' || name === 'documentation') {
+          if (name === 'community' || name === 'documentation' || name ==='integration library') {
             return (
               <li className="my-2 w-fit" key={nav.name}>
                 <a href={nav?.link} target='__blank'>
