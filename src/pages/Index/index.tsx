@@ -20,7 +20,7 @@ import SideMlFlow from '../../assets/images/sideMlFlow.png'
 import screenshots from '../../assets/images/screenshot1.png';
 import screenshots1 from '../../assets/images/screenshot2.png';
 import screenshots2 from '../../assets/images/screenshot3.png';
-import snip from '../../assets/images/snip.jpg'
+import snip from '../../assets/images/snip.png'
 
 
 const BenefitMobileCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
@@ -138,7 +138,7 @@ export const LandingPage = () => {
           </Typography>
         </div>
         <div className="w-full p-5">
-          <img src={screenshots2} className="h-full w-full object-contain" />
+          <img src={screenshots} className="h-full w-full object-contain" />
         </div>
       </Container>
 
@@ -198,7 +198,7 @@ export const LandingPage = () => {
           </Typography>
         </div>
         <div className="w-full">
-          <img src={screenshots} className="h-full w-full object-contain" />
+          <img src={screenshots2} className="h-full w-full object-contain" />
         </div>
       </Container>
 

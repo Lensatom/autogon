@@ -10,7 +10,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       primary: {
         container: {
           light: "bg-primary",
-          dark: "bg-[#eaeee2] ",
+          dark: "bg-[#eaeee2]",
         },
         outline: {
           light:

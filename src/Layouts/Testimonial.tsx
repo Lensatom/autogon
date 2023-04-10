@@ -68,22 +68,7 @@ export const Testimonial = ({ isDarkMode }: TestimonialType) => {
       name: "Michael",
       img: "https://a.storyblok.com/f/139616/500x500/3dd69add65/thales.jpeg",
       positionandcompany: "CTO of Tech Wave",
-    },
-    // {
-    //   comment:
-    //     "Kili enables us to improve our models’ performance and scale our AI projects as fast as our business needs.",
-    //   name: "Andrea Colonna",
-    //   img: "https://a.storyblok.com/f/139616/800x800/1937b81e0c/jellysmack2.jpeg",
-    //   positionandcompany: "Head of Data, Jellysmack",
-    // },
-    // {
-    //   comment:
-    //     "We are very satisfied with our collaboration with Kili. We saw a performance improvement of our model of 3.5%",
-    //   name: "Marie de Léséleuc",
-    //   img: "https://a.storyblok.com/f/139616/460x460/5e38951100/eidos.jpeg",
-    //   positionandcompany:
-    //     "Director of Analytics and Data Science, Eidos-Montréal",
-    // },
+    }
   ];
 
   return (
@@ -113,7 +98,7 @@ export const Testimonial = ({ isDarkMode }: TestimonialType) => {
           <SwiperSlide
             key={index}
             className={`!w-fit rounded-4xl md:max-h-[370px] shadow-[0_0_16px_rgb(8,24,25/4%)] flex flex-col justify-between py-12 px-8 lg:px-16 ${
-              isDarkMode ? "bg-dark-paper" : "bg-white"
+              isDarkMode ? "bg-dark-paper" : "bg-[#eaeee2]"
             }`}
           >
             <TestimonialCard {...testimonial} isDark={isDarkMode} />
