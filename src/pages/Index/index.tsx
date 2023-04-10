@@ -17,8 +17,8 @@ import { Pagination } from "swiper";
 import { BenefitCard } from "./components/BenefitCard";
 import MlFlow from '../../assets/images/mlFlow.png'
 import SideMlFlow from '../../assets/images/sideMlFlow.png'
-import screenshots from '../../assets/images/screenshot3.jpg';
-import screenshots1 from '../../assets/images/screenshot2.jpg';
+import screenshots from '../../assets/images/screenshot1.png';
+import screenshots1 from '../../assets/images/screenshot2.png';
 import screenshots2 from '../../assets/images/screenshot3.png';
 import snip from '../../assets/images/snip.jpg'
 

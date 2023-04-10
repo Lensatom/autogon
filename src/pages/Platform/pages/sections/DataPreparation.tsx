@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Button, Container, Typography } from "../../../../components";
-import DataPrep from '../../../../assets/images/screenshot2.jpg'
+import DataPrep from '../../../../assets/images/screenshot2.png'
 import { NavLink } from "react-router-dom";
 
 const DataPreparation = () => {
