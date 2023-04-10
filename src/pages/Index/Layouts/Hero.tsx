@@ -27,7 +27,9 @@ export const HeroPage = () => {
             results.
           </Typography>
           <div className="flex gap-2 mt-5 justify-center lg:justify-start mb-8 lg:mb-0">
-            <Button>Case study</Button>
+            <a href="https://console.autogon.ai" target="_blank">
+              <Button>Case study</Button>
+            </a>
             <a href="https://console.autogon.ai" target="_blank">
               <Button className="flex items-center gap-3" variant="outline">
                 <a href="http://console.autogon.ai/">Get started</a>
