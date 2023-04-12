@@ -21,6 +21,7 @@ import screenshots from '../../assets/images/screenshot1.png';
 import screenshots1 from '../../assets/images/screenshot2.png';
 import screenshots2 from '../../assets/images/screenshot3.png';
 import snip from '../../assets/images/snip.png'
+import Blogs from "../../components/Blogs";
 
 
 const BenefitMobileCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
@@ -119,7 +120,7 @@ export const LandingPage = () => {
         align="center"
       >
         <div className="w-full gap-10">
-          <Typography variant="header" className="font-semibold !font-montserrat">
+          <Typography variant="header" className="!font-bold !font-montserrat">
             NO CODE experience doing the complex but keeping it simple
           </Typography>
           <Typography variant="body" className="mt-8 w-[80%]">
@@ -148,7 +149,7 @@ export const LandingPage = () => {
         align="center"
       >
         <div className="w-full flex flex-col items-end">
-          <Typography variant="header" className="font-semibold !font-montserrat text-right">
+          <Typography variant="header" className="!font-bold !font-montserrat text-right">
             Quickly purchase and deploy powerful ML Models for your intended
             usecase
           </Typography>
@@ -177,7 +178,7 @@ export const LandingPage = () => {
         align="center"
       >
         <div className="w-full gap-10">
-          <Typography variant="header" className="font-semibold !font-montserrat">
+          <Typography variant="header" className="!font-bold !font-montserrat">
             Build custom software experiences with well-documented APIs and
             Integration SDK's
           </Typography>
@@ -208,7 +209,7 @@ export const LandingPage = () => {
         align="center"
       >
         <div className="w-full flex flex-col items-end">
-          <Typography variant="header" className="font-semibold !font-montserrat text-right">
+          <Typography variant="header" className="!font-bold !font-montserrat text-right">
             Tap into the power of our AutoML engine
           </Typography>
           <Typography variant="body" className="mt-8 w-[90%] text-right">
@@ -229,7 +230,7 @@ export const LandingPage = () => {
           align="center"
           className="lg:w-[60%] mx-auto font-extrabold"
         >
-          You can use Autogon if you are a
+          You can use Autogon<br />if you are a
         </Typography>
 
         <div className="grid-rows-1 mt-32 gap-y-9 hidden lg:grid ">
@@ -397,12 +398,7 @@ export const LandingPage = () => {
         >
           Recent news
         </Typography>
-        <iframe
-          src='https://widgets.sociablekit.com/medium-publication-feed/iframe/131290'
-          width='80%'
-          height='500'
-          className='rounded-xl'
-        ></iframe>
+        <Blogs />
       </Container>
 
       <Container

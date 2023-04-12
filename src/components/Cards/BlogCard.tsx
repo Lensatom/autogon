@@ -38,13 +38,15 @@ export const BlogCard = ({
           </Typography>
           {children}
         </div>
-        <Button
-          className="flex items-center gap-3 m-4 mt-0 !bg-primary border-none"
-          onClick={onClick}
-        >
-          {buttonText}
-          {IconComponent}
-        </Button>
+        <div className="absolute left-0 bottom-0 p-3 w-full bg-opq-trans">
+          <Button
+            className="flex items-center gap-3 mt-0 !bg-primary border-none"
+            onClick={onClick}
+          >
+            {buttonText}
+            {IconComponent}
+          </Button>
+        </div>
       </div>
     </div>
   );

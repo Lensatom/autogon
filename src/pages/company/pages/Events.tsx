@@ -167,7 +167,9 @@ export const Event = () => {
               className="flex items-center gap-3 !text-white border-white"
               variant="outline"
             >
-              Start for free
+              <a href="https://console.autogon.ai">
+                Start for free
+              </a>
               <ArrowTopRightOnSquareIcon className={`h-6 w-6 text-white`} />
             </Button>
           </div>

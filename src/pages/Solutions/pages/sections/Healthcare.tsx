@@ -51,7 +51,7 @@ const Healthcare = () => {
       </Container>
       <Container
         background
-        className={`${display} bg-screen flex-col items-start !px-44 pb-16 pt-10`}
+        className={`${display} bg-screen flex-col items-start lg:!px-44 pb-16 pt-10`}
         flex
         id="healthcare"
         // direction="row-reverse"

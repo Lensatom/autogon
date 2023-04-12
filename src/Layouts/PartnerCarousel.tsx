@@ -85,7 +85,7 @@ export const PartnerCarousel = ({
         isDarkMode={darkMode}
         align="center"
         className={classNames(
-          "lg:text-[2.5rem] lg:w-[60rem] mx-auto",
+          "lg:text-[2.5rem] lg:w-[60rem] mx-auto !font-bold capitalize",
           titleClassName
         )}
       >

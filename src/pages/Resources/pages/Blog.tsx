@@ -6,6 +6,7 @@ import { Header } from "../../../Layouts/Header";
 import { PartnerCarousel } from "../../../Layouts/PartnerCarousel";
 import { Footer } from "../../../Layouts/Footer";
 import { NavLink } from "react-router-dom";
+import Blogs from "../../../components/Blogs";
 
 export const Blog = () => {
   const [query, setQuery] = useState("");
@@ -83,12 +84,7 @@ export const Blog = () => {
       </Container>
 
       <Container className="bg-screen pt-16 lg:pb-40 flex flex-col items-center">
-        <iframe
-          src='https://widgets.sociablekit.com/medium-publication-feed/iframe/131290'
-          width='90%'
-          height='500'
-          className='rounded-xl'
-        ></iframe>
+        <Blogs />
       </Container>
 
       <PartnerCarousel />

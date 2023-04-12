@@ -5,6 +5,9 @@
 ol li:nth-child(1) {
   margin-top: 20px;
 }
+ul {
+  list-style-position: inside;
+}
 table{
   border-collapse: collapse;
 }
@@ -22,4 +25,7 @@ ol li{
 }
 ol ul li {
   padding: 3px 0px;
+}
+.bg-opq-trans {
+  background: linear-gradient(180deg, transparent, white)
 }

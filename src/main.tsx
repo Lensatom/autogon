@@ -16,9 +16,6 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
-      <Button className="fixed lg:hidden bottom-5 left-5">
-        <NavLink to='/request'>Request a demo</NavLink>
-      </Button>
       <div className="App">
         <TawkMessengerReact
           propertyId="6404981031ebfa0fe7f0c720"
