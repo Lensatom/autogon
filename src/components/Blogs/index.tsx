@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Typography } from "../Typography"
 import { BlogCard } from "../Cards/BlogCard";
-import { NavLink } from "react-router-dom";
 import { GetData } from "../../firebase/get";
 
 const Blogs = () => {
