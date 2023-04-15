@@ -36,7 +36,7 @@ const Blogs = () => {
               children={
                 <Typography
                   variant="body"
-                  className="mt-2 !leading-6 !text-[16px] "
+                  className="mt-2 !leading-6 !text-[16px]"
                 >
                   {blog.content}
                 </Typography>

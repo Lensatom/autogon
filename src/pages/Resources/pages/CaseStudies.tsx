@@ -97,9 +97,7 @@ export const CaseStudies = () => {
 
       <PartnerCarousel />
 
-      <Container className="bg-surface h-40" ></Container>
-
-      <Container disableOverflowHidden isDarkMode background className="pb-28">
+      <Container disableOverflowHidden isDarkMode background className="pb-28 !bg-gray-800">
         <div className="mx-auto w-fit ">
           <img src={Smilesvg} className="relative -top-24 mx-auto z-[1999]" />
           <Typography variant="subdisplay" className="capitalize !text-white">

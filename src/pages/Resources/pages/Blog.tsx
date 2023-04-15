@@ -87,12 +87,8 @@ export const Blog = () => {
         <Blogs />
       </Container>
 
-      <PartnerCarousel />
-
-      <Container className="bg-surface h-40"></Container>
-
-      <Container disableOverflowHidden isDarkMode background className="pt-5 pb-28">
-        <div className="mx-auto w-fit ">
+      <Container disableOverflowHidden isDarkMode background className="!bg-gray-800 !py-36">
+        <div className="mx-auto w-fit">
           <Typography variant="subdisplay" className="capitalize !text-white">
             <a href="http://console.autogon.ai/">Get started</a>
           </Typography>

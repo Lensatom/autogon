@@ -391,7 +391,7 @@ export const Header = ({ darkMode }: HeaderProps) => {
     {
       id: "5",
       name: "docs",
-      link: "doc.autogon.ai",
+      link: "https://doc.autogon.ai",
       hover: false,
     },
     {
@@ -539,7 +539,7 @@ const MenuItem = forwardRef<
       {link ? (
         <li key={id}>
           {name === 'docs' ?
-            <Link to={link}>
+            <a href={link}>
               <Typography
                 ref={hoverRef}
                 variant="link"
@@ -551,7 +551,7 @@ const MenuItem = forwardRef<
               >
                 {name}
               </Typography>
-            </Link>
+            </a>
           :
             <Link to={link}>
               <Typography

@@ -81,6 +81,13 @@ export const PlatformPage = () => {
           variant="display"
           className="mx-auto pt-36 lg:w-[80%]"
         >
+          Platforms
+        </Typography>
+        <Typography
+          variant="body"
+          align="center"
+          className="capitalize lg:w-1/2 mx-auto mt-5"
+        >
           The most advanced platform for enterprise AI
         </Typography>
         <Typography
@@ -109,7 +116,7 @@ export const PlatformPage = () => {
       <Container
         isLightDarkMode
         background
-        className="bg-[#162427] pb-28 pt-28"
+        className="!bg-gray-800 pb-28 pt-28"
       >
         <div className="">
           <img src={Smilesvg} className="relative mx-auto h-20 w-20 mb-5" />

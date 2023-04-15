@@ -257,7 +257,7 @@ export const ProfessionalService = () => {
 
       {/* <Blog /> */}
 
-      <Container disableOverflowHidden isLightDarkMode background className="bg-[#162427] pb-28">
+      <Container disableOverflowHidden isLightDarkMode background className="!bg-gray-800 pb-28">
         <div className="mx-auto w-fit ">
           <img src={Smilesvg} className="relative -top-24 mx-auto" />
           <Typography variant="subdisplay" align="center" className="capitalize !text-white">

@@ -394,7 +394,7 @@ export const LandingPage = () => {
         <Typography
           variant="header"
           align="center"
-          className="w-[80%] mx-auto font-extrabold"
+          className="w-[80%] mx-auto font-semibold !font-montserrat"
         >
           Recent news
         </Typography>
@@ -406,7 +406,7 @@ export const LandingPage = () => {
         background
         disableOverflowHidden
         grid
-        className="bg-[#162427] pb-28 pt-28 place-items-center"
+        className="!bg-gray-800 pb-28 pt-28 place-items-center"
       >
         <div className="">
           <img src={Smilesvg} className="relative mx-auto h-20 w-20 mb-10" />

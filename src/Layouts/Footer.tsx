@@ -340,15 +340,6 @@ export const Footer = ({ darkMode }: FooterProps) => {
               className={`h-5 w-5 ${darkMode ? "text-neutral" : "text-white"}`}
             />
           </a>
-          <div
-            className={`rounded-full w-7 h-7 grid place-items-center ${
-              darkMode ? "bg-screen" : "bg-black"
-            }`}
-          >
-            <FaSlack
-              className={`h-5 w-5 ${darkMode ? "text-neutral" : "text-white"}`}
-            />
-          </div>
         </div>
 
         <div className="flex lg:flex-row flex-col gap-y-3 lg:items-center lg:gap-x-20 lg:ml-3 !text-left ">

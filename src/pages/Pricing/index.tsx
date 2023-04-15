@@ -259,7 +259,7 @@ export const Pricing = () => {
         disableOverflowHidden
         isLightDarkMode
         background
-        className="py-28"
+        className="py-28 !bg-gray-800"
       >
         <div className="">
           <img src={Smilesvg} className="relative mx-auto h-20 w-20 mb-5" />

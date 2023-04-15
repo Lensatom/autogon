@@ -23,7 +23,7 @@ export const BlogCard = ({
         <div className="h-[250px] rounded-tl-xl rounded-tr-xl overflow-hidden snap-center">
           <img src={src} className="h-full w-full object-cover" />
         </div>
-        <div className="p-4">
+        <div className="p-4 h-[400px]">
           <Typography variant="caption" className="uppercase">
             {caption}
           </Typography>
@@ -36,7 +36,9 @@ export const BlogCard = ({
           >
             {title}
           </Typography>
-          {children}
+          <div className="overflow-hidden h-3/4">
+            {children}
+          </div>
         </div>
         <div className="absolute left-0 bottom-0 p-3 w-full bg-opq-trans">
           <Button

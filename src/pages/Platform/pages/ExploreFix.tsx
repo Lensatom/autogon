@@ -102,7 +102,7 @@ export const KeyCapabilities = () => {
         disableOverflowHidden
         isLightDarkMode
         background
-        className="bg-[#162427] pb-28 pt-28"
+        className="!bg-gray-800 pb-28 pt-28"
       >
         <div className="">
           <img src={Smilesvg} className="relative mx-auto h-20 w-20 mb-10" />
