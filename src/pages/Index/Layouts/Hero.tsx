@@ -2,7 +2,7 @@ import { Button, Container, Typography } from "../../../components";
 import Lottie from "lottie-react";
 import animationData from "../../../assets/iRU7KxwKMP.json";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
-import Animation from '../../../assets/images/artificial intelligence.gif'
+import Animation from '../../../assets/images/Artificial intelligence.gif'
 
 export const HeroPage = () => {
 
