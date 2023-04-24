@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
 import { BsCheck } from "react-icons/bs";
 import { Button, Container, Typography } from "../../components";
@@ -57,6 +58,11 @@ const PricingCard = ({ img, title, type, benefits, buttonText, isDarkButton, but
 }
 
 export const Pricing = () => {
+
+  const [automate, setAutomate] = useState(49)
+  const [scale, setScale] = useState(149)
+  const [enterprise, setEnterprise] = useState(299)
+
   return (
     <>
       <Header />
@@ -95,7 +101,7 @@ export const Pricing = () => {
                 <h2 className="font-bold text-lg">Automate</h2>
                 <div className="flex items-start">
                   <span className="text-sm pt-1">$</span>
-                  <span className="text-2xl font-bold">49</span>
+                  <span className="text-2xl font-bold">{automate}</span>
                 </div>
                 <span className="text-xs text-gray-500 font-semibold">USD / month</span>
                 <a href="https://console.autogon.ai">
@@ -107,7 +113,7 @@ export const Pricing = () => {
                 <h2 className="font-bold text-lg">Scale</h2>
                 <div className="flex items-start">
                   <span className="text-sm pt-1">$</span>
-                  <span className="text-2xl font-bold">149</span>
+                  <span className="text-2xl font-bold">{scale}</span>
                 </div>
                 <span className="text-xs text-gray-500 font-semibold">USD / month</span>
                 <a href="https://console.autogon.ai">
@@ -116,7 +122,7 @@ export const Pricing = () => {
                 <span className="text-sm font-semibold">Scale your marketing</span>
               </td>
               <td className="flex flex-col items-center gap-1">
-                <h2 className="font-bold text-lg">Enterprise</h2>
+                <h2 className="font-bold text-lg">{enterprise}</h2>
                 <div className="flex items-start">
                   <span className="text-sm pt-1">$</span>
                   <span className="text-2xl font-bold">299</span>
@@ -133,18 +139,27 @@ export const Pricing = () => {
             <tr className="w-full grid grid-cols-4 justify-between">
               <td className="font-semibold">API Calls</td>
               <td className="text-center">
-                <select className="bg-white w-1/2 px-2 py-1">
+                <select onChange={(e:any) => setAutomate((e.target.value / 1000) * 49 + 49)} className="bg-white w-1/2 px-2 py-1">
                   <option>1000</option>
+                  <option>2000</option>
+                  <option>3000</option>
+                  <option>4000</option>
                 </select>
               </td>
               <td className="text-center">
-                <select className="bg-white w-1/2 px-2 py-1">
+                <select onChange={(e:any) => setScale((e.target.value / 1000) * 49 + 149)} className="bg-white w-1/2 px-2 py-1">
                   <option>1000</option>
+                  <option>2000</option>
+                  <option>3000</option>
+                  <option>4000</option>
                 </select>
               </td>
               <td className="text-center">
-                <select className="bg-white w-1/2 px-2 py-1">
+                <select onChange={(e:any) => setEnterprise((e.target.value / 1000) * 49 + 299)} className="bg-white w-1/2 px-2 py-1">
                   <option>1000</option>
+                  <option>2000</option>
+                  <option>3000</option>
+                  <option>4000</option>
                 </select>
               </td>
             </tr>

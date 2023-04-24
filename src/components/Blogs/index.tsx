@@ -23,7 +23,7 @@ const Blogs = () => {
   return (
     <div>
       {blogs.length ? (
-        <div className="grid lg:grid-cols-3 grid-cols-1 gap-5 md:grid-cols-2 mt-10 lg:w-[85%] mx-auto gap-y-6">
+        <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 mt-10 lg:w-[100%] mx-auto gap-5">
           {blogs.map((blog:any) => (
             <BlogCard
               onClick={() => window.open(

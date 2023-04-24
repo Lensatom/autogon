@@ -40,7 +40,7 @@ export const BlogCard = ({
             {children}
           </div>
         </div>
-        <div className="absolute left-0 bottom-0 p-3 w-full bg-opq-trans">
+        <div className="absolute left-0 bottom-0 p-3 w-full bg-white">
           <Button
             className="flex items-center gap-3 mt-0 !bg-primary border-none"
             onClick={onClick}

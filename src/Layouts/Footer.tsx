@@ -8,6 +8,7 @@ import {
   FaTwitter,
   FaYoutube,
   FaSlack,
+  FaInstagram,
 } from "react-icons/fa";
 import cn from "classnames";
 import { FooterLinks } from "../components/FooterLinks";
@@ -287,7 +288,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
         <div className="flex items-center gap-x-4">
           <a
             target='__blank'
-            href='https://web.facebook.com/people/Autogon/100088750542777/'
+            href='https://web.facebook.com/people/Autogon-Incorporated/100091275010826/'
             className={`rounded-full w-7 h-7 grid place-items-center ${
               darkMode ? "bg-screen" : "bg-black"
             }`}
@@ -308,7 +309,7 @@ export const Footer = ({ darkMode }: FooterProps) => {
             />
           </a>
           <a
-            href='https://www.linkedin.com/company/autogon/'
+            href='https://www.linkedin.com/company/autogoninc/about/'
             target='__blank'
             className={`rounded-full w-7 h-7 grid place-items-center ${
               darkMode ? "bg-screen" : "bg-black"
@@ -327,6 +328,17 @@ export const Footer = ({ darkMode }: FooterProps) => {
           >
             <FaTwitter
               className={`h-4 w-4 ${darkMode ? "text-neutral" : "text-white"}`}
+            />
+          </a>
+          <a
+            href='https://www.instagram.com/autogoninc/'
+            target='__blank'
+            className={`rounded-full w-7 h-7 grid place-items-center ${
+              darkMode ? "bg-screen" : "bg-black"
+            }`}
+          >
+            <FaInstagram
+              className={`h-5 w-5 ${darkMode ? "text-neutral" : "text-white"}`}
             />
           </a>
           <a
