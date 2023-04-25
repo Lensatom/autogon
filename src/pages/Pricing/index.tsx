@@ -122,10 +122,10 @@ export const Pricing = () => {
                 <span className="text-sm font-semibold">Scale your marketing</span>
               </td>
               <td className="flex flex-col items-center gap-1">
-                <h2 className="font-bold text-lg">{enterprise}</h2>
+                <h2 className="font-bold text-lg">Enterprise</h2>
                 <div className="flex items-start">
                   <span className="text-sm pt-1">$</span>
-                  <span className="text-2xl font-bold">299</span>
+                  <span className="text-2xl font-bold">{enterprise}</span>
                 </div>
                 <span className="text-xs text-gray-500 font-semibold">USD / month</span>
                 <a href="https://console.autogon.ai">
@@ -139,27 +139,24 @@ export const Pricing = () => {
             <tr className="w-full grid grid-cols-4 justify-between">
               <td className="font-semibold">API Calls</td>
               <td className="text-center">
-                <select onChange={(e:any) => setAutomate((e.target.value / 1000) * 49 + 49)} className="bg-white w-1/2 px-2 py-1">
+                <select onChange={(e:any) => setAutomate(49)} className="bg-white w-1/2 px-2 py-1">
                   <option>1000</option>
-                  <option>2000</option>
-                  <option>3000</option>
-                  <option>4000</option>
                 </select>
               </td>
               <td className="text-center">
-                <select onChange={(e:any) => setScale((e.target.value / 1000) * 49 + 149)} className="bg-white w-1/2 px-2 py-1">
-                  <option>1000</option>
-                  <option>2000</option>
-                  <option>3000</option>
-                  <option>4000</option>
+                <select onChange={(e:any) => setScale(e.target.value * 49 + 149)} className="bg-white w-1/2 px-2 py-1">
+                  <option value={0}>10000</option>
+                  <option value={1}>20000</option>
+                  <option value={2}>30000</option>
+                  <option value={3}>40000</option>
                 </select>
               </td>
               <td className="text-center">
-                <select onChange={(e:any) => setEnterprise((e.target.value / 1000) * 49 + 299)} className="bg-white w-1/2 px-2 py-1">
-                  <option>1000</option>
-                  <option>2000</option>
-                  <option>3000</option>
-                  <option>4000</option>
+                <select onChange={(e:any) => setEnterprise(e.target.value * 159 + 299)} className="bg-white w-1/2 px-2 py-1">
+                  <option value={0}>50000</option>
+                  <option value={1}>100000</option>
+                  <option value={2}>500000</option>
+                  <option value={3}>1000000</option>
                 </select>
               </td>
             </tr>

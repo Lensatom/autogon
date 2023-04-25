@@ -1,20 +1,29 @@
 import { Button, Container, Typography } from "../../../components";
-import Lottie from "lottie-react";
-import animationData from "../../../assets/iRU7KxwKMP.json";
+import Lottie from "react-lottie";
+import animationData from "../../../assets/images/hero.json";
 import { ArrowTopRightOnSquareIcon } from "@heroicons/react/24/outline";
-import Animation from '../../../assets/images/anime.gif'
+import Animation from '../../../assets/images/Artificial intelligence.gif'
 
 export const HeroPage = () => {
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
 
   return (
     <Container className="bg-screen h-screen flex flex-col justify-between pt-44 lg:pt-[10rem]">
       <Typography
         align="center"
         variant="display"
-        className="z-[5] mx-auto lg:w-3/4 mb-8 text-neutral font-montserrat font-bold"
+        className="z-[5] mx-auto lg:w-3/4 text-neutral font-montserrat font-bold"
       >
         Artificial Intelligence Platform for Creatives
-      </Typography>
+      </Typography> 
       <div className="flex flex-col-reverse lg:flex-row w-full items-center">
         <div className="flex-1 flex flex-col-reverse lg:flex-col w-full lg:w-fit lg:pl-20">
           <Typography
@@ -38,8 +47,13 @@ export const HeroPage = () => {
             </a>
           </div>
         </div>
-        <div className="flex-1 md:mt-[-100px]">
-          <img src={Animation} alt='Loading...' className='w-[80%] mx-auto' />
+        <div className="flex-1 lg:mt-[-80px]">
+          {/* <Lottie 
+            options={defaultOptions}
+            height={220}
+            width={500}
+          /> */}
+          <img src={Animation} className="w-[80%]" />
         </div>
       </div>
     </Container>
