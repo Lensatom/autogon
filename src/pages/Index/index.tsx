@@ -22,6 +22,7 @@ import screenshots1 from '../../assets/images/screenshot2.png';
 import screenshots2 from '../../assets/images/screenshot3.png';
 import snip from '../../assets/images/snip.png'
 import Blogs from "../../components/Blogs";
+import { FaPause, FaPlay } from "react-icons/fa";
 
 
 const BenefitMobileCard = ({ className, position, contents, src, active, onClick }: BenefitCardProps) => {
@@ -59,7 +60,22 @@ const BenefitMobileCard = ({ className, position, contents, src, active, onClick
 
 
 export const LandingPage = () => {
+
   const [active, setActive] = useState(7);
+  const [video, setVideo] = useState(false)
+
+  const toggleVideo = () => {
+    console.log("Hello")
+    const videoDOM = document.getElementById("video")
+    if (video === false) {
+      // @ts-ignore
+      videoDOM?.play()
+    } else {
+      // @ts-ignore
+      videoDOM?.pause()
+    }
+    setVideo(!video)
+  }
 
   return (
     <>
@@ -79,8 +95,14 @@ export const LandingPage = () => {
           itemProp="contentUrl"
           content="https://www.youtube.com/watch?v=6WC8Ef4nNjE"
         />
-        <div className="reltive first:mx-auto lg:mx-24 mt-16 w-full flex relative overflow-hidden items-center justify-center rounded">
-          <video className='rounded-xl w-full' controls poster={snip}>
+        <div className="relative first:mx-auto lg:mx-24 mt-16 w-full flex overflow-hidden items-center justify-center rounded">
+          <div
+            className="z-[99] opacity-0 hover:opacity-100 transition-all text-white text-2xl absolute w-full h-full top-0 left-0 flex justify-center items-center"
+            onClick={toggleVideo}
+          >
+            {video ? <FaPause /> : <FaPlay />}
+          </div>
+          <video id="video" className='rounded-xl w-full'>
             <source src="https://s3.amazonaws.com/cloud.autogonai/autogonai-intro.mp4" type="video/mp4" />
           </video>
         </div>
