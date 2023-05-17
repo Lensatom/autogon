@@ -1,6 +1,9 @@
 import { Container, Typography } from "../components";
 import Logo from "../assets/logo/Autogon-full-logo-light.png";
 import DarkLogo from "../assets/logo/Autogon-full-logo-light.png";
+import Iso from '../assets/images/iso27001.svg';
+import Soc from '../assets/images/SOC2_TypeII.svg'
+import Gdpr from '../assets/images/gdpr.svg'
 import {
   FaFacebookF,
   FaGithub,
@@ -231,6 +234,20 @@ export const Footer = ({ darkMode }: FooterProps) => {
         <Typography isDarkMode={darkMode} variant="caption" className="mt-2 !text-white">
           Autogon © {new Date().getFullYear()}
         </Typography>
+        <div className="flex mt-5 gap-5">
+          <img
+            src={Soc}
+            className="h-[48.47px] font-roboto font-bold select-none"
+          />
+          <img
+            src={Iso}
+            className="h-[48.47px] font-roboto font-bold select-none"
+          />
+          <img
+            src={Gdpr}
+            className="h-[48.47px] font-roboto font-bold select-none"
+          />
+        </div>
       </div>
       <div className="flex gap-x-20 lg:gap-y-12 gap-6 mt-5 lg:mt-0 flex-wrap">
         <FooterLinks
