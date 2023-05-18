@@ -18,8 +18,8 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
       <App />
       <div className="App">
         <TawkMessengerReact
-          propertyId="6404981031ebfa0fe7f0c720"
-          widgetId="1gqov40cn"
+          propertyId="6438726831ebfa0fe7f82d68"
+          widgetId="1gtu7tqni"
         />
       </div>
       <CookieConsent
